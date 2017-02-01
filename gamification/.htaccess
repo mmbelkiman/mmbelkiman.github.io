@@ -1,0 +1,28 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+RewriteEngine On
+
+Options All -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^index index.php
+RewriteRule ^home home.php
+RewriteRule ^activity-basic-operations/(.*) activity-basic-operations.php?level=$1
+RewriteRule ^activity-cartesian/(.*) activity-cartesian.php?level=$1
+RewriteRule ^activity-cryptology/(.*) activity-cryptology.php?level=$1
+RewriteRule ^activity-think-fast/(.*) activity-think-fast.php?level=$1
+RewriteRule ^activity-where-expression/(.*) activity-where-expression.php?level=$1
+RewriteRule ^activity-xyz/(.*) activity-xyz.php?level=$1
+
+RewriteRule ^_public-html/index _public-html/index.php
+RewriteRule ^_public-html/home _public-html/home.php
+
+RewriteRule ^_public-html/activity-basic-operations/(.*) _public-html/activity-basic-operations.php?level=$1
+RewriteRule ^_public-html/activity-cartesian/(.*) _public-html/activity-cartesian.php?level=$1
+RewriteRule ^_public-html/activity-cryptology/(.*) _public-html/activity-cryptology.php?level=$1
+RewriteRule ^_public-html/activity-think-fast/(.*) _public-html/activity-think-fast.php?level=$1
+RewriteRule ^_public-html/activity-where-expression/(.*) _public-html/activity-where-expression.php?level=$1
+RewriteRule ^_public-html/activity-xyz/(.*) _public-html/activity-xyz.php?level=$1
