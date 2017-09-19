@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/Lobster-Regular.ttf');
+}
+
 html {
 	height: 100%;
 }
@@ -7,12 +12,20 @@ body {
 	background-image: url("../background-pattern.png");
 }
 
+h1{
+	font-size: 28px;
+}
+
 #menu-language {
 	cursor: pointer;
 }
 
 .menu-active {
 	background-color: rgb(231, 231, 231);
+}
+
+#filter-h1 {
+	font-size: 26px;
 }
 
 #inputMessage {
@@ -105,7 +118,7 @@ body {
 	margin-right: 10px;
 }
 
-.carousel-inner > .item > img {
+.carousel-inner>.item>img {
 	margin: 0 auto;
 }
 
@@ -121,10 +134,12 @@ body {
 	padding-top: 60%;
 	z-index: -1;
 }
+
 #container-filter {
 	padding-top: 5%;
 	z-index: -1;
 }
+
 .cover-image {
 	width: 100%;
 	height: 130%;
@@ -145,12 +160,13 @@ body {
 	background-position: center center;
 	padding-top: 30%;
 }
+
 .icon-achievement {
 	font-size: 1.3em;
 }
 
 .icon-no-achievement {
-	color: rgba(189, 195, 199,0.9)
+	color: rgba(189, 195, 199, 0.9)
 }
 
 .text-achievement {
@@ -158,7 +174,7 @@ body {
 }
 
 .progress-bar {
-	background-color: rgba(55, 215, 180,0.5);
+	background-color: rgba(55, 215, 180, 0.5);
 	color: black;
 }
 
@@ -206,7 +222,7 @@ body {
 }
 
 .body-home {
-	background-color: rgba(236,236,236,1);
+	background-color: rgba(236, 236, 236, 1);
 }
 
 .page-title {
@@ -233,12 +249,12 @@ li a {
 	color: white;
 	text-align: center;
 	font-size: 2.5em;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .block-porfolio {
 	border-style: solid;
-	border-color: rgba(128, 128, 128,0.9);
+	border-color: rgba(128, 128, 128, 0.9);
 	padding: 0px 0px 0px 0px;
 	margin-left: 1em;
 	margin-top: 2em;
@@ -250,7 +266,7 @@ li a {
 }
 
 .block-porfolio .block-portfolio-title {
-	background-color: rgba(54, 215, 183,0.5);
+	background-color: rgba(54, 215, 183, 0.5);
 	color: black;
 	text-align: center;
 	font-size: 2em;
@@ -260,8 +276,8 @@ li a {
 }
 
 .block-porfolio .block-portfolio-click {
-	background-color: rgba(125, 125, 125,0.1);
-	color: rgba(255,255,255,0.5);
+	background-color: rgba(125, 125, 125, 0.1);
+	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.5em;
 	position: absolute;
 	width: 100%;
@@ -274,8 +290,8 @@ li a {
 }
 
 .block-porfolio:hover .block-portfolio-click {
-	background-color: rgba(125, 125, 125,0.1);
-	color: rgba(255,255,255,0.5);
+	background-color: rgba(125, 125, 125, 0.1);
+	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.5em;
 	position: absolute;
 	width: 100%;
@@ -292,11 +308,17 @@ li a {
 	text-align: center;
 	margin-left: 10px;
 	cursor: pointer;
-	color: #999;
+	color: black;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .filter-text:hover {
-	color: gray;
+	color: #ccc;
 }
 
 .row-video {
@@ -320,7 +342,7 @@ li a {
 }
 
 .block h1 {
-	background-color: rgba(54, 215, 183,1);
+	background-color: rgba(54, 215, 183, 1);
 	padding-left: 0.2em;
 }
 
@@ -352,7 +374,7 @@ li a {
 
 #content-allign {
 	font-size: 1.5em;
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 	background-color: rgba(54, 215, 183, .8);
 	color: black;
 	width: 900px;
@@ -360,7 +382,7 @@ li a {
 }
 
 #content-name-allign {
-	background-color: rgba(236,236,236,1);
+	background-color: rgba(236, 236, 236, 1);
 	color: black;
 	width: 500px;
 	position: relative;
@@ -396,9 +418,9 @@ li a {
 	margin-bottom: 1%;
 }
 
-#portifolio-message-father{
+#portifolio-message-father {
 	padding-top: 5%;
-		text-align: center;
+	text-align: center;
 }
 
 #portifolio-message {
@@ -418,12 +440,12 @@ li a {
 	width: 100%;
 	color: #444;
 	padding-top: 150px;
-	background: rgb(91,178,161);
+	background: rgb(91, 178, 161);
 }
 
 #container-contact-final {
 	font-size: 1.5em;
-	background-color: rgba(236,236,236,1);
+	background-color: rgba(236, 236, 236, 1);
 	text-align: center;
 	color: black;
 	padding: 10px 0;
@@ -431,7 +453,7 @@ li a {
 
 #sendEmail {
 	width: 100%;
-	background: rgb(22,110,92);
+	background: rgb(22, 110, 92);
 	border: none;
 	color: white;
 	font-size: 2em;
@@ -445,11 +467,14 @@ li a {
 	background: #1c8f78;
 }
 
-#sendEmail:hover, #sendEmail:focus {
+#sendEmail:hover,
+#sendEmail:focus {
 	background: #197e6a;
 }
 
+
 /*TOP*/
+
 #page-top {
 	background-color: #F8F8F8;
 	color: black;
@@ -559,6 +584,8 @@ li a {
 	top: 0px;
 	opacity: .6;
 }
+
+
 /*===============================================================*/
 
 @media (max-width: 1010px) {
@@ -571,29 +598,25 @@ li a {
 	#menu-subtitle {
 		font-size: 0.9em;
 	}
-
 	.cover-image {
 		margin-top: 25%;
 	}
 }
+
 @media (max-width: 640px) {
 	#content-name-allign {
 		width: unset;
 	}
-
 	#container-content {
 		padding-top: 105%;
 	}
-
 	.cover-image {
 		background-size: 260%;
 	}
-
 	.block {
 		margin-left: 0px;
 	}
-	
-	#portifolio-message{
+	#portifolio-message {
 		font-size: 1.5em;
 	}
 }
@@ -606,7 +629,9 @@ li a {
 		padding-top: 160%;
 	}
 	#page-top .links {
-	font-size: 0.7em;
+		font-size: 0.7em;
+	}
+	#menu-language {
+		margin-bottom: 10px;
 	}
 }
-

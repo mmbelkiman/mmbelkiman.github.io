@@ -1,87 +1,42 @@
-$(document).ready(function() {
-	var displaySoftware = false;
-	var displayGames = false;
-	var displayMusic = false;
+$(document).ready(function () {
+	var displaySoftware = true;
+	var displayGames = true;
 	translate();
 
-	$(".filter-text").on("click", function() {
-		deselectFilter();
+	$(".filter-text").on("click", function () {
 		var id = $(this).attr("id");
 		if (id == "filter-software") {
-			if (!displaySoftware) {
+			if (displaySoftware) {
+				$(".row-software").css("display", "none");
+				$(".row-software-father").css("opacity", ".8");
+				$("#filter-software").css("color", "#999");
+
+				displaySoftware = false;
+			} else {
 				$(".row-software").css("display", "block");
 				$(".row-software-father").css("opacity", "1");
-
-				$(".row-games").css("display", "none");
-				$(".row-games-father").css("opacity", ".8");
-
-				$(".row-music").css("display", "none");
-				$(".row-music-father").css("opacity", ".8");
-
 				$("#filter-software").css("color", "black");
+
 				displaySoftware = true;
-				displayMusic = false;
-				displayGames = false;
-			} else {
-				displaySoftware = false;
 			}
 		}
 
 		if (id == "filter-games") {
-			if (!displayGames) {
-				$(".row-software").css("display", "none");
-				$(".row-software-father").css("opacity", ".8");
-
-				$(".row-games").css("display", "block");
-				$(".row-games-father").css("opacity", "1");
-
-				$(".row-music").css("display", "none");
-				$(".row-music-father").css("opacity", ".8");
-
-				$("#filter-games").css("color", "black");
-				displaySoftware = false;
-				displayMusic = false;
-				displayGames = true;
-			} else {
-				displayGames = false;
-			}
-		}
-
-		if (id == "filter-music") {
-			if (!displayMusic) {
-				$(".row-software").css("display", "none");
-				$(".row-software-father").css("none", ".8");
-
+			if (displayGames) {
 				$(".row-games").css("display", "none");
 				$(".row-games-father").css("opacity", ".8");
+				$("#filter-games").css("color", "#999");
 
-				$(".row-music").css("display", "block");
-				$(".row-music-father").css("opacity", "1");
-
-				$("#filter-music").css("color", "black");
-				displaySoftware = false;
-				displayMusic = true;
 				displayGames = false;
 			} else {
-				displayMusic = false;
+				$(".row-games").css("display", "block");
+				$(".row-games-father").css("opacity", "1");
+				$("#filter-games").css("color", "black");
+
+				displayGames = true;
 			}
 		}
 	});
-
-	function deselectFilter() {
-		$(".row-software").css("display", "block");
-		$(".row-software-father").css("opacity", "1");
-
-		$(".row-games").css("display", "block");
-		$(".row-games-father").css("opacity", "1");
-
-		$(".row-music").css("display", "block");
-		$(".row-music-father").css("opacity", "1");
-
-		$("#filter-software").css("color", "#999");
-		$("#filter-music").css("color", "#999");
-		$("#filter-games").css("color", "#999");
-	}
 
 	function translate() {
 		var mLanguage = activeLanguage.portfolio;
@@ -133,6 +88,16 @@ $(document).ready(function() {
 		$("#m12-3").html(mLanguage["m12-3"]);
 		$("#nauu-1").html(mLanguage["nauu-1"]);
 		$("#nauu-2").html(mLanguage["nauu-2"]);
+		$("#itaucard-1").html(mLanguage["itaucard-1"]);
+		$("#itaucard-2").html(mLanguage["itaucard-2"]);
+		$("#itaucard-3").html(mLanguage["itaucard-3"]);
+		$("#rupert-1").html(mLanguage["rupert-1"]);
+		$("#rupert-2").html(mLanguage["rupert-2"]);
+		$("#rupert-3").html(mLanguage["rupert-3"]);
+		$("#thaisborba-1").html(mLanguage["thaisborba-1"]);
+		$("#thaisborba-2").html(mLanguage["thaisborba-2"]);
+		$("#calangostudio-1").html(mLanguage["calangostudio-1"]);
+		$("#calangostudio-2").html(mLanguage["calangostudio-2"]);
 	}
 
 });
