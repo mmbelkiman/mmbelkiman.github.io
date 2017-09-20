@@ -1,12 +1,11 @@
 $(document).ready(function() {
 	var showScrollTutorial = false;
+	
 	translate();
+	verifyScreenStoped();
 
 	$('.slide').each(function() {
 		var $obj = $(this);
-		var yPos = -($(window).scrollTop() / $obj.data('speed'));
-		var bgpos = '50% ' + (yPos + 20) + 'px';
-		$obj.css('background-position', bgpos);
 
 		$(window).scroll(function() {
 			var yPos = -($(window).scrollTop() / $obj.data('speed'));
@@ -22,7 +21,6 @@ $(document).ready(function() {
 		}
 	});
 
-	verifyScreenStoped();
 
 	function animateScrollOn() {
 		showScrollTutorial = true;
