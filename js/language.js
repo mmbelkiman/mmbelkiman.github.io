@@ -127,7 +127,7 @@ var language = {
 		home: {
 			"content-name-allign": "Hi, my name is Marcelo",
 			"welcome-1": "Welcome to my online portfolio.",
-			"welcome-2": "I use this site to exhibit works which participated and my professional experience.",
+			"welcome-2": "I use this site to show works which participated and my professional experience.",
 			"welcome-3": "Thank you for your visit and I am available for questions, comments and critiques =]",
 			"topic-name-1": " Languages",
 			"topic-name-2": " Objective",
