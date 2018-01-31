@@ -41,6 +41,7 @@ $(document).ready(function () {
 	function translate() {
 		var mLanguage = activeLanguage.portfolio;
 
+		$(".play-online").html(mLanguage["play-online"]);
 		$("#filter-title").html(mLanguage["filter-title"]);
 		$("#filter-software-text").html(mLanguage["filter-software-text"]);
 		$("#filter-games-text").html(mLanguage["filter-games-text"]);
@@ -98,6 +99,9 @@ $(document).ready(function () {
 		$("#thaisborba-2").html(mLanguage["thaisborba-2"]);
 		$("#calangostudio-1").html(mLanguage["calangostudio-1"]);
 		$("#calangostudio-2").html(mLanguage["calangostudio-2"]);
+		$("#ultraretrovirus-1").html(mLanguage["ultraretrovirus-1"]);
+		$("#ultraretrovirus-2").html(mLanguage["ultraretrovirus-2"]);
+		$("#ultraretrovirus-3").html(mLanguage["ultraretrovirus-3"]);
 	}
 
 });

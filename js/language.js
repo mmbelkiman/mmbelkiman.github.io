@@ -59,6 +59,7 @@ var language = {
 			"sendEmail-Message": " Enviar"
 		},
 		portfolio: {
+			"play-online" : "JOGAR ONLINE",
 			"filter-title": "Filtro",
 			"filter-software-text": "Aplicativos e Websites",
 			"filter-games-text": "Jogos",
@@ -115,7 +116,11 @@ var language = {
 			"thaisborba-1": "Site pessoal para divulgação dos trabalhos da artista Thais Borba.",
 			"thaisborba-2": "Ano: 2017",
 			"calangostudio-1": "Site para organizar e agrupar os jogos profissionais que criei com o selo Calango Studio.",
-			"calangostudio-2": "Ano: 2017"
+			"calangostudio-2": "Ano: 2017",
+			"ultraretrovirus-1" : "Jogo criado em 48 para a global game jam 2018",
+			"ultraretrovirus-2" : "Jogador controla um vírus de computador e deve transmiti-lo a tantos programas quanto possível, evitando o software de firewall.",
+			"ultraretrovirus-3" : "Ano: 2018",
+	
 		}
 	},
 	en: {
@@ -179,6 +184,7 @@ var language = {
 			"sendEmail-Message": " Send"
 		},
 		portfolio: {
+			"play-online" : "PLAY ONLINE",
 			"filter-title": "Filter",
 			"filter-software-text": "Softwares and Websites",
 			"filter-games-text": "Games",
@@ -235,7 +241,10 @@ var language = {
 			"thaisborba-1": "Personal website to promote the work of the artist Thais Borba.",
 			"thaisborba-2": "Year: 2017",
 			"calangostudio-1": "Website to organize and group the professional games that I created with the label Calango Studio.",
-			"calangostudio-2": "Year: 2017"
+			"calangostudio-2": "Year: 2017",
+			"ultraretrovirus-1" : "Game created in 48 for the global game jam 2018",
+			"ultraretrovirus-2" : "Control a computer virus that must be transmitted to as many programs as possible by avoiding firewalls",
+			"ultraretrovirus-3" : "Year: 2018",
 		}
 	}
 };

@@ -82,6 +82,24 @@ h1{
 	margin-right: 10px;
 }
 
+.portfolio-csharp {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(138,43,226);
+	text-align: center;
+	padding: 0px;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
+.portfolio-unity {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(119,136,153);
+	text-align: center;
+	padding: 0px;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
 .portfolio-html-css {
 	border-bottom-style: solid;
 	border-bottom-color: #e67e22;
