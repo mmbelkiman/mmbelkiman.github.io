@@ -91,6 +91,15 @@ h1{
 	margin-right: 10px;
 }
 
+.portfolio-monogame {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(255,100,0);
+	text-align: center;
+	padding: 0px;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
 .portfolio-unity {
 	border-bottom-style: solid;
 	border-bottom-color: rgb(119,136,153);

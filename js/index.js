@@ -62,6 +62,8 @@ $(document).ready(function() {
 		$("#topic-name-7").html(mLanguage["topic-name-7"]);
 		$("#topic-name-8").html(mLanguage["topic-name-8"]);
 		$("#desc-obj").html(mLanguage["desc-obj"]);
+		$("#verisoft-1").html(mLanguage["verisoft-1"]);
+		$("#verisoft-2").html(mLanguage["verisoft-2"]);
 		$("#cit-1").html(mLanguage["cit-1"]);
 		$("#cit-2").html(mLanguage["cit-2"]);
 		$("#click-1").html(mLanguage["click-1"]);
@@ -80,6 +82,7 @@ $(document).ready(function() {
 		$("#language-eng-2").html(mLanguage["language-eng-2"]);
 		$("#language-eng-3").html(mLanguage["language-eng-3"]);
 		$("#language-eng-4").html(mLanguage["language-eng-4"]);
+		$("#verisoft-time").html(mLanguage["verisoft-time"]);
 		$("#cit-time").html(mLanguage["cit-time"]);
 		$("#click-time").html(mLanguage["click-time"]);
 		$("#art-time").html(mLanguage["art-time"]);
