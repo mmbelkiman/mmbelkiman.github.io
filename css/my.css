@@ -21,8 +21,13 @@ body {
 }
 
 h1{
-	font-size: 26px;
+	font-size: 22px;
 	font-family: JosefinSans;
+}
+
+.glyphicon {
+	font-size: 40px;
+	color: rgba(54, 215, 183, 255);
 }
 
 #menu-language {
@@ -253,10 +258,7 @@ h1{
 	color: white;
 }
 
-.glyphicon {
-	font-size: 1.4em;
-	color: rgba(54, 215, 183, 255);
-}
+
 
 
 .page-title {

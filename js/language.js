@@ -7,9 +7,9 @@ var language = {
 		},
 		home: {
 			"content-name-allign": "Olá, meu nome é Marcelo",
-			"welcome-1": "Seja bem vindo ao meu portfólio online.",
-			"welcome-2": "Utilizo este site expor trabalhos com qual participei e minha expêriencia profissional.",
-			"welcome-3": "Agradeço sua visita e estou à disposição a dúvidas, comentários e críticas =]",
+			"welcome-1": "Sou Programador, Game Designer, Arquiteto de Software, ",
+			"welcome-2": "Gosto de criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
+			"welcome-3": "Como posso te ajudar hoje? _",
 			"topic-name-1": " Idiomas",
 			"topic-name-2": " Objetivo",
 			"topic-name-3": " Experiência profissional",
@@ -57,8 +57,8 @@ var language = {
 		},
 		contact: {
 			"contact-message": "Utilize o formulário para entrar em contato, ou se preferir use algum dos outros meios de contato listado.",
-			"contact-message-portifolio": "Hey, antes de ir embora, dê um pulinho no meu portfólio =}",
-			"contact-message-profile": "Hey, antes de ir embora, dê um pulinho no meu perfil =}",
+			"contact-message-portifolio": "Hey, antes de ir embora, dê um pulinho no meu portfólio :)",
+			"contact-message-profile": "Hey, antes de ir embora, dê um pulinho no meu perfil :)",
 			"sendEmail-Message": " Enviar"
 		},
 		portfolio: {
@@ -185,8 +185,8 @@ var language = {
 		},
 		contact: {
 			"contact-message": "Use the form to contact, or if you prefer use some other means of contact listed.",
-			"contact-message-portifolio": "Hey, before you leave, give my portfolio a visit =}",
-			"contact-message-profile": "Hey, before you leave, give my profile visit =}",
+			"contact-message-portifolio": "Hey, before you leave, give my portfolio a visit :)",
+			"contact-message-profile": "Hey, before you leave, give my profile visit :)",
 			"sendEmail-Message": " Send"
 		},
 		portfolio: {
