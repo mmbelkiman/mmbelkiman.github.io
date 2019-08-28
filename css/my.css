@@ -368,6 +368,14 @@ li a {
 	width: 100%;
 }
 
+.block-full{
+	background-color: white;
+	padding: 0px 0px 0px 0px;
+	margin-left: 1.5em;
+	padding-left: 1em;
+	margin-top: 2em;
+}
+
 .block {
 	background-color: white;
 	padding: 0px 0px 0px 0px;
@@ -408,19 +416,16 @@ li a {
 
 #content-allign {
 	font-size: 1.5em;
-	color: rgba(255, 255, 255, 1);
-	background-color: rgba(54, 215, 183, .8);
-	color: black;
+	color: rgba(204, 204, 204, 1);
+	background-color: rgba(14, 14, 14);
 	width: 900px;
-	margin: 0 auto;
 }
 
 #content-name-allign {
-	background-color: rgba(236, 236, 236, 1);
-	color: black;
+	color: rgba(204, 204, 204, 1);
+	background-color: rgba(14, 14, 14);
 	width: 500px;
 	position: relative;
-	margin: 0 auto;
 }
 
 #mouse-scroll {
@@ -623,6 +628,10 @@ li a {
 /*===============================================================*/
 
 @media (max-width: 1010px) {
+	.block-full{
+		margin-left: 1em;
+	}
+
 	#content-allign {
 		width: unset;
 	}
@@ -638,6 +647,10 @@ li a {
 }
 
 @media (max-width: 640px) {
+	.block-full{
+		margin-left: 1em;
+	}
+
 	#content-name-allign {
 		width: unset;
 	}
@@ -656,6 +669,10 @@ li a {
 }
 
 @media (max-width: 440px) {
+	.block-full{
+		margin-left: 1em;
+	}
+
 	.cover-image {
 		margin-top: 35%;
 	}
