@@ -9,7 +9,7 @@ var language = {
 			"content-name-allign": "Olá, meu nome é Marcelo",
 			"welcome-1": "Sou Programador, Game Designer, Arquiteto de Software e Scrum Master ",
 			"welcome-2": "Gosto de criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
-			"welcome-3": "Como posso te ajudar hoje? _",
+			"welcome-3": "Como posso te ajudar hoje?",
 			"topic-name-1": " Idiomas",
 			"topic-name-2": " Objetivo",
 			"topic-name-3": " Experiência profissional",

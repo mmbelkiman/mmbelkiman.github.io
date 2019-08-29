@@ -1,13 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	var showScrollTutorial = false;
-	
+
 	translate();
 	verifyScreenStoped();
+	fadeEffect();
 
-	$('.slide').each(function() {
+	$('.slide').each(function () {
 		var $obj = $(this);
 
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			var yPos = -($(window).scrollTop() / $obj.data('speed'));
 			var bgpos = '50% ' + (yPos + 20) + 'px';
 			$obj.css('background-position', bgpos);
@@ -25,21 +26,30 @@ $(document).ready(function() {
 	function animateScrollOn() {
 		showScrollTutorial = true;
 		$("#mouse-scroll").animate({
-			width : "150px",
-			height : "150px"
+			width: "150px",
+			height: "150px"
 		});
 	}
 
 	function animateScrollOff() {
 		showScrollTutorial = false;
 		$("#mouse-scroll").animate({
-			width : "0px",
-			height : "0px"
+			width: "0px",
+			height: "0px"
 		});
 	}
 
+	function fadeEffect() {
+		$("#blink_char").fadeOut().delay(500).fadeIn();
+
+		setTimeout(function () {
+			fadeEffect();
+		}, 500);
+
+	}
+
 	function verifyScreenStoped() {
-		setTimeout(function() {
+		setTimeout(function () {
 			if ($(window).scrollTop() < 400 && !showScrollTutorial) {
 				animateScrollOn();
 			}
