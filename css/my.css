@@ -3,6 +3,10 @@
 	src: url('../fonts/Lobster-Regular.ttf');
 }
 @font-face {
+	font-family: 'MajorMonoDisplay';
+	src: url('../fonts/MajorMonoDisplay-Regular.ttf');
+}
+@font-face {
 	font-family: 'JosefinSans';
 	src: url('../fonts/JosefinSans-Regular.ttf');
 }
@@ -61,6 +65,10 @@ h1{
 	border-color: rgb(102, 175, 233);
 	outline: 0px none;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+.welcome{
+	font-family: JosefinSans;
 }
 
 .portfolioUrl {
@@ -425,7 +433,7 @@ li a {
 	color: rgba(204, 204, 204, 1);
 	background-color: rgba(14, 14, 14);
 	width: 500px;
-	position: relative;
+	font-size: 40px;
 }
 
 #mouse-scroll {
@@ -479,12 +487,12 @@ li a {
 	width: 100%;
 	color: #444;
 	padding-top: 150px;
-	background: rgb(91, 178, 161);
+	background: rgb(14, 14, 14);
 }
 
 #container-contact-final {
 	font-size: 1.5em;
-	background-color: rgba(236, 236, 236, 1);
+	background-color: rgba(14, 14, 14);
 	text-align: center;
 	color: black;
 	padding: 10px 0;
@@ -592,14 +600,13 @@ li a {
 }
 
 .menu-title {
-	font-family: Lobster;
-	font-size: 3em;
+	font-family: MajorMonoDisplay;
+	font-size: 2.5em;
 	line-height: 1em;
 }
 
 #menu-subtitle {
 	font-size: 1.3em;
-	margin-left: 5em;
 	line-height: 1em;
 }
 
@@ -626,7 +633,11 @@ li a {
 
 
 /*===============================================================*/
-
+@media (max-width: 1090px) {
+	.menu-title {
+		font-size: 2.5em;
+	}
+}
 @media (max-width: 1010px) {
 	.block-full{
 		margin-left: 1em;
@@ -636,7 +647,7 @@ li a {
 		width: unset;
 	}
 	.menu-title {
-		font-size: 2em;
+		font-size: 2.1em;
 	}
 	#menu-subtitle {
 		font-size: 0.9em;
@@ -666,9 +677,13 @@ li a {
 	#portifolio-message {
 		font-size: 1.5em;
 	}
+	.menu-title {
+		font-size: 1.7em;
+	}
 }
 
 @media (max-width: 440px) {
+
 	.block-full{
 		margin-left: 1em;
 	}
