@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html manifest="offline.appcache">
+	<head>
+		<meta charset="UTF-8" />
+
+		<!-- This ensures the canvas works on IE9+.  Don't remove it! -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<!-- Standardised web app manifest -->
+		<link rel="manifest" href="appmanifest.json" />
+
+		<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+		<meta name="HandheldFriendly" content="true" />
+
+		<!-- Chrome for Android web app tags -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+		<title>Omg my House</title>
+		<!-- Note: running this exported project from disk may not work exactly like preview, since browsers block some features on the file:// protocol.  Once you've uploaded it to a server, it should work OK. -->
+
+		<style type="text/css">
+			body {
+				background-color: black;
+				color: white;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			#side {
+				width: 125px;
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				right: 0px;
+			}
+
+			#main {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				bottom: 0px;
+				right: 150px;
+			}
+
+			iframe {
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="opacity: 0; height: 1px; width: 1px;">
+			<h1>OMG-My-House - Marcelo Belkiman - marcelobelkiman@gmail.com</h1>
+			<img src="front.jpg"></img>		
+		</div>
+		
+		<script src="jquery-2.1.1.min.js"></script>
+
+		<script>
+			var side_size = 125;
+
+			// Issue a warning if trying to preview an exported project on disk.
+			(function() {
+				// Check for running exported on file protocol
+				if (window.location.protocol.substr(0, 4) === "file") {
+					alert("Exported games won't work until you upload them.");
+				}
+			})();
+
+			function size_iframe() {
+				var w = jQuery(window).width() - side_size;
+				var h = jQuery(window).height();
+				jQuery("iframe").width(w).height(h);
+			};
+
+			jQuery(document).ready(size_iframe);
+			jQuery(window).resize(size_iframe);
+
+			if (navigator.serviceWorker && navigator.serviceWorker.register) {
+				// Register an empty service worker to trigger web app install banners.
+				navigator.serviceWorker.register("sw.js", {
+					scope : "./"
+				});
+			}
+		</script>
+
+		<div id="side">
+			<!-- <p>
+				Side content goes here. You can add any additional HTML content, e.g. an advert.
+			</p> -->
+			<script type='text/javascript' src='//eclkmpbn.com/adServe/banners?tid=78132_125010_3&type=slider&side=right&size=120x600&position=top'></script>
+		</div>
+		<div id="main">
+			<iframe allowfullscreen="true" src="game.html" scrolling="no" noresize="noresize" />
+		</div>
+		
+		<!-- Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-69841708-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+				
+	</body>
+</html>

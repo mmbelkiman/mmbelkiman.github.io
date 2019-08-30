@@ -364,6 +364,10 @@ li a {
 	color: #ccc;
 }
 
+.row-gif{
+	padding-right: 15px;
+}
+
 .row-video {
 	margin: 0px;
 	background-color: black;
