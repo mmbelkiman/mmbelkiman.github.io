@@ -32,7 +32,7 @@ $(document).ready(function() {
 		$("#menu-portfolio").html(mLanguage["menu-portfolio"]);
 		
 		if(getCookie("language") == 1){
-			$("#menu-language-text").html("in English");
+			$("#menu-language-text").html("in english");
 		}else{
 			$("#menu-language-text").html("em português");
 		}
