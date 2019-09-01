@@ -1,9 +1,4 @@
 @font-face {
-	font-family: 'Lobster';
-	src: url('../fonts/Lobster-Regular.ttf');
-}
-
-@font-face {
 	font-family: 'MajorMonoDisplay';
 	src: url('../fonts/MajorMonoDisplay-Regular.ttf');
 }
@@ -11,6 +6,15 @@
 @font-face {
 	font-family: 'JosefinSans';
 	src: url('../fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+div {
+	font-family: Roboto;
 }
 
 html {
@@ -286,6 +290,14 @@ li a {
 
 .title-education {
 	font-weight: 700;
+	font-family: JosefinSans;
+	font-size: 1.2em;
+}
+
+.subtitle-education {
+	font-family: JosefinSans;
+	font-size: 1.1em;
+	color: #4b7f73;
 }
 
 .block-moreinfo {
@@ -365,12 +377,12 @@ li a {
 	color: #ccc;
 }
 
-.col-gif{
+.col-gif {
 	background-color: black;
-	text-align: center;	
+	text-align: center;
 }
 
-.row-gif{
+.row-gif {
 	padding-right: 15px;
 }
 
@@ -450,7 +462,7 @@ li a {
 	height: 0px;
 	background-size: 100%;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 2px;
 	border-color: black;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -466,7 +478,7 @@ li a {
 	height: 160px;
 	background-size: 100%;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 2px;
 	border-color: white;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -524,7 +536,8 @@ li a {
 	background: #1c8f78;
 }
 
-#sendEmail:hover, #sendEmail:focus {
+#sendEmail:hover,
+#sendEmail:focus {
 	background: #197e6a;
 }
 
@@ -651,18 +664,23 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
+
 	#content-allign {
 		width: unset;
 	}
+
 	.menu-title {
 		font-size: 2.1em;
 	}
+
 	#menu-subtitle {
 		font-size: 0.9em;
 	}
+
 	.cover-image {
 		margin-top: 25%;
 	}
+
 	#mouse-scroll {
 		margin-top: -50px;
 	}
@@ -672,24 +690,31 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
+
 	#content-name-allign {
 		width: unset;
 	}
+
 	#container-content {
 		padding-top: 105%;
 	}
+
 	.cover-image {
 		background-size: 260%;
 	}
+
 	.block {
 		margin-left: 0px;
 	}
+
 	#portifolio-message {
 		font-size: 1.5em;
 	}
+
 	.menu-title {
 		font-size: 1.7em;
 	}
+
 	#mouse-scroll {
 		margin-top: -50px;
 	}
@@ -699,18 +724,23 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
+
 	.cover-image {
 		margin-top: 35%;
 	}
+
 	#container-content {
 		padding-top: 160%;
 	}
+
 	#page-top .links {
 		font-size: 0.7em;
 	}
+
 	#menu-language {
 		margin-bottom: 10px;
 	}
+
 	#mouse-scroll {
 		margin-top: -100px;
 	}

@@ -74,6 +74,8 @@ $(document).ready(function () {
 		$("#desc-obj").html(mLanguage["desc-obj"]);
 		$("#verisoft-1").html(mLanguage["verisoft-1"]);
 		$("#verisoft-2").html(mLanguage["verisoft-2"]);
+		$("#ies2-1").html(mLanguage["ies2-1"]);
+		$("#ies2-2").html(mLanguage["ies2-2"]);
 		$("#cit-1").html(mLanguage["cit-1"]);
 		$("#cit-2").html(mLanguage["cit-2"]);
 		$("#click-1").html(mLanguage["click-1"]);
@@ -92,6 +94,7 @@ $(document).ready(function () {
 		$("#language-eng-2").html(mLanguage["language-eng-2"]);
 		$("#language-eng-3").html(mLanguage["language-eng-3"]);
 		$("#language-eng-4").html(mLanguage["language-eng-4"]);
+		$("#ies2-time").html(mLanguage["ies2-time"]);
 		$("#verisoft-time").html(mLanguage["verisoft-time"]);
 		$("#cit-time").html(mLanguage["cit-time"]);
 		$("#click-time").html(mLanguage["click-time"]);
@@ -107,6 +110,8 @@ $(document).ready(function () {
 		$("#glossary-exp").html(mLanguage["glossary-exp"]);
 		$("#glossary-personal").html(mLanguage["glossary-personal"]);
 		$("#glossary-now").html(mLanguage["glossary-now"]);
-	}
 
+		var mLanguage = activeLanguage.contact;
+		$("#contact-message-portifolio").html(mLanguage["contact-message-portifolio"]);
+	}
 });

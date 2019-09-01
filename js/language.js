@@ -39,7 +39,8 @@ var language = {
 			"language-eng-2": "Intermediário",
 			"language-eng-3": "• Leitura: Avançado",
 			"language-eng-4": "• Conversação : Intermediário",
-			"verisoft-time": "Desenvolvedor Android : 11/2017 ~ Atualmente",
+			"ies2-time": "Desenvolvedor React Native/Android 09/2019 ~ Atualmente",
+			"verisoft-time": "Desenvolvedor Android : 11/2017 ~ 09/2019",
 			"cit-time": "Desenvolvedor Mobile : 08/2015 ~ 11/2017",
 			"click-time": "Desenvolvedor Web : 05/2014 ~ 08/2015",
 			"art-time": "Analista de Sistemas : 06/2012 ~ 06/2013",
@@ -56,10 +57,8 @@ var language = {
 			"glossary-now": "Utilizando atualmente"
 		},
 		contact: {
-			"contact-message": "Utilize o formulário para entrar em contato, ou se preferir use algum dos outros meios de contato listado.",
 			"contact-message-portifolio": "Hey, antes de ir embora, dê um pulinho no meu portfólio :)",
 			"contact-message-profile": "Hey, antes de ir embora, dê um pulinho no meu perfil :)",
-			"sendEmail-Message": " Enviar"
 		},
 		portfolio: {
 			"play-online" : "JOGAR ONLINE",
@@ -181,13 +180,10 @@ var language = {
 			"glossary-exp": "Professional experience",
 			"glossary-personal": "Use in personal projects",
 			"glossary-now": "Currently using"
-
 		},
 		contact: {
-			"contact-message": "Use the form to contact, or if you prefer use some other means of contact listed.",
 			"contact-message-portifolio": "Hey, before you leave, give my portfolio a visit :)",
 			"contact-message-profile": "Hey, before you leave, give my profile visit :)",
-			"sendEmail-Message": " Send"
 		},
 		portfolio: {
 			"play-online" : "PLAY ONLINE",
