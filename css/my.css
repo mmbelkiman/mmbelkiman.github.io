@@ -365,6 +365,11 @@ li a {
 	color: #ccc;
 }
 
+.col-gif{
+	background-color: black;
+	text-align: center;	
+}
+
 .row-gif{
 	padding-right: 15px;
 }
@@ -576,12 +581,12 @@ li a {
 
 .contact-text {
 	font-size: 1.5em;
-	color: #444;
+	color: rgba(204, 204, 204, 1);
 }
 
 .contact-text:hover {
 	text-decoration: none;
-	color: #333;
+	color: rgba(224, 224, 224, 1);
 }
 
 .title {
