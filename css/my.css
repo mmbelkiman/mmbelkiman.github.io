@@ -23,7 +23,6 @@ html {
 
 body {
 	height: 100%;
-	/*	background-image: url("../background-pattern.png");*/
 }
 
 .body-home {
@@ -35,12 +34,6 @@ h1 {
 	font-family: JosefinSans;
 }
 
-.glyphicon {
-	font-size: 40px;
-	color: rgba(54, 215, 183, 255);
-	padding-top: 10px;
-}
-
 #menu-language {
 	cursor: pointer;
 }
@@ -49,29 +42,9 @@ h1 {
 	background-color: rgb(231, 231, 231);
 }
 
-#filter-h1 {
-	font-size: 26px;
-}
-
-#inputMessage {
-	display: block;
-	width: 100%;
-	padding: 6px 12px;
-	font-size: 14px;
-	line-height: 1.42857;
-	color: rgb(85, 85, 85);
-	background-color: rgb(255, 255, 255);
-	background-image: none;
-	border: 1px solid rgb(204, 204, 204);
-	border-radius: 4px;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-}
-
-#inputMessage:focus {
-	border-color: rgb(102, 175, 233);
-	outline: 0px none;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+.icon-title {
+	color: #4b7f73;
+	font-size: 1.4em;
 }
 
 .welcome {
@@ -536,8 +509,7 @@ li a {
 	background: #1c8f78;
 }
 
-#sendEmail:hover,
-#sendEmail:focus {
+#sendEmail:hover, #sendEmail:focus {
 	background: #197e6a;
 }
 
@@ -664,23 +636,18 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
-
 	#content-allign {
 		width: unset;
 	}
-
 	.menu-title {
 		font-size: 2.1em;
 	}
-
 	#menu-subtitle {
 		font-size: 0.9em;
 	}
-
 	.cover-image {
 		margin-top: 25%;
 	}
-
 	#mouse-scroll {
 		margin-top: -50px;
 	}
@@ -690,31 +657,24 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
-
 	#content-name-allign {
 		width: unset;
 	}
-
 	#container-content {
 		padding-top: 105%;
 	}
-
 	.cover-image {
 		background-size: 260%;
 	}
-
 	.block {
 		margin-left: 0px;
 	}
-
 	#portifolio-message {
 		font-size: 1.5em;
 	}
-
 	.menu-title {
 		font-size: 1.7em;
 	}
-
 	#mouse-scroll {
 		margin-top: -50px;
 	}
@@ -724,23 +684,18 @@ li a {
 	.block-full {
 		margin-left: 1em;
 	}
-
 	.cover-image {
 		margin-top: 35%;
 	}
-
 	#container-content {
 		padding-top: 160%;
 	}
-
 	#page-top .links {
 		font-size: 0.7em;
 	}
-
 	#menu-language {
 		margin-bottom: 10px;
 	}
-
 	#mouse-scroll {
 		margin-top: -100px;
 	}
