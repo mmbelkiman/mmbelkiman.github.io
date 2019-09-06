@@ -8,7 +8,7 @@ $(document).ready(function () {
 		  'width': '60px',
 		  'height': '60px',
 		  'border-radius': '30px',
-		  'background': 'rgba(255, 255, 255, 0.5)',
+		  'background': 'rgba(75, 127,115, 0.5)',
 		  'position': 'absolute',
 		  'top': '50%',
 		  'left': '50%',
@@ -19,7 +19,7 @@ $(document).ready(function () {
 		  'height': '0',
 		  'border-top': '14px solid transparent',
 		  'border-bottom': '14px solid transparent',
-		  'border-left': '14px solid rgba(0, 0, 0, 0.5)',
+		  'border-left': '14px solid rgba(255, 255, 255, 0.9)',
 		  'position': 'absolute',
 		  'left': '26px',
 		  'top': '16px'
@@ -125,6 +125,9 @@ $(document).ready(function () {
 		$("#ultraretrovirus-1").html(mLanguage["ultraretrovirus-1"]);
 		$("#ultraretrovirus-2").html(mLanguage["ultraretrovirus-2"]);
 		$("#ultraretrovirus-3").html(mLanguage["ultraretrovirus-3"]);
+	
+		var mLanguage = activeLanguage.contact;
+		$("#contact-message-portifolio").html(mLanguage["contact-message-profile"]);
 	}
 
 });
