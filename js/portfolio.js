@@ -65,10 +65,7 @@ $(document).ready(function () {
 		var mLanguage = activeLanguage.portfolio;
 
 		$(".play-online").html(mLanguage["play-online"]);
-		$("#filter-title").html(mLanguage["filter-title"]);
-		$("#filter-software-text").html(mLanguage["filter-software-text"]);
-		$("#filter-games-text").html(mLanguage["filter-games-text"]);
-		$("#filter-music-text").html(mLanguage["filter-music-text"]);
+		$(".sourcecode").html(mLanguage["sourcecode"]);
 		$("#tri-1").html(mLanguage["tri-1"]);
 		$("#tri-2").html(mLanguage["tri-2"]);
 		$("#tri-3").html(mLanguage["tri-3"]);
@@ -85,8 +82,6 @@ $(document).ready(function () {
 		$("#gludum-3").html(mLanguage["gludum-3"]);
 		$("#gludum-4").html(mLanguage["gludum-4"]);
 		$("#gludum-5").html(mLanguage["gludum-5"]);
-		$("#plinio-1").html(mLanguage["plinio-1"]);
-		$("#plinio-2").html(mLanguage["plinio-2"]);
 		$("#click-1").html(mLanguage["click-1"]);
 		$("#click-2").html(mLanguage["click-2"]);
 		$("#click-3").html(mLanguage["click-3"]);
@@ -97,21 +92,8 @@ $(document).ready(function () {
 		$("#space-2").html(mLanguage["space-2"]);
 		$("#space-3").html(mLanguage["space-3"]);
 		$("#space-4").html(mLanguage["space-4"]);
-		$("#oeste-1").html(mLanguage["oeste-1"]);
-		$("#oeste-2").html(mLanguage["oeste-2"]);
-		$("#oeste-3").html(mLanguage["oeste-3"]);
-		$("#yami-1").html(mLanguage["yami-1"]);
-		$("#yami-2").html(mLanguage["yami-2"]);
 		$("#break-1").html(mLanguage["break-1"]);
 		$("#break-2").html(mLanguage["break-2"]);
-		$("#gameMacaco-1").html(mLanguage["gameMacaco-1"]);
-		$("#gameMacaco-2").html(mLanguage["gameMacaco-2"]);
-		$("#music-1").html(mLanguage["music-1"]);
-		$("#m12-1").html(mLanguage["m12-1"]);
-		$("#m12-2").html(mLanguage["m12-2"]);
-		$("#m12-3").html(mLanguage["m12-3"]);
-		$("#nauu-1").html(mLanguage["nauu-1"]);
-		$("#nauu-2").html(mLanguage["nauu-2"]);
 		$("#itaucard-1").html(mLanguage["itaucard-1"]);
 		$("#itaucard-2").html(mLanguage["itaucard-2"]);
 		$("#itaucard-3").html(mLanguage["itaucard-3"]);
@@ -125,7 +107,22 @@ $(document).ready(function () {
 		$("#ultraretrovirus-1").html(mLanguage["ultraretrovirus-1"]);
 		$("#ultraretrovirus-2").html(mLanguage["ultraretrovirus-2"]);
 		$("#ultraretrovirus-3").html(mLanguage["ultraretrovirus-3"]);
-	
+		$("#livroh-1").html(mLanguage["livroh-1"]);
+		$("#livroh-2").html(mLanguage["livroh-2"]);
+		$("#livroh-3").html(mLanguage["livroh-3"]);
+		$("#bancah-1").html(mLanguage["bancah-1"]);
+		$("#bancah-2").html(mLanguage["bancah-2"]);
+		$("#bancah-3").html(mLanguage["bancah-3"]);
+		$("#epicgolf2d-1").html(mLanguage["epicgolf2d-1"]);
+		$("#epicgolf2d-2").html(mLanguage["epicgolf2d-2"]);
+		$("#epicgolf2d-3").html(mLanguage["epicgolf2d-3"])
+		$("#ourAdventureTime-1").html(mLanguage["ourAdventureTime-1"]);
+		$("#ourAdventureTime-2").html(mLanguage["ourAdventureTime-2"]);
+		$("#ourAdventureTime-3").html(mLanguage["ourAdventureTime-3"]);
+		$("#venusparticleeditor-1").html(mLanguage["venusparticleeditor-1"])
+		$("#venusparticleeditor-2").html(mLanguage["venusparticleeditor-2"])
+		$("#venusparticleeditor-3").html(mLanguage["venusparticleeditor-3"])
+		
 		var mLanguage = activeLanguage.contact;
 		$("#contact-message-portifolio").html(mLanguage["contact-message-profile"]);
 	}

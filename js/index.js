@@ -4,9 +4,13 @@ $(document).ready(function () {
 	translate();
 	verifyScreenStoped();
 	fadeEffect();
+	animateScrollOff();	
 
 	$('.slide').each(function () {
 		var $obj = $(this);
+		var yPos = -($(window).scrollTop() / $obj.data('speed'));
+		var bgpos = '50% ' + (yPos + 20) + 'px';
+		$obj.css('background-position', bgpos);
 
 		$(window).scroll(function () {
 			var yPos = -($(window).scrollTop() / $obj.data('speed'));
