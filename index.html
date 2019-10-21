@@ -13,10 +13,13 @@
 	<script type="text/javascript" src="js/contato.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/all.min.js"></script>
+	<script type="text/javascript" src="js/scrollA.js"></script>
+	<script type="text/javascript" src="js/scrollB.js"></script>
 
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/my.css" rel="stylesheet" type="text/css">
 	<link href="css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="css/scroll.css" rel="stylesheet" type="text/css">
 
 	<link rel="icon" type="image/png" href="ico_152x.png" />
 </head>
@@ -33,10 +36,10 @@
 			</div>
 			<div class="col-md-8 col-lg-8 col-sm-8 hidden-xs links">
 				<ul>
-					<li id="menu-language">
+					<li class="menu-language">
 						<a style="font-size: 1.2em;">
 							<i class="fas fa-globe-americas"> </i>
-							<span id="menu-language-text">in english</span></a>
+							<span class="menu-language-text">in english</span></a>
 					</li>
 					<li class="menu-active"> <a id="menu-home" href="#">Inicio</a> </li>
 					<li> <a id="menu-portfolio" href="portfolio.html">Portfólio</a> </li>
@@ -51,13 +54,13 @@
 			</div>
 			<div class=" hidden-md hidden-lg hidden-sm col-xs-10 links">
 				<ul>
-					<li id="menu-language">
-						<a style="font-size: 1.2em;">
+					<li class="menu-language">
+						<a style="font-size: 1.0em;">
 							<i class="fa fa-globe-americas"> </i>
-							<span id="menu-language-text">in english</span></a>
+							<span class="menu-language-text">in english</span></a>
 					</li>
 					<li class="menu-active"> <a id="menu-home" href="#">Inicio</a> </li>
-					<li> <a id="menu-portfolio" href="portfolio.html">Portfólio</a> </li>
+					<li style="font-size:0.6em;"> <a id="menu-portfolio" href="portfolio.html">Portfólio</a> </li>
 				</ul>
 			</div>
 		</div>
@@ -68,7 +71,7 @@
 	<div data-speed="4" class="slide container-fluid cover-image" style="background-image: url('img-home.jpg');">
 
 		<div class="row welcome">
-			<div id="content-allign" >
+			<div id="content-allign">
 				<div id="content-name-allign"></div>
 				<div id="welcome-1"> </div>
 				<div id="welcome-2"> </div>
@@ -98,105 +101,110 @@
 				<h1><span class="icon-title fas fa-briefcase"> </span></h1>
 				<h1><span id="topic-name-3">Experiência profissional</span></h1>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-ies2.png">
-					</div>
+				<div class="col-md-12 pn-ProductNav_Wrapper">
+					<nav id="pnProductNav" class="col-md-12 pn-ProductNav" style="overflow-x:hidden">
+						<div id="pnProductNavContents" class=" pn-ProductNav_Contents">
 
-					<div>
-						<span class="title-education">IES2</span>
-						<br />
-						<span id="ies2-time" class="subtitle-education"></span>
-						<p id="ies2-1"> </p>
-						<p id="ies2-2"> </p>
-					</div>
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-ies2.png">
+									<div class="title-education">IES2</div>
+									<div id="ies2-time" class="subtitle-education"></div>
+									<div id="ies2-role" class="subtitle-education"></div>
+									<p id="ies2-1"> </p>
+									<p id="ies2-2"> </p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-verisoft.png">
+									<div class="title-education">Verisoft</div>
+									<div id="verisoft-time" class="subtitle-education"></div>
+									<div id="verisoft-role" class="subtitle-education"></div>
+									<p id="verisoft-1"> </p>
+									<p id="verisoft-2"> </p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-ciet.png">
+									<div class="title-education">Ci&T</div>
+									<div id="cit-time" class="subtitle-education"></div>
+									<div id="cit-role" class="subtitle-education"></div>
+									<p id="cit-1"></p>
+									<p id="cit-2"></p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-clickideia.png">
+									<div class="title-education">Clickideia</div>
+									<div id="click-time" class="subtitle-education"></div>
+									<div id="click-role" class="subtitle-education"></div>
+									<p id="click-1"> </p>
+									<p id="click-2"> </p>
+									<p id="click-3"> </p>
+									<p id="click-4"></p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-artivinco.png">
+									<div class="title-education">Artivinco</div>
+									<div id="art-time" class="subtitle-education"></div>
+									<div id="art-role" class="subtitle-education"></div>
+									<p id="art-1"> </p>
+									<p id="art-2"> </p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-people.png">
+									<div class="title-education">People Computação</div>
+									<div id="people-time" class="subtitle-education"></div>
+									<div id="people-role" class="subtitle-education"></div>
+									<p id="people-1"></p>
+									<p id="people-2"></p>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-brsimulations.png">
+									<div class="title-education">BR Simulations</div>
+									<div id="brSim-time" class="subtitle-education"></div>
+									<div id="brSim-role" class="subtitle-education"></div>
+									<p id="brSim-1"> </p>
+									<p id="brSim-2"></p>
+								</div>
+							</div>
+
+							<span id="pnIndicator" class="pn-ProductNav_Indicator"></span>
+						</div>
+					</nav>
+					<button id="pnAdvancerLeft" class="pn-Advancer pn-Advancer_Left" type="button">
+						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+							<path
+								d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
+						</svg>
+					</button>
+					<button id="pnAdvancerRight" class="pn-Advancer pn-Advancer_Right" type="button">
+						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+							<path
+								d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
+						</svg>
+					</button>
 				</div>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-verisoft.png">
-					</div>
 
-					<div>
-						<span class="title-education">Verisoft</span>
-						<br />
-						<span id="verisoft-time" class="subtitle-education"></span>
-						<p id="verisoft-1"> </p>
-						<p id="verisoft-2"> </p>
-					</div>
-				</div>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-ciet.png">
-					</div>
 
-					<div>
-						<span class="title-education">Ci&T</span>
-						<br />
-						<span id="cit-time" class="subtitle-education"></span>
-						<p id="cit-1"></p>
-						<p id="cit-2"></p>
-					</div>
-				</div>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-clickideia.png">
-					</div>
-
-					<div>
-						<span class="title-education">Portal Clickideia</span>
-						<br />
-						<span id="click-time" class="subtitle-education"></span>
-						<p id="click-1"> </p>
-						<p id="click-2"> </p>
-						<p id="click-3"> </p>
-						<p id="click-4"></p>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-artivinco.png">
-					</div>
-
-					<div>
-						<span class="title-education">Artivinco</span>
-						<br />
-						<span id="art-time" class="subtitle-education"></span>
-						<p id="art-1"> </p>
-						<p id="art-2"> </p>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-people.png">
-					</div>
-
-					<div>
-						<span class="title-education">People Computação</span>
-						<br />
-						<span id="people-time" class="subtitle-education">xxx</span>
-						<p id="people-1"></p>
-						<p id="people-2"></p>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-education">
-					<div class="col-md-3 col-lg-2">
-						<img class="img-education" src="img-brsimulations.png">
-					</div>
-
-					<div>
-						<span class="title-education">BR Indústria e Comércio de Simuladores LTDA</span>
-						<br />
-						<span id="brSim-time" class="subtitle-education"></span>
-						<p id="brSim-1"> </p>
-						<p id="brSim-2"></p>
-					</div>
-				</div>
 			</div>
 			<!--=============================
 			FIM QUADRO: EXPERIENCIA PROFISSIONAL
@@ -239,60 +247,74 @@
 			<!--=============================
 			QUADRO: FORMACAO ACADEMICA
 			============================= -->
-			<div class="col-md-6  block">
+			<div class="col-md-11  block-full">
 				<h1><span class="icon-title fas fa-graduation-cap"> </span></h1>
 				<h1> <span id="topic-name-4">Formação acadêmica</span></h1>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-5 col-md-lg-4 ">
-						<img class="img-education" src="img-unyleya.png">
-					</div>
+				<div class="col-md-12 pn-ProductNav_Wrapper">
+					<nav id="pnProductNavB" class="col-md-12 pn-ProductNav" style="overflow-x:hidden">
+						<div id="pnProductNavContentsB" class=" pn-ProductNav_Contents">
 
-					<div>
-						<span class="title-education">Faculdade UnYLeYa</span>
-						<br />
-						<span>Especialização lato sensu Desenvolvimento de jogos digitais - Concluído em 12/2018</span>
-					</div>
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-unyleya.png">
+									<div class="title-education">Lato Sensu
+										Desenvolvimento de jogos digitais</div>
+									<div id="unyleya-time" class="subtitle-education">Concluído em 12/2018</div>
+									<div id="unyleya-role" class="subtitle-education">Faculdade UnYLeYa</div>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-metrocamp.png">
+									<div class="title-education"> Bacharelado Ciência da Computação</div>
+									<div id="metrocamp-time" class="subtitle-education">Concluído em 12/2015</div>
+									<div id="metrocamp-role" class="subtitle-education">Faculdade Integrada
+										Metropolitana de Campinas –
+										Metrocamp - Grupo IBMEC</div>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-centropaulasouza.png">
+									<div class="title-education">Técnico Manutenção de Microcomputadores</div>
+									<div id="unyleya-time" class="subtitle-education">Concluído em 06/2011</div>
+									<div id="unyleya-role" class="subtitle-education">Escola Técnica Estadual Rosa
+										Perrone Scavone (Centro Paula
+										Souza)</div>
+								</div>
+							</div>
+
+							<div class="pn-ProductNav_Link marcelo">
+								<div>
+									<img class="img-education" src="img-centropaulasouza.png">
+									<div class="title-education">Técnico Programação</div>
+									<div id="unyleya-time" class="subtitle-education">Concluído em 12/2007</div>
+									<div id="unyleya-role" class="subtitle-education">Escola Técnica Estadual Rosa
+										Perrone Scavone (Centro Paula
+										Souza)</div>
+								</div>
+							</div>
+
+							<span id="pnIndicatorB" class="pn-ProductNav_Indicator"></span>
+						</div>
+					</nav>
+					<button id="pnAdvancerLeftB" class="pn-Advancer pn-Advancer_Left" type="button">
+						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+							<path
+								d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
+						</svg>
+					</button>
+					<button id="pnAdvancerRightB" class="pn-Advancer pn-Advancer_Right" type="button">
+						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+							<path
+								d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
+						</svg>
+					</button>
 				</div>
 
-				<div class="col-md-12 col-education">
-					<div class="col-md-5 col-md-lg-4 ">
-						<img class="img-education" src="img-metrocamp.png">
-					</div>
-
-					<div>
-						<span class="title-education">Faculdade Integrada Metropolitana de Campinas – Metrocamp - Grupo
-							IBMEC</span>
-						<br />
-						<span>Ciência da Computação - Concluído em 12/2015</span>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-education">
-					<div class="col-md-5 col-md-lg-4 ">
-						<img class="img-education" src="img-centropaulasouza.png">
-					</div>
-
-					<div>
-						<span class="title-education">Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula
-							Souza)</span>
-						<br />
-						<span>Curso Técnico em Manutenção de Microcomputadores - Concluído em 06/2011</span>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-education">
-					<div class="col-md-5 col-md-lg-4 ">
-						<img class="img-education" src="img-centropaulasouza.png">
-					</div>
-
-					<div>
-						<span class="title-education">Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula
-							Souza)</span>
-						<br />
-						<span>Curso Técnico em Informática (programação) - Concluído em 12/2007</span>
-					</div>
-				</div>
 			</div>
 			<!--=============================
 				FIM QUADRO: FORMACAO ACADEMICA

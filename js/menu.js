@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var shrinkHeader = 300;
 	translate();
 
-	$("#menu-language").on("click", function() {
+	$(".menu-language").on("click", function() {
 		setLanguage();
 	});
 	// Animation header
@@ -32,9 +32,9 @@ $(document).ready(function() {
 		$("#menu-portfolio").html(mLanguage["menu-portfolio"]);
 		
 		if(getCookie("language") == 1){
-			$("#menu-language-text").html("in english");
+			$(".menu-language-text").html("in english");
 		}else{
-			$("#menu-language-text").html("em português");
+			$(".menu-language-text").html("em português");
 		}
 	}
 
