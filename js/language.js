@@ -6,7 +6,7 @@ var language = {
 			"menu-portfolio": "Portfólio"
 		},
 		home: {
-			"content-name-allign": "Olá, meu nome é Marcelo",
+			"content-name-allign": "Olá, meu nome é card-info",
 			"welcome-1": "Sou Programador, Game Designer, Arquiteto de Software e Scrum Master ",
 			"welcome-2": "Gosto de criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
 			"welcome-3": "Como posso te ajudar hoje?",
@@ -136,7 +136,7 @@ var language = {
 			"menu-portfolio": "Portfolio"
 		},
 		home: {
-			"content-name-allign": "Hi, my name is Marcelo",
+			"content-name-allign": "Hi, my name is card-info",
 			"welcome-1": "I'm a Programmer, Game Designer, Software Architect and Scrum Master",
 			"welcome-2": "I like to create amazing computer solutions, well-performing, visually elegant and exciting computing solutions.",
 			"welcome-3": "How can I help you today?",
