@@ -650,11 +650,11 @@ li a {
 @media (max-width: 640px) {
 	#content-allign {
 		width: 440px;
-	background-color: rgba(14, 14, 14,0.8);
-
+		background-color: rgba(14, 14, 14, 0.8);
 	}
 	.block-full {
-		margin-left: 1em;
+		margin-left: 0em;
+		padding-left: 0em;
 	}
 	#content-name-allign {
 		width: unset;
@@ -688,7 +688,8 @@ li a {
 		width: unset;
 	}
 	.block-full {
-		margin-left: 1em;
+		margin-left: 0em;
+		padding-left: 0em;
 	}
 	.cover-image {
 		margin-top: 35%;
