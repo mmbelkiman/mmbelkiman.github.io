@@ -695,7 +695,7 @@ li a {
 		margin-top: 35%;
 	}
 	#container-content {
-		padding-top: 160%;
+		padding-top: 130%;
 	}
 	#page-top .links {
 		font-size: 0.7em;
@@ -705,5 +705,11 @@ li a {
 	}
 	#mouse-scroll {
 		margin-top: -100px;
+	}
+}
+
+@media (max-width: 240px) {
+	#container-content {
+		padding-top: 100%;
 	}
 }
