@@ -30,12 +30,13 @@ $(document).ready(function() {
 		$("#menu-subtitle").html(mLanguage["menu-subtitle"]);
 		$("#menu-home").html(mLanguage["menu-home"]);
 		$("#menu-portfolio").html(mLanguage["menu-portfolio"]);
-		
+
+// alert(getCookie("language"));
+
 		if(getCookie("language") == 1){
 			$(".menu-language-text").html("in english");
 		}else{
 			$(".menu-language-text").html("em português");
 		}
 	}
-
 });

@@ -1,390 +1,833 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Marcelo Belkiman</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcelo Belkiman</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/control-cookies.js"></script>
-	<script type="text/javascript" src="js/language.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
-	<script type="text/javascript" src="js/contato.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/all.min.js"></script>
-	<script type="text/javascript" src="js/scrollA.js"></script>
-	<script type="text/javascript" src="js/scrollB.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/control-cookies.js"></script>
+    <script type="text/javascript" src="js/language.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/scrollA.js"></script>
+    <script type="text/javascript" src="js/scrollB.js"></script>
+    <script type="text/javascript" src="js/gifffer.min.js"></script>
 
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/my.css" rel="stylesheet" type="text/css">
-	<link href="css/all.min.css" rel="stylesheet" type="text/css">
-	<link href="css/scroll.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/my.css" rel="stylesheet" type="text/css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/scroll.css" rel="stylesheet" type="text/css">
 
-	<link rel="icon" type="image/png" href="ico_152x.png" />
+    <link rel="icon" type="image/png" href="ico_152x.png"/>
 </head>
 
 <body class="body-home">
-	<!-- MENU SUPERIOR -->
-	<div id="page-top" class="container-fluid">
-		<div class="row">
-			<!--Desktop-->
-			<div class="title col-md-6 col-lg-6 col-sm-6 hidden-xs">
-				<span class="menu-title">marcelo belkiman</span>
-				<br />
-				<span id="menu-subtitle">Cientista da Computação</span>
-			</div>
-			<div class="col-md-8 col-lg-8 col-sm-8 hidden-xs links">
-				<ul>
-					<li class="menu-language">
-						<a style="font-size: 1.2em;">
-							<i class="fas fa-globe-americas"> </i>
-							<span class="menu-language-text">in english</span></a>
-					</li>
-					<li class="menu-active"> <a id="menu-home" href="#">Inicio</a> </li>
-					<li> <a id="menu-portfolio" href="portfolio.html">Portfólio</a> </li>
-				</ul>
-			</div>
 
-			<!--Mobile-->
-			<div class="title hidden-md hidden-lg hidden-sm col-xs-1">
-				<span class="menu-title">belkiman</span>
-				<br />
-				<span id="menu-subtitle" style="margin-left:0px">B.Sc</span>
-			</div>
-			<div class=" hidden-md hidden-lg hidden-sm col-xs-10 links">
-				<ul>
-					<li class="menu-language">
-						<a style="font-size: 1.0em;">
-							<i class="fa fa-globe-americas"> </i>
-							<span class="menu-language-text">in english</span></a>
-					</li>
-					<li class="menu-active"> <a id="menu-home" href="#">Inicio</a> </li>
-					<li style="font-size:0.6em;"> <a id="menu-portfolio" href="portfolio.html">Portfólio</a> </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- FIM MENU SUPERIOR -->
+<!-- MENU SUPERIOR -->
+<div id="page-top" class="container-fluid">
+    <div class="row">
+        <!--Desktop-->
+        <div class="title col-md-6 col-lg-6 col-sm-6 hidden-xs">
+            <span class="menu-title">marcelo belkiman</span>
+            <br/>
+            <span id="menu-subtitle">Cientista da Computação</span>
+        </div>
+        <div class="col-md-8 col-lg-8 col-sm-8 hidden-xs links">
+            <ul>
+                <li class="menu-language">
+                    <a style="font-size: 1.2em;">
+                        <i class="fas fa-globe-americas"> </i>
+                        <span class="menu-language-text">in english</span></a>
+                </li>
+            </ul>
+        </div>
 
-	<!-- CONTEUDO TOPO (FOTO) -->
-	<div data-speed="4" class="slide container-fluid cover-image" style="background-image: url('img-home.jpg');">
+        <!--Mobile-->
+        <div class="title hidden-md hidden-lg hidden-sm col-xs-1">
+            <span class="menu-title">belkiman</span>
+            <br/>
+            <span id="menu-subtitle" style="margin-left:0px">B.Sc</span>
+        </div>
+        <div class=" hidden-md hidden-lg hidden-sm col-xs-10 links">
+            <ul>
+                <li class="menu-language">
+                    <a style="font-size: 1.0em;">
+                        <i class="fa fa-globe-americas"> </i>
+                        <span class="menu-language-text">in english</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- FIM MENU SUPERIOR -->
 
-		<div class="row welcome">
-			<div id="content-allign">
-				<div id="content-name-allign"></div>
-				<div id="welcome-1"> </div>
-				<div id="welcome-2"> </div>
+<!-- CONTEUDO TOPO (FOTO) -->
+<div data-speed="4" class="slide container-fluid cover-image" style="background-image: url('img-home.jpg');">
 
-				<div>
-					<span id="welcome-3"></span><span id="blink_char" style="font-weight: bold; color:white">_</span>
-				</div>
-			</div>
-		</div>
+    <div class="row welcome">
+        <div id="content-allign">
+            <div id="content-name-allign"></div>
+            <div id="welcome-1"></div>
+            <div id="welcome-2"></div>
 
-		<div class="row allign-content">
-			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="z-index: 999 !important;">
-				<div id="mouse-scroll" style="width: 0px; background-image: url('mouse-scroll.gif')">
-				</div>
-			</div>
-		</div>
+            <div>
+                <span id="welcome-3"></span><span id="blink_char" style="font-weight: bold; color:white">_</span>
+            </div>
+        </div>
+    </div>
 
-	</div>
-	<!--FIM CONTEUDO TOPO (FOTO) -->
+    <div class="row allign-content">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="z-index: 999 !important;">
+            <div id="mouse-scroll" style="width: 0px; background-image: url('mouse-scroll.gif')">
+            </div>
+        </div>
+    </div>
 
-	<div id="container-content" class="container">
-		<div class="row">
-			<!--=============================
-			QUADRO: EXPERIENCIA PROFISSIONAL
-			============================= -->
-			<div class="col-md-11  block-full">
-				<h1><span class="icon-title fas fa-briefcase"> </span></h1>
-				<h1><span id="topic-name-3">Experiência profissional</span></h1>
+</div>
+<!--FIM CONTEUDO TOPO (FOTO) -->
 
-				<div class="col-md-12 pn-ProductNav_Wrapper">
-					<nav id="pnProductNav" class="col-md-12 pn-ProductNav"
-						style="overflow: auto; scrollbar-color: rgb(255,255,255) rgb(255,255,255);">
-						<div id="pnProductNavContents" class=" pn-ProductNav_Contents">
+<div id="container-content" class="container">
+    <div class="row">
+        <!--QUADRO: EXPERIENCIA PROFISSIONAL============================= -->
+        <div class="col-md-11  block-full">
+            <h1><span class="icon-title fas fa-briefcase"> </span></h1>
+            <h1><span id="topic-name-3">Experiência profissional</span></h1>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-ies2.png">
-									<div class="title-education">IES2</div>
-									<div id="ies2-time" class="subtitle-education"></div>
-									<div id="ies2-role" class="subtitle-education"></div>
-									<p id="ies2-1"> </p>
-									<p id="ies2-2"> </p>
-								</div>
-							</div>
+            <div class="col-md-12 pn-ProductNav_Wrapper">
+                <nav id="pnProductNav" class="col-md-12 pn-ProductNav"
+                     style="overflow: auto; scrollbar-color: rgb(255,255,255) rgb(255,255,255);">
+                    <div id="pnProductNavContents" class=" pn-ProductNav_Contents">
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-verisoft.png">
-									<div class="title-education">Verisoft</div>
-									<div id="verisoft-time" class="subtitle-education"></div>
-									<div id="verisoft-role" class="subtitle-education"></div>
-									<p id="verisoft-1"> </p>
-									<p id="verisoft-2"> </p>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-ies2.png">
+                                <div class="title-education">IES2</div>
+                                <div id="ies2-time" class="subtitle-education"></div>
+                                <div id="ies2-role" class="subtitle-education"></div>
+                                <p id="ies2-1"></p>
+                                <p id="ies2-2"></p>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-ciet.png">
-									<div class="title-education">Ci&T</div>
-									<div id="cit-time" class="subtitle-education"></div>
-									<div id="cit-role" class="subtitle-education"></div>
-									<p id="cit-1"></p>
-									<p id="cit-2"></p>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-verisoft.png">
+                                <div class="title-education">Verisoft</div>
+                                <div id="verisoft-time" class="subtitle-education"></div>
+                                <div id="verisoft-role" class="subtitle-education"></div>
+                                <p id="verisoft-1"></p>
+                                <p id="verisoft-2"></p>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-clickideia.png">
-									<div class="title-education">Clickideia</div>
-									<div id="click-time" class="subtitle-education"></div>
-									<div id="click-role" class="subtitle-education"></div>
-									<p id="click-1"> </p>
-									<p id="click-2"> </p>
-									<p id="click-3"> </p>
-									<p id="click-4"></p>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-ciet.png">
+                                <div class="title-education">Ci&T</div>
+                                <div id="cit-time" class="subtitle-education"></div>
+                                <div id="cit-role" class="subtitle-education"></div>
+                                <p id="cit-1"></p>
+                                <p id="cit-2"></p>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-artivinco.png">
-									<div class="title-education">Artivinco</div>
-									<div id="art-time" class="subtitle-education"></div>
-									<div id="art-role" class="subtitle-education"></div>
-									<p id="art-1"> </p>
-									<p id="art-2"> </p>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-clickideia.png">
+                                <div class="title-education">Clickideia</div>
+                                <div id="click-time" class="subtitle-education"></div>
+                                <div id="click-role" class="subtitle-education"></div>
+                                <p id="click-company-1"></p>
+                                <p id="click-company-2"></p>
+                                <p id="click-company-3"></p>
+                                <p id="click-company-4"></p>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-brsimulations.png">
-									<div class="title-education">BR Simulations</div>
-									<div id="brSim-time" class="subtitle-education"></div>
-									<div id="brSim-role" class="subtitle-education"></div>
-									<p id="brSim-1"> </p>
-									<p id="brSim-2"></p>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-artivinco.png">
+                                <div class="title-education">Artivinco</div>
+                                <div id="art-time" class="subtitle-education"></div>
+                                <div id="art-role" class="subtitle-education"></div>
+                                <p id="art-1"></p>
+                                <p id="art-2"></p>
+                            </div>
+                        </div>
 
-							<span id="pnIndicator" class="pn-ProductNav_Indicator"></span>
-						</div>
-					</nav>
-					<button id="pnAdvancerLeft" class="pn-Advancer pn-Advancer_Left" type="button">
-						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
-							<path
-								d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
-						</svg>
-					</button>
-					<button id="pnAdvancerRight" class="pn-Advancer pn-Advancer_Right" type="button">
-						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
-							<path
-								d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
-						</svg>
-					</button>
-				</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-brsimulations.png">
+                                <div class="title-education">BR Simulations</div>
+                                <div id="brSim-time" class="subtitle-education"></div>
+                                <div id="brSim-role" class="subtitle-education"></div>
+                                <p id="brSim-1"></p>
+                                <p id="brSim-2"></p>
+                            </div>
+                        </div>
+
+                        <span id="pnIndicator" class="pn-ProductNav_Indicator"></span>
+                    </div>
+                </nav>
+                <button id="pnAdvancerLeft" class="pn-Advancer pn-Advancer_Left" type="button">
+                    <svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                        <path
+                                d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z"/>
+                    </svg>
+                </button>
+                <button id="pnAdvancerRight" class="pn-Advancer pn-Advancer_Right" type="button">
+                    <svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                        <path
+                                d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z"/>
+                    </svg>
+                </button>
+            </div>
 
 
+        </div>
+        <!--=============================
+        FIM QUADRO: EXPERIENCIA PROFISSIONAL
+        ============================= -->
+    </div>
 
+    <div class="row">
+        <!--=============================
+        QUADRO: PROGRAMACAO
+        ============================= -->
+        <div class="col-md-6 block">
+            <h1><span class="icon-title fas fa-code"> </span></h1>
+            <h1><span id="topic-name-5">Programação </span></h1>
 
+            <div class="col-md-12 text-achievement">
+                C#, Java, Javascript, PHP, HTML/CSS, SQL, Android SDK, Unity SDK, React Native, Monogame(XNA)
+            </div>
+        </div>
+        <!--=============================
+        FIM QUADRO: PROGRAMACAO
+        ============================= -->
 
-			</div>
-			<!--=============================
-			FIM QUADRO: EXPERIENCIA PROFISSIONAL
-			============================= -->
-		</div>
+        <!--=============================
+        QUADRO: OUTROS CONHECIMENTOS
+        ============================= -->
+        <div class="col-md-5 block">
+            <h1><span class="icon-title fab fa-connectdevelop"> </span></h1>
+            <h1><span id="topic-name-6">Outros conhecimentos </span></h1>
 
-		<div class="row">
-			<!--=============================
-			QUADRO: PROGRAMACAO
-			============================= -->
-			<div class="col-md-6 block">
-				<h1><span class="icon-title fas fa-code"> </span></h1>
-				<h1> <span id="topic-name-5">Programação </span></h1>
+            <div class="col-md-12 text-achievement">
+                Arquitetura de Software, GIT, Game Design, Game Development, Agile Dev
+            </div>
+        </div>
+        <!--=============================
+        FIM QUADRO: OUTROS CONHECIMENTOS
+        ============================= -->
+    </div>
 
-				<div class="col-md-12 text-achievement">
-					C#, Java, Javascript, PHP, HTML/CSS, SQL, Android SDK, Unity SDK, React Native, Monogame(XNA)
-				</div>
-			</div>
-			<!--=============================
-			FIM QUADRO: PROGRAMACAO
-			============================= -->
+    <div class="row">
+        <!--=============================
+        QUADRO: FORMACAO ACADEMICA
+        ============================= -->
+        <div class="col-md-11  block-full">
+            <h1><span class="icon-title fas fa-graduation-cap"> </span></h1>
+            <h1><span id="topic-name-4">Formação acadêmica</span></h1>
 
-			<!--=============================
-			QUADRO: OUTROS CONHECIMENTOS
-			============================= -->
-			<div class="col-md-5 block">
-				<h1><span class="icon-title fab fa-connectdevelop"> </span></h1>
-				<h1><span id="topic-name-6">Outros conhecimentos </span></h1>
+            <div class="col-md-12 pn-ProductNav_Wrapper">
+                <nav id="pnProductNavB" class="col-md-12 pn-ProductNav"
+                     style="overflow-x:auto; scrollbar-color: rgb(255,255,255) rgb(255,255,255);">
+                    <div id="pnProductNavContentsB" class=" pn-ProductNav_Contents">
 
-				<div class="col-md-12 text-achievement">
-					Arquitetura de Software, GIT, UML, Game Design, Game Development, Agile Dev
-				</div>
-			</div>
-			<!--=============================
-			FIM QUADRO: OUTROS CONHECIMENTOS
-			============================= -->
-		</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-unyleya.png">
+                                <div class="title-education">Lato Sensu
+                                    Desenvolvimento de jogos digitais
+                                </div>
+                                <div id="unyleya-time" class="subtitle-education">Concluído em 12/2018</div>
+                                <div id="unyleya-role" class="subtitle-education">Faculdade UnYLeYa</div>
+                            </div>
+                        </div>
 
-		<div class="row">
-			<!--=============================
-			QUADRO: FORMACAO ACADEMICA
-			============================= -->
-			<div class="col-md-11  block-full">
-				<h1><span class="icon-title fas fa-graduation-cap"> </span></h1>
-				<h1> <span id="topic-name-4">Formação acadêmica</span></h1>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-metrocamp.png">
+                                <div class="title-education"> Bacharelado Ciência da Computação</div>
+                                <div id="metrocamp-time" class="subtitle-education">Concluído em 12/2015</div>
+                                <div id="metrocamp-role" class="subtitle-education">Faculdade Integrada
+                                    Metropolitana de Campinas –
+                                    Metrocamp - Grupo IBMEC
+                                </div>
+                            </div>
+                        </div>
 
-				<div class="col-md-12 pn-ProductNav_Wrapper">
-					<nav id="pnProductNavB" class="col-md-12 pn-ProductNav"
-						style="overflow-x:auto; scrollbar-color: rgb(255,255,255) rgb(255,255,255);">
-						<div id="pnProductNavContentsB" class=" pn-ProductNav_Contents">
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-centropaulasouza.png">
+                                <div class="title-education">Técnico Manutenção de Microcomputadores</div>
+                                <div  class="subtitle-education">Concluído em 06/2011</div>
+                                <div  class="subtitle-education">Escola Técnica Estadual Rosa
+                                    Perrone Scavone (Centro Paula
+                                    Souza)
+                                </div>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-unyleya.png">
-									<div class="title-education">Lato Sensu
-										Desenvolvimento de jogos digitais</div>
-									<div id="unyleya-time" class="subtitle-education">Concluído em 12/2018</div>
-									<div id="unyleya-role" class="subtitle-education">Faculdade UnYLeYa</div>
-								</div>
-							</div>
+                        <div class="pn-ProductNav_Link card-info">
+                            <div>
+                                <img class="img-education" src="img-centropaulasouza.png">
+                                <div class="title-education">Técnico Programação</div>
+                                <div  class="subtitle-education">Concluído em 12/2007</div>
+                                <div  class="subtitle-education">Escola Técnica Estadual Rosa
+                                    Perrone Scavone (Centro Paula
+                                    Souza)
+                                </div>
+                            </div>
+                        </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-metrocamp.png">
-									<div class="title-education"> Bacharelado Ciência da Computação</div>
-									<div id="metrocamp-time" class="subtitle-education">Concluído em 12/2015</div>
-									<div id="metrocamp-role" class="subtitle-education">Faculdade Integrada
-										Metropolitana de Campinas –
-										Metrocamp - Grupo IBMEC</div>
-								</div>
-							</div>
+                        <span id="pnIndicatorB" class="pn-ProductNav_Indicator"></span>
+                    </div>
+                </nav>
+                <button id="pnAdvancerLeftB" class="pn-Advancer pn-Advancer_Left" type="button">
+                    <svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                        <path
+                                d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z"/>
+                    </svg>
+                </button>
+                <button id="pnAdvancerRightB" class="pn-Advancer pn-Advancer_Right" type="button">
+                    <svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+                        <path
+                                d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z"/>
+                    </svg>
+                </button>
+            </div>
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-centropaulasouza.png">
-									<div class="title-education">Técnico Manutenção de Microcomputadores</div>
-									<div id="unyleya-time" class="subtitle-education">Concluído em 06/2011</div>
-									<div id="unyleya-role" class="subtitle-education">Escola Técnica Estadual Rosa
-										Perrone Scavone (Centro Paula
-										Souza)</div>
-								</div>
-							</div>
+        </div>
+        <!--=============================
+            FIM QUADRO: FORMACAO ACADEMICA
+            ============================= -->
 
-							<div class="pn-ProductNav_Link card-info">
-								<div>
-									<img class="img-education" src="img-centropaulasouza.png">
-									<div class="title-education">Técnico Programação</div>
-									<div id="unyleya-time" class="subtitle-education">Concluído em 12/2007</div>
-									<div id="unyleya-role" class="subtitle-education">Escola Técnica Estadual Rosa
-										Perrone Scavone (Centro Paula
-										Souza)</div>
-								</div>
-							</div>
+        <!--=============================
+            QUADRO: IDIOMAS
+        ============================= -->
+        <div class="col-md-5 block">
+            <h1><span class="icon-title fas fa-language"> </span></h1>
+            <h1><span id="topic-name-1">Idiomas</span></h1>
+            <p>
+                <b id="language-port-1">Português</b> - <span id="language-port-2">Nativo</span>
+            </p>
+            <p>
+                <b id="language-eng-1">Inglês </b> - <span id="language-eng-2">Nativo</span>
+            </p>
+        </div>
+        <!--=============================
+            FIM QUADRO: IDIOMAS
+        ============================= -->
+    </div>
+</div>
 
-							<span id="pnIndicatorB" class="pn-ProductNav_Indicator"></span>
-						</div>
-					</nav>
-					<button id="pnAdvancerLeftB" class="pn-Advancer pn-Advancer_Left" type="button">
-						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
-							<path
-								d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
-						</svg>
-					</button>
-					<button id="pnAdvancerRightB" class="pn-Advancer pn-Advancer_Right" type="button">
-						<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
-							<path
-								d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
-						</svg>
-					</button>
-				</div>
+<!--=============================
+CONTACT
+============================= -->
+<div id="container-contact" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 ">
+            <p><a class='contact-text' href="https://br.linkedin.com/in/marcelobelkiman" target="_blank">
+                <i class="fa-3x fa-fw fab fa-linkedin-in text-inverse"></i>
+                Linkedin: Marcelo Belkiman</a></p>
 
-			</div>
-			<!--=============================
-				FIM QUADRO: FORMACAO ACADEMICA
-				============================= -->
+            <p><a class='contact-text' href="https://github.com/mmbelkiman" target="_blank">
+                <i class="fa-3x fa-fw fab fa-github-alt  text-inverse"></i>
+                GitHub: mmbelkiman</a></p>
 
-			<!--=============================
-				QUADRO: IDIOMAS
-			============================= -->
-			<div class="col-md-5 block">
-				<h1><span class="icon-title fas fa-language"> </span></h1>
-				<h1><span id="topic-name-1">Idiomas</span></h1>
-				<p>
-					<b id="language-port-1">Português</b> - <span id="language-port-2">Nativo</span>
-				</p>
-				<p>
-					<b id="language-eng-1">Inglês </b> - <span id="language-eng-2">Nativo</span>
-				</p>
-			</div>
-			<!--=============================
-				FIM QUADRO: IDIOMAS
-			============================= -->
-		</div>
-	</div>
+            <p><a class='contact-text' href="https://twitter.com/mmbelkiman" target="_blank">
+                <i class="fa-3x fa-fw fab fa-twitter  text-inverse"></i>
+                Twitter: @mmbelkiman</a></p>
 
-	<!--=============================
-	CONTACT
-	============================= -->
-	<div id="container-contact" class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 ">
-				<p> <a class='contact-text' href="https://br.linkedin.com/in/marcelobelkiman" target="_blank">
-						<i class="fa-3x fa-fw fab fa-linkedin-in text-inverse"></i>
-						Linkedin: Marcelo Belkiman</a> </p>
+            <p><a class='contact-text' href="mailto:marcelobelkiman@gmail.com">
+                <i class="fa-3x fa-fw fas fa-at text-inverse"></i>
+                E-mail: marcelobelkiman@gmail.com</a></p>
+        </div>
+    </div>
 
-				<p> <a class='contact-text' href="https://github.com/mmbelkiman" target="_blank">
-						<i class="fa-3x fa-fw fab fa-github-alt  text-inverse"></i>
-						GitHub: mmbelkiman</a> </p>
+    <div class="row">
+        <div class="col-md-12 ">
+            <h1 style="color:#FFF; font-size: 4em; margin-top: 50px"><span id="">Portfólio</span></h1>
+        </div>
+    </div>
 
-				<p> <a class='contact-text' href="https://twitter.com/mmbelkiman" target="_blank">
-						<i class="fa-3x fa-fw fab fa-twitter  text-inverse"></i>
-						Twitter: @mmbelkiman</a> </p>
+    <div class="container">
+        <div class="row">
+            <!--QUADRO: Aulapp============================= -->
+            <div style="height: 700px" class="col-md-5 row-software-father block">
+                <h1>Aulapp</h1>
 
-				<p> <a class='contact-text' href="mailto:marcelobelkiman@gmail.com">
-						<i class="fa-3x fa-fw fas fa-at text-inverse"></i>
-						E-mail: marcelobelkiman@gmail.com</a> </p>
-			</div>
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/aulapp.gif" data-gifffer-width="50%" data-gifffer-height="50%"/>
+                    </div>
 
-			<a href="portfolio.html" id="portifolio-message" class="col-md-12">
-				<div id="img-portifolio" style="background-image: url('img-portifolio.png')"></div>
-				<span id="contact-message-portifolio"></span>
-			</a>
+                    <p id="aulapp-1"></p>
+                    <p id="aulapp-2"></p>
+                    <p id="aulapp-3"></p>
+                    <br/>
 
-		</div>
-	</div>
+                    <div class="col-md-2 portfolio-js">
+                        JS
+                    </div>
+                    <div class="col-md-3 portfolio-reactnative">
+                        React Native
+                    </div>
 
-	<footer id="container-contact-final">
-	</footer>
-	<!--=============================
-	FIM CONTACT
-	============================= -->
+                    <p class="portfolioUrl">
+                        Google Play: <a
+                            href="https://play.google.com/store/apps/details?id=br.com.ies.aulaapp"
+                            target="_blank">AULAPP - Plataforma de Aprendizagem Digital</a>
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        App Store: <a
+                            href="https://apps.apple.com/br/app/aulapp/id1378370353"
+                            target="_blank">Aulapp</a>
+                    </p>
+                </div>
+                <!--=============================
+                FIM QUADRO: Livroh
+                ============================= -->
+            </div>
+            <!--FIM QUADRO: Aulapp ========== -->
 
-	<!-- Analytics -->
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] ||
-				function () {
-					(i[r].q = i[r].q || []).push(arguments);
-				}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m);
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            <!--QUADRO: Livroh============================= -->
+            <div style="height: 700px" class="col-md-5 row-software-father block">
+                <h1>Livroh</h1>
 
-		ga('create', 'UA-69841708-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+                <div class="row-software row-gif">
+
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/livroh.gif" data-gifffer-width="50%" data-gifffer-height="50%"/>
+                    </div>
+
+                    <p id="livroh-1"></p>
+                    <p id="livroh-2"></p>
+                    <p id="livroh-3"></p>
+                    <br/>
+
+                    <div class="col-md-1 portfolio-java">
+                        JAVA
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Google Play:
+                        <a href="https://play.google.com/store/apps/details?id=br.com.verisoft.livroh"
+                           target="_blank">Livroh - Livros e Audiolivros digitais</a>
+                    </p>
+                </div>
+                <!--=============================
+                FIM QUADRO: Livroh
+                ============================= -->
+            </div>
+            <!--FIM QUADRO: Livroh ========== -->
+
+            <!--QUADRO: Bancah============================= -->
+            <div style="height: 700px" class="col-md-5 row-software-father block">
+                <h1>Bancah</h1>
+
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/bancah.gif" data-gifffer-width="50%" data-gifffer-height="50%"/>
+                    </div>
+
+                    <p id="bancah-1"></p>
+                    <p id="bancah-2"></p>
+                    <p id="bancah-3"></p>
+                    <br/>
+
+                    <div class="col-md-1 portfolio-java">
+                        JAVA
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Google Play: <a href="https://play.google.com/store/apps/details?id=br.com.verisoft.bancah"
+                                        target="_blank">Bancah – Banca Digital</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Bancah ========== -->
+
+            <!--QUADRO: Epic Golf 2D============================= -->
+            <div style="height: 700px" class="col-md-5 row-games-father block">
+                <h1>Epic Golf 2D</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/epicgolf2d.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="epicgolf2d-1"></p>
+                    <p id="epicgolf2d-2"></p>
+                    <p id="epicgolf2d-3"></p>
+
+                    <img src="epicgolf2d-trofeu.jpg" style=" width:40%;"/>
+                    <br/>
+
+                    <div class="col-md-3 portfolio-monogame">
+                        Monogame
+                    </div>
+                    <div class="col-md-1 portfolio-csharp">
+                        C#
+                    </div>
+
+                    <br/>
+                    <p class="portfolioUrl" style="font-style: italic; font-size:0.9em;">
+                        Cancelado
+                    </p>
+
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Epic Golf 2D ========== -->
+
+            <!--QUADRO: Venus Particle Editor============================= -->
+            <div style="height: 600px" class="col-md-5 row-games-father block">
+                <h1>Venus Particle Editor</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/venusparticleeditor.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="venusparticleeditor-1"></p>
+                    <p id="venusparticleeditor-2"></p>
+                    <p id="venusparticleeditor-3"></p>
+                    <p id="venusparticleeditor-4"></p>
+
+                    <br/>
+
+                    <div class="col-md-3 portfolio-construct">
+                        C#
+                    </div>
+                    <div class="col-md-3 portfolio-construct">
+                        Monogame
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Itch.IO: <a href="https://mmbelkiman.itch.io/venus-particle-editor"
+                                    target="_blank">Baixar</a>
+                    </p>
+
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        Github: <a href="https://github.com/mmbelkiman/Venus-Particle-Editor" target="_blank"
+                                   class="sourcecode">Código fonte</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Venus Particle Editor ========== -->
+
+            <!--QUADRO: Our Adventure Time============================= -->
+            <div style="height: 600px" class="col-md-5 row-games-father block">
+                <h1>Our Adventure Time</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/ouradventuretime.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+                    <p id="ourAdventureTime-1"></p>
+                    <p id="ourAdventureTime-2"></p>
+                    <p id="ourAdventureTime-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-2 portfolio-unity">
+                        Unity
+                    </div>
+                    <div class="col-md-1 portfolio-csharp">
+                        C#
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Itch.IO: <a href="https://redemptor.itch.io/our-adventure-time" target="_blank"
+                                    class="play-online">Jogar online</a>
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        Github: <a href="https://github.com/redemptor/marriage_jam" target="_blank"
+                                   class="sourcecode">Código fonte</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Our Adventure Time ========== -->
+
+            <!--QUADRO: Ultra Retro Virus Attack============================= -->
+            <div style="height: 700px" class="col-md-5 row-games-father block">
+                <h1>Ultra Retro Virus Attack</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/ultraretrovirusattack.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+                    <p id="ultraretrovirus-1"></p>
+                    <p id="ultraretrovirus-2"></p>
+                    <p id="ultraretrovirus-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-2 portfolio-unity">
+                        Unity
+                    </div>
+                    <div class="col-md-1 portfolio-csharp">
+                        C#
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Unity Web-Player: <a href="downloads/ultraretrovirusattack/index.html" target="_blank"
+                                             class="play-online"></a>
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        Github: <a href="https://github.com/mmbelkiman/UltraRetroVirusAttack" target="_blank"
+                                   class="sourcecode">Código fonte</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Ultra Retro Virus Attack ========== -->
+
+            <!--QUADRO: Itaucard============================= -->
+            <div style="height: 700px" class="col-md-5 row-software-father block">
+                <h1>Itaucard - Android</h1>
+
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/itaucard.gif" data-gifffer-width="50%" data-gifffer-height="50%"/>
+                    </div>
+                    <p id="itaucard-1"></p>
+                    <p id="itaucard-2"></p>
+                    <p id="itaucard-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-1 portfolio-java">
+                        JAVA
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Google Play: <a href="https://play.google.com/store/apps/details?id=com.itaucard.activity"
+                                        target="_blank">Itaucard Controle seu cartão</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Itaucard ========== -->
+
+            <!--QUADRO: Rupert============================= -->
+            <div style="height: 800px" class="col-md-5 row-games-father block">
+                <h1>Rupert</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/rupert.gif" data-gifffer-width="100%" data-gifffer-height="100%"/>
+                    </div>
+                    <p id="rupert-1"></p>
+                    <p id="rupert-2"></p>
+                    <p id="rupert-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-1 portfolio-java">
+                        JAVA
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Google Play: <a
+                            href="https://play.google.com/store/apps/details?id=com.calangostudio.rupertthefish"
+                            target="_blank">Rupert</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Rupert ========== -->
+
+            <!--QUADRO: Tribanco Mobile Bank============================= -->
+            <div style="height: 800px" class="col-md-5 row-software-father block">
+                <h1>Tribanco - Mobile Bank</h1>
+
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/tribanco.gif" data-gifffer-width="50%" data-gifffer-height="50%"/>
+                    </div>
+                    <p id="tri-1"></p>
+                    <p id="tri-2"></p>
+                    <p id="tri-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-1 portfolio-js">
+                        JS
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Google Play: <a
+                            href="https://play.google.com/store/apps/details?id=br.com.tribanco.mb&hl=pt_BR"
+                            target="_blank">Tribanco</a>
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        App Store: <a
+                            href="https://itunes.apple.com/us/app/tribanco-o-banco-do-varejo/id1095421258?mt=8"
+                            target="_blank">Tribanco - O Banco do Varejo</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Tribanco Mobile Bank ========== -->
+
+            <!--QUADRO: OMG============================= -->
+            <div style="height: 700px" class="col-md-5 row-games-father block">
+                <h1>OMG! My House!</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/omgmyhouse.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="omg-1"></p>
+                    <p id="omg-2"></p>
+                    <p id="omg-3"></p>
+                    <p id="omg-4"></p>
+
+                    <br/>
+
+                    <div class="col-md-3 portfolio-construct">
+                        Construct 2
+                    </div>
+
+                    <p class="portfolioUrl">
+                        Construct Web-Player: <a href="downloads/omg/index.html" target="_blank">Jogar online</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: OMG ========== -->
+
+            <!--QUADRO: Monografia Gamificação ============================= -->
+            <div style="height: 700px" class="col-md-5 row-software-father block">
+                <h1>Monografia Gamificação</h1>
+
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/monografia.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="gamification-1"></p>
+                    <p id="gamification-2"></p>
+                    <p id="gamification-3"></p>
+                    <p id="gamification-4"></p>
+                    <br/>
+
+                    <div class="col-md-3 portfolio-html-css">
+                        HTML/CSS
+                    </div>
+                    <div class="col-md-1 portfolio-js">
+                        JS
+                    </div>
+
+                    <p class="portfolioUrl">
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        Documento: <a
+                            href="https://raw.githubusercontent.com/mmbelkiman/mmbelkiman.github.io/master/downloads/gamification-MarceloBelkiman.pdf"
+                            target="_blank">Gamificação:
+                        Aplicando ao treino de atividades lógicas</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO:  Monografia Gamificação ========== -->
+
+            <!--QUADRO: Space Jay============================= -->
+            <div style="height: 500px" class="col-md-5 row-games-father block">
+                <h1>Space Jay</h1>
+
+                <div class="row-games row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/spacejay.gif" data-gifffer-width="100%" data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="space-1"></p>
+                    <p id="space-2"></p>
+                    <p id="space-3"></p>
+                    <p id="space-4"></p>
+                    <br/>
+
+                    <div class="col-md-1 portfolio-java"> JAVA</div>
+
+                    <p class="portfolioUrl">
+                        Google Play: <a
+                            href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk"
+                            target="_blank"> Space Jay </a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Space Jay ========== -->
+
+            <!--QUADRO: Ferramenta exercicios educativos============================= -->
+            <div style="height: 500px" class="col-md-5 row-software-father block">
+                <h1>Clickideia: Ferramenta exercicios educativos </h1>
+
+                <div class="row-software row-gif">
+                    <div class="col-md-12 col-gif">
+                        <img data-gifffer="gifs/clickideia.gif" data-gifffer-width="100%"
+                             data-gifffer-height="100%"/>
+                    </div>
+
+                    <p id="click-1"></p>
+                    <p id="click-2"></p>
+                    <p id="click-3"></p>
+
+                    <br/>
+
+                    <div class="col-md-1 portfolio-js">
+                        JS
+                    </div>
+                    <div class="col-md-1 portfolio-sql">
+                        SQL
+                    </div>
+                    <div class="col-md-1 portfolio-php">
+                        PHP
+                    </div>
+
+                    <p class="portfolioUrl">
+                    </p>
+                    <p style="margin-top:0px;" class="portfolioUrl">
+                        URL: <a href="http://www.clickideia.com.br" target="_blank">www.clickideia.com.br</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIM QUADRO: Ferramenta exercicios educativos========== -->
+        </div>
+    </div>
+</div>
+
+<footer id="container-contact-final">
+</footer>
+<!--=============================
+FIM CONTACT
+============================= -->
+
+<!-- Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] ||
+            function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-69841708-1', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </body>
 
