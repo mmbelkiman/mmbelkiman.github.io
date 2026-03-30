@@ -95,7 +95,16 @@ h1 {
 
 .portfolio-reactnative {
 	border-bottom-style: solid;
-	border-bottom-color: rgb(255, 43, 226);
+	border-bottom-color: #61DBFB;
+	text-align: center;
+	padding: 0px;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
+.portfolio-nodejs {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(10, 100, 10);
 	text-align: center;
 	padding: 0px;
 	font-size: 1.2em;
@@ -132,6 +141,15 @@ h1 {
 .portfolio-html-css {
 	border-bottom-style: solid;
 	border-bottom-color: #e67e22;
+	text-align: center;
+	padding: 0px;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
+.portfolio-ts {
+	border-bottom-style: solid;
+	border-bottom-color: #007acc;
 	text-align: center;
 	padding: 0px;
 	font-size: 1.2em;
