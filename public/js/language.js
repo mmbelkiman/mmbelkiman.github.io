@@ -53,7 +53,7 @@ const language = {
             "onebrain-time": "01/2021 ~ 08/2021",
             "onebrain-role": "React Native Developer",
             "ies2-1": "• Responsável por incluir processos de desenvolvimento dentro do time React Native, analisar e criar padrões de código/arquitetura, processos de build/entrega, testes, suporte aos desenvolvedores e tomadas de decisões técnicas de impacto dentro do projeto.",
-            "ies2-2": "• Apresentei um planejamento de refatoração na parte mais sensível da aplicação, este planejamento foi executado trazendo uma melhora significativa na visão dos clientes ao produto.",
+            "ies2-2": "• Apresentei um planejamento de refatoração na parte mais sensível da aplicação. este planejamento foi executado trazendo uma melhora significativa na visão dos clientes ao produto.",
             "ies2-time": "09/2019 ~ 01/2021",
             "ies2-role": "Desenvolvedor React Native",
             "verisoft-time": "11/2017 ~ 09/2019",
