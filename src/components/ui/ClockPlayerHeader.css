@@ -1,0 +1,41 @@
+.v1-clock-player-header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 9.5rem;
+}
+
+.v1-clock-player-header__city {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.v1-clock-player-header__city .v1-city-landscape-parallax {
+  height: 100%;
+}
+
+.v1-spotify-player.v1-clock-player-header__player {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.v1-local-clock.v1-clock-player-header__clock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 0;
+  height: clamp(7rem, 8vw, 10rem);
+  max-width: 100%;
+  align-content: start;
+}
+
+@media (max-width: 42rem) {
+  .v1-local-clock.v1-clock-player-header__clock {
+    height: 7rem;
+  }
+}

@@ -1,5 +1,6 @@
 .v1-identity-header {
   position: relative;
+  container-type: inline-size;
   overflow: hidden;
   padding: clamp(var(--space-4), 4vw, var(--space-6));
   background: var(--color-surface-strong);
@@ -14,16 +15,16 @@
 
 .v1-identity-header::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   z-index: 0;
-  width: 100vw;
-  height: 100vw;
+  width: 200vmax;
+  height: 200vmax;
   content: '';
-  background: url('/images/matrix-bg.png') left top / auto 100vw no-repeat;
+  background: url('/images/matrix-bg.png') center / auto 100vmax repeat;
   opacity: 0.09;
-  transform: rotate(-90deg) translateX(-100%);
-  transform-origin: top left;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: center;
 }
 
 .v1-identity-header__identity {
@@ -41,7 +42,7 @@
   margin: 0;
   color: var(--color-text-inverse);
   font-family: var(--font-heading);
-  font-size: clamp(1.7rem, 7vw, 3.75rem);
+  font-size: clamp(1.4rem, 5.25vw, 2.05rem);
   font-weight: var(--font-weight-display);
   letter-spacing: 0.02em;
   line-height: 0.95;
@@ -55,15 +56,15 @@
 
 .v1-identity-header__roles {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2) var(--space-3);
+  flex-wrap: nowrap;
+  gap: var(--space-1);
   margin: 0;
   padding: 0;
   color: var(--color-text-ice);
   font-family: var(--font-heading);
-  font-size: clamp(0.75rem, 2vw, 0.95rem);
+  font-size: clamp(0.62rem, 2.6cqi, 0.75rem);
   font-weight: var(--font-weight-role);
-  letter-spacing: var(--letter-spacing-label);
+  letter-spacing: 0.02em;
   list-style: none;
   text-transform: uppercase;
 }
@@ -71,16 +72,11 @@
 .v1-identity-header__roles li {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .v1-identity-header__roles li:not(:last-child)::after {
-  margin-left: var(--space-3);
+  margin-left: var(--space-1);
   color: var(--color-focus);
   content: '//';
-}
-
-@media (min-width: 40rem) {
-  .v1-identity-header__roles {
-    gap: var(--space-3);
-  }
 }

@@ -1,0 +1,32 @@
+.v1-local-clock {
+  display: grid;
+  gap: var(--space-1);
+  align-content: center;
+  min-height: 100%;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-inverse);
+  background: color-mix(in srgb, var(--color-surface-strong) 92%, transparent);
+  border-left: var(--border-width-thin) solid var(--color-border-strong);
+  font-family: var(--font-heading);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.v1-local-clock__location,
+.v1-local-clock__date,
+.v1-local-clock__time {
+  margin: 0;
+}
+
+.v1-local-clock__location,
+.v1-local-clock__date {
+  color: var(--color-text-ice);
+  font-size: 0.75rem;
+  letter-spacing: var(--letter-spacing-label);
+}
+
+.v1-local-clock__time {
+  color: var(--color-text-inverse);
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  line-height: 1;
+}

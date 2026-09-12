@@ -1,0 +1,32 @@
+.v1-spotify-player {
+  align-self: center;
+  justify-self: start;
+  width: min(calc(100% - var(--space-6)), 26rem);
+  margin-inline: var(--space-3);
+  padding: var(--space-1);
+  overflow: hidden;
+  background: var(--color-surface-strong);
+  border: var(--border-width-strong) solid var(--color-metal-mid);
+  border-radius: var(--radius-md);
+}
+
+.v1-spotify-player__embed {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-strong);
+}
+
+.v1-spotify-player:focus-within {
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: var(--space-1);
+}
+
+@media (max-width: 26rem) {
+  .v1-spotify-player {
+    width: calc(100% - var(--space-4));
+    margin-inline: var(--space-2);
+  }
+}
