@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { PortfolioPreview } from './PortfolioPreview'
 
 export type PortfolioTechnology =
   | 'typescript'
@@ -39,7 +40,7 @@ export type PortfolioLink = {
 
 export type PortfolioCardProps = {
   titleKey: string
-  previewUrl: string
+  videoUrl: string
   category: 'software' | 'game'
   descriptionKeys?: string[]
   yearKey?: string
@@ -54,7 +55,7 @@ export type PortfolioCardProps = {
 
 export function PortfolioCard({
   titleKey,
-  previewUrl,
+  videoUrl,
   category,
   descriptionKeys = [],
   yearKey,
@@ -76,12 +77,7 @@ export function PortfolioCard({
 
       <div className={`${isSoftware ? 'row-software' : 'row-games'} row-gif`}>
         <div className="col-md-12 col-gif">
-          <img
-            data-gifffer={previewUrl}
-            data-gifffer-width={previewSize}
-            data-gifffer-height={previewSize}
-            alt={t(titleKey)}
-          />
+          <PortfolioPreview alt={t(titleKey)} src={videoUrl} width={previewSize} />
         </div>
 
         {descriptionKeys.map((descriptionKey) => (
