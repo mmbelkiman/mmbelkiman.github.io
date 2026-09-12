@@ -35,10 +35,6 @@
     "glossary-personal": "Utiliza em projetos pessoais",
     "glossary-now": "Utilizando atualmente"
   },
-  "contact": {
-    "contact-message-portifolio": "Hey, antes de ir embora, dê um pulinho no meu portfólio :)",
-    "contact-message-profile": "Hey, antes de ir embora, dê um pulinho no meu perfil :)"
-  },
   "portfolio": {
     "heading": "Portfólio",
     "tictac": {
@@ -389,23 +385,35 @@
       }
     }
   },
+  "education": {
+    "unyleya": {
+      "title": "Lato Sensu Desenvolvimento de jogos digitais",
+      "period": "Concluído em 12/2018",
+      "institution": "Faculdade UnYLeYa"
+    },
+    "metrocamp": {
+      "title": "Bacharelado Ciência da Computação",
+      "period": "Concluído em 12/2015",
+      "institution": "Faculdade Integrada Metropolitana de Campinas – Metrocamp - Grupo IBMEC"
+    },
+    "centroPaulaSouza": {
+      "technicalMaintenance": {
+        "title": "Técnico Manutenção de Microcomputadores",
+        "period": "Concluído em 06/2011",
+        "institution": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)"
+      },
+      "technicalProgramming": {
+        "title": "Técnico Programação",
+        "period": "Concluído em 12/2007",
+        "institution": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)"
+      }
+    }
+  },
   "static": {
     "text001": "marcelo belkiman",
     "text002": "belkiman",
     "text015": "C#, Java, Javascript, Typescript, PHP, HTML/CSS, SQL, Android SDK, Unity SDK, React.Js, Node.Js, React Native, Monogame(XNA)",
     "text016": "Software Architecture, GIT, Game Design, Game Development, Agile Dev",
-    "text017": "Lato Sensu Desenvolvimento de jogos digitais",
-    "text018": "Concluído em 12/2018",
-    "text019": "Faculdade UnYLeYa",
-    "text020": "Bacharelado Ciência da Computação",
-    "text021": "Concluído em 12/2015",
-    "text022": "Faculdade Integrada Metropolitana de Campinas – Metrocamp - Grupo IBMEC",
-    "text023": "Técnico Manutenção de Microcomputadores",
-    "text024": "Concluído em 06/2011",
-    "text025": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)",
-    "text026": "Técnico Programação",
-    "text027": "Concluído em 12/2007",
-    "text028": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)",
     "text029": "- ",
     "text030": "- ",
     "text031": "Linkedin: Marcelo Belkiman",

@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { AcademicEducationCard } from './components/AcademicEducationCard'
 import { PortfolioCard } from './components/PortfolioCard'
 import { ProfessionalExperienceCard } from './components/ProfessionalExperienceCard'
+import { academicEducation } from './data/academicEducation'
 import { portfolioItems } from './data/portfolio'
 import { professionalExperiences } from './data/professionalExperiences'
 import './App.css'
@@ -282,49 +284,15 @@ function App() {
                 style={{ overflowX: 'auto', scrollbarColor: 'rgb(255,255,255) rgb(255,255,255)' }}
               >
                 <div id="pnProductNavContentsB" className=" pn-ProductNav_Contents">
-                  <div className="pn-ProductNav_Link card-info">
-                    <div>
-                      <img className="img-education" src="img-unyleya.png" />
-                      <div className="title-education">{t('static.text017')}</div>
-                      <div id="unyleya-time" className="subtitle-education">
-                        {t('static.text018')}
-                      </div>
-                      <div id="unyleya-role" className="subtitle-education">
-                        {t('static.text019')}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="pn-ProductNav_Link card-info">
-                    <div>
-                      <img className="img-education" src="img-metrocamp.png" />
-                      <div className="title-education">{t('static.text020')}</div>
-                      <div id="metrocamp-time" className="subtitle-education">
-                        {t('static.text021')}
-                      </div>
-                      <div id="metrocamp-role" className="subtitle-education">
-                        {t('static.text022')}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="pn-ProductNav_Link card-info">
-                    <div>
-                      <img className="img-education" src="img-centropaulasouza.png" />
-                      <div className="title-education">{t('static.text023')}</div>
-                      <div className="subtitle-education">{t('static.text024')}</div>
-                      <div className="subtitle-education">{t('static.text025')}</div>
-                    </div>
-                  </div>
-
-                  <div className="pn-ProductNav_Link card-info">
-                    <div>
-                      <img className="img-education" src="img-centropaulasouza.png" />
-                      <div className="title-education">{t('static.text026')}</div>
-                      <div className="subtitle-education">{t('static.text027')}</div>
-                      <div className="subtitle-education">{t('static.text028')}</div>
-                    </div>
-                  </div>
+                  {academicEducation.map((education) => (
+                    <AcademicEducationCard
+                      key={education.titleKey}
+                      logoUrl={education.logoUrl}
+                      title={t(education.titleKey)}
+                      period={t(education.periodKey)}
+                      institution={t(education.institutionKey)}
+                    />
+                  ))}
 
                   <span id="pnIndicatorB" className="pn-ProductNav_Indicator"></span>
                 </div>
