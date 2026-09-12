@@ -19,54 +19,12 @@
     "topic-name-7": " Hobbies",
     "topic-name-8": "  Glossário",
     "desc-obj": "Criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
-    "verisoft-1": "• Desenvolvimento e manutenção de diversos aplicativos para Android, entre eles Claro Banca, Vivo Proteção Financeira, Bancah, Uol Leia+ Livros, Curso de Bolso.",
-    "verisoft-2": "",
-    "cit-1": "• Desenvolvimento de internet banking para dispositivos móveis utilizando o framework de desenvolvimento híbrido Kony, com JavaScript, para Android e iOS.",
-    "cit-2": "• Desenvolvimento de aplicativo para gestão de cartão de credito para dispositivos móveis Android para uma das maiores empresas bancarias do Brasil.",
-    "click-1": "•\tCorreção e atualização de diversas ferramentas existentes no portal.",
-    "click-2": "•\tDesenvolvimento integral de uma ferramenta para controle de exercícios educativos. Esta ferramenta possibilita um professor criar exercícios online para seus alunos. Entre suas funções ela gera instantaneamente a nota do aluno, relatorios(com filtros), cache de respostas dos alunos(não perde as informações mesmo em caso de conexão instável), controle de tempo respondendo e periodo limite para realizar os exercicios.",
-    "click-3": "•\tEntre os clientes, 'Centro Paula Souza', 'Prefeitura do Rio Grande do Norte'.",
-    "click-4": "",
-    "art-1": "•\tDesenvolvimento de softwares de controle interno da empresa, principalmente referente a gestão de 'Fretes/transporte', além da criação de software para otimizar os setores internos em geral.",
-    "art-2": "•\tCriação de software para otimizar a comunicação do sistema de folha de pagamento 'TOTVS'.",
-    "people-1": "•\tInstrutor responsável por diversos cursos entre todas as faixas etárias.",
-    "people-2": "",
-    "brSim-1": "•\tDesenvolvimento de softwares para simulação de aviões profissionais (FTD Fligth Training Device), criando comunicação entre hardware e software de simulação (Ms Flight Simulator). Ferramenta Borland Delphi junto da biblioteca gráfica OpenGL.",
-    "brSim-2": "•\tEntre os clientes, 'Companhia Aérea TAM', 'Escola de Aviação EDAPA', 'Escola de Aviação EJ', 'Aeroclube de Bragança'.",
     "language-port-1": "Português",
     "language-port-2": "Nativo",
     "language-eng-1": "Inglês",
     "language-eng-2": "",
     "language-eng-3": "",
     "language-eng-4": "",
-    "trio-b-time": "11/2023 ~ Atualmente",
-    "trio-b-role": "Full Stack Developer (React+Node)",
-    "aulapp-time": "09/2021 ~ 10/2024",
-    "aulapp-role": "Mobile Engineer Consultant/Lead (React Native)",
-    "cyberIsight-time": "04/2023 ~ 12/2023",
-    "cyberIsight-role": "Full Stack Developer (React+Node)",
-    "trio-a-time": "04/2022 ~ 04/2023",
-    "trio-a-role": "Full Stack Developer (React+React Native+Node)",
-    "ilia-time": "08/2021 ~ 04/2022",
-    "ilia-role": "Mobile Developer (React Native)",
-    "onebrain-time": "01/2021 ~ 08/2021",
-    "onebrain-role": "React Native Developer",
-    "ies2-1": "• Responsável por incluir processos de desenvolvimento dentro do time React Native, analisar e criar padrões de código/arquitetura, processos de build/entrega, testes, suporte aos desenvolvedores e tomadas de decisões técnicas de impacto dentro do projeto.",
-    "ies2-2": "• Apresentei um planejamento de refatoração na parte mais sensível da aplicação. este planejamento foi executado trazendo uma melhora significativa na visão dos clientes ao produto.",
-    "ies2-time": "09/2019 ~ 01/2021",
-    "ies2-role": "Desenvolvedor React Native",
-    "verisoft-time": "11/2017 ~ 09/2019",
-    "verisoft-role": "Desenvolvedor Android",
-    "cit-time": "08/2015 ~ 11/2017",
-    "cit-role": "Desenvolvedor Mobile",
-    "click-time": "05/2014 ~ 08/2015",
-    "click-role": "Desenvolvedor Web",
-    "art-time": "06/2012 ~ 06/2013",
-    "art-role": "Analista de Sistemas",
-    "people-time": "08/2009 ~ 03/2011",
-    "people-role": "Instrutor Técnico",
-    "brSim-time": "08/2007 ~ 08/2008",
-    "brSim-role": "Programador",
     "other-gamedev": "Dev. jogos eletrônicos",
     "hobbies-music": "Música",
     "hobbies-travel": "Cinema",
@@ -141,10 +99,6 @@
     },
     "aulapp": {
       "title": "Aulapp",
-      "description": {
-        "first": "",
-        "second": ""
-      },
       "year": "",
       "technologies": {
         "javascript": "JS",
@@ -438,18 +392,6 @@
   "static": {
     "text001": "marcelo belkiman",
     "text002": "belkiman",
-    "text003": "Trio",
-    "text004": "Aulapp",
-    "text005": "Cyber iSight",
-    "text006": "Trio",
-    "text007": "ília",
-    "text008": "Onebrain",
-    "text009": "IES2",
-    "text010": "Verisoft",
-    "text011": "Ci&T",
-    "text012": "Clickideia",
-    "text013": "Artivinco",
-    "text014": "BR Simulations",
     "text015": "C#, Java, Javascript, Typescript, PHP, HTML/CSS, SQL, Android SDK, Unity SDK, React.Js, Node.Js, React Native, Monogame(XNA)",
     "text016": "Software Architecture, GIT, Game Design, Game Development, Agile Dev",
     "text017": "Lato Sensu Desenvolvimento de jogos digitais",
@@ -469,5 +411,90 @@
     "text031": "Linkedin: Marcelo Belkiman",
     "text032": "GitHub: mmbelkiman",
     "text033": "E-mail: marcelobelkiman@gmail.com"
+  },
+  "professionalExperience": {
+    "trio": {
+      "current": {
+        "companyName": "Trio",
+        "period": "11/2023 ~ Atualmente",
+        "role": "Full Stack Developer (React+Node)"
+      },
+      "previous": {
+        "companyName": "Trio",
+        "period": "04/2022 ~ 04/2023",
+        "role": "Full Stack Developer (React+React Native+Node)"
+      }
+    },
+    "aulapp": {
+      "companyName": "Aulapp",
+      "period": "09/2021 ~ 10/2024",
+      "role": "Mobile Engineer Consultant/Lead (React Native)",
+      "description": ["", ""]
+    },
+    "cyberISight": {
+      "companyName": "Cyber iSight",
+      "period": "04/2023 ~ 12/2023",
+      "role": "Full Stack Developer (React+Node)"
+    },
+    "ilia": {
+      "companyName": "ília",
+      "period": "08/2021 ~ 04/2022",
+      "role": "Mobile Developer (React Native)"
+    },
+    "onebrain": {
+      "companyName": "Onebrain",
+      "period": "01/2021 ~ 08/2021",
+      "role": "React Native Developer"
+    },
+    "ies2": {
+      "companyName": "IES2",
+      "period": "09/2019 ~ 01/2021",
+      "role": "Desenvolvedor React Native",
+      "description": [
+        "• Responsável por incluir processos de desenvolvimento dentro do time React Native, analisar e criar padrões de código/arquitetura, processos de build/entrega, testes, suporte aos desenvolvedores e tomadas de decisões técnicas de impacto dentro do projeto.",
+        "• Apresentei um planejamento de refatoração na parte mais sensível da aplicação. este planejamento foi executado trazendo uma melhora significativa na visão dos clientes ao produto."
+      ]
+    },
+    "verisoft": {
+      "companyName": "Verisoft",
+      "period": "11/2017 ~ 09/2019",
+      "role": "Desenvolvedor Android",
+      "description": [
+        "• Desenvolvimento e manutenção de diversos aplicativos para Android, entre eles Claro Banca, Vivo Proteção Financeira, Bancah, Uol Leia+ Livros, Curso de Bolso.",
+        ""
+      ]
+    },
+    "ciandt": {
+      "companyName": "Ci&T",
+      "period": "08/2015 ~ 11/2017",
+      "role": "Desenvolvedor Mobile",
+      "description": [
+        "• Desenvolvimento de internet banking para dispositivos móveis utilizando o framework de desenvolvimento híbrido Kony, com JavaScript, para Android e iOS.",
+        "• Desenvolvimento de aplicativo para gestão de cartão de credito para dispositivos móveis Android para uma das maiores empresas bancarias do Brasil."
+      ]
+    },
+    "clickideia": {
+      "companyName": "Clickideia",
+      "period": "05/2014 ~ 08/2015",
+      "role": "Desenvolvedor Web"
+    },
+    "artivinco": {
+      "companyName": "Artivinco",
+      "period": "06/2012 ~ 06/2013",
+      "role": "Analista de Sistemas",
+      "description": [
+        "•\tDesenvolvimento de softwares de controle interno da empresa, principalmente referente a gestão de 'Fretes/transporte', além da criação de software para otimizar os setores internos em geral.",
+        "•\tCriação de software para otimizar a comunicação do sistema de folha de pagamento 'TOTVS'."
+      ]
+    },
+    "brSimulations": {
+      "companyName": "BR Simulations",
+      "period": "08/2007 ~ 08/2008",
+      "role": "Programador",
+      "description": [
+        "•\tDesenvolvimento de softwares para simulação de aviões profissionais (FTD Fligth Training Device), criando comunicação entre hardware e software de simulação (Ms Flight Simulator). Ferramenta Borland Delphi junto da biblioteca gráfica OpenGL.",
+        "•\tEntre os clientes, 'Companhia Aérea TAM', 'Escola de Aviação EDAPA', 'Escola de Aviação EJ', 'Aeroclube de Bragança'."
+      ]
+    }
   }
 }

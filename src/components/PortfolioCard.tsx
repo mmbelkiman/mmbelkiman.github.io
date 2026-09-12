@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 export type PortfolioTechnology =
   | 'typescript'
@@ -12,7 +12,7 @@ export type PortfolioTechnology =
   | 'unity'
   | 'construct2'
   | 'htmlCss'
-  | 'sql';
+  | 'sql'
 
 const technologyClassNames: Record<PortfolioTechnology, string> = {
   typescript: 'col-md-2 portfolio-ts',
@@ -27,30 +27,30 @@ const technologyClassNames: Record<PortfolioTechnology, string> = {
   construct2: 'col-md-3 portfolio-construct',
   htmlCss: 'col-md-3 portfolio-html-css',
   sql: 'col-md-1 portfolio-sql',
-};
+}
 
 export type PortfolioLink = {
-  href: string;
-  labelKey: string;
-  textKey: string;
-  className?: string;
-  compact?: boolean;
-};
+  href: string
+  labelKey: string
+  textKey: string
+  className?: string
+  compact?: boolean
+}
 
 export type PortfolioCardProps = {
-  titleKey: string;
-  previewUrl: string;
-  category: 'software' | 'game';
-  descriptionKeys?: string[];
-  yearKey?: string;
-  technologies: PortfolioTechnology[];
-  links?: PortfolioLink[];
+  titleKey: string
+  previewUrl: string
+  category: 'software' | 'game'
+  descriptionKeys?: string[]
+  yearKey?: string
+  technologies: PortfolioTechnology[]
+  links?: PortfolioLink[]
   supplementaryImage?: {
-    src: string;
-    width: string;
-  };
-  linkSpacer?: boolean;
-};
+    src: string
+    width: string
+  }
+  linkSpacer?: boolean
+}
 
 export function PortfolioCard({
   titleKey,
@@ -63,9 +63,9 @@ export function PortfolioCard({
   supplementaryImage,
   linkSpacer = false,
 }: PortfolioCardProps) {
-  const { t } = useTranslation();
-  const isSoftware = category === 'software';
-  const previewSize = isSoftware ? '50%' : '100%';
+  const { t } = useTranslation()
+  const isSoftware = category === 'software'
+  const previewSize = isSoftware ? '50%' : '100%'
 
   return (
     <div
@@ -117,5 +117,5 @@ export function PortfolioCard({
         ))}
       </div>
     </div>
-  );
+  )
 }

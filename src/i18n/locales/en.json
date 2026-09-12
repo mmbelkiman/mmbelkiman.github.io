@@ -22,32 +22,6 @@
     "language-port-1": "Portuguese",
     "language-port-2": "Native",
     "language-eng-1": "English",
-    "trio-b-time": "11/2023 ~ Today",
-    "trio-b-role": "Full Stack Developer (React+Node)",
-    "aulapp-time": "09/2021 ~ 10/2024",
-    "aulapp-role": "Mobile Engineer Consultant/Lead (React Native)",
-    "cyberIsight-time": "04/2023 ~ 12/2023",
-    "cyberIsight-role": "Full Stack Developer (React+Node)",
-    "trio-a-time": "04/2022 ~ 04/2023",
-    "trio-a-role": "Full Stack Developer (React+React Native+Node)",
-    "ilia-time": "08/2021 ~ 04/2022",
-    "ilia-role": "Mobile Developer (React Native)",
-    "onebrain-time": "01/2021 ~ 08/2021",
-    "onebrain-role": "React Native Developer",
-    "ies2-time": "09/2019 ~ 01/2021",
-    "ies2-role": "React Native/Android Developer",
-    "verisoft-time": "11/2017 ~ 09/2019",
-    "verisoft-role": "Android Developer",
-    "cit-time": "08/2015 ~ 11/2017",
-    "cit-role": "Mobile Developer",
-    "click-time": "05/2014 ~ 08/2015",
-    "click-role": "Web Developer",
-    "art-time": "06/2012 ~ 06/2013",
-    "art-role": "System analyst",
-    "people-time": "08/2009 ~ 03/2011",
-    "people-role": "Technical instructor",
-    "brSim-time": "08/2007 ~ 08/2008",
-    "brSim-role": "Developer/Programmer",
     "other-gamedev": "Game development",
     "hobbies-music": "Music",
     "hobbies-travel": "Movies",
@@ -88,7 +62,6 @@
       }
     },
     "aulapp": {
-      "description": {},
       "year": "Year: 2020",
       "technologies": {},
       "links": {
@@ -239,5 +212,57 @@
       "description": {}
     }
   },
-  "static": {}
+  "static": {},
+  "professionalExperience": {
+    "trio": {
+      "current": {
+        "period": "11/2023 ~ Today",
+        "role": "Full Stack Developer (React+Node)"
+      },
+      "previous": {
+        "period": "04/2022 ~ 04/2023",
+        "role": "Full Stack Developer (React+React Native+Node)"
+      }
+    },
+    "aulapp": {
+      "period": "09/2021 ~ 10/2024",
+      "role": "Mobile Engineer Consultant/Lead (React Native)"
+    },
+    "cyberISight": {
+      "period": "04/2023 ~ 12/2023",
+      "role": "Full Stack Developer (React+Node)"
+    },
+    "ilia": {
+      "period": "08/2021 ~ 04/2022",
+      "role": "Mobile Developer (React Native)"
+    },
+    "onebrain": {
+      "period": "01/2021 ~ 08/2021",
+      "role": "React Native Developer"
+    },
+    "ies2": {
+      "period": "09/2019 ~ 01/2021",
+      "role": "React Native/Android Developer"
+    },
+    "verisoft": {
+      "period": "11/2017 ~ 09/2019",
+      "role": "Android Developer"
+    },
+    "ciandt": {
+      "period": "08/2015 ~ 11/2017",
+      "role": "Mobile Developer"
+    },
+    "clickideia": {
+      "period": "05/2014 ~ 08/2015",
+      "role": "Web Developer"
+    },
+    "artivinco": {
+      "period": "06/2012 ~ 06/2013",
+      "role": "System analyst"
+    },
+    "brSimulations": {
+      "period": "08/2007 ~ 08/2008",
+      "role": "Developer/Programmer"
+    }
+  }
 }

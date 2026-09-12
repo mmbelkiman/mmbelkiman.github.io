@@ -1,4 +1,4 @@
-import type { PortfolioCardProps } from '../components/PortfolioCard';
+import type { PortfolioCardProps } from '../components/PortfolioCard'
 
 export const portfolioItems: PortfolioCardProps[] = [
   {
@@ -6,10 +6,7 @@ export const portfolioItems: PortfolioCardProps[] = [
     previewUrl: 'gifs/tictac.gif',
     category: 'software',
     yearKey: 'portfolio.tictac.year',
-    technologies: [
-      'typescript',
-      'reactNative',
-    ],
+    technologies: ['typescript', 'reactNative'],
     links: [
       {
         labelKey: 'portfolio.tictac.links.github.label',
@@ -23,13 +20,13 @@ export const portfolioItems: PortfolioCardProps[] = [
     previewUrl: 'gifs/pathcrypto.gif',
     category: 'software',
     yearKey: 'portfolio.pathCrypto.year',
-    technologies: [
-      'typescript',
-      'reactNative',
-      'nodeJs',
-    ],
+    technologies: ['typescript', 'reactNative', 'nodeJs'],
     links: [
-      { labelKey: 'portfolio.pathCrypto.links.website.label', textKey: 'portfolio.pathCrypto.links.website.text', href: 'https://www.pathcrypto.com/' },
+      {
+        labelKey: 'portfolio.pathCrypto.links.website.label',
+        textKey: 'portfolio.pathCrypto.links.website.text',
+        href: 'https://www.pathcrypto.com/',
+      },
     ],
   },
   {
@@ -37,13 +34,13 @@ export const portfolioItems: PortfolioCardProps[] = [
     previewUrl: 'gifs/pipoclube.gif',
     category: 'software',
     yearKey: 'portfolio.pipoclube.year',
-    technologies: [
-      'typescript',
-      'reactNative',
-      'php',
-    ],
+    technologies: ['typescript', 'reactNative', 'php'],
     links: [
-      { labelKey: 'portfolio.pipoclube.links.website.label', textKey: 'portfolio.pipoclube.links.website.text', href: 'https://www.pipoclube.com/' },
+      {
+        labelKey: 'portfolio.pipoclube.links.website.label',
+        textKey: 'portfolio.pipoclube.links.website.text',
+        href: 'https://www.pipoclube.com/',
+      },
     ],
   },
   {
@@ -51,10 +48,7 @@ export const portfolioItems: PortfolioCardProps[] = [
     previewUrl: 'gifs/aulapp.gif',
     category: 'software',
     yearKey: 'portfolio.aulapp.year',
-    technologies: [
-      'javascript',
-      'reactNative',
-    ],
+    technologies: ['javascript', 'reactNative'],
     links: [
       {
         labelKey: 'portfolio.aulapp.links.googlePlay.label',
@@ -103,13 +97,13 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.epicGolf2d.title',
     previewUrl: 'gifs/epicgolf2d.gif',
     category: 'game',
-    descriptionKeys: ['portfolio.epicGolf2d.description.first', 'portfolio.epicGolf2d.description.second'],
+    descriptionKeys: [
+      'portfolio.epicGolf2d.description.first',
+      'portfolio.epicGolf2d.description.second',
+    ],
     yearKey: 'portfolio.epicGolf2d.year',
     supplementaryImage: { src: 'epicgolf2d-trofeu.jpg', width: '40%' },
-    technologies: [
-      'monogame',
-      'csharp',
-    ],
+    technologies: ['monogame', 'csharp'],
     links: [
       {
         labelKey: 'portfolio.epicGolf2d.links.googlePlay.label',
@@ -124,12 +118,13 @@ export const portfolioItems: PortfolioCardProps[] = [
     category: 'game',
     descriptionKeys: ['portfolio.venusParticleEditor.description.first'],
     yearKey: 'portfolio.venusParticleEditor.year',
-    technologies: [
-      'csharp',
-      'monogame',
-    ],
+    technologies: ['csharp', 'monogame'],
     links: [
-      { labelKey: 'portfolio.venusParticleEditor.links.itchIo.label', textKey: 'portfolio.venusParticleEditor.links.itchIo.text', href: 'https://mmbelkiman.itch.io/venus-particle-editor' },
+      {
+        labelKey: 'portfolio.venusParticleEditor.links.itchIo.label',
+        textKey: 'portfolio.venusParticleEditor.links.itchIo.text',
+        href: 'https://mmbelkiman.itch.io/venus-particle-editor',
+      },
       {
         labelKey: 'portfolio.venusParticleEditor.links.github.label',
         textKey: 'portfolio.venusParticleEditor.links.github.text',
@@ -145,10 +140,7 @@ export const portfolioItems: PortfolioCardProps[] = [
     category: 'game',
     descriptionKeys: ['portfolio.ourAdventureTime.description.first'],
     yearKey: 'portfolio.ourAdventureTime.year',
-    technologies: [
-      'unity',
-      'csharp',
-    ],
+    technologies: ['unity', 'csharp'],
     links: [
       {
         labelKey: 'portfolio.ourAdventureTime.links.itchIo.label',
@@ -169,12 +161,12 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.ultraRetroVirusAttack.title',
     previewUrl: 'gifs/ultraretrovirusattack.gif',
     category: 'game',
-    descriptionKeys: ['portfolio.ultraRetroVirusAttack.description.first', 'portfolio.ultraRetroVirusAttack.description.second'],
-    yearKey: 'portfolio.ultraRetroVirusAttack.year',
-    technologies: [
-      'unity',
-      'csharp',
+    descriptionKeys: [
+      'portfolio.ultraRetroVirusAttack.description.first',
+      'portfolio.ultraRetroVirusAttack.description.second',
     ],
+    yearKey: 'portfolio.ultraRetroVirusAttack.year',
+    technologies: ['unity', 'csharp'],
     links: [
       {
         labelKey: 'portfolio.ultraRetroVirusAttack.links.webPlayer.label',
@@ -195,7 +187,10 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.itaucard.title',
     previewUrl: 'gifs/itaucard.gif',
     category: 'software',
-    descriptionKeys: ['portfolio.itaucard.description.first', 'portfolio.itaucard.description.second'],
+    descriptionKeys: [
+      'portfolio.itaucard.description.first',
+      'portfolio.itaucard.description.second',
+    ],
     yearKey: 'portfolio.itaucard.year',
     technologies: ['java'],
     links: [
@@ -225,7 +220,10 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.tribanco.title',
     previewUrl: 'gifs/tribanco.gif',
     category: 'software',
-    descriptionKeys: ['portfolio.tribanco.description.first', 'portfolio.tribanco.description.second'],
+    descriptionKeys: [
+      'portfolio.tribanco.description.first',
+      'portfolio.tribanco.description.second',
+    ],
     yearKey: 'portfolio.tribanco.year',
     technologies: ['javascript'],
     links: [
@@ -246,7 +244,10 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.omgMyHouse.title',
     previewUrl: 'gifs/omgmyhouse.gif',
     category: 'game',
-    descriptionKeys: ['portfolio.omgMyHouse.description.first', 'portfolio.omgMyHouse.description.second'],
+    descriptionKeys: [
+      'portfolio.omgMyHouse.description.first',
+      'portfolio.omgMyHouse.description.second',
+    ],
     yearKey: 'portfolio.omgMyHouse.year',
     technologies: ['construct2'],
     links: [
@@ -261,12 +262,13 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.gamification.title',
     previewUrl: 'gifs/monografia.gif',
     category: 'software',
-    descriptionKeys: ['portfolio.gamification.description.first', 'portfolio.gamification.description.second', 'portfolio.gamification.description.third'],
-    yearKey: 'portfolio.gamification.year',
-    technologies: [
-      'htmlCss',
-      'javascript',
+    descriptionKeys: [
+      'portfolio.gamification.description.first',
+      'portfolio.gamification.description.second',
+      'portfolio.gamification.description.third',
     ],
+    yearKey: 'portfolio.gamification.year',
+    technologies: ['htmlCss', 'javascript'],
     linkSpacer: true,
     links: [
       {
@@ -298,11 +300,7 @@ export const portfolioItems: PortfolioCardProps[] = [
     category: 'software',
     descriptionKeys: ['portfolio.clickideia.description.first'],
     yearKey: 'portfolio.clickideia.year',
-    technologies: [
-      'javascript',
-      'sql',
-      'php',
-    ],
+    technologies: ['javascript', 'sql', 'php'],
     linkSpacer: true,
     links: [
       {
@@ -313,4 +311,4 @@ export const portfolioItems: PortfolioCardProps[] = [
       },
     ],
   },
-];
+]
