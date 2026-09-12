@@ -1,0 +1,38 @@
+:where(.v1, .v1-storybook),
+:where(.v1, .v1-storybook) *,
+:where(.v1, .v1-storybook) *::before,
+:where(.v1, .v1-storybook) *::after {
+  box-sizing: border-box;
+}
+
+:where(.v1, .v1-storybook) {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  font-weight: var(--font-weight-body);
+  line-height: 1.35;
+}
+
+:where(.v1, .v1-storybook) :where(button, input, select, textarea) {
+  font: inherit;
+}
+
+:where(.v1, .v1-storybook) :where(a) {
+  color: inherit;
+}
+
+:where(.v1, .v1-storybook) :where(img, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+:where(.v1, .v1-storybook) :focus-visible {
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: var(--space-1);
+}
+
+.v1-storybook {
+  min-height: 100dvh;
+  padding: var(--space-6);
+  background: var(--color-page);
+}
