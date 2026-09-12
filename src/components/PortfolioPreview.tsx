@@ -1,19 +1,34 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './PortfolioPreview.css'
 
 type PortfolioPreviewProps = {
   alt: string
+  posterUrl: string
   src: string
   width: string
 }
 
-export function PortfolioPreview({ alt, src, width }: PortfolioPreviewProps) {
+export function PortfolioPreview({ alt, posterUrl, src, width }: PortfolioPreviewProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const [hasStartedLoading, setHasStartedLoading] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
+
+  useEffect(() => {
+    if (hasStartedLoading) {
+      const video = videoRef.current
+      video?.load()
+      void video?.play()
+    }
+  }, [hasStartedLoading])
 
   const togglePlayback = () => {
     const video = videoRef.current
     if (!video) return
+
+    if (!hasStartedLoading) {
+      setHasStartedLoading(true)
+      return
+    }
 
     if (video.paused) {
       void video.play()
@@ -31,12 +46,13 @@ export function PortfolioPreview({ alt, src, width }: PortfolioPreviewProps) {
         loop
         muted
         playsInline
-        preload="metadata"
+        poster={posterUrl}
+        preload="none"
         onClick={togglePlayback}
         onPause={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
       >
-        <source src={src} type="video/webm" />
+        {hasStartedLoading && <source src={src} type="video/webm" />}
       </video>
       <button
         aria-label={isPlaying ? `Pausar ${alt}` : `Reproduzir ${alt}`}

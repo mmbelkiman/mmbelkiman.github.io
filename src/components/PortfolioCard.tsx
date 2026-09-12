@@ -41,6 +41,7 @@ export type PortfolioLink = {
 export type PortfolioCardProps = {
   titleKey: string
   videoUrl: string
+  posterUrl: string
   category: 'software' | 'game'
   descriptionKeys?: string[]
   yearKey?: string
@@ -56,6 +57,7 @@ export type PortfolioCardProps = {
 export function PortfolioCard({
   titleKey,
   videoUrl,
+  posterUrl,
   category,
   descriptionKeys = [],
   yearKey,
@@ -77,7 +79,12 @@ export function PortfolioCard({
 
       <div className={`${isSoftware ? 'row-software' : 'row-games'} row-gif`}>
         <div className="col-md-12 col-gif">
-          <PortfolioPreview alt={t(titleKey)} src={videoUrl} width={previewSize} />
+          <PortfolioPreview
+            alt={t(titleKey)}
+            posterUrl={posterUrl}
+            src={videoUrl}
+            width={previewSize}
+          />
         </div>
 
         {descriptionKeys.map((descriptionKey) => (
