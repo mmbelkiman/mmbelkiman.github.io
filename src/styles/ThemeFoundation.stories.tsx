@@ -14,7 +14,7 @@ function ThemeFoundation() {
       <article className="v1-foundation-story__panel">
         <p className="v1-foundation-story__eyebrow">Portfolio interface system / v1</p>
         <h1 className="v1-foundation-story__title">
-          Rajdhani for information. Oxanium for identity.
+          Rajdhani for information. Share Tech Mono for identity.
         </h1>
         <p className="v1-foundation-story__body">
           The visual foundation uses a light industrial palette with clear hierarchy, technical
