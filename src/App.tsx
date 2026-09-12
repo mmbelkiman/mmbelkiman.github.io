@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { AcademicEducationCard } from './components/AcademicEducationCard'
-import { PortfolioCard } from './components/PortfolioCard'
-import { ProfessionalExperienceCard } from './components/ProfessionalExperienceCard'
-import { academicEducation } from './data/academicEducation'
-import { portfolioItems } from './data/portfolio'
-import { professionalExperiences } from './data/professionalExperiences'
+import { AcademicEducationSection } from './components/sections/AcademicEducationSection'
+import { ContactSection } from './components/sections/ContactSection'
+import { LanguagesSection } from './components/sections/LanguagesSection'
+import { OtherKnowledgeSection } from './components/sections/OtherKnowledgeSection'
+import { PageTop } from './components/sections/PageTop'
+import { PortfolioSection } from './components/sections/PortfolioSection'
+import { ProfessionalExperienceSection } from './components/sections/ProfessionalExperienceSection'
+import { ProgrammingSection } from './components/sections/ProgrammingSection'
 import './App.css'
 
 declare global {
@@ -15,7 +17,7 @@ declare global {
 }
 
 function App() {
-  const { i18n, t } = useTranslation()
+  const { i18n } = useTranslation()
   const [isHeaderShrunk, setIsHeaderShrunk] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0)
   const [showScrollHint, setShowScrollHint] = useState(false)
@@ -84,319 +86,39 @@ function App() {
     carouselRef.current?.scrollBy({ left: direction * 150, behavior: 'smooth' })
   }
 
-  const getExperienceDescriptions = (descriptionsKey?: string) => {
-    if (!descriptionsKey) return []
-
-    const description = t(descriptionsKey, { returnObjects: true })
-    return Array.isArray(description) ? description.map(String) : []
-  }
-
   return (
     <>
-      <div id="page-top" className={isHeaderShrunk ? 'container-fluid shrink' : 'container-fluid'}>
-        <div className="row">
-          <div
-            className={
-              isHeaderShrunk
-                ? 'title col-md-6 col-lg-6 col-sm-6 hidden-xs shrink'
-                : 'title col-md-6 col-lg-6 col-sm-6 hidden-xs'
-            }
-          >
-            <span className="menu-title">{t('static.text001')}</span>
-            <br />
-            <span id="menu-subtitle">{t('menu.menu-subtitle')}</span>
-          </div>
-          <div className="col-md-8 col-lg-8 col-sm-8 hidden-xs links">
-            <ul>
-              <li className="menu-language" onClick={toggleLanguage}>
-                <a style={{ fontSize: '1.2em' }}>
-                  <i className="fas fa-globe-americas"> </i>
-                  <span className="menu-language-text">{t('menu.switchLanguage')}</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            className={
-              isHeaderShrunk
-                ? 'title hidden-md hidden-lg hidden-sm col-xs-1 shrink'
-                : 'title hidden-md hidden-lg hidden-sm col-xs-1'
-            }
-          >
-            <span className="menu-title">{t('static.text002')}</span>
-            <br />
-            <span id="menu-subtitle" style={{ marginLeft: '0px' }}>
-              {t('menu.menu-subtitle')}
-            </span>
-          </div>
-          <div className=" hidden-md hidden-lg hidden-sm col-xs-10 links">
-            <ul>
-              <li className="menu-language" onClick={toggleLanguage}>
-                <a style={{ fontSize: '1.0em' }}>
-                  <i className="fa fa-globe-americas"> </i>
-                  <span className="menu-language-text">{t('menu.switchLanguage')}</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="slide container-fluid cover-image"
-        style={{
-          backgroundImage: "url('/img-home.jpg')",
-          backgroundPosition: `50% ${heroOffset}px`,
-        }}
-      >
-        <div className="row welcome">
-          <div id="content-allign">
-            <div id="content-name-allign">{t('home.content-name-allign')}</div>
-            <div id="welcome-1">{t('home.welcome-1')}</div>
-            <div id="welcome-2">{t('home.welcome-2')}</div>
-
-            <div>
-              <span id="welcome-3">{t('home.welcome-3')}</span>
-              <span id="blink_char" style={{ fontWeight: 'bold', color: 'white' }}>
-                _
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="row allign-content">
-          <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12" style={{ zIndex: '999' }}>
-            <div
-              id="mouse-scroll"
-              style={{
-                width: showScrollHint ? '150px' : '0px',
-                height: showScrollHint ? '150px' : '0px',
-                backgroundImage: "url('/mouse-scroll.gif')",
-              }}
-            ></div>
-          </div>
-        </div>
-      </div>
+      <PageTop
+        isHeaderShrunk={isHeaderShrunk}
+        heroOffset={heroOffset}
+        showScrollHint={showScrollHint}
+        onToggleLanguage={toggleLanguage}
+      />
 
       <div id="container-content" className="container">
+        <ProfessionalExperienceSection
+          carouselRef={professionalCarouselRef}
+          onScrollCarousel={(direction) => scrollCarousel(professionalCarouselRef, direction)}
+        />
+
         <div className="row">
-          <div className="col-md-11  block-full">
-            <h1>
-              <span className="icon-title fas fa-briefcase"> </span>
-            </h1>
-            <h1>
-              <span id="topic-name-3">{t('home.topic-name-3')}</span>
-            </h1>
-
-            <div className="col-md-12 pn-ProductNav_Wrapper">
-              <nav
-                ref={professionalCarouselRef}
-                id="pnProductNav"
-                className="col-md-12 pn-ProductNav"
-                style={{ overflow: 'auto', scrollbarColor: 'rgb(255,255,255) rgb(255,255,255)' }}
-              >
-                <div id="pnProductNavContents" className=" pn-ProductNav_Contents">
-                  {professionalExperiences.map((experience) => (
-                    <ProfessionalExperienceCard
-                      key={experience.titleKey}
-                      logoUrl={experience.logoUrl}
-                      title={t(experience.titleKey)}
-                      period={t(experience.periodKey)}
-                      role={t(experience.roleKey)}
-                      descriptions={getExperienceDescriptions(experience.descriptionsKey)}
-                    />
-                  ))}
-
-                  <span id="pnIndicator" className="pn-ProductNav_Indicator"></span>
-                </div>
-              </nav>
-              <button
-                id="pnAdvancerLeft"
-                className="pn-Advancer pn-Advancer_Left"
-                type="button"
-                onClick={() => scrollCarousel(professionalCarouselRef, -1)}
-              >
-                <svg
-                  className="pn-Advancer_Icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 551 1024"
-                >
-                  <path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
-                </svg>
-              </button>
-              <button
-                id="pnAdvancerRight"
-                className="pn-Advancer pn-Advancer_Right"
-                type="button"
-                onClick={() => scrollCarousel(professionalCarouselRef, 1)}
-              >
-                <svg
-                  className="pn-Advancer_Icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 551 1024"
-                >
-                  <path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
-                </svg>
-              </button>
-            </div>
-          </div>
+          <ProgrammingSection />
+          <OtherKnowledgeSection />
         </div>
 
         <div className="row">
-          <div className="col-md-6 block">
-            <h1>
-              <span className="icon-title fas fa-code"> </span>
-            </h1>
-            <h1>
-              <span id="topic-name-5">{t('home.topic-name-5')}</span>
-            </h1>
-
-            <div className="col-md-12 text-achievement">{t('static.text015')}</div>
-          </div>
-
-          <div className="col-md-5 block">
-            <h1>
-              <span className="icon-title fab fa-connectdevelop"> </span>
-            </h1>
-            <h1>
-              <span id="topic-name-6">{t('home.topic-name-6')}</span>
-            </h1>
-
-            <div className="col-md-12 text-achievement">{t('static.text016')}</div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-md-11  block-full">
-            <h1>
-              <span className="icon-title fas fa-graduation-cap"> </span>
-            </h1>
-            <h1>
-              <span id="topic-name-4">{t('home.topic-name-4')}</span>
-            </h1>
-
-            <div className="col-md-12 pn-ProductNav_Wrapper">
-              <nav
-                ref={educationCarouselRef}
-                id="pnProductNavB"
-                className="col-md-12 pn-ProductNav"
-                style={{ overflowX: 'auto', scrollbarColor: 'rgb(255,255,255) rgb(255,255,255)' }}
-              >
-                <div id="pnProductNavContentsB" className=" pn-ProductNav_Contents">
-                  {academicEducation.map((education) => (
-                    <AcademicEducationCard
-                      key={education.titleKey}
-                      logoUrl={education.logoUrl}
-                      title={t(education.titleKey)}
-                      period={t(education.periodKey)}
-                      institution={t(education.institutionKey)}
-                    />
-                  ))}
-
-                  <span id="pnIndicatorB" className="pn-ProductNav_Indicator"></span>
-                </div>
-              </nav>
-              <button
-                id="pnAdvancerLeftB"
-                className="pn-Advancer pn-Advancer_Left"
-                type="button"
-                onClick={() => scrollCarousel(educationCarouselRef, -1)}
-              >
-                <svg
-                  className="pn-Advancer_Icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 551 1024"
-                >
-                  <path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z" />
-                </svg>
-              </button>
-              <button
-                id="pnAdvancerRightB"
-                className="pn-Advancer pn-Advancer_Right"
-                type="button"
-                onClick={() => scrollCarousel(educationCarouselRef, 1)}
-              >
-                <svg
-                  className="pn-Advancer_Icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 551 1024"
-                >
-                  <path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div className="col-md-5 block">
-            <h1>
-              <span className="icon-title fas fa-language"> </span>
-            </h1>
-            <h1>
-              <span id="topic-name-1">{t('home.topic-name-1')}</span>
-            </h1>
-            <p>
-              <b id="language-port-1">{t('home.language-port-1')}</b>
-              {t('static.text029')}
-              <span id="language-port-2">{t('home.language-port-2')}</span>
-            </p>
-            <p>
-              <b id="language-eng-1">{t('home.language-eng-1')}</b>
-              {t('static.text030')}
-              <span id="language-eng-2">{t('home.language-eng-2')}</span>
-            </p>
-          </div>
+          <AcademicEducationSection
+            carouselRef={educationCarouselRef}
+            onScrollCarousel={(direction) => scrollCarousel(educationCarouselRef, direction)}
+          />
+          <LanguagesSection />
         </div>
       </div>
 
       <div id="container-contact" className="container-fluid">
-        <div className="row">
-          <div className="col-md-12 ">
-            <p>
-              <a
-                className="contact-text"
-                href="https://br.linkedin.com/in/marcelobelkiman"
-                target="_blank"
-              >
-                <i className="fa-3x fa-fw fab fa-linkedin-in text-inverse"></i>
-                {t('static.text031')}
-              </a>
-            </p>
-
-            <p>
-              <a className="contact-text" href="https://github.com/mmbelkiman" target="_blank">
-                <i className="fa-3x fa-fw fab fa-github-alt  text-inverse"></i>
-                {t('static.text032')}
-              </a>
-            </p>
-
-            <p>
-              <a className="contact-text" href="mailto:marcelobelkiman@gmail.com">
-                <i className="fa-3x fa-fw fas fa-at text-inverse"></i>
-                {t('static.text033')}
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-md-12 ">
-            <h1 style={{ color: '#FFF', fontSize: '4em', marginTop: '50px' }}>
-              <span id="">{t('portfolio.heading')}</span>
-            </h1>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            {portfolioItems.map((item) => (
-              <PortfolioCard key={item.titleKey} {...item} />
-            ))}
-          </div>
-        </div>
+        <ContactSection />
+        <PortfolioSection />
       </div>
-
-      <footer id="container-contact-final"></footer>
     </>
   )
 }
