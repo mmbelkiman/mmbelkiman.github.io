@@ -1,0 +1,316 @@
+import type { PortfolioCardProps } from '../components/PortfolioCard';
+
+export const portfolioItems: PortfolioCardProps[] = [
+  {
+    titleKey: 'portfolio.tictac.title',
+    previewUrl: 'gifs/tictac.gif',
+    category: 'software',
+    yearKey: 'portfolio.tictac.year',
+    technologies: [
+      'typescript',
+      'reactNative',
+    ],
+    links: [
+      {
+        labelKey: 'portfolio.tictac.links.github.label',
+        textKey: 'portfolio.tictac.links.github.text',
+        href: 'https://github.com/mmbelkiman/tiny_tic_tac_toe_mobile?tab=readme-ov-file',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.pathCrypto.title',
+    previewUrl: 'gifs/pathcrypto.gif',
+    category: 'software',
+    yearKey: 'portfolio.pathCrypto.year',
+    technologies: [
+      'typescript',
+      'reactNative',
+      'nodeJs',
+    ],
+    links: [
+      { labelKey: 'portfolio.pathCrypto.links.website.label', textKey: 'portfolio.pathCrypto.links.website.text', href: 'https://www.pathcrypto.com/' },
+    ],
+  },
+  {
+    titleKey: 'portfolio.pipoclube.title',
+    previewUrl: 'gifs/pipoclube.gif',
+    category: 'software',
+    yearKey: 'portfolio.pipoclube.year',
+    technologies: [
+      'typescript',
+      'reactNative',
+      'php',
+    ],
+    links: [
+      { labelKey: 'portfolio.pipoclube.links.website.label', textKey: 'portfolio.pipoclube.links.website.text', href: 'https://www.pipoclube.com/' },
+    ],
+  },
+  {
+    titleKey: 'portfolio.aulapp.title',
+    previewUrl: 'gifs/aulapp.gif',
+    category: 'software',
+    yearKey: 'portfolio.aulapp.year',
+    technologies: [
+      'javascript',
+      'reactNative',
+    ],
+    links: [
+      {
+        labelKey: 'portfolio.aulapp.links.googlePlay.label',
+        textKey: 'portfolio.aulapp.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=br.com.ies.aulaapp',
+      },
+      {
+        labelKey: 'portfolio.aulapp.links.appStore.label',
+        textKey: 'portfolio.aulapp.links.appStore.text',
+        href: 'https://apps.apple.com/br/app/aulapp/id1378370353',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.livroh.title',
+    previewUrl: 'gifs/livroh.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.livroh.description.first', 'portfolio.livroh.description.second'],
+    yearKey: 'portfolio.livroh.year',
+    technologies: ['java'],
+    links: [
+      {
+        labelKey: 'portfolio.livroh.links.googlePlay.label',
+        textKey: 'portfolio.livroh.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=br.com.verisoft.livroh',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.bancah.title',
+    previewUrl: 'gifs/bancah.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.bancah.description.first', 'portfolio.bancah.description.second'],
+    yearKey: 'portfolio.bancah.year',
+    technologies: ['java'],
+    links: [
+      {
+        labelKey: 'portfolio.bancah.links.googlePlay.label',
+        textKey: 'portfolio.bancah.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=br.com.verisoft.bancah',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.epicGolf2d.title',
+    previewUrl: 'gifs/epicgolf2d.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.epicGolf2d.description.first', 'portfolio.epicGolf2d.description.second'],
+    yearKey: 'portfolio.epicGolf2d.year',
+    supplementaryImage: { src: 'epicgolf2d-trofeu.jpg', width: '40%' },
+    technologies: [
+      'monogame',
+      'csharp',
+    ],
+    links: [
+      {
+        labelKey: 'portfolio.epicGolf2d.links.googlePlay.label',
+        textKey: 'portfolio.epicGolf2d.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=br.com.estudiovacaroxa.eg2d',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.venusParticleEditor.title',
+    previewUrl: 'gifs/venusparticleeditor.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.venusParticleEditor.description.first'],
+    yearKey: 'portfolio.venusParticleEditor.year',
+    technologies: [
+      'csharp',
+      'monogame',
+    ],
+    links: [
+      { labelKey: 'portfolio.venusParticleEditor.links.itchIo.label', textKey: 'portfolio.venusParticleEditor.links.itchIo.text', href: 'https://mmbelkiman.itch.io/venus-particle-editor' },
+      {
+        labelKey: 'portfolio.venusParticleEditor.links.github.label',
+        textKey: 'portfolio.venusParticleEditor.links.github.text',
+        href: 'https://github.com/mmbelkiman/Venus-Particle-Editor',
+        className: 'sourcecode',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.ourAdventureTime.title',
+    previewUrl: 'gifs/ouradventuretime.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.ourAdventureTime.description.first'],
+    yearKey: 'portfolio.ourAdventureTime.year',
+    technologies: [
+      'unity',
+      'csharp',
+    ],
+    links: [
+      {
+        labelKey: 'portfolio.ourAdventureTime.links.itchIo.label',
+        textKey: 'portfolio.ourAdventureTime.links.itchIo.text',
+        href: 'https://redemptor.itch.io/our-adventure-time',
+        className: 'play-online',
+      },
+      {
+        labelKey: 'portfolio.ourAdventureTime.links.github.label',
+        textKey: 'portfolio.ourAdventureTime.links.github.text',
+        href: 'https://github.com/redemptor/marriage_jam',
+        className: 'sourcecode',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.ultraRetroVirusAttack.title',
+    previewUrl: 'gifs/ultraretrovirusattack.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.ultraRetroVirusAttack.description.first', 'portfolio.ultraRetroVirusAttack.description.second'],
+    yearKey: 'portfolio.ultraRetroVirusAttack.year',
+    technologies: [
+      'unity',
+      'csharp',
+    ],
+    links: [
+      {
+        labelKey: 'portfolio.ultraRetroVirusAttack.links.webPlayer.label',
+        textKey: 'portfolio.ultraRetroVirusAttack.links.webPlayer.text',
+        href: 'downloads/ultraretrovirusattack/index.html',
+        className: 'play-online',
+      },
+      {
+        labelKey: 'portfolio.ultraRetroVirusAttack.links.github.label',
+        textKey: 'portfolio.ultraRetroVirusAttack.links.github.text',
+        href: 'https://github.com/mmbelkiman/UltraRetroVirusAttack',
+        className: 'sourcecode',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.itaucard.title',
+    previewUrl: 'gifs/itaucard.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.itaucard.description.first', 'portfolio.itaucard.description.second'],
+    yearKey: 'portfolio.itaucard.year',
+    technologies: ['java'],
+    links: [
+      {
+        labelKey: 'portfolio.itaucard.links.googlePlay.label',
+        textKey: 'portfolio.itaucard.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=com.itaucard.activity',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.rupert.title',
+    previewUrl: 'gifs/rupert.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.rupert.description.first', 'portfolio.rupert.description.second'],
+    yearKey: 'portfolio.rupert.year',
+    technologies: ['java'],
+    links: [
+      {
+        labelKey: 'portfolio.rupert.links.googlePlay.label',
+        textKey: 'portfolio.rupert.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.rupertthefish',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.tribanco.title',
+    previewUrl: 'gifs/tribanco.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.tribanco.description.first', 'portfolio.tribanco.description.second'],
+    yearKey: 'portfolio.tribanco.year',
+    technologies: ['javascript'],
+    links: [
+      {
+        labelKey: 'portfolio.tribanco.links.googlePlay.label',
+        textKey: 'portfolio.tribanco.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=br.com.tribanco.mb&hl=pt_BR',
+      },
+      {
+        labelKey: 'portfolio.tribanco.links.appStore.label',
+        textKey: 'portfolio.tribanco.links.appStore.text',
+        href: 'https://itunes.apple.com/us/app/tribanco-o-banco-do-varejo/id1095421258?mt=8',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.omgMyHouse.title',
+    previewUrl: 'gifs/omgmyhouse.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.omgMyHouse.description.first', 'portfolio.omgMyHouse.description.second'],
+    yearKey: 'portfolio.omgMyHouse.year',
+    technologies: ['construct2'],
+    links: [
+      {
+        labelKey: 'portfolio.omgMyHouse.links.webPlayer.label',
+        textKey: 'portfolio.omgMyHouse.links.webPlayer.text',
+        href: 'downloads/omg/index.html',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.gamification.title',
+    previewUrl: 'gifs/monografia.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.gamification.description.first', 'portfolio.gamification.description.second', 'portfolio.gamification.description.third'],
+    yearKey: 'portfolio.gamification.year',
+    technologies: [
+      'htmlCss',
+      'javascript',
+    ],
+    linkSpacer: true,
+    links: [
+      {
+        labelKey: 'portfolio.gamification.links.document.label',
+        textKey: 'portfolio.gamification.links.document.text',
+        href: 'https://raw.githubusercontent.com/mmbelkiman/mmbelkiman.github.io/master/downloads/gamification-MarceloBelkiman.pdf',
+        compact: true,
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.spaceJay.title',
+    previewUrl: 'gifs/spacejay.gif',
+    category: 'game',
+    descriptionKeys: ['portfolio.spaceJay.description.first'],
+    yearKey: 'portfolio.spaceJay.year',
+    technologies: ['java'],
+    links: [
+      {
+        labelKey: 'portfolio.spaceJay.links.googlePlay.label',
+        textKey: 'portfolio.spaceJay.links.googlePlay.text',
+        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk',
+      },
+    ],
+  },
+  {
+    titleKey: 'portfolio.clickideia.title',
+    previewUrl: 'gifs/clickideia.gif',
+    category: 'software',
+    descriptionKeys: ['portfolio.clickideia.description.first'],
+    yearKey: 'portfolio.clickideia.year',
+    technologies: [
+      'javascript',
+      'sql',
+      'php',
+    ],
+    linkSpacer: true,
+    links: [
+      {
+        labelKey: 'portfolio.clickideia.links.website.label',
+        textKey: 'portfolio.clickideia.links.website.text',
+        href: 'http://www.clickideia.com.br',
+        compact: true,
+      },
+    ],
+  },
+];

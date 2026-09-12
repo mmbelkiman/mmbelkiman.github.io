@@ -63,36 +63,181 @@
     "contact-message-profile": "Hey, before you leave, give my profile visit :)"
   },
   "portfolio": {
-    "play-online": "play online",
-    "tri-3": "Year: 2016",
-    "pathcrypto-3": "Year: 2022",
-    "pipoclube-3": "Year: 2022",
-    "tictac-3": "Year: 2023",
-    "aulapp-3": "Year: 2020",
-    "gamification-3": ".",
-    "gamification-4": "Year: 2015",
-    "omg-1": " ",
-    "omg-2": " ",
-    "omg-4": "Year: 2015",
-    "gludum-1": " ",
-    "gludum-2": " ",
-    "gludum-3": " ",
-    "gludum-4": "Year: 2015",
-    "click-1": "  ",
-    "click-2": "   ",
-    "click-3": "Year: 2015",
-    "space-4": "Year: 2014",
-    "break-2": "Year: 2013",
-    "itaucard-3": "Year: 2017",
-    "rupert-3": "Year: 2017",
-    "ultraretrovirus-3": "Year: 2018",
-    "livroh-3": "Ano: 2019",
-    "bancah-2": ".",
-    "bancah-3": "Ano: 2019",
-    "epicgolf2d-1": "' ",
-    "epicgolf2d-3": "Ano: 2019",
-    "ourAdventureTime-2": "Ano: 2018",
-    "venusparticleeditor-2": "Ano: 2019"
+    "tictac": {
+      "description": {},
+      "year": "Year: 2023",
+      "technologies": {},
+      "links": {
+        "github": {}
+      }
+    },
+    "pathCrypto": {
+      "description": {},
+      "year": "Year: 2022",
+      "technologies": {},
+      "links": {
+        "website": {}
+      }
+    },
+    "pipoclube": {
+      "description": {},
+      "year": "Year: 2022",
+      "technologies": {},
+      "links": {
+        "website": {}
+      }
+    },
+    "aulapp": {
+      "description": {},
+      "year": "Year: 2020",
+      "technologies": {},
+      "links": {
+        "googlePlay": {},
+        "appStore": {}
+      }
+    },
+    "livroh": {
+      "description": {},
+      "year": "Ano: 2019",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "bancah": {
+      "description": {
+        "second": "."
+      },
+      "year": "Ano: 2019",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "epicGolf2d": {
+      "description": {
+        "first": "' "
+      },
+      "year": "Ano: 2019",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "venusParticleEditor": {
+      "description": {},
+      "year": "Ano: 2019",
+      "technologies": {},
+      "links": {
+        "itchIo": {},
+        "github": {}
+      }
+    },
+    "ourAdventureTime": {
+      "description": {},
+      "year": "Ano: 2018",
+      "technologies": {},
+      "links": {
+        "itchIo": {
+          "text": "play online"
+        },
+        "github": {}
+      }
+    },
+    "ultraRetroVirusAttack": {
+      "description": {},
+      "year": "Year: 2018",
+      "technologies": {},
+      "links": {
+        "webPlayer": {
+          "text": "play online"
+        },
+        "github": {}
+      }
+    },
+    "itaucard": {
+      "description": {},
+      "year": "Year: 2017",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "rupert": {
+      "description": {},
+      "year": "Year: 2017",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "tribanco": {
+      "description": {},
+      "year": "Year: 2016",
+      "technologies": {},
+      "links": {
+        "googlePlay": {},
+        "appStore": {}
+      }
+    },
+    "omgMyHouse": {
+      "description": {
+        "first": " ",
+        "second": " "
+      },
+      "year": "Year: 2015",
+      "technologies": {},
+      "links": {
+        "webPlayer": {}
+      }
+    },
+    "gamification": {
+      "description": {
+        "third": "."
+      },
+      "year": "Year: 2015",
+      "technologies": {},
+      "links": {
+        "document": {}
+      }
+    },
+    "spaceJay": {
+      "description": {},
+      "year": "Year: 2014",
+      "technologies": {},
+      "links": {
+        "googlePlay": {}
+      }
+    },
+    "clickideia": {
+      "description": {
+        "first": "  ",
+        "second": "   "
+      },
+      "year": "Year: 2015",
+      "technologies": {},
+      "links": {
+        "website": {}
+      }
+    },
+    "gludum": {
+      "description": {
+        "first": " ",
+        "second": " ",
+        "third": " "
+      },
+      "year": "Year: 2015"
+    },
+    "breakout": {
+      "description": {},
+      "year": "Year: 2013"
+    },
+    "music": {
+      "description": {}
+    },
+    "m12": {
+      "description": {}
+    }
   },
   "static": {}
 }
