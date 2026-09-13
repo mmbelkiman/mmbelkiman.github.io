@@ -26,6 +26,12 @@
   --color-accent-contrast: #f5fbff;
   --color-positive: #2f9b69;
   --color-focus: #00a8ff;
+  --color-technology-react: #61dafb;
+  --color-technology-react-native: #61dafb;
+  --color-technology-typescript: #3178c6;
+  --color-technology-firebase: #ffca28;
+  --color-technology-node-js: #539e43;
+  --color-technology-postgresql: #4169e1;
   --color-panel-header-surface-top: #b7d4e7;
   --color-panel-header-surface-bottom: #a5c7df;
   --color-panel-header-text: var(--color-text);
