@@ -34,3 +34,15 @@ export const WithoutIcon: Story = {
     </ul>
   ),
 }
+
+export const TransparentBackground: Story = {
+  args: {
+    bg: 'transparent',
+    tech: 'typescript',
+  },
+  render: (args) => (
+    <ul className="v1-featured-project-card__technologies">
+      <FeaturedProjectTechnology {...args} />
+    </ul>
+  ),
+}

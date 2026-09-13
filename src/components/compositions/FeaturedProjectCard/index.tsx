@@ -10,6 +10,7 @@ import { getExternalLinkText } from './utils'
 export type {
   FeaturedProjectCardProps,
   FeaturedProjectExternalLink,
+  FeaturedProjectTechnologyBackground,
   FeaturedProjectTechnologyName,
 } from './types'
 export { FeaturedProjectTechnology } from './sections/FeaturedProjectTechnology'
@@ -24,6 +25,7 @@ export function FeaturedProjectCard({
   imageSrc,
   subtitle,
   technologies,
+  technologyBackground,
   technologyIconVisibility,
   title,
 }: FeaturedProjectCardProps) {
@@ -44,6 +46,7 @@ export function FeaturedProjectCard({
         <ul className="v1-featured-project-card__technologies">
           {technologies.map((tech) => (
             <FeaturedProjectTechnology
+              bg={technologyBackground}
               key={tech}
               showIcon={technologyIconVisibility?.[tech]}
               tech={tech}

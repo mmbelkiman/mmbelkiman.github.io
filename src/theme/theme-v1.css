@@ -32,6 +32,10 @@
   --color-technology-firebase: #ffca28;
   --color-technology-node-js: #539e43;
   --color-technology-postgresql: #4169e1;
+  --color-project-category-financial: #0055c7;
+  --color-project-category-financial-surface: #e8f2ff;
+  --color-project-category-banking: #713fd4;
+  --color-project-category-banking-surface: #f0eaff;
   --color-panel-header-surface-top: #b7d4e7;
   --color-panel-header-surface-bottom: #a5c7df;
   --color-panel-header-text: var(--color-text);

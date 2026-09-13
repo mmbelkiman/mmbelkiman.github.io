@@ -21,3 +21,9 @@ export const LevelOne: Story = {
 }
 
 export const LevelTwo: Story = {}
+
+export const LevelThree: Story = {
+  args: {
+    level: 3,
+  },
+}

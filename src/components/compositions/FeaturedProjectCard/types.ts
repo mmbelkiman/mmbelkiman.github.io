@@ -8,6 +8,8 @@ export type FeaturedProjectExternalLink = {
 export type FeaturedProjectTechnologyName =
   'firebase' | 'node-js' | 'postgresql' | 'react' | 'react-native' | 'typescript'
 
+export type FeaturedProjectTechnologyBackground = 'filled' | 'transparent'
+
 export type FeaturedProjectCardProps = {
   description: string
   externalLinks?: readonly FeaturedProjectExternalLink[]
@@ -16,6 +18,7 @@ export type FeaturedProjectCardProps = {
   imageSrc: string
   subtitle: string
   technologies: readonly FeaturedProjectTechnologyName[]
+  technologyBackground?: FeaturedProjectTechnologyBackground
   technologyIconVisibility?: Partial<Record<FeaturedProjectTechnologyName, boolean>>
   title: string
 }

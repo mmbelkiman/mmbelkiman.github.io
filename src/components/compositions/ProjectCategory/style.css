@@ -1,0 +1,22 @@
+.v1-project-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width-thin) solid currentcolor;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.v1-project-category--financial {
+  color: var(--color-project-category-financial);
+  background: var(--color-project-category-financial-surface);
+}
+
+.v1-project-category--banking {
+  color: var(--color-project-category-banking);
+  background: var(--color-project-category-banking-surface);
+}

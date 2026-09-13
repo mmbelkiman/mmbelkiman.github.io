@@ -68,9 +68,17 @@
   color: var(--color-text-ice);
   border: var(--border-width-thin) solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: color-mix(in srgb, var(--color-surface-strong) 88%, var(--color-metal-dark));
+  background: transparent;
   font-family: var(--font-heading);
   font-size: 0.75rem;
+}
+
+.v1-featured-project-card__technology--bg-filled {
+  background: var(--color-surface-strong);
+}
+
+.v1-featured-project-card__technology--bg-transparent {
+  color: var(--color-text);
 }
 
 .v1-featured-project-card__technology svg {
