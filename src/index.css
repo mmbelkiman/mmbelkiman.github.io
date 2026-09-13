@@ -1,3 +1,3 @@
-@import './styles/fonts.css';
-@import './styles/theme-v1.css';
-@import './styles/foundation.css';
+@import './theme/fonts.css';
+@import './theme/theme-v1.css';
+@import './theme/foundation.css';

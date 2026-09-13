@@ -1,0 +1,22 @@
+.v1-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--v1-grid-columns), minmax(0, 1fr));
+  grid-auto-rows: var(--v1-grid-row-height);
+  gap: var(--space-3);
+}
+
+.v1-grid__column {
+  grid-column: span var(--v1-grid-column-weight);
+  min-width: 0;
+}
+
+@media (max-width: 52rem) {
+  .v1-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .v1-grid__column {
+    grid-column: auto;
+  }
+}

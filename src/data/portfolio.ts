@@ -1,4 +1,4 @@
-import type { PortfolioCardProps } from '../components/PortfolioCard'
+import type { PortfolioCardProps } from '@/legacy/PortfolioCard.tsx'
 
 export const portfolioItems: PortfolioCardProps[] = [
   {
