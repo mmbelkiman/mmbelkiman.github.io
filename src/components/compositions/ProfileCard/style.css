@@ -1,0 +1,57 @@
+.v1-profile-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+}
+
+.v1-profile-card__photo-frame {
+  padding: var(--space-1);
+  background: var(--color-surface-inset);
+  border: var(--border-width-strong) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-inset);
+}
+
+.v1-profile-card__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  object-position: 71% 32%;
+  filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85);
+}
+
+.v1-profile-card__details {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.v1-profile-card__details .v1-heading {
+  color: var(--color-text-primary);
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.v1-profile-card__details .v1-text {
+  font-size: 1rem;
+}
+
+.v1-profile-card__location {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  padding-top: var(--space-3);
+  border-top: var(--border-width-thin) solid var(--color-border);
+}
+
+.v1-profile-card__location svg {
+  flex: 0 0 auto;
+  color: var(--color-accent-active);
+}
+
+.v1-profile-card__location .v1-text {
+  font-family: var(--font-heading);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+}

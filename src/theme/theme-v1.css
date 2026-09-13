@@ -26,6 +26,12 @@
   --color-accent-contrast: #f5fbff;
   --color-positive: #2f9b69;
   --color-focus: #00a8ff;
+  --color-panel-header-surface-top: #b7d4e7;
+  --color-panel-header-surface-bottom: #a5c7df;
+  --color-panel-header-text: var(--color-text);
+  --color-panel-header-prefix: var(--color-metal-dark);
+  --color-panel-header-details: var(--color-text-muted);
+  --color-panel-header-border: var(--color-border);
 
   --shadow-panel: 0 3px 0 rgb(7 35 58 / 24%);
   --shadow-panel-strong: 0 5px 0 rgb(5 27 47 / 34%);

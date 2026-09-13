@@ -1,13 +1,22 @@
 .v1-panel-header {
+  --panel-header-surface: linear-gradient(
+    180deg,
+    var(--color-panel-header-surface-top),
+    var(--color-panel-header-surface-bottom)
+  );
+  --panel-header-text: var(--color-panel-header-text);
+  --panel-header-prefix: var(--color-panel-header-prefix);
+  --panel-header-details: var(--color-panel-header-details);
+
   display: flex;
   gap: var(--space-3);
   align-items: center;
   justify-content: space-between;
-  min-height: 2rem;
-  padding: var(--space-1) var(--space-3);
-  color: var(--color-text-inverse);
-  background: var(--color-surface-strong);
-  border-bottom: var(--border-width-strong) solid var(--color-border-strong);
+  min-height: 1.5rem;
+  padding: 0 var(--space-3);
+  color: var(--panel-header-text);
+  background: var(--panel-header-surface);
+  border-bottom: var(--border-width-thin) solid var(--color-panel-header-border);
   box-shadow: var(--shadow-inset);
   font-family: var(--font-heading);
   font-size: 0.75rem;
@@ -32,12 +41,12 @@
 }
 
 .v1-panel-header__prefix {
-  color: var(--color-focus);
+  color: var(--panel-header-prefix);
 }
 
 .v1-panel-header__details {
   flex: 0 0 auto;
-  color: var(--color-accent-contrast);
+  color: var(--panel-header-details);
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: var(--font-weight-label);
