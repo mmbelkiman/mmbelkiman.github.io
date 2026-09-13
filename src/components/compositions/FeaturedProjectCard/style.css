@@ -81,6 +81,10 @@
   color: var(--color-text);
 }
 
+.v1-featured-project-card__technology--border-none {
+  border: 0;
+}
+
 .v1-featured-project-card__technology svg {
   width: 0.875rem;
   height: 0.875rem;

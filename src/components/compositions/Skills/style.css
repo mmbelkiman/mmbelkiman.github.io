@@ -1,0 +1,52 @@
+.v1-skills {
+  padding: var(--space-3);
+}
+
+.v1-skills__groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.v1-skills__group {
+  overflow: hidden;
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.v1-skills__group .v1-heading {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 var(--space-2);
+  color: var(--color-text);
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+  background: var(--color-surface-inset);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.v1-skills__technologies {
+  display: grid;
+  gap: 0;
+  padding: var(--space-1) var(--space-2);
+}
+
+.v1-skills__technologies .v1-featured-project-card__technology {
+  justify-content: flex-start;
+  min-height: 1.75rem;
+  padding: var(--space-1) 0;
+  border-bottom: var(--border-width-thin) solid var(--color-border);
+}
+
+.v1-skills__technologies .v1-featured-project-card__technology:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .v1-skills__groups {
+    grid-template-columns: 1fr;
+  }
+}

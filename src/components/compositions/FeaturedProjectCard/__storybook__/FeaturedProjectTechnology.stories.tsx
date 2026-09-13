@@ -46,3 +46,16 @@ export const TransparentBackground: Story = {
     </ul>
   ),
 }
+
+export const TransparentWithoutBorder: Story = {
+  args: {
+    bg: 'transparent',
+    border: 'none',
+    tech: 'react-native',
+  },
+  render: (args) => (
+    <ul className="v1-featured-project-card__technologies">
+      <FeaturedProjectTechnology {...args} />
+    </ul>
+  ),
+}
