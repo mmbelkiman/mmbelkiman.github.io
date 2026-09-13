@@ -1,0 +1,18 @@
+.v1-profile-about-row .v1-grid {
+  align-items: stretch;
+}
+
+.v1-profile-about-row .v1-grid__column,
+.v1-profile-about-row .v1-grid__column > .v1-panel-frame {
+  height: 100%;
+}
+
+.v1-profile-about-row .v1-profile-card,
+.v1-profile-about-row .v1-about-me-card {
+  height: 100%;
+}
+
+.v1-profile-about-row .v1-profile-card,
+.v1-profile-about-row .v1-about-me-card {
+  box-sizing: border-box;
+}

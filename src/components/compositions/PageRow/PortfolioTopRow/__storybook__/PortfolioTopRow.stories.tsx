@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { PortfolioTopRow } from '@/components/compositions/PortfolioTopRow'
+import { PortfolioTopRow } from '@/components/compositions/PageRow/PortfolioTopRow'
 
 const meta = {
-  title: 'Compositions/Portfolio Top Row',
+  title: 'Compositions/Page Row/Portfolio Top Row',
   component: PortfolioTopRow,
   tags: ['autodocs'],
   parameters: {

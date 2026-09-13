@@ -4,6 +4,8 @@
   --panel-border: var(--color-border-strong);
 
   position: relative;
+  display: flex;
+  flex-direction: column;
   color: var(--panel-text);
   background:
     linear-gradient(var(--panel-surface), var(--panel-surface)) padding-box,
@@ -38,13 +40,15 @@
 .v1-panel-frame__content {
   position: relative;
   z-index: 1;
-  min-height: 100%;
+  flex: 1 0 auto;
+  min-height: 0;
   background: transparent;
   border: var(--border-width-thin) solid var(--panel-border);
   border-radius: calc(var(--radius-md) - var(--space-1));
 }
 
 .v1-panel-frame__header + .v1-panel-frame__content {
+  min-height: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }

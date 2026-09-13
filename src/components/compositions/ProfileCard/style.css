@@ -18,7 +18,7 @@
   aspect-ratio: 1 / 1.08;
   object-fit: cover;
   object-position: 71% 32%;
-  filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85);
+  /*filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85);*/
 }
 
 .v1-profile-card__details {

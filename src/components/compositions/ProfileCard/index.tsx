@@ -1,5 +1,5 @@
 import { MapPinIcon } from '@phosphor-icons/react/dist/csr/MapPin'
-import profileImage from '@/assets/images/profile.jpg'
+import profileImage from '@/assets/images/profile.png'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
