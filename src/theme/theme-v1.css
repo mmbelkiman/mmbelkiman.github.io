@@ -70,6 +70,7 @@
   --space-4: 1rem;
   --space-5: 1.5rem;
   --space-6: 2rem;
+  --layout-content-max: 90rem;
 
   --font-body: 'Rajdhani', 'Arial Narrow', Arial, sans-serif;
   --font-heading: 'Share Tech Mono', 'Courier New', monospace;
