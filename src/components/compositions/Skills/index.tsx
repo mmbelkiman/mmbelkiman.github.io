@@ -1,5 +1,5 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
-import { FeaturedProjectTechnology } from '@/components/compositions/FeaturedProjectCard'
+import { ProjectTechnology } from '@/components/compositions/ProjectCard'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
@@ -19,9 +19,9 @@ export function Skills({ groups }: SkillsProps) {
                 <CaretRightIcon aria-hidden="true" size={16} weight="bold" />
                 {group.title}
               </Heading>
-              <ul className="v1-featured-project-card__technologies v1-skills__technologies">
+              <ul className="v1-project-card__technologies v1-skills__technologies">
                 {group.technologies.map((technology) => (
-                  <FeaturedProjectTechnology
+                  <ProjectTechnology
                     bg="transparent"
                     border="none"
                     key={technology}

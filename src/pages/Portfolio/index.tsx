@@ -1,8 +1,7 @@
-import { FeaturedProjectsRow } from '@/components/compositions/PageRow/FeaturedProjectsRow'
 import { PortfolioTopRow } from '@/components/compositions/PageRow/PortfolioTopRow'
+import { PortfolioProjectsRow } from '@/components/compositions/PageRow/PortfolioProjectsRow'
 import { ProfessionalExperienceRow } from '@/components/compositions/PageRow/ProfessionalExperienceRow'
 import { ProfileAboutRow } from '@/components/compositions/PageRow/ProfileAboutRow'
-import { ProjectArchiveRow } from '@/components/compositions/PageRow/ProjectArchiveRow'
 import { QuickInfoRow } from '@/components/compositions/PageRow/QuickInfoRow'
 import { SkillsLanguagesRow } from '@/components/compositions/PageRow/SkillsLanguagesRow'
 import './style.css'
@@ -11,8 +10,8 @@ import type { PortfolioProps } from './types'
 export type { PortfolioProps } from './types'
 
 export function Portfolio({
-  archivedProjects,
-  featuredProjects,
+  contactAndEducation,
+  projects,
   professionalExperience,
   skillsAndLanguages,
   topRow,
@@ -23,11 +22,12 @@ export function Portfolio({
         <PortfolioTopRow {...topRow} />
         <ProfileAboutRow />
         <QuickInfoRow />
-        <FeaturedProjectsRow projects={featuredProjects} />
         <ProfessionalExperienceRow experiences={professionalExperience} />
         <SkillsLanguagesRow {...skillsAndLanguages} />
-        <ProjectArchiveRow projects={archivedProjects} />
+        <ContactEducationRow {...contactAndEducation} />
+        <PortfolioProjectsRow projects={projects} />
       </div>
     </main>
   )
 }
+import { ContactEducationRow } from '@/components/compositions/PageRow/ContactEducationRow'

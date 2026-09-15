@@ -1,7 +1,7 @@
 import type {
-  FeaturedProjectTechnologyBackground,
-  FeaturedProjectTechnologyName,
-} from '@/components/compositions/FeaturedProjectCard'
+  ProjectTechnologyBackground,
+  ProjectTechnologyName,
+} from '@/components/compositions/ProjectCard'
 import type { ProjectCategoryName } from '@/components/compositions/ProjectCategory'
 
 export type ExperienceMonthYear = {
@@ -22,8 +22,8 @@ export type Engagement = {
   name: string
   period?: string
   responsibilities: readonly string[]
-  technologies: readonly FeaturedProjectTechnologyName[]
-  technologyBackground?: FeaturedProjectTechnologyBackground
+  technologies: readonly ProjectTechnologyName[]
+  technologyBackground?: ProjectTechnologyBackground
   type: 'client' | 'product'
 }
 

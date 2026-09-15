@@ -34,14 +34,15 @@
   padding: var(--space-1) var(--space-2);
 }
 
-.v1-skills__technologies .v1-featured-project-card__technology {
+.v1-skills__technologies .v1-project-card__technology {
   justify-content: flex-start;
   min-height: 1.75rem;
   padding: var(--space-1) 0;
   border-bottom: var(--border-width-thin) solid var(--color-border);
+  font-size: 0.8125rem;
 }
 
-.v1-skills__technologies .v1-featured-project-card__technology:last-child {
+.v1-skills__technologies .v1-project-card__technology:last-child {
   border-bottom: 0;
 }
 

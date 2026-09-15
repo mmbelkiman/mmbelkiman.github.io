@@ -1,10 +1,10 @@
 import { FilmSlateIcon } from '@phosphor-icons/react/dist/csr/FilmSlate'
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { FeaturedProjectCard } from '@/components/compositions/FeaturedProjectCard'
+import { ProjectCard } from '@/components/compositions/ProjectCard'
 
 const meta = {
-  title: 'Compositions/Featured Project Card',
-  component: FeaturedProjectCard,
+  title: 'Compositions/Project Card',
+  component: ProjectCard,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
@@ -16,7 +16,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof FeaturedProjectCard>
+} satisfies Meta<typeof ProjectCard>
 
 export default meta
 type Story = StoryObj<typeof meta>

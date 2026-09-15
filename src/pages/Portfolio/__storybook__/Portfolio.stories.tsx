@@ -1,6 +1,7 @@
-import { CodeIcon } from '@phosphor-icons/react/dist/csr/Code'
-import { FilmSlateIcon } from '@phosphor-icons/react/dist/csr/FilmSlate'
+import { EnvelopeIcon } from '@phosphor-icons/react/dist/csr/Envelope'
 import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
+import { GithubLogoIcon } from '@phosphor-icons/react/dist/csr/GithubLogo'
+import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/csr/LinkedinLogo'
 import { RocketLaunchIcon } from '@phosphor-icons/react/dist/csr/RocketLaunch'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Portfolio } from '@/pages/Portfolio'
@@ -24,30 +25,6 @@ export const Default: Story = {
       locationLabel: 'Campinas, BR',
       timeZone: 'America/Sao_Paulo',
     },
-    featuredProjects: [
-      {
-        title: 'Project one',
-        subtitle: 'A mobile experience',
-        description:
-          'A concise overview of the product, its audience and the challenge it addresses.',
-        technologies: ['react-native', 'typescript', 'firebase'],
-        imageSrc: '/images/portfolio-previews/pipoclube.jpg',
-        imageAlt: 'Project one preview',
-        icon: <FilmSlateIcon size={28} weight="fill" />,
-        externalLinks: [{ label: 'Website', url: 'https://example.com' }],
-      },
-      {
-        title: 'Project two',
-        subtitle: 'A developer platform',
-        description:
-          'A concise overview of the product, its audience and the challenge it addresses.',
-        technologies: ['react', 'node-js', 'postgresql'],
-        imageSrc: '/images/portfolio-previews/aulapp.jpg',
-        imageAlt: 'Project two preview',
-        icon: <CodeIcon size={28} weight="fill" />,
-        externalLinks: [{ label: 'Website', url: 'https://example.com' }],
-      },
-    ],
     professionalExperience: [
       {
         id: 'sample-company',
@@ -85,21 +62,59 @@ export const Default: Story = {
         { flag: '🇺🇸', name: 'English', proficiency: 'Professional' },
       ],
     },
-    archivedProjects: [
+    contactAndEducation: {
+      contactLinks: [
+        {
+          label: 'LinkedIn',
+          value: '/mmbelkiman',
+          href: 'https://www.linkedin.com/in/mmbelkiman',
+          icon: <LinkedinLogoIcon weight="fill" />,
+        },
+        {
+          label: 'GitHub',
+          value: '/mmbelkiman',
+          href: 'https://github.com/mmbelkiman',
+          icon: <GithubLogoIcon weight="fill" />,
+        },
+        {
+          label: 'Email',
+          value: 'marcelo@mmbelkiman.com',
+          href: 'mailto:marcelo@mmbelkiman.com',
+          icon: <EnvelopeIcon weight="bold" />,
+        },
+      ],
+      education: [
+        {
+          title: 'Specialization in Digital Games Development',
+          institution: 'Unyleya',
+          period: '2017 – 2018',
+          logoSrc: '/img-unyleya.png',
+          logoAlt: 'Unyleya logo',
+        },
+        {
+          title: "Bachelor's Degree in Computer Science",
+          institution: 'Wyden, Metrocamp',
+          period: '2012 – 2015',
+          logoSrc: '/img-metrocamp.png',
+          logoAlt: 'Wyden Metrocamp logo',
+        },
+      ],
+    },
+    projects: [
       {
         id: 'orbit-defender',
         title: 'Orbit Defender',
         subtitle: 'A compact arcade prototype.',
         description:
           'A small arcade project created to explore fast game loops and responsive controls.',
+        featured: true,
         year: '2024',
-        role: 'Game developer',
-        kind: 'game',
+        projectType: 'game',
         icon: <GameControllerIcon weight="fill" />,
         imageSrc: '/images/portfolio-previews/epicgolf2d.jpg',
         imageAlt: 'Orbit Defender game preview',
         technologies: ['typescript', 'react'],
-        links: [{ label: 'Play online', url: 'https://example.com/orbit-defender' }],
+        externalLinks: [{ label: 'Play online', url: 'https://example.com/orbit-defender' }],
       },
       {
         id: 'reading-shelf',
@@ -108,8 +123,7 @@ export const Default: Story = {
         description:
           'A mobile-focused experiment for browsing books and organizing recommendations.',
         year: '2023',
-        role: 'Mobile developer',
-        kind: 'mobile',
+        projectType: 'mobile',
         icon: <RocketLaunchIcon weight="fill" />,
         imageSrc: '/images/portfolio-previews/livroh.jpg',
         imageAlt: 'Reading Shelf mobile app preview',

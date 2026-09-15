@@ -1,5 +1,6 @@
 import { MapPinIcon } from '@phosphor-icons/react/dist/csr/MapPin'
 import profileImage from '@/assets/images/profile.png'
+import photoStatic from '@/assets/images/photo-static.gif'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
@@ -13,6 +14,12 @@ export function ProfileCard() {
       <section aria-label="Profile" className="v1-profile-card">
         <div className="v1-profile-card__photo-frame">
           <img alt="Marcelo Belkiman" className="v1-profile-card__photo" src={profileImage} />
+          <img
+            alt=""
+            aria-hidden="true"
+            className="v1-profile-card__photo-static"
+            src={photoStatic}
+          />
         </div>
 
         <div className="v1-profile-card__details">

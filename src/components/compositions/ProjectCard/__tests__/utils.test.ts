@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getExternalLinkText } from '../utils'
 
-describe('FeaturedProjectCard utilities', () => {
+describe('ProjectCard utilities', () => {
   it('uses a compact hostname for valid external links', () => {
     expect(getExternalLinkText('https://www.example.com/projects/portfolio')).toBe('example.com')
   })

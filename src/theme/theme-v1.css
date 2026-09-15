@@ -36,6 +36,15 @@
   --color-project-category-financial-surface: #e8f2ff;
   --color-project-category-banking: #713fd4;
   --color-project-category-banking-surface: #f0eaff;
+  --color-project-type-game: #57d7ff;
+  --color-project-type-game-surface: #0b3d60;
+  --color-project-type-mobile: #76e2c2;
+  --color-project-type-mobile-surface: #0b493f;
+  --color-project-type-software: #c69cff;
+  --color-project-type-software-surface: #362460;
+  --color-project-type-web: #f5c35b;
+  --color-project-type-web-surface: #5c4210;
+  --color-project-featured: #f5c35b;
   --color-panel-header-surface-top: #b7d4e7;
   --color-panel-header-surface-bottom: #a5c7df;
   --color-panel-header-text: var(--color-text);

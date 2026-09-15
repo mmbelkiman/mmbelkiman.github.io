@@ -1,5 +1,5 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
-import { FeaturedProjectTechnology } from '@/components/compositions/FeaturedProjectCard'
+import { ProjectTechnology } from '@/components/compositions/ProjectCard'
 import { ProjectCategory } from '@/components/compositions/ProjectCategory'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
@@ -50,9 +50,9 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
             <CaretRightIcon aria-hidden="true" size={16} weight="bold" />
             Tech stack
           </div>
-          <ul className="v1-featured-project-card__technologies">
+          <ul className="v1-project-card__technologies">
             {engagement.technologies.map((tech) => (
-              <FeaturedProjectTechnology
+              <ProjectTechnology
                 bg={engagement.technologyBackground}
                 key={tech}
                 tech={tech}

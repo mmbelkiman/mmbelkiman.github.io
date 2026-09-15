@@ -1,7 +1,7 @@
-import type { FeaturedProjectTechnologyName } from '@/components/compositions/FeaturedProjectCard'
+import type { ProjectTechnologyName } from '@/components/compositions/ProjectCard'
 
 export type SkillsGroup = {
-  technologies: readonly FeaturedProjectTechnologyName[]
+  technologies: readonly ProjectTechnologyName[]
   title: string
 }
 

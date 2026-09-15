@@ -1,0 +1,8 @@
+.v1-contact-education-row .v1-grid {
+  align-items: stretch;
+}
+
+.v1-contact-education-row .v1-grid__column,
+.v1-contact-education-row .v1-panel-frame {
+  height: 100%;
+}
