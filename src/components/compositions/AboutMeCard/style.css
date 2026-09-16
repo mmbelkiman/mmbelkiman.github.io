@@ -40,23 +40,23 @@
   display: grid;
   align-content: center;
   width: min(100%, 31rem);
-  padding: clamp(var(--space-4), 4vw, var(--space-6));
+  padding: var(--space-big);
 }
 
 .v1-about-me-card__content .v1-heading {
-  margin-bottom: var(--space-4);
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-normal);
+  font-size: 3.5rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .v1-about-me-card__description {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-normal);
 }
 
 .v1-about-me-card__description .v1-text {
-  font-size: clamp(1rem, 1.65vw, 1.2rem);
+  font-size: clamp(var(--font-size-normal), 1.65vw, var(--font-size-big));
   line-height: 1.35;
 }
 

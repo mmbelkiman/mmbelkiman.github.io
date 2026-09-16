@@ -14,7 +14,7 @@ export function IdentityHeader({ familyName, givenName, roles }: IdentityHeaderP
             <CodeIcon
               aria-hidden="true"
               className="v1-identity-header__icon"
-              size={30}
+              size="var(--icon-size-big)"
               weight="duotone"
             />
             <h1 className="v1-identity-header__name">

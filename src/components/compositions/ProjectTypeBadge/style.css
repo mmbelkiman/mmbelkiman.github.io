@@ -1,13 +1,13 @@
 .v1-project-type-badge {
   display: inline-flex;
-  gap: var(--space-1);
+  gap: var(--space-nano);
   align-items: center;
   width: fit-content;
-  padding: var(--space-1) var(--space-2);
+  padding: var(--space-nano) var(--space-small);
   border: var(--border-width-thin) solid currentcolor;
   border-radius: var(--radius-sm);
   font-family: var(--font-heading);
-  font-size: 0.75rem;
+  font-size: var(--font-size-nano);
   line-height: 1;
   text-transform: uppercase;
 }

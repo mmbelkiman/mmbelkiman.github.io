@@ -9,7 +9,7 @@
   color: var(--color-text);
   font-family: var(--font-body);
   font-synthesis: none;
-  font-weight: var(--font-weight-body);
+  font-weight: var(--font-weight-big);
   line-height: 1.35;
 }
 
@@ -28,11 +28,11 @@
 
 :where(.v1, .v1-storybook) :focus-visible {
   outline: var(--border-width-strong) solid var(--color-focus);
-  outline-offset: var(--space-1);
+  outline-offset: var(--space-nano);
 }
 
 .v1-storybook {
   min-height: 100dvh;
-  padding: var(--space-6);
+  padding: var(--space-big);
   background: var(--color-page);
 }

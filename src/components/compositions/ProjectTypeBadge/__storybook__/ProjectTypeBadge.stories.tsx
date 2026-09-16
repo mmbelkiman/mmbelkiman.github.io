@@ -11,8 +11,11 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const AllTypes: Story = {
+  args: {
+    type: 'web',
+  },
   render: () => (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-2)' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-small)' }}>
       {PROJECT_TYPE_NAMES.map((type) => (
         <ProjectTypeBadge key={type} type={type} />
       ))}

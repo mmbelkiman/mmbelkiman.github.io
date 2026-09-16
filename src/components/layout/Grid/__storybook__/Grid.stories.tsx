@@ -20,12 +20,12 @@ export const Split40_60: Story = {
   render: () => (
     <Grid rowHeight="7rem">
       <Grid.Column weight={4}>
-        <div style={{ padding: 'var(--space-4)', background: 'var(--color-surface-raised)' }}>
+        <div style={{ padding: 'var(--space-normal)', background: 'var(--color-surface-raised)' }}>
           40%
         </div>
       </Grid.Column>
       <Grid.Column weight={6}>
-        <div style={{ padding: 'var(--space-4)', background: 'var(--color-surface-muted)' }}>
+        <div style={{ padding: 'var(--space-normal)', background: 'var(--color-surface-muted)' }}>
           60%
         </div>
       </Grid.Column>

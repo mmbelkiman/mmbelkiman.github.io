@@ -45,7 +45,7 @@ export function ExperienceTimeline({
                 <strong>{experience.company}</strong>
                 <small>{experience.role}</small>
               </span>
-              <CaretRightIcon aria-hidden="true" size={18} weight="bold" />
+              <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             </span>
           </button>
         )

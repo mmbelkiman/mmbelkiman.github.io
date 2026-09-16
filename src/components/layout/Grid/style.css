@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(var(--v1-grid-columns), minmax(0, 1fr));
   grid-auto-rows: var(--v1-grid-row-height);
-  gap: var(--space-3);
+  gap: var(--space-small);
 }
 
 .v1-grid__column {

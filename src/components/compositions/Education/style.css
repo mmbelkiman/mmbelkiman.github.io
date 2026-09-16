@@ -1,5 +1,5 @@
 .v1-education {
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-small) var(--space-small);
 }
 
 .v1-education__list {
@@ -10,10 +10,10 @@
 
 .v1-education__item {
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-small);
   align-items: center;
   min-width: 0;
-  padding: var(--space-3) 0;
+  padding: var(--space-small) 0;
 }
 
 .v1-education__item + .v1-education__item {
@@ -30,12 +30,12 @@
 
 .v1-education__content {
   display: grid;
-  gap: var(--space-1);
+  gap: var(--space-nano);
   min-width: 0;
 }
 
 .v1-education__content .v1-heading {
-  font-size: 1.05rem;
+  font-size: var(--font-size-normal);
 }
 
 .v1-education__content .v1-text--meta {

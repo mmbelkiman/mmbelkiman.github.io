@@ -1,6 +1,7 @@
 :root[data-theme='v1'] {
   color-scheme: light;
 
+  /**colors**/
   --color-page: #aac1d0;
   --color-surface: #e7f0f5;
   --color-surface-raised: #f6fbfd;
@@ -52,9 +53,12 @@
   --color-panel-header-details: var(--color-text-muted);
   --color-panel-header-border: var(--color-border);
 
-  --shadow-panel: 0 3px 0 rgb(7 35 58 / 24%);
-  --shadow-panel-strong: 0 5px 0 rgb(5 27 47 / 34%);
-  --shadow-inset: inset 0 1px 0 rgb(255 255 255 / 90%);
+  /**colors effects**/
+  --shadow-panel: 0 3px 0 color-mix(in srgb, var(--color-surface-strong) 24%, transparent);
+  --shadow-panel-strong: 0 5px 0
+    color-mix(in srgb, var(--color-surface-strong) 34%, transparent);
+  --shadow-inset: inset 0 1px 0
+    color-mix(in srgb, var(--color-border-highlight) 90%, transparent);
   --gradient-metal-border: linear-gradient(
     135deg,
     var(--color-metal-highlight) 0%,
@@ -67,26 +71,37 @@
     var(--color-metal-highlight) 100%
   );
 
+  /** borders **/
   --border-width-thin: 1px;
   --border-width-strong: 2px;
-  --border-width-metal: 4px;
   --radius-sm: 2px;
   --radius-md: 4px;
 
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
+  /** spaces,paddings,margins **/
+  --space-nano: 0.25rem;
+  --space-small: 0.5rem;
+  --space-normal: 1rem;
+  --space-big: 1.5rem;
   --layout-content-max: 90rem;
+
+  /** fonts **/
+  --font-size-nano: 0.75rem;
+  --font-size-normal: 1rem;
+  --font-size-big: 1.25rem;
+  --font-size-huge: 1.75rem;
+
+  --font-weight-nano: 100;
+  --font-weight-normal: 400;
+  --font-weight-big: 500;
+
+  --letter-spacing-label: 0.04em;
 
   --font-body: 'Rajdhani', 'Arial Narrow', Arial, sans-serif;
   --font-heading: 'Share Tech Mono', 'Courier New', monospace;
-  --font-weight-body: 500;
-  --font-weight-label: 600;
-  --font-weight-role: 100;
-  --font-weight-heading: 400;
-  --font-weight-display: 400;
-  --letter-spacing-label: 0.04em;
+
+  /** icons **/
+  --icon-size-nano: 0.875rem;
+  --icon-size-normal: 1.2rem;
+  --icon-size-big: 1.75rem;
+  --icon-size-huge: 2.25rem;
 }

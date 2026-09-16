@@ -1,9 +1,9 @@
 .v1-local-clock {
   display: grid;
-  gap: var(--space-1);
+  gap: var(--space-nano);
   align-content: center;
   min-height: 100%;
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-small) var(--space-normal);
   color: var(--color-text-primary);
   background: color-mix(in srgb, var(--color-surface-strong) 92%, transparent);
   border-left: var(--border-width-thin) solid var(--color-border-strong);
@@ -20,12 +20,12 @@
 .v1-local-clock > .v1-text,
 .v1-local-clock__date {
   color: var(--color-text-secondary);
-  font-size: 0.6rem;
+  font-size: var(--font-size-nano);
   letter-spacing: var(--letter-spacing-label);
 }
 
 .v1-local-clock__time {
   color: var(--color-text-primary);
-  font-size: clamp(1.3rem, 2.8vw, 1.95rem);
+  font-size: var(--font-size-huge);
   line-height: 1;
 }

@@ -1,11 +1,11 @@
 .v1-skills {
-  padding: var(--space-3);
+  padding: var(--space-small);
 }
 
 .v1-skills__groups {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-3);
+  gap: var(--space-small);
 }
 
 .v1-skills__group {
@@ -17,29 +17,29 @@
 
 .v1-skills__group .v1-heading {
   display: flex;
-  gap: var(--space-1);
+  gap: var(--space-nano);
   align-items: center;
   min-height: 2rem;
-  padding: 0 var(--space-2);
+  padding: 0 var(--space-small);
   color: var(--color-text);
   border-bottom: var(--border-width-thin) solid var(--color-border);
   background: var(--color-surface-inset);
-  font-size: 0.9rem;
+  font-size: var(--font-size-nano);
   text-transform: uppercase;
 }
 
 .v1-skills__technologies {
   display: grid;
   gap: 0;
-  padding: var(--space-1) var(--space-2);
+  padding: var(--space-nano) var(--space-small);
 }
 
 .v1-skills__technologies .v1-project-card__technology {
   justify-content: flex-start;
   min-height: 1.75rem;
-  padding: var(--space-1) 0;
+  padding: var(--space-nano) 0;
   border-bottom: var(--border-width-thin) solid var(--color-border);
-  font-size: 0.8125rem;
+  font-size: var(--font-size-nano);
 }
 
 .v1-skills__technologies .v1-project-card__technology:last-child {

@@ -1,8 +1,8 @@
-.v1-skills-languages-row .v1-grid {
+.v1-skills-row .v1-grid {
   align-items: stretch;
 }
 
-.v1-skills-languages-row .v1-grid__column,
-.v1-skills-languages-row .v1-panel-frame {
+.v1-skills-row .v1-grid__column,
+.v1-skills-row .v1-panel-frame {
   height: 100%;
 }

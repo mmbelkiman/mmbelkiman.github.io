@@ -25,13 +25,13 @@ export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
             <div className="v1-professional-experience-row__company-meta">
               {experience.location ? (
                 <span className="v1-professional-experience-row__location">
-                  <MapPinIcon aria-hidden="true" size={16} weight="fill" />
+                  <MapPinIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
                   {experience.location}
                 </span>
               ) : null}
               {experience.companyType ? (
                 <span className="v1-professional-experience-row__company-type">
-                  <BriefcaseIcon aria-hidden="true" size={16} weight="fill" />
+                  <BriefcaseIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
                   {experience.companyType}
                 </span>
               ) : null}

@@ -31,7 +31,7 @@ export const Default: Story = {
     technologyIconVisibility: { firebase: false },
     imageSrc: '/images/portfolio-previews/pipoclube.jpg',
     imageAlt: 'Project preview',
-    icon: <FilmSlateIcon size={28} weight="fill" />,
+    icon: <FilmSlateIcon size="var(--icon-size-big)" weight="fill" />,
     externalLinks: [{ label: 'Website', url: 'https://example.com' }],
   },
 }

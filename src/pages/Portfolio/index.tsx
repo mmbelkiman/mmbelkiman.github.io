@@ -3,7 +3,7 @@ import { PortfolioProjectsRow } from '@/components/compositions/PageRow/Portfoli
 import { ProfessionalExperienceRow } from '@/components/compositions/PageRow/ProfessionalExperienceRow'
 import { ProfileAboutRow } from '@/components/compositions/PageRow/ProfileAboutRow'
 import { QuickInfoRow } from '@/components/compositions/PageRow/QuickInfoRow'
-import { SkillsLanguagesRow } from '@/components/compositions/PageRow/SkillsLanguagesRow'
+import { SkillsRow } from '@/components/compositions/PageRow/SkillsLanguagesRow'
 import './style.css'
 import type { PortfolioProps } from './types'
 
@@ -13,7 +13,7 @@ export function Portfolio({
   contactAndEducation,
   projects,
   professionalExperience,
-  skillsAndLanguages,
+  skills,
   topRow,
 }: PortfolioProps) {
   return (
@@ -23,7 +23,7 @@ export function Portfolio({
         <ProfileAboutRow />
         <QuickInfoRow />
         <ProfessionalExperienceRow experiences={professionalExperience} />
-        <SkillsLanguagesRow {...skillsAndLanguages} />
+        <SkillsRow {...skills} />
         <ContactEducationRow {...contactAndEducation} />
         <PortfolioProjectsRow projects={projects} />
       </div>

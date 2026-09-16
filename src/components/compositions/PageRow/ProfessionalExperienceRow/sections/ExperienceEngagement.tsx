@@ -35,7 +35,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
 
         <div className="v1-professional-experience-row__engagement-section">
           <div className="v1-professional-experience-row__engagement-label">
-            <CaretRightIcon aria-hidden="true" size={16} weight="bold" />
+            <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             Key responsibilities
           </div>
           <ul className="v1-professional-experience-row__responsibilities">
@@ -47,7 +47,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
 
         <div className="v1-professional-experience-row__engagement-section">
           <div className="v1-professional-experience-row__engagement-label">
-            <CaretRightIcon aria-hidden="true" size={16} weight="bold" />
+            <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             Tech stack
           </div>
           <ul className="v1-project-card__technologies">

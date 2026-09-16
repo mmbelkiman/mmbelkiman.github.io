@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   render: (args) => (
     <PanelFrame header={<PanelHeader {...args} />}>
-      <div style={{ padding: 'var(--space-4)' }}>
+      <div style={{ padding: 'var(--space-normal)' }}>
         <Text>Panel content.</Text>
       </div>
     </PanelFrame>

@@ -1,18 +1,18 @@
 .v1-portfolio-page {
   min-height: 100%;
-  padding: var(--space-4);
+  padding: var(--space-normal);
   background: var(--color-page);
 }
 
 .v1-portfolio-page__content {
   display: grid;
   width: min(100%, var(--layout-content-max));
-  gap: var(--space-3);
+  gap: var(--space-small);
   margin: 0 auto;
 }
 
 @media (max-width: 40rem) {
   .v1-portfolio-page {
-    padding: var(--space-2);
+    padding: var(--space-small);
   }
 }

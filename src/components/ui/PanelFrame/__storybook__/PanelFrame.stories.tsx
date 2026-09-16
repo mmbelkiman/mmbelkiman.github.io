@@ -15,14 +15,14 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: <div style={{ padding: 'var(--space-4)' }}>{content}</div>,
+    children: <div style={{ padding: 'var(--space-normal)' }}>{content}</div>,
   },
 }
 
 export const Dark: Story = {
   args: {
     children: (
-      <div style={{ padding: 'var(--space-4)' }}>
+      <div style={{ padding: 'var(--space-normal)' }}>
         <Text>High-emphasis panel content.</Text>
       </div>
     ),

@@ -1,5 +1,5 @@
 .v1-contact-links {
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-small) var(--space-small);
 }
 
 .v1-contact-links__list {
@@ -14,10 +14,10 @@
 
 .v1-contact-links__item a {
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-small);
   align-items: center;
   min-width: 0;
-  padding: var(--space-3) 0;
+  padding: var(--space-small) 0;
   color: inherit;
   text-decoration: none;
 }
@@ -42,16 +42,16 @@
 }
 
 .v1-contact-links__icon svg {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: var(--icon-size-huge);
+  height: var(--icon-size-huge);
 }
 
 .v1-contact-links__content {
   display: grid;
-  gap: var(--space-1);
+  gap: var(--space-nano);
   min-width: 0;
 }
 
 .v1-contact-links__content .v1-heading {
-  font-size: 1.1rem;
+  font-size: var(--font-size-big);
 }

@@ -20,7 +20,7 @@ export function ProjectTypeBadge({ type }: ProjectTypeBadgeProps) {
 
   return (
     <span className={`v1-project-type-badge v1-project-type-badge--${type}`}>
-      <Icon aria-hidden="true" size={15} weight="bold" />
+      <Icon aria-hidden="true" size="var(--icon-size-nano)" weight="bold" />
       {label}
     </span>
   )

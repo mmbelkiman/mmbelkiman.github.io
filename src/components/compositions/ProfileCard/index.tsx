@@ -28,7 +28,7 @@ export function ProfileCard() {
         </div>
 
         <div className="v1-profile-card__location">
-          <MapPinIcon aria-hidden="true" size={20} weight="fill" />
+          <MapPinIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
           <Text color="secondary" size="meta">
             {PROFILE_CARD_CONTENT.location}
           </Text>

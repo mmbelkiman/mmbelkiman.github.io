@@ -1,8 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import {
-  ProjectTechnology,
-  PROJECT_TECHNOLOGY_NAMES,
-} from '@/components/compositions/ProjectCard'
+import { ProjectTechnology, PROJECT_TECHNOLOGY_NAMES } from '@/components/compositions/ProjectCard'
 
 const meta = {
   title: 'Compositions/Project Technology',
@@ -14,6 +11,9 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const AllTechnologies: Story = {
+  args: {
+    tech: 'react',
+  },
   render: () => (
     <ul className="v1-project-card__technologies">
       {PROJECT_TECHNOLOGY_NAMES.map((tech) => (

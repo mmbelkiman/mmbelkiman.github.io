@@ -1,8 +1,8 @@
 .v1-portfolio-projects-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-2);
-  padding: var(--space-2);
+  gap: var(--space-small);
+  padding: var(--space-small);
 }
 
 .v1-portfolio-projects-row > .v1-panel-frame {

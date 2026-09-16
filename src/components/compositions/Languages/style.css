@@ -1,10 +1,10 @@
 .v1-languages {
-  padding: var(--space-3);
+  padding: var(--space-small);
 }
 
 .v1-languages__list {
   display: grid;
-  gap: var(--space-3);
+  gap: var(--space-small);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -12,7 +12,7 @@
 
 .v1-languages__item {
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
@@ -31,14 +31,14 @@
   border: var(--border-width-thin) solid var(--color-border-strong);
   border-radius: var(--radius-sm);
   background: var(--color-surface-inset);
-  font-size: 1.75rem;
+  font-size: var(--font-size-huge);
   line-height: 1;
 }
 
 .v1-languages__item .v1-heading {
-  font-size: 1.1rem;
+  font-size: var(--font-size-big);
 }
 
 .v1-languages__item .v1-text {
-  margin-top: var(--space-1);
+  margin-top: var(--space-nano);
 }

@@ -54,5 +54,9 @@ export const Default: Story = {
         logoAlt: 'Wyden Metrocamp logo',
       },
     ],
+    languages: [
+      { flag: '🇧🇷', name: 'Portuguese', proficiency: 'Native' },
+      { flag: '🇺🇸', name: 'English', proficiency: 'Professional' },
+    ],
   },
 }

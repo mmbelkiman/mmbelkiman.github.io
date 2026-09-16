@@ -9,18 +9,18 @@
   --panel-header-details: var(--color-panel-header-details);
 
   display: flex;
-  gap: var(--space-3);
+  gap: var(--space-small);
   align-items: center;
   justify-content: space-between;
   min-height: 1.5rem;
-  padding: 0 var(--space-3);
+  padding: 0 var(--space-small);
   color: var(--panel-header-text);
   background: var(--panel-header-surface);
   border-bottom: var(--border-width-thin) solid var(--color-panel-header-border);
   box-shadow: var(--shadow-inset);
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: var(--font-weight-heading);
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-normal);
   letter-spacing: var(--letter-spacing-label);
   line-height: 1;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
 .v1-panel-header__label,
 .v1-panel-header__details {
   display: inline-flex;
-  gap: var(--space-2);
+  gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
@@ -48,6 +48,6 @@
   flex: 0 0 auto;
   color: var(--panel-header-details);
   font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: var(--font-weight-label);
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-big);
 }

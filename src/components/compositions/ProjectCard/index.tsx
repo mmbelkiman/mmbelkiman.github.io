@@ -50,7 +50,7 @@ export function ProjectCard({
                     <StarIcon
                       aria-hidden="true"
                       className="v1-project-card__featured-icon"
-                      size={20}
+                      size="var(--icon-size-normal)"
                       weight="fill"
                     />
                   ) : null}
@@ -71,7 +71,11 @@ export function ProjectCard({
                       <span>{externalLink.label}:</span>
                       <a href={externalLink.url} rel="noreferrer" target="_blank">
                         {getExternalLinkText(externalLink.url)}
-                        <ArrowSquareOutIcon aria-hidden="true" size={15} weight="bold" />
+                        <ArrowSquareOutIcon
+                          aria-hidden="true"
+                          size="var(--icon-size-nano)"
+                          weight="bold"
+                        />
                       </a>
                     </li>
                   ))}
@@ -94,7 +98,7 @@ export function ProjectCard({
           <div className="v1-project-card__media-column">
             {year ? (
               <span className="v1-project-card__year">
-                <CalendarIcon aria-hidden="true" size={16} weight="bold" />
+                <CalendarIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {year}
               </span>
             ) : null}

@@ -51,15 +51,11 @@ export const Default: Story = {
         ],
       },
     ],
-    skillsAndLanguages: {
+    skills: {
       skillGroups: [
         { title: 'Frontend', technologies: ['react', 'react-native', 'typescript'] },
         { title: 'Backend', technologies: ['node-js', 'postgresql'] },
         { title: 'Tools & others', technologies: ['firebase'] },
-      ],
-      languages: [
-        { flag: '🇧🇷', name: 'Portuguese', proficiency: 'Native' },
-        { flag: '🇺🇸', name: 'English', proficiency: 'Professional' },
       ],
     },
     contactAndEducation: {
@@ -98,6 +94,10 @@ export const Default: Story = {
           logoSrc: '/img-metrocamp.png',
           logoAlt: 'Wyden Metrocamp logo',
         },
+      ],
+      languages: [
+        { flag: '🇧🇷', name: 'Portuguese', proficiency: 'Native' },
+        { flag: '🇺🇸', name: 'English', proficiency: 'Professional' },
       ],
     },
     projects: [

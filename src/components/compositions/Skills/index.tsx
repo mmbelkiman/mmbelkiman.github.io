@@ -16,7 +16,7 @@ export function Skills({ groups }: SkillsProps) {
           {groups.map((group) => (
             <section className="v1-skills__group" key={group.title}>
               <Heading level={3}>
-                <CaretRightIcon aria-hidden="true" size={16} weight="bold" />
+                <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {group.title}
               </Heading>
               <ul className="v1-project-card__technologies v1-skills__technologies">
