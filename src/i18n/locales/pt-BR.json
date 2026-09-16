@@ -504,5 +504,21 @@
         "•\tEntre os clientes, 'Companhia Aérea TAM', 'Escola de Aviação EDAPA', 'Escola de Aviação EJ', 'Aeroclube de Bragança'."
       ]
     }
+  },
+  "v1": {
+    "profile": { "location": "Campinas, São Paulo — Brasil" },
+    "roles": {
+      "softwareEngineer": "Engenheiro de Software",
+      "mobileDeveloper": "Desenvolvedor Mobile",
+      "fullStack": "Desenvolvedor Full Stack"
+    },
+    "skills": { "frontend": "Frontend", "backend": "Backend", "tools": "Ferramentas e outros" },
+    "languages": { "professional": "Profissional" },
+    "contact": { "email": "E-mail" },
+    "projectTypes": { "game": "Jogo", "software": "Software" },
+    "projectDescriptions": {
+      "game": "Projeto de desenvolvimento de jogos criado para explorar experiências interativas.",
+      "software": "Projeto de software focado em entregar uma experiência digital prática."
+    }
   }
 }

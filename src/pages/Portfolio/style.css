@@ -11,6 +11,29 @@
   margin: 0 auto;
 }
 
+.v1-portfolio-page__language-toggle {
+  justify-self: end;
+  padding: var(--space-nano) var(--space-small);
+  color: var(--color-text);
+  background: var(--color-surface-raised);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font: var(--font-weight-big) var(--font-size-nano) var(--font-heading);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.v1-portfolio-page__language-toggle:hover {
+  color: var(--color-accent-hover);
+  border-color: var(--color-accent);
+}
+
+.v1-portfolio-page__language-toggle:focus-visible {
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: var(--space-nano);
+}
+
 @media (max-width: 40rem) {
   .v1-portfolio-page {
     padding: var(--space-small);

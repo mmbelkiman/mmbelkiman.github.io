@@ -3,7 +3,7 @@ import type { PortfolioProjectsRowProps } from '@/components/compositions/PageRo
 import type { ProfessionalExperienceRowProps } from '@/components/compositions/PageRow/ProfessionalExperienceRow'
 import type { SkillsRowProps } from '@/components/compositions/PageRow/SkillsLanguagesRow'
 
-export type PortfolioProps = {
+export type PortfolioContent = {
   contactAndEducation: ContactEducationRowProps
   projects: PortfolioProjectsRowProps['projects']
   professionalExperience: ProfessionalExperienceRowProps['experiences']

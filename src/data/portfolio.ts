@@ -1,6 +1,42 @@
-import type { PortfolioCardProps } from '@/legacy/PortfolioCard.tsx'
+export type PortfolioTechnology =
+  | 'construct2'
+  | 'csharp'
+  | 'htmlCss'
+  | 'java'
+  | 'javascript'
+  | 'monogame'
+  | 'nodeJs'
+  | 'php'
+  | 'reactNative'
+  | 'sql'
+  | 'typescript'
+  | 'unity'
 
-export const portfolioItems: PortfolioCardProps[] = [
+export type PortfolioLink = {
+  className?: string
+  compact?: boolean
+  href: string
+  labelKey: string
+  textKey: string
+}
+
+export type PortfolioItem = {
+  category: 'software' | 'game'
+  descriptionKeys?: string[]
+  linkSpacer?: boolean
+  links?: PortfolioLink[]
+  posterUrl: string
+  supplementaryImage?: {
+    src: string
+    width: string
+  }
+  technologies: PortfolioTechnology[]
+  titleKey: string
+  videoUrl: string
+  yearKey?: string
+}
+
+export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.tictac.title',
     videoUrl: '/videos/tictac.webm',

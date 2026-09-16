@@ -260,5 +260,21 @@
       "period": "08/2007 ~ 08/2008",
       "role": "Developer/Programmer"
     }
+  },
+  "v1": {
+    "profile": { "location": "Campinas, São Paulo — Brazil" },
+    "roles": {
+      "softwareEngineer": "Software Engineer",
+      "mobileDeveloper": "Mobile Developer",
+      "fullStack": "Full Stack Developer"
+    },
+    "skills": { "frontend": "Frontend", "backend": "Backend", "tools": "Tools & others" },
+    "languages": { "professional": "Professional" },
+    "contact": { "email": "Email" },
+    "projectTypes": { "game": "Game", "software": "Software" },
+    "projectDescriptions": {
+      "game": "A game development project created to explore interactive experiences.",
+      "software": "A software project focused on delivering a practical digital experience."
+    }
   }
 }

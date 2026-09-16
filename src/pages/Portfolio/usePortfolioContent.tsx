@@ -1,0 +1,149 @@
+import { EnvelopeIcon } from '@phosphor-icons/react/dist/csr/Envelope'
+import { CodeIcon } from '@phosphor-icons/react/dist/csr/Code'
+import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
+import { GithubLogoIcon } from '@phosphor-icons/react/dist/csr/GithubLogo'
+import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/csr/LinkedinLogo'
+import { useTranslation } from 'react-i18next'
+import { academicEducation } from '@/data/academicEducation'
+import { portfolioItems, type PortfolioTechnology } from '@/data/portfolio'
+import { professionalExperiences } from '@/data/professionalExperiences'
+import type { ProjectTechnologyName } from '@/components/compositions/ProjectCard'
+import type { PortfolioContent } from './types'
+
+const TECHNOLOGY_MAP: Record<PortfolioTechnology, ProjectTechnologyName> = {
+  construct2: 'html-css',
+  csharp: 'csharp',
+  htmlCss: 'html-css',
+  java: 'java',
+  javascript: 'javascript',
+  monogame: 'monogame',
+  nodeJs: 'node-js',
+  php: 'php',
+  reactNative: 'react-native',
+  sql: 'sql',
+  typescript: 'typescript',
+  unity: 'unity',
+}
+
+function formatMonth(month: number, locale: string) {
+  return new Intl.DateTimeFormat(locale, { month: 'short' }).format(new Date(2020, month - 1, 1))
+}
+
+function getPeriod(period: string, locale: string) {
+  const dates = [...period.matchAll(/(\d{2})\/(\d{4})/g)].map(([, month, year]) => ({
+    month: formatMonth(Number(month), locale),
+    year: Number(year),
+  }))
+
+  return { end: dates[1], start: dates[0] ?? { month: '', year: 0 } }
+}
+
+export function usePortfolioContent(): PortfolioContent {
+  const { i18n, t } = useTranslation()
+  const locale = i18n.resolvedLanguage === 'pt-BR' ? 'pt-BR' : 'en-US'
+  const getTextList = (key?: string) => {
+    if (!key) return []
+
+    const value = t(key, { returnObjects: true })
+    return Array.isArray(value) ? value.map(String).filter(Boolean) : []
+  }
+
+  return {
+    topRow: {
+      familyName: 'Belkiman',
+      givenName: 'Marcelo',
+      locale,
+      locationLabel: t('v1.profile.location'),
+      roles: [t('v1.roles.softwareEngineer'), t('v1.roles.mobileDeveloper'), t('v1.roles.fullStack')],
+      timeZone: 'America/Sao_Paulo',
+    },
+    professionalExperience: professionalExperiences.map((experience) => {
+      const description = getTextList(experience.descriptionsKey).join(' ')
+
+      return {
+        company: t(experience.titleKey),
+        description,
+        id: experience.titleKey,
+        logo: `/${experience.logoUrl}`,
+        period: getPeriod(t(experience.periodKey), locale),
+        role: t(experience.roleKey),
+      }
+    }),
+    skills: {
+      skillGroups: [
+        {
+          title: t('v1.skills.frontend'),
+          technologies: ['react', 'react-native', 'typescript', 'javascript', 'html-css'],
+        },
+        {
+          title: t('v1.skills.backend'),
+          technologies: ['node-js', 'postgresql', 'php', 'java', 'sql'],
+        },
+        {
+          title: t('v1.skills.tools'),
+          technologies: ['firebase', 'unity', 'monogame', 'csharp'],
+        },
+      ],
+    },
+    contactAndEducation: {
+      contactLinks: [
+        {
+          href: 'https://www.linkedin.com/in/marcelobelkiman',
+          icon: <LinkedinLogoIcon weight="fill" />,
+          label: 'LinkedIn',
+          value: '/marcelobelkiman',
+        },
+        {
+          href: 'https://github.com/mmbelkiman',
+          icon: <GithubLogoIcon weight="fill" />,
+          label: 'GitHub',
+          value: '/mmbelkiman',
+        },
+        {
+          href: 'mailto:marcelobelkiman@gmail.com',
+          icon: <EnvelopeIcon weight="bold" />,
+          label: t('v1.contact.email'),
+          value: 'marcelobelkiman@gmail.com',
+        },
+      ],
+      education: academicEducation.map((education) => ({
+        institution: t(education.institutionKey),
+        logoAlt: t(education.institutionKey),
+        logoSrc: `/${education.logoUrl}`,
+        period: t(education.periodKey),
+        title: t(education.titleKey),
+      })),
+      languages: [
+        { flag: '🇧🇷', name: t('home.language-port-1'), proficiency: t('home.language-port-2') },
+        { flag: '🇺🇸', name: t('home.language-eng-1'), proficiency: t('v1.languages.professional') },
+      ],
+    },
+    projects: portfolioItems.map((project) => {
+      const description = project.descriptionKeys?.map((key) => t(key)).filter(Boolean).join(' ')
+      const projectType = project.category
+
+      return {
+        description: description || t(`v1.projectDescriptions.${projectType}`),
+        externalLinks: project.links?.map((link) => ({ label: t(link.labelKey), url: link.href })),
+        featured: ['portfolio.pipoclube.title', 'portfolio.epicGolf2d.title', 'portfolio.aulapp.title'].includes(
+          project.titleKey,
+        ),
+        icon:
+          projectType === 'game' ? (
+            <GameControllerIcon weight="fill" />
+          ) : (
+            <CodeIcon weight="fill" />
+          ),
+        id: project.titleKey,
+        imageAlt: t(project.titleKey),
+        imageSrc: project.posterUrl,
+        projectType,
+        subtitle: t(`v1.projectTypes.${projectType}`),
+        technologies: project.technologies.map((technology) => TECHNOLOGY_MAP[technology]),
+        technologyBackground: 'transparent' as const,
+        title: t(project.titleKey),
+        year: t(project.yearKey ?? ''),
+      }
+    }),
+  }
+}

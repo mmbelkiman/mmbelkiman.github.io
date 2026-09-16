@@ -7,7 +7,20 @@ export type ProjectExternalLink = {
 }
 
 export type ProjectTechnologyName =
-  'firebase' | 'node-js' | 'postgresql' | 'react' | 'react-native' | 'typescript'
+  | 'csharp'
+  | 'firebase'
+  | 'html-css'
+  | 'java'
+  | 'javascript'
+  | 'monogame'
+  | 'node-js'
+  | 'php'
+  | 'postgresql'
+  | 'react'
+  | 'react-native'
+  | 'sql'
+  | 'typescript'
+  | 'unity'
 
 export type ProjectTechnologyBackground = 'filled' | 'transparent'
 
