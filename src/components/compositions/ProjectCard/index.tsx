@@ -1,6 +1,8 @@
 import { ArrowSquareOutIcon } from '@phosphor-icons/react/dist/csr/ArrowSquareOut'
 import { CalendarIcon } from '@phosphor-icons/react/dist/csr/Calendar'
+import { PlayIcon } from '@phosphor-icons/react/dist/csr/Play'
 import { StarIcon } from '@phosphor-icons/react/dist/csr/Star'
+import { useRef, useState } from 'react'
 import { ProjectTypeBadge } from '@/components/compositions/ProjectTypeBadge'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
@@ -33,23 +35,32 @@ export function ProjectCard({
   technologyBackground,
   technologyIconVisibility,
   title,
+  videoSrc,
   year,
 }: ProjectCardProps) {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+  const [isVideoPaused, setIsVideoPaused] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const resumeVideo = () => {
+    void videoRef.current?.play()
+  }
+
   return (
-    <PanelFrame tone="dark">
-      <article className="v1-project-card">
-        <div className="v1-project-card__content">
-          <div className="v1-project-card__summary">
-            <header className="v1-project-card__header">
-              <span aria-hidden="true" className="v1-project-card__icon">
+    <PanelFrame tone={featured ? 'dark' : 'default'}>
+      <article className={`project-card${featured ? ' project-card--featured' : ''}`}>
+        <div className="project-card__content">
+          <div className="project-card__summary">
+            <header className="project-card__header">
+              <span aria-hidden="true" className="project-card__icon">
                 {icon}
               </span>
-              <div className="v1-project-card__identity">
+              <div className="project-card__identity">
                 <Heading level={2}>
                   {featured ? (
                     <StarIcon
                       aria-hidden="true"
-                      className="v1-project-card__featured-icon"
+                      className="project-card__featured-icon"
                       size="var(--icon-size-normal)"
                       weight="fill"
                     />
@@ -60,12 +71,12 @@ export function ProjectCard({
                 {projectType ? <ProjectTypeBadge type={projectType} /> : null}
               </div>
             </header>
-            <div className="v1-project-card__description">
+            <div className="project-card__description">
               <Text color="secondary">{description}</Text>
             </div>
             {externalLinks?.length ? (
-              <div className="v1-project-card__link-section">
-                <ul className="v1-project-card__external-links">
+              <div className="project-card__link-section">
+                <ul className="project-card__external-links">
                   {externalLinks.map((externalLink) => (
                     <li key={externalLink.url}>
                       <span>{externalLink.label}:</span>
@@ -82,8 +93,8 @@ export function ProjectCard({
                 </ul>
               </div>
             ) : null}
-            <div className="v1-project-card__technology-stack">
-              <ul className="v1-project-card__technologies">
+            <div className="project-card__technology-stack">
+              <ul className="project-card__technologies">
                 {technologies.map((tech) => (
                   <ProjectTechnology
                     bg={technologyBackground}
@@ -95,15 +106,67 @@ export function ProjectCard({
               </ul>
             </div>
           </div>
-          <div className="v1-project-card__media-column">
+          <div className="project-card__media-column">
             {year ? (
-              <span className="v1-project-card__year">
+              <span className="project-card__year">
                 <CalendarIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {year}
               </span>
             ) : null}
-            <div className="v1-project-card__media-frame">
-              <img alt={imageAlt} className="v1-project-card__image" src={imageSrc} />
+            <div className="project-card__media-frame">
+              {videoSrc ? (
+                isVideoLoaded ? (
+                  <video
+                    aria-label={imageAlt}
+                    autoPlay
+                    className="project-card__media"
+                    loop
+                    muted
+                    onClick={(event) => {
+                      const video = event.currentTarget
+
+                      if (video.paused) {
+                        void video.play()
+                        return
+                      }
+
+                      video.pause()
+                    }}
+                    onPause={() => setIsVideoPaused(true)}
+                    onPlay={() => setIsVideoPaused(false)}
+                    playsInline
+                    poster={imageSrc}
+                    ref={videoRef}
+                    src={videoSrc}
+                  />
+                ) : (
+                  <button
+                    aria-label={`Play ${title} preview`}
+                    className="project-card__play-trigger"
+                    onClick={() => setIsVideoLoaded(true)}
+                    type="button"
+                  >
+                    <img alt={imageAlt} className="project-card__media" src={imageSrc} />
+                    <span aria-hidden="true" className="project-card__play-icon">
+                      <PlayIcon weight="fill" />
+                    </span>
+                  </button>
+                )
+              ) : (
+                <img alt={imageAlt} className="project-card__media" src={imageSrc} />
+              )}
+              {isVideoLoaded && isVideoPaused ? (
+                <button
+                  aria-label={`Resume ${title} preview`}
+                  className="project-card__play-overlay"
+                  onClick={resumeVideo}
+                  type="button"
+                >
+                  <span aria-hidden="true" className="project-card__play-icon">
+                    <PlayIcon weight="fill" />
+                  </span>
+                </button>
+              ) : null}
             </div>
           </div>
         </div>

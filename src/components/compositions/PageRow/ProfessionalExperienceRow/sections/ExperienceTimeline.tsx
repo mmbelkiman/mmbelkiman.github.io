@@ -17,7 +17,7 @@ export function ExperienceTimeline({
   return (
     <nav
       aria-label="Professional experience timeline"
-      className="v1-professional-experience-row__timeline"
+      className="professional-experience-row__timeline"
     >
       {experiences.map((experience) => {
         const isSelected = experience.id === selectedExperienceId
@@ -25,13 +25,13 @@ export function ExperienceTimeline({
         return (
           <button
             aria-current={isSelected ? 'true' : undefined}
-            className="v1-professional-experience-row__timeline-item"
+            className="professional-experience-row__timeline-item"
             key={experience.id}
             onClick={() => onSelect(experience.id)}
             type="button"
           >
-            <span aria-hidden="true" className="v1-professional-experience-row__timeline-marker" />
-            <span className="v1-professional-experience-row__timeline-period">
+            <span aria-hidden="true" className="professional-experience-row__timeline-marker" />
+            <span className="professional-experience-row__timeline-period">
               <span>{formatExperienceMonthYear(experience.period.start)}</span>
               <span>
                 {experience.period.end
@@ -39,9 +39,9 @@ export function ExperienceTimeline({
                   : 'Present'}
               </span>
             </span>
-            <span className="v1-professional-experience-row__timeline-company">
+            <span className="professional-experience-row__timeline-company">
               <CompanyLogo company={experience.company} logo={experience.logo} />
-              <span className="v1-professional-experience-row__timeline-copy">
+              <span className="professional-experience-row__timeline-copy">
                 <strong>{experience.company}</strong>
                 <small>{experience.role}</small>
               </span>

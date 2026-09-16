@@ -1,21 +1,21 @@
-.v1-clock-player-header {
+.clock-player-header {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   min-height: 6.5rem;
 }
 
-.v1-clock-player-header__city {
+.clock-player-header__city {
   position: absolute;
   inset: 0;
   z-index: 0;
 }
 
-.v1-clock-player-header__city .v1-city-landscape-parallax {
+.clock-player-header__city .city-landscape-parallax {
   height: 100%;
 }
 
-.v1-clock-player-header > .v1-spotify-player {
+.clock-player-header > .spotify-player {
   position: absolute;
   top: 50%;
   left: 0;
@@ -23,7 +23,7 @@
   transform: translateY(-50%);
 }
 
-.v1-clock-player-header__city > .v1-local-clock {
+.clock-player-header__city > .local-clock {
   position: absolute;
   top: 0;
   right: 0;
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 42rem) {
-  .v1-clock-player-header__city > .v1-local-clock {
+  .clock-player-header__city > .local-clock {
     height: 4.9rem;
   }
 }

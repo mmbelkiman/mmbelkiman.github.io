@@ -10,11 +10,11 @@ export type { Language, LanguagesProps } from './types'
 export function Languages({ languages }: LanguagesProps) {
   return (
     <PanelFrame header={<PanelHeader label="Languages" />}>
-      <section aria-label="Languages" className="v1-languages">
-        <ul className="v1-languages__list">
+      <section aria-label="Languages" className="languages">
+        <ul className="languages__list">
           {languages.map((language) => (
-            <li className="v1-languages__item" key={language.name}>
-              <span aria-hidden="true" className="v1-languages__flag">
+            <li className="languages__item" key={language.name}>
+              <span aria-hidden="true" className="languages__flag">
                 {language.flag}
               </span>
               <div>

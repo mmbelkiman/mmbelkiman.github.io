@@ -1,20 +1,20 @@
-.v1-portfolio-top-row .v1-grid {
+.portfolio-top-row .grid {
   align-items: stretch;
 }
 
-.v1-portfolio-top-row .v1-grid__column {
+.portfolio-top-row .grid__column {
   height: 100%;
 }
 
-.v1-portfolio-top-row .v1-grid__column > .v1-panel-frame {
+.portfolio-top-row .grid__column > .panel-frame {
   height: 100%;
 }
 
-.v1-portfolio-top-row .v1-panel-frame__content,
-.v1-portfolio-top-row .v1-identity-header {
+.portfolio-top-row .panel-frame__content,
+.portfolio-top-row .identity-header {
   height: 100%;
 }
 
-.v1-portfolio-top-row .v1-identity-header {
+.portfolio-top-row .identity-header {
   box-sizing: border-box;
 }

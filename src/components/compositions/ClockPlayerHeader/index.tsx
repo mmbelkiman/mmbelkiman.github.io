@@ -15,8 +15,8 @@ export function ClockPlayerHeader({
 }: ClockPlayerHeaderProps) {
   return (
     <PanelFrame tone="dark">
-      <section aria-label="Now playing and local time" className="v1-clock-player-header">
-        <div className="v1-clock-player-header__city">
+      <section aria-label="Now playing and local time" className="clock-player-header">
+        <div className="clock-player-header__city">
           <CityLandscapeParallax timeZone={timeZone} />
           <LocalClock locale={locale} locationLabel={locationLabel} timeZone={timeZone} />
         </div>

@@ -1,8 +1,8 @@
-.v1-languages {
+.languages {
   padding: var(--space-small);
 }
 
-.v1-languages__list {
+.languages__list {
   display: grid;
   gap: var(--space-small);
   padding: 0;
@@ -10,18 +10,18 @@
   list-style: none;
 }
 
-.v1-languages__item {
+.languages__item {
   display: flex;
   gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
 
-.v1-languages__item > div {
+.languages__item > div {
   min-width: 0;
 }
 
-.v1-languages__flag {
+.languages__flag {
   display: grid;
   flex: 0 0 auto;
   width: 3rem;
@@ -35,10 +35,10 @@
   line-height: 1;
 }
 
-.v1-languages__item .v1-heading {
+.languages__item .heading {
   font-size: var(--font-size-big);
 }
 
-.v1-languages__item .v1-text {
+.languages__item .text {
   margin-top: var(--space-nano);
 }

@@ -17,7 +17,7 @@ export function PortfolioTopRow({
   timeZone,
 }: PortfolioTopRowProps) {
   return (
-    <header className="v1-portfolio-top-row">
+    <header className="portfolio-top-row">
       <Grid rowHeight="7rem">
         <Grid.Column weight={3}>
           <IdentityHeader familyName={familyName} givenName={givenName} roles={roles} />

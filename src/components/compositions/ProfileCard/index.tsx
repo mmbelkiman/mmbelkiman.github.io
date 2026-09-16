@@ -11,23 +11,23 @@ import './style.css'
 export function ProfileCard() {
   return (
     <PanelFrame header={<PanelHeader label="Profile" />}>
-      <section aria-label="Profile" className="v1-profile-card">
-        <div className="v1-profile-card__photo-frame">
-          <img alt="Marcelo Belkiman" className="v1-profile-card__photo" src={profileImage} />
+      <section aria-label="Profile" className="profile-card">
+        <div className="profile-card__photo-frame">
+          <img alt="Marcelo Belkiman" className="profile-card__photo" src={profileImage} />
           <img
             alt=""
             aria-hidden="true"
-            className="v1-profile-card__photo-static"
+            className="profile-card__photo-static"
             src={photoStatic}
           />
         </div>
 
-        <div className="v1-profile-card__details">
+        <div className="profile-card__details">
           <Heading level={2}>{PROFILE_CARD_CONTENT.name}</Heading>
           <Text color="secondary">{PROFILE_CARD_CONTENT.subtitle}</Text>
         </div>
 
-        <div className="v1-profile-card__location">
+        <div className="profile-card__location">
           <MapPinIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
           <Text color="secondary" size="meta">
             {PROFILE_CARD_CONTENT.location}

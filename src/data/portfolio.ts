@@ -23,6 +23,7 @@ export type PortfolioLink = {
 export type PortfolioItem = {
   category: 'software' | 'game'
   descriptionKeys?: string[]
+  featured?: boolean
   linkSpacer?: boolean
   links?: PortfolioLink[]
   posterUrl: string
@@ -69,6 +70,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     titleKey: 'portfolio.pipoclube.title',
+    featured: true,
     videoUrl: '/videos/pipoclube.webm',
     posterUrl: '/images/portfolio-previews/pipoclube.jpg',
     category: 'software',
@@ -137,6 +139,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     titleKey: 'portfolio.epicGolf2d.title',
+    featured: true,
     videoUrl: '/videos/epicgolf2d.webm',
     posterUrl: '/images/portfolio-previews/epicgolf2d.jpg',
     category: 'game',

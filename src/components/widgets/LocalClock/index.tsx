@@ -18,14 +18,14 @@ export function LocalClock({ locale, locationLabel, now, timeZone }: LocalClockP
   const date = formatLocalDate({ locale, time: displayedTime, timeZone: resolvedTimeZone })
   const time = formatLocalTime({ locale, time: displayedTime, timeZone: resolvedTimeZone })
   return (
-    <section aria-label="Local date and time" className="v1-local-clock">
+    <section aria-label="Local date and time" className="local-clock">
       <Text color="secondary" size="meta">
         {locationLabel ?? getLocationFromTimeZone(resolvedTimeZone)}
       </Text>
-      <time className="v1-local-clock__time" dateTime={displayedTime.toISOString()}>
+      <time className="local-clock__time" dateTime={displayedTime.toISOString()}>
         {time}
       </time>
-      <time className="v1-local-clock__date" dateTime={displayedTime.toISOString()}>
+      <time className="local-clock__date" dateTime={displayedTime.toISOString()}>
         {date}
       </time>
     </section>

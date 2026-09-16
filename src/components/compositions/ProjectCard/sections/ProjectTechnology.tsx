@@ -18,7 +18,7 @@ export function ProjectTechnology({
 
   return (
     <li
-      className={`v1-project-card__technology v1-project-card__technology--${tech} v1-project-card__technology--bg-${bg} v1-project-card__technology--border-${border}`}
+      className={`project-card__technology project-card__technology--${tech} project-card__technology--bg-${bg} project-card__technology--border-${border}`}
     >
       {showIcon ? <Icon aria-hidden="true" weight="fill" /> : null}
       {label}

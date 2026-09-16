@@ -11,15 +11,15 @@ export type { SkillsGroup, SkillsProps } from './types'
 export function Skills({ groups }: SkillsProps) {
   return (
     <PanelFrame header={<PanelHeader label="Skills" />}>
-      <section aria-label="Skills" className="v1-skills">
-        <div className="v1-skills__groups">
+      <section aria-label="Skills" className="skills">
+        <div className="skills__groups">
           {groups.map((group) => (
-            <section className="v1-skills__group" key={group.title}>
+            <section className="skills__group" key={group.title}>
               <Heading level={3}>
                 <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {group.title}
               </Heading>
-              <ul className="v1-project-card__technologies v1-skills__technologies">
+              <ul className="project-card__technologies skills__technologies">
                 {group.technologies.map((technology) => (
                   <ProjectTechnology
                     bg="transparent"

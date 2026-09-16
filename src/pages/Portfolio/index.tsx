@@ -19,9 +19,9 @@ export function Portfolio() {
   }
 
   return (
-    <main className="v1-portfolio-page">
-      <div className="v1-portfolio-page__content">
-        <button className="v1-portfolio-page__language-toggle" onClick={toggleLanguage} type="button">
+    <main className="portfolio-page">
+      <div className="portfolio-page__content">
+        <button className="portfolio-page__language-toggle" onClick={toggleLanguage} type="button">
           {t('menu.switchLanguage')}
         </button>
         <PortfolioTopRow {...topRow} />

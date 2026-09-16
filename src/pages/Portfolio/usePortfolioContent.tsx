@@ -125,9 +125,7 @@ export function usePortfolioContent(): PortfolioContent {
       return {
         description: description || t(`v1.projectDescriptions.${projectType}`),
         externalLinks: project.links?.map((link) => ({ label: t(link.labelKey), url: link.href })),
-        featured: ['portfolio.pipoclube.title', 'portfolio.epicGolf2d.title', 'portfolio.aulapp.title'].includes(
-          project.titleKey,
-        ),
+        featured: project.featured,
         icon:
           projectType === 'game' ? (
             <GameControllerIcon weight="fill" />
@@ -142,6 +140,7 @@ export function usePortfolioContent(): PortfolioContent {
         technologies: project.technologies.map((technology) => TECHNOLOGY_MAP[technology]),
         technologyBackground: 'transparent' as const,
         title: t(project.titleKey),
+        videoSrc: project.videoUrl,
         year: t(project.yearKey ?? ''),
       }
     }),

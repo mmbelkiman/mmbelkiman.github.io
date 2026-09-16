@@ -7,7 +7,7 @@ export type { SkillsRowProps } from './types'
 
 export function SkillsRow({ skillGroups }: SkillsRowProps) {
   return (
-    <section aria-label="Skills" className="v1-skills-row">
+    <section aria-label="Skills" className="skills-row">
       <Grid>
         <Grid.Column weight={10}>
           <Skills groups={skillGroups} />

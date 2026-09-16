@@ -1,4 +1,4 @@
-.v1-about-me-card {
+.about-me-card {
   --color-text-primary: var(--color-text-inverse);
   --color-text-secondary: var(--color-text-ice);
 
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.v1-about-me-card::before {
+.about-me-card::before {
   position: absolute;
   z-index: 1;
   inset: 0;
@@ -24,7 +24,7 @@
   );
 }
 
-.v1-about-me-card__background {
+.about-me-card__background {
   position: absolute;
   z-index: 0;
   inset: 0;
@@ -34,7 +34,7 @@
   object-position: center;
 }
 
-.v1-about-me-card__content {
+.about-me-card__content {
   position: relative;
   z-index: 2;
   display: grid;
@@ -43,29 +43,29 @@
   padding: var(--space-big);
 }
 
-.v1-about-me-card__content .v1-heading {
+.about-me-card__content .heading {
   margin-bottom: var(--space-normal);
   font-size: 3.5rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.v1-about-me-card__description {
+.about-me-card__description {
   display: grid;
   gap: var(--space-normal);
 }
 
-.v1-about-me-card__description .v1-text {
+.about-me-card__description .text {
   font-size: clamp(var(--font-size-normal), 1.65vw, var(--font-size-big));
   line-height: 1.35;
 }
 
 @media (max-width: 42rem) {
-  .v1-about-me-card {
+  .about-me-card {
     min-height: 30rem;
   }
 
-  .v1-about-me-card::before {
+  .about-me-card::before {
     background: color-mix(in srgb, var(--color-surface-strong) 84%, transparent);
   }
 }

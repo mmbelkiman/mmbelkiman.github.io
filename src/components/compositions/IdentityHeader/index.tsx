@@ -8,20 +8,20 @@ export type { IdentityHeaderProps } from './types'
 export function IdentityHeader({ familyName, givenName, roles }: IdentityHeaderProps) {
   return (
     <PanelFrame tone="dark">
-      <header className="v1-identity-header">
-        <div className="v1-identity-header__content">
-          <div className="v1-identity-header__identity">
+      <header className="identity-header">
+        <div className="identity-header__content">
+          <div className="identity-header__identity">
             <CodeIcon
               aria-hidden="true"
-              className="v1-identity-header__icon"
+              className="identity-header__icon"
               size="var(--icon-size-big)"
               weight="duotone"
             />
-            <h1 className="v1-identity-header__name">
+            <h1 className="identity-header__name">
               <span>{givenName}</span> <strong>{familyName}</strong>
             </h1>
           </div>
-          <ul aria-label="Professional roles" className="v1-identity-header__roles">
+          <ul aria-label="Professional roles" className="identity-header__roles">
             {roles.map((role) => (
               <li key={role}>{role}</li>
             ))}

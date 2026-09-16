@@ -15,7 +15,7 @@ export const AllTechnologies: Story = {
     tech: 'react',
   },
   render: () => (
-    <ul className="v1-project-card__technologies">
+    <ul className="project-card__technologies">
       {PROJECT_TECHNOLOGY_NAMES.map((tech) => (
         <ProjectTechnology key={tech} tech={tech} />
       ))}
@@ -29,7 +29,7 @@ export const WithoutIcon: Story = {
     tech: 'firebase',
   },
   render: (args) => (
-    <ul className="v1-project-card__technologies">
+    <ul className="project-card__technologies">
       <ProjectTechnology {...args} />
     </ul>
   ),
@@ -41,7 +41,7 @@ export const TransparentBackground: Story = {
     tech: 'typescript',
   },
   render: (args) => (
-    <ul className="v1-project-card__technologies">
+    <ul className="project-card__technologies">
       <ProjectTechnology {...args} />
     </ul>
   ),
@@ -54,7 +54,7 @@ export const TransparentWithoutBorder: Story = {
     tech: 'react-native',
   },
   render: (args) => (
-    <ul className="v1-project-card__technologies">
+    <ul className="project-card__technologies">
       <ProjectTechnology {...args} />
     </ul>
   ),

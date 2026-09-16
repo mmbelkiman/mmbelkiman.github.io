@@ -5,7 +5,7 @@ import './style.css'
 
 export function ProfileAboutRow() {
   return (
-    <section aria-label="Profile and about me" className="v1-profile-about-row">
+    <section aria-label="Profile and about me" className="profile-about-row">
       <Grid>
         <Grid.Column weight={3}>
           <ProfileCard />

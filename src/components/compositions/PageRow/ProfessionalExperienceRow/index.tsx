@@ -26,7 +26,7 @@ export function ProfessionalExperienceRow({
 
   return (
     <PanelFrame header={<PanelHeader label="Professional experience" />}>
-      <section aria-label="Professional experience" className="v1-professional-experience-row">
+      <section aria-label="Professional experience" className="professional-experience-row">
         <ExperienceTimeline
           experiences={experiences}
           onSelect={setSelectedExperienceId}

@@ -14,8 +14,8 @@ type ExperienceEngagementProps = {
 export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) {
   return (
     <PanelFrame>
-      <article className="v1-professional-experience-row__engagement">
-        <header className="v1-professional-experience-row__engagement-header">
+      <article className="professional-experience-row__engagement">
+        <header className="professional-experience-row__engagement-header">
           <CompanyLogo company={engagement.name} logo={engagement.logo} size="large" />
           <div>
             <Heading level={3}>{engagement.name}</Heading>
@@ -24,7 +24,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
             </Text>
           </div>
           {engagement.period || engagement.category ? (
-            <div className="v1-professional-experience-row__engagement-meta">
+            <div className="professional-experience-row__engagement-meta">
               {engagement.period ? <span>{engagement.period}</span> : null}
               {engagement.category ? <ProjectCategory category={engagement.category} /> : null}
             </div>
@@ -33,24 +33,24 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
 
         <Text color="secondary">{engagement.description}</Text>
 
-        <div className="v1-professional-experience-row__engagement-section">
-          <div className="v1-professional-experience-row__engagement-label">
+        <div className="professional-experience-row__engagement-section">
+          <div className="professional-experience-row__engagement-label">
             <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             Key responsibilities
           </div>
-          <ul className="v1-professional-experience-row__responsibilities">
+          <ul className="professional-experience-row__responsibilities">
             {engagement.responsibilities.map((responsibility) => (
               <li key={responsibility}>{responsibility}</li>
             ))}
           </ul>
         </div>
 
-        <div className="v1-professional-experience-row__engagement-section">
-          <div className="v1-professional-experience-row__engagement-label">
+        <div className="professional-experience-row__engagement-section">
+          <div className="professional-experience-row__engagement-label">
             <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             Tech stack
           </div>
-          <ul className="v1-project-card__technologies">
+          <ul className="project-card__technologies">
             {engagement.technologies.map((tech) => (
               <ProjectTechnology
                 bg={engagement.technologyBackground}

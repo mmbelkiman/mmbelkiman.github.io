@@ -1,4 +1,4 @@
-.v1-panel-header {
+.panel-header {
   --panel-header-surface: linear-gradient(
     180deg,
     var(--color-panel-header-surface-top),
@@ -26,25 +26,25 @@
   text-transform: uppercase;
 }
 
-.v1-panel-header__label,
-.v1-panel-header__details {
+.panel-header__label,
+.panel-header__details {
   display: inline-flex;
   gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
 
-.v1-panel-header__label {
+.panel-header__label {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.v1-panel-header__prefix {
+.panel-header__prefix {
   color: var(--panel-header-prefix);
 }
 
-.v1-panel-header__details {
+.panel-header__details {
   flex: 0 0 auto;
   color: var(--panel-header-details);
   font-family: var(--font-body);

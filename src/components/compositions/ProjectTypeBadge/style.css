@@ -1,4 +1,4 @@
-.v1-project-type-badge {
+.project-type-badge {
   display: inline-flex;
   gap: var(--space-nano);
   align-items: center;
@@ -12,22 +12,22 @@
   text-transform: uppercase;
 }
 
-.v1-project-type-badge--game {
+.project-type-badge--game {
   color: var(--color-project-type-game);
   background: var(--color-project-type-game-surface);
 }
 
-.v1-project-type-badge--mobile {
+.project-type-badge--mobile {
   color: var(--color-project-type-mobile);
   background: var(--color-project-type-mobile-surface);
 }
 
-.v1-project-type-badge--software {
+.project-type-badge--software {
   color: var(--color-project-type-software);
   background: var(--color-project-type-software-surface);
 }
 
-.v1-project-type-badge--web {
+.project-type-badge--web {
   color: var(--color-project-type-web);
   background: var(--color-project-type-web-surface);
 }

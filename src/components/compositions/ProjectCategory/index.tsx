@@ -11,7 +11,7 @@ const PROJECT_CATEGORY_LABELS = {
 
 export function ProjectCategory({ category }: ProjectCategoryProps) {
   return (
-    <span className={`v1-project-category v1-project-category--${category}`}>
+    <span className={`project-category project-category--${category}`}>
       {PROJECT_CATEGORY_LABELS[category]}
     </span>
   )

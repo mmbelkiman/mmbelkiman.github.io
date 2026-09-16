@@ -1,16 +1,22 @@
-.v1-portfolio-projects-row {
+.portfolio-projects-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-small);
   padding: var(--space-small);
 }
 
-.v1-portfolio-projects-row > .v1-panel-frame {
+.portfolio-projects-row__item,
+.portfolio-projects-row__item > .panel-frame {
   min-width: 0;
+  height: 100%;
+}
+
+.portfolio-projects-row__item--featured {
+  grid-column: 1 / -1;
 }
 
 @media (max-width: 40rem) {
-  .v1-portfolio-projects-row {
+  .portfolio-projects-row {
     grid-template-columns: 1fr;
   }
 }

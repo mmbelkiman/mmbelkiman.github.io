@@ -5,10 +5,10 @@ type QuickInfoItemProps = QuickInfoItemType
 
 export function QuickInfoItem({ icon: Icon, label }: QuickInfoItemProps) {
   return (
-    <div className="v1-quick-info-row__item">
+    <div className="quick-info-row__item">
       <Icon
         aria-hidden="true"
-        className="v1-quick-info-row__icon"
+        className="quick-info-row__icon"
         size="var(--icon-size-big)"
         weight="fill"
       />

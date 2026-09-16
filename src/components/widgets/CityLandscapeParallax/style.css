@@ -1,4 +1,4 @@
-.v1-city-landscape-parallax {
+.city-landscape-parallax {
   position: relative;
   isolation: isolate;
   min-height: 9.5rem;
@@ -6,14 +6,14 @@
   background: var(--color-surface-strong);
 }
 
-.v1-city-landscape-parallax__scene {
+.city-landscape-parallax__scene {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
 }
 
-.v1-city-landscape-parallax__layer {
+.city-landscape-parallax__layer {
   position: absolute;
   inset: 0 auto 0 0;
   display: flex;
@@ -26,15 +26,15 @@
   will-change: transform;
 }
 
-.v1-city-landscape-parallax__layer--left {
-  animation-name: v1-city-scroll-left;
+.city-landscape-parallax__layer--left {
+  animation-name: city-scroll-left;
 }
 
-.v1-city-landscape-parallax__layer--right {
-  animation-name: v1-city-scroll-right;
+.city-landscape-parallax__layer--right {
+  animation-name: city-scroll-right;
 }
 
-.v1-city-landscape-parallax__layer img {
+.city-landscape-parallax__layer img {
   display: block;
   flex: 0 0 auto;
   width: auto;
@@ -43,7 +43,7 @@
   user-select: none;
 }
 
-@keyframes v1-city-scroll-left {
+@keyframes city-scroll-left {
   from {
     transform: translateX(0);
   }
@@ -53,7 +53,7 @@
   }
 }
 
-@keyframes v1-city-scroll-right {
+@keyframes city-scroll-right {
   from {
     transform: translateX(-50%);
   }
@@ -64,7 +64,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .v1-city-landscape-parallax__layer {
+  .city-landscape-parallax__layer {
     animation-play-state: paused;
   }
 }

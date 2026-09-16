@@ -1,18 +1,18 @@
-.v1-profile-about-row .v1-grid {
+.profile-about-row .grid {
   align-items: stretch;
 }
 
-.v1-profile-about-row .v1-grid__column,
-.v1-profile-about-row .v1-grid__column > .v1-panel-frame {
+.profile-about-row .grid__column,
+.profile-about-row .grid__column > .panel-frame {
   height: 100%;
 }
 
-.v1-profile-about-row .v1-profile-card,
-.v1-profile-about-row .v1-about-me-card {
+.profile-about-row .profile-card,
+.profile-about-row .about-me-card {
   height: 100%;
 }
 
-.v1-profile-about-row .v1-profile-card,
-.v1-profile-about-row .v1-about-me-card {
+.profile-about-row .profile-card,
+.profile-about-row .about-me-card {
   box-sizing: border-box;
 }

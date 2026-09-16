@@ -5,12 +5,12 @@ import type { GridProps } from './types'
 
 export function Grid({ children, columns = DEFAULT_GRID_COLUMNS, rowHeight }: GridProps) {
   const style = {
-    '--v1-grid-columns': columns,
-    '--v1-grid-row-height': rowHeight ?? 'auto',
+    '--grid-columns': columns,
+    '--grid-row-height': rowHeight ?? 'auto',
   } as CSSProperties
 
   return (
-    <div className="v1-grid" style={style}>
+    <div className="grid" style={style}>
       {children}
     </div>
   )

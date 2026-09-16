@@ -12,8 +12,8 @@ export function CityLandscapeParallax({ period, timeZone }: CityLandscapeParalla
   const layerCount = CITY_LAYER_COUNTS[displayedPeriod]
 
   return (
-    <section className="v1-city-landscape-parallax" data-period={displayedPeriod}>
-      <div aria-hidden="true" className="v1-city-landscape-parallax__scene">
+    <section className="city-landscape-parallax" data-period={displayedPeriod}>
+      <div aria-hidden="true" className="city-landscape-parallax__scene">
         {Array.from({ length: layerCount }, (_, index) => {
           const layer = getCityLayer(displayedPeriod, index)
 

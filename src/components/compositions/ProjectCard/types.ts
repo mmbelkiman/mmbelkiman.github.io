@@ -37,5 +37,6 @@ export type ProjectCardProps = {
   technologyBackground?: ProjectTechnologyBackground
   technologyIconVisibility?: Partial<Record<ProjectTechnologyName, boolean>>
   title: string
+  videoSrc?: string
   year?: string
 }

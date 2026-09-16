@@ -5,14 +5,14 @@ export type { PanelHeaderProps } from './types'
 
 export function PanelHeader({ endContent, label, prefix = '//' }: PanelHeaderProps) {
   return (
-    <div className="v1-panel-header">
-      <span className="v1-panel-header__label">
-        <span aria-hidden="true" className="v1-panel-header__prefix">
+    <div className="panel-header">
+      <span className="panel-header__label">
+        <span aria-hidden="true" className="panel-header__prefix">
           {prefix}
         </span>
         {label}
       </span>
-      <span className="v1-panel-header__details">{endContent}</span>
+      <span className="panel-header__details">{endContent}</span>
     </div>
   )
 }

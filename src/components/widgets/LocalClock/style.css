@@ -1,4 +1,4 @@
-.v1-local-clock {
+.local-clock {
   display: grid;
   gap: var(--space-nano);
   align-content: center;
@@ -12,19 +12,19 @@
   text-transform: uppercase;
 }
 
-.v1-local-clock__date,
-.v1-local-clock__time {
+.local-clock__date,
+.local-clock__time {
   margin: 0;
 }
 
-.v1-local-clock > .v1-text,
-.v1-local-clock__date {
+.local-clock > .text,
+.local-clock__date {
   color: var(--color-text-secondary);
   font-size: var(--font-size-nano);
   letter-spacing: var(--letter-spacing-label);
 }
 
-.v1-local-clock__time {
+.local-clock__time {
   color: var(--color-text-primary);
   font-size: var(--font-size-huge);
   line-height: 1;

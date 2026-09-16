@@ -9,7 +9,7 @@ type CompanyLogoProps = {
 export function CompanyLogo({ company, logo, size = 'compact' }: CompanyLogoProps) {
   return (
     <div
-      className={`v1-professional-experience-row__company-logo v1-professional-experience-row__company-logo--${size}`}
+      className={`professional-experience-row__company-logo professional-experience-row__company-logo--${size}`}
     >
       {logo ? <img alt={`${company} logo`} src={logo} /> : getCompanyInitials(company)}
     </div>

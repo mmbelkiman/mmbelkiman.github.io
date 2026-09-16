@@ -1,4 +1,4 @@
-.v1-text {
+.text {
   margin: 0;
   color: var(--color-text-primary);
   font-family: inherit;
@@ -7,16 +7,16 @@
   line-height: 1.35;
 }
 
-.v1-text--secondary {
+.text--secondary {
   color: var(--color-text-secondary);
 }
 
-.v1-text--label {
+.text--label {
   font-size: var(--font-size-nano);
   font-weight: var(--font-weight-big);
   letter-spacing: var(--letter-spacing-label);
 }
 
-.v1-text--meta {
+.text--meta {
   font-size: var(--font-size-nano);
 }

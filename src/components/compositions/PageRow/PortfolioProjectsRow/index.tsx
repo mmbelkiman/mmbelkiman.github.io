@@ -16,9 +16,14 @@ export function PortfolioProjectsRow({ projects }: PortfolioProjectsRowProps) {
     <PanelFrame
       header={<PanelHeader endContent={`${projects.length} projects`} label="Portfólio" />}
     >
-      <section aria-label="Portfolio projects" className="v1-portfolio-projects-row">
+      <section aria-label="Portfolio projects" className="portfolio-projects-row">
         {orderedProjects.map(({ id, ...project }) => (
-          <ProjectCard {...project} key={id} />
+          <div
+            className={project.featured ? 'portfolio-projects-row__item--featured' : 'portfolio-projects-row__item'}
+            key={id}
+          >
+            <ProjectCard {...project} />
+          </div>
         ))}
       </section>
     </PanelFrame>

@@ -1,4 +1,4 @@
-.v1-spotify-player {
+.spotify-player {
   --spotify-player-scale: 0.7;
 
   align-self: center;
@@ -15,7 +15,7 @@
   border-radius: var(--radius-md);
 }
 
-.v1-spotify-player__embed {
+.spotify-player__embed {
   display: block;
   width: 142.857%;
   height: 5rem;
@@ -26,7 +26,7 @@
   transform-origin: top left;
 }
 
-.v1-spotify-player:focus-within {
+.spotify-player:focus-within {
   outline: var(--border-width-strong) solid var(--color-focus);
   outline-offset: var(--space-nano);
 }

@@ -10,11 +10,11 @@ export function SpotifyPlayer({
   title = 'Spotify player',
 }: SpotifyPlayerProps) {
   return (
-    <section aria-label={title} className="v1-spotify-player">
+    <section aria-label={title} className="spotify-player">
       <iframe
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         allowFullScreen
-        className="v1-spotify-player__embed"
+        className="spotify-player__embed"
         frameBorder="0"
         src={getSpotifyEmbedUrl(spotifyUrl)}
         title={title}

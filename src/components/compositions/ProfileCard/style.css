@@ -1,10 +1,10 @@
-.v1-profile-card {
+.profile-card {
   display: grid;
   gap: var(--space-small);
   padding: var(--space-small);
 }
 
-.v1-profile-card__photo-frame {
+.profile-card__photo-frame {
   position: relative;
   overflow: hidden;
   padding: var(--space-nano);
@@ -14,7 +14,7 @@
   box-shadow: var(--shadow-inset);
 }
 
-.v1-profile-card__photo {
+.profile-card__photo {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1.08;
@@ -23,7 +23,7 @@
   /*filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85);*/
 }
 
-.v1-profile-card__photo-static {
+.profile-card__photo-static {
   position: absolute;
   inset: var(--space-nano);
   width: calc(100% - (var(--space-nano) * 2));
@@ -33,23 +33,23 @@
   pointer-events: none;
 }
 
-.v1-profile-card__details {
+.profile-card__details {
   display: grid;
   gap: var(--space-nano);
 }
 
-.v1-profile-card__details .v1-heading {
+.profile-card__details .heading {
   color: var(--color-text-primary);
   font-size: var(--font-size-big);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
-.v1-profile-card__details .v1-text {
+.profile-card__details .text {
   font-size: var(--font-size-normal);
 }
 
-.v1-profile-card__location {
+.profile-card__location {
   display: flex;
   gap: var(--space-small);
   align-items: center;
@@ -57,12 +57,12 @@
   border-top: var(--border-width-thin) solid var(--color-border);
 }
 
-.v1-profile-card__location svg {
+.profile-card__location svg {
   flex: 0 0 auto;
   color: var(--color-accent-active);
 }
 
-.v1-profile-card__location .v1-text {
+.profile-card__location .text {
   font-family: var(--font-heading);
   letter-spacing: var(--letter-spacing-label);
   text-transform: uppercase;

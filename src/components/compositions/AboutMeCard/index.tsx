@@ -9,11 +9,11 @@ import './style.css'
 export function AboutMeCard() {
   return (
     <PanelFrame header={<PanelHeader label="About me" />}>
-      <section aria-label="About me" className="v1-about-me-card">
-        <img alt="" className="v1-about-me-card__background" src={aboutBackground} />
-        <div className="v1-about-me-card__content">
+      <section aria-label="About me" className="about-me-card">
+        <img alt="" className="about-me-card__background" src={aboutBackground} />
+        <div className="about-me-card__content">
           <Heading level={1}>{ABOUT_ME_CONTENT.title}</Heading>
-          <div className="v1-about-me-card__description">
+          <div className="about-me-card__description">
             {ABOUT_ME_CONTENT.description.map((paragraph) => (
               <Text color="secondary" key={paragraph}>
                 {paragraph}
