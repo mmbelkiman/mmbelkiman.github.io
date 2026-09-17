@@ -1,524 +1,493 @@
 {
-  "menu": {
-    "menu-subtitle": "Cientista da Computação",
-    "menu-home": "Início",
-    "menu-portfolio": "Portfólio",
-    "switchLanguage": "in english"
-  },
+  "menu": { "switchLanguage": "in English" },
   "home": {
-    "content-name-allign": "Olá, meu nome é Marcelo",
-    "welcome-1": "Sou Programador, Game Designer e Arquiteto de Software",
-    "welcome-2": "Gosto de criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
-    "welcome-3": "Como posso te ajudar hoje?",
-    "topic-name-1": " Idiomas",
-    "topic-name-2": " Objetivo",
-    "topic-name-3": " Experiência profissional",
-    "topic-name-4": " Formação acadêmica",
-    "topic-name-5": " Programação",
-    "topic-name-6": " Outros conhecimentos",
-    "topic-name-7": " Hobbies",
-    "topic-name-8": "  Glossário",
-    "desc-obj": "Criar soluções computacionais incríveis, com um bom desempenho, elegantes visualmente e apaixonantes.",
     "language-port-1": "Português",
     "language-port-2": "Nativo",
-    "language-eng-1": "Inglês",
-    "language-eng-2": "",
-    "language-eng-3": "",
-    "language-eng-4": "",
-    "other-gamedev": "Dev. jogos eletrônicos",
-    "hobbies-music": "Música",
-    "hobbies-travel": "Cinema",
-    "hobbies-programming": "Programação",
-    "hobbies-games": "\tJogos Eletrônicos",
-    "glossary-course": "Conhecimento acadêmico e/ou cursos",
-    "glossary-exp": "Experiência profissional",
-    "glossary-personal": "Utiliza em projetos pessoais",
-    "glossary-now": "Utilizando atualmente"
-  },
-  "portfolio": {
-    "heading": "Portfólio",
-    "tictac": {
-      "title": "Tiny Tic Tac Toe",
-      "description": {
-        "first": "",
-        "second": ""
-      },
-      "year": "Year: 2023",
-      "technologies": {
-        "typescript": "TS",
-        "reactNative": "React Native"
-      },
-      "links": {
-        "github": {
-          "label": "Github: ",
-          "text": "Code"
-        }
-      }
-    },
-    "pathCrypto": {
-      "title": "Path Crypto",
-      "description": {
-        "first": "",
-        "second": ""
-      },
-      "year": "Year: 2022",
-      "technologies": {
-        "typescript": "TS",
-        "reactNative": "React Native",
-        "nodeJs": "NodeJS"
-      },
-      "links": {
-        "website": {
-          "label": "Website: ",
-          "text": "Path Crypto"
-        }
-      }
-    },
-    "pipoclube": {
-      "title": "Pipoclube",
-      "description": {
-        "first": "",
-        "second": ""
-      },
-      "year": "Year: 2022",
-      "technologies": {
-        "typescript": "TS",
-        "reactNative": "React Native",
-        "php": "PHP"
-      },
-      "links": {
-        "website": {
-          "label": "Website: ",
-          "text": "Pipoclube"
-        }
-      }
-    },
-    "aulapp": {
-      "title": "Aulapp",
-      "year": "",
-      "technologies": {
-        "javascript": "JS",
-        "reactNative": "React Native"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "AULAPP - Plataforma de Aprendizagem Digital"
-        },
-        "appStore": {
-          "label": "App Store: ",
-          "text": "Aulapp"
-        }
-      }
-    },
-    "livroh": {
-      "title": "Livroh",
-      "description": {
-        "first": "Aplicativo para leitura de livros e escuta de audiolivros.",
-        "second": "Possui um enorme acervo e parceria com grandes publicadores. Leitor dinâmico que organiza o texto na tela e possibilita a alteração de cores e tamanho de fonte."
-      },
-      "year": "Ano: 2019",
-      "technologies": {
-        "java": "JAVA"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Livroh - Livros e Audiolivros digitais"
-        }
-      }
-    },
-    "bancah": {
-      "title": "Bancah",
-      "description": {
-        "first": "Aplicativo para leitura jornais e revistas.",
-        "second": "Possui um enorme acervo e parceria com grandes editoras."
-      },
-      "year": "Ano: 2019",
-      "technologies": {
-        "java": "JAVA"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Bancah – Banca Digital"
-        }
-      }
-    },
-    "epicGolf2d": {
-      "title": "Epic Golf 2D",
-      "description": {
-        "first": "Jogo de golf para Android/Ios, finalista do Big Festival 2018 na categoria 'Melhor Projeto de Jogo de Entretenimento' ",
-        "second": "Após festival, jogo recebeu suporte da publicadora ZPlay(Pop Star, Bomber Friends, Absolute Drift, Super Stickman Golf)"
-      },
-      "year": "Ano: 2019",
-      "technologies": {
-        "monogame": "Monogame",
-        "csharp": "C#"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Epic Golf 2D"
-        }
-      }
-    },
-    "venusParticleEditor": {
-      "title": "Venus Particle Editor",
-      "description": {
-        "first": "Editor de particulas para usar juntamente do framework Monogame",
-        "third": ""
-      },
-      "year": "Ano: 2019",
-      "technologies": {
-        "csharp": "C#",
-        "monogame": "Monogame"
-      },
-      "links": {
-        "itchIo": {
-          "label": "Itch.IO: ",
-          "text": "Baixar"
-        },
-        "github": {
-          "label": "Github: ",
-          "text": "Código fonte"
-        }
-      }
-    },
-    "ourAdventureTime": {
-      "title": "Our Adventure Time",
-      "description": {
-        "first": "Jogo feito sobre demanda, onde o cliente gostaria de um jogo que fosse possivel pedir sua atual esposa em casamento. ",
-        "third": ""
-      },
-      "year": "Ano: 2018",
-      "technologies": {
-        "unity": "Unity",
-        "csharp": "C#"
-      },
-      "links": {
-        "itchIo": {
-          "label": "Itch.IO: ",
-          "text": "Jogar online"
-        },
-        "github": {
-          "label": "Github: ",
-          "text": "Código fonte"
-        }
-      }
-    },
-    "ultraRetroVirusAttack": {
-      "title": "Ultra Retro Virus Attack",
-      "description": {
-        "first": "Jogo criado em 48 para a global game jam 2018",
-        "second": "Jogador controla um vírus de computador e deve transmiti-lo a tantos programas quanto possível, evitando o software de firewall."
-      },
-      "year": "Ano: 2018",
-      "technologies": {
-        "unity": "Unity",
-        "csharp": "C#"
-      },
-      "links": {
-        "webPlayer": {
-          "label": "Unity Web-Player: ",
-          "text": "Jogar online"
-        },
-        "github": {
-          "label": "Github: ",
-          "text": "Código fonte"
-        }
-      }
-    },
-    "itaucard": {
-      "title": "Itaucard - Android",
-      "description": {
-        "first": "Aplicativo para gestão de cartão de crédito para dispositivos móveis Android",
-        "second": "Itaú é uma das maiores empresas bancarias do Brasil, aplicativo possui mais de dez milhões downloads."
-      },
-      "year": "Ano: 2017",
-      "technologies": {
-        "java": "JAVA"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Itaucard Controle seu cartão"
-        }
-      }
-    },
-    "rupert": {
-      "title": "Rupert",
-      "description": {
-        "first": "Jogo criado com intuito de testar conceitos estudados sobre desenvolvimento de jogos eletrônicos.",
-        "second": "Foi realizado testes com usuários, documentação de game-design e código facilmente escalonável."
-      },
-      "year": "Ano: 2017",
-      "technologies": {
-        "java": "JAVA"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Rupert"
-        }
-      }
-    },
-    "tribanco": {
-      "title": "Tribanco - Mobile Bank",
-      "description": {
-        "first": "Internet banking para dispositivos móveis utilizando o framework de desenvolvimento híbrido Kony, para Android e iOS.",
-        "second": "No app do Tribanco é possivel consultar o saldo e extrato de todas suas contas, o valor a ser repassado do Correspondente Tribanco e ainda tem na mão o histórico de transações e remuneração, em qualquer lugar, a qualquer hora! "
-      },
-      "year": "Ano: 2016",
-      "technologies": {
-        "javascript": "JS"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Tribanco"
-        },
-        "appStore": {
-          "label": "App Store: ",
-          "text": "Tribanco - O Banco do Varejo"
-        }
-      }
-    },
-    "omgMyHouse": {
-      "title": "OMG! My House!",
-      "description": {
-        "first": "Projeto desenvolvido durante o bacharelado de ciência da computação dentro da materia de desenvolvimento de jogos eletrônicos.",
-        "second": "Neste jogo o personagem deve proteger sua casa de ser destruida por monstros alem de se manter vivo dos ataques inferidos contra ele.",
-        "third": ""
-      },
-      "year": "Ano: 2015",
-      "technologies": {
-        "construct2": "Construct 2"
-      },
-      "links": {
-        "webPlayer": {
-          "label": "Construct Web-Player: ",
-          "text": "Jogar online"
-        }
-      }
-    },
-    "gamification": {
-      "title": "Monografia Gamificação",
-      "description": {
-        "first": "Trabalho de conclusão de curso para o bacharelado de ciência da computação.",
-        "second": "É apresentado nesta monografia informações sobre o que é um sistema gamificado e como é possivel criar um.",
-        "third": "Juntamente com a monografia foi desenvolvido um pequeno sistema gamificado para demostrar alguns conceitos apresentados na monografia"
-      },
-      "year": "Ano: 2015",
-      "technologies": {
-        "htmlCss": "HTML/CSS",
-        "javascript": "JS"
-      },
-      "links": {
-        "document": {
-          "label": "Documento: ",
-          "text": "Gamificação: Aplicando ao treino de atividades lógicas"
-        }
-      }
-    },
-    "spaceJay": {
-      "title": "Space Jay",
-      "description": {
-        "first": "Jogo para Android, possui um nível alto de dificuldade, os efeitos sonoros dinamicos e pontuação online",
-        "second": "",
-        "third": ""
-      },
-      "year": "Ano: 2014",
-      "technologies": {
-        "java": "JAVA"
-      },
-      "links": {
-        "googlePlay": {
-          "label": "Google Play: ",
-          "text": "Space Jay"
-        }
-      }
-    },
-    "clickideia": {
-      "title": "Clickideia: Ferramenta exercicios educativos",
-      "description": {
-        "first": "Ferramenta desenvolvida para criar exercícios, alocar usuarios para realizar os exercícios, corrigir as respostas, gerar gráficos.",
-        "second": ""
-      },
-      "year": "Ano: 2015",
-      "technologies": {
-        "javascript": "JS",
-        "sql": "SQL",
-        "php": "PHP"
-      },
-      "links": {
-        "website": {
-          "label": "URL: ",
-          "text": "www.clickideia.com.br"
-        }
-      }
-    },
-    "gludum": {
-      "description": {
-        "first": "Rede social voltada a desenvolvedores de jogos eletrônicos, podendo trocar experiências, criar um perfil público e divulgar os jogos criados.",
-        "second": "Não foi utilizado nenhum sistema pré-pronto na sua criação, todo o projeto foi programado do zero.",
-        "third": ""
-      },
-      "year": "Ano: 2015"
-    },
-    "breakout": {
-      "description": {
-        "first": "Pequeno jogo ao estilo breakout."
-      },
-      "year": "Ano: 2013"
-    },
-    "music": {
-      "description": {
-        "first": "Dentre outras músicas que compus, resolvi gravar algumas, sem nenhum compromisso. =] "
-      }
-    },
-    "m12": {
-      "description": {
-        "first": "Banda de rock alternativo que participei de 2010 até 2014.",
-        "second": "[Guitarra, Voz, Composições]",
-        "third": "Tambem aqui, audio em versão 8bits (convertido por mim)"
-      }
-    }
+    "language-eng-1": "Inglês"
   },
   "education": {
     "unyleya": {
-      "title": "Lato Sensu Desenvolvimento de jogos digitais",
-      "period": "Concluído em 12/2018",
-      "institution": "Faculdade UnYLeYa"
+      "title": "Pós-graduação em Desenvolvimento de Jogos Digitais",
+      "period": "2017 – 2018",
+      "institution": "Unyleya"
     },
     "metrocamp": {
-      "title": "Bacharelado Ciência da Computação",
-      "period": "Concluído em 12/2015",
-      "institution": "Faculdade Integrada Metropolitana de Campinas – Metrocamp - Grupo IBMEC"
+      "title": "Bacharelado em Ciência da Computação",
+      "period": "2012 – 2015",
+      "institution": "Wyden (DeVry Educacional do Brasil)"
     },
     "centroPaulaSouza": {
       "technicalMaintenance": {
-        "title": "Técnico Manutenção de Microcomputadores",
-        "period": "Concluído em 06/2011",
-        "institution": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)"
+        "title": "Técnico em Infraestrutura de TI e Administração de Servidores",
+        "period": "2010 – 2011",
+        "institution": "Escola Técnica Estadual de São Paulo"
       },
       "technicalProgramming": {
-        "title": "Técnico Programação",
-        "period": "Concluído em 12/2007",
-        "institution": "Escola Técnica Estadual Rosa Perrone Scavone (Centro Paula Souza)"
+        "title": "Técnico em Desenvolvimento de Sistemas",
+        "period": "2006 – 2007",
+        "institution": "Escola Técnica Estadual de São Paulo"
       }
     }
   },
-  "static": {
-    "text001": "marcelo belkiman",
-    "text002": "belkiman",
-    "text015": "C#, Java, Javascript, Typescript, PHP, HTML/CSS, SQL, Android SDK, Unity SDK, React.Js, Node.Js, React Native, Monogame(XNA)",
-    "text016": "Software Architecture, GIT, Game Design, Game Development, Agile Dev",
-    "text029": "- ",
-    "text030": "- ",
-    "text031": "Linkedin: Marcelo Belkiman",
-    "text032": "GitHub: mmbelkiman",
-    "text033": "E-mail: marcelobelkiman@gmail.com"
-  },
   "professionalExperience": {
+    "companyTypes": {
+      "usOutsourcing": "Empresa de outsourcing dos Estados Unidos",
+      "globalOutsourcing": "Empresa global de outsourcing",
+      "edtech": "Empresa de EdTech",
+      "cybersecurity": "Empresa de software de cibersegurança",
+      "consultancy": "Consultoria de produtos digitais",
+      "software": "Empresa de software",
+      "logistics": "Empresa de logística",
+      "simulation": "Empresa de software de simulação"
+    },
     "trio": {
       "current": {
         "companyName": "Trio",
-        "period": "11/2023 ~ Atualmente",
-        "role": "Full Stack Developer (React+Node)"
+        "period": "11/2023 – Atual",
+        "role": "Desenvolvedor Full-Stack Sênior (React.js e Node.js)",
+        "description": [
+          "Empresa de outsourcing dos Estados Unidos que atende Studylog, uma plataforma de pesquisa pré-clínica, e Flyreel.",
+          "Desenvolvimento de uma plataforma multi-tenant com colaboração em tempo real, grids avançados, controle de acesso por função e serviços Node.js com NestJS e GraphQL."
+        ],
+        "engagement": {
+          "studylog": {
+            "name": "Studylog",
+            "type": "cliente",
+            "period": "11/2023 – 06/2026",
+            "description": "Uma plataforma de fluxo de trabalho para estudos pré-clínicos em animais, usada para planejar estudos, coletar dados e gerar relatórios.",
+            "responsibilities": [
+              "Desenvolvimento de uma plataforma de pesquisa multi-tenant com colaboração em tempo real, grids avançados e controle de acesso detalhado baseado em papéis.",
+              "Criação de colaboração em tempo real com subscriptions GraphQL, incluindo presença de usuários, bloqueio em nível de campo e prevenção de conflitos baseada em versionamento de última modificação.",
+              "Construção e manutenção de serviços Node.js com NestJS e GraphQL, incluindo autenticação AWS Cognito e autorização baseada em JWT.",
+              "Contribuição para uma arquitetura cross-platform escalável com React, Next.js e Electron.",
+              "Mentoria de desenvolvedores e contribuição para decisões técnicas e de produto focadas em escalabilidade de longo prazo."
+            ]
+          },
+          "flyreel": {
+            "name": "Flyreel",
+            "type": "cliente",
+            "period": "07/2026 – Atual",
+            "role": "Engenheiro de Software Sênior (React.js e Node.js)",
+            "description": "Uma solução de vistoria de propriedades orientada por IA que ajuda seguradoras dos Estados Unidos a avaliar riscos sem inspeção física no local.",
+            "responsibilities": [
+              "Projeto atual; as responsabilidades detalhadas serão adicionadas conforme o projeto evoluir."
+            ]
+          }
+        }
       },
       "previous": {
         "companyName": "Trio",
-        "period": "04/2022 ~ 04/2023",
-        "role": "Full Stack Developer (React+React Native+Node)"
+        "period": "04/2022 – 04/2023",
+        "role": "Desenvolvedor Full-Stack Sênior (React Native e Node.js)",
+        "description": [
+          "Empresa de outsourcing dos Estados Unidos. Cliente: Path Crypto, uma plataforma fintech de criptomoedas.",
+          "Desenvolvimento de um aplicativo de criptomoedas em React Native e contribuição para uma arquitetura escalável e serviços de backend em Node.js."
+        ],
+        "engagement": {
+          "pathCrypto": {
+            "name": "PathCrypto",
+            "type": "cliente",
+            "description": "Um aplicativo de investimento e gestão de portfólio de criptomoedas para uma startup fintech.",
+            "responsibilities": [
+              "Desenvolvimento do aplicativo mobile de criptomoedas com React Native.",
+              "Contribuição em decisões de arquitetura com engenheiros, product owners e product managers para definir soluções escaláveis.",
+              "Construção e manutenção de serviços backend em Node.js com NestJS e Express, estabelecendo padrões e boas práticas para a base de código."
+            ]
+          }
+        }
       }
     },
     "aulapp": {
       "companyName": "Aulapp",
-      "period": "09/2021 ~ 10/2024",
-      "role": "Mobile Engineer Consultant/Lead (React Native)",
-      "description": ["", ""]
+      "period": "09/2021 – 10/2024",
+      "role": "Consultor React Native Sênior e Tech Lead",
+      "description": [
+        "Empresa de EdTech. Produto: Aulapp, uma plataforma educacional.",
+        "Liderança da arquitetura e dos processos de desenvolvimento mobile, modernização do código com TypeScript e hooks e implementação de experiências offline-first com Realm."
+      ],
+      "engagement": {
+        "name": "Aulapp LMS",
+        "type": "produto",
+        "description": "Uma plataforma de aprendizagem digital para produzir, publicar e gerir treinamentos e avaliações em web e mobile.",
+        "responsibilities": [
+          "Liderança das decisões técnicas do time mobile, incluindo arquitetura, qualidade de código e processos de desenvolvimento.",
+          "Migração da base de código de JavaScript e componentes de classe para TypeScript e uma arquitetura baseada em hooks, melhorando a manutenibilidade e escalabilidade.",
+          "Desenvolvimento de recursos offline-first com Realm, permitindo acessar vídeos, áudios e exercícios sem conectividade, com sincronização em segundo plano e downloads controlados pelo usuário.",
+          "Implementação de internacionalização e melhorias de performance por meio de refatoração e otimização.",
+          "Estabelecimento de boas práticas para testes, Storybook, code reviews e processos de CI/CD."
+        ]
+      }
     },
     "cyberISight": {
       "companyName": "Cyber iSight",
-      "period": "04/2023 ~ 12/2023",
-      "role": "Full Stack Developer (React+Node)"
+      "period": "04/2023 – 12/2023",
+      "role": "Desenvolvedor Full-Stack Sênior (Node.js e React.js)",
+      "description": [
+        "Empresa de software de cibersegurança. Produto: Cyber iSight, uma plataforma de inteligência de ameaças.",
+        "Liderança do desenvolvimento da plataforma multi-tenant desde o início, definindo arquitetura e construindo serviços Node.js e um frontend escalável em React e TypeScript."
+      ],
+      "engagement": {
+        "name": "Cyber iSight",
+        "type": "produto",
+        "description": "Uma plataforma SaaS multi-tenant para inteligência de ameaças e relatórios de cibersegurança.",
+        "responsibilities": [
+          "Liderança do desenvolvimento da plataforma desde o início, definindo arquitetura, stack de tecnologia, padrões de código e fluxos de desenvolvimento.",
+          "Construção e manutenção de serviços backend em Node.js com Express e Prisma, incluindo autenticação, integrações de terceiros, testes automatizados e ambientes com Docker.",
+          "Desenvolvimento do frontend em React e TypeScript com arquitetura escalável baseada em componentes e relatórios dinâmicos por exportações via jsreport."
+        ]
+      }
     },
     "ilia": {
       "companyName": "ília",
-      "period": "08/2021 ~ 04/2022",
-      "role": "Mobile Developer (React Native)"
-    },
-    "onebrain": {
-      "companyName": "Onebrain",
-      "period": "01/2021 ~ 08/2021",
-      "role": "React Native Developer"
+      "period": "06/2021 – 04/2022",
+      "role": "Desenvolvedor React Native Sênior",
+      "description": [
+        "Empresa de outsourcing. Cliente: Livelo, plataforma de fidelidade da Elopar.",
+        "Desenvolvimento de um novo fluxo de resgate de viagens, mentoria de desenvolvedores e colaboração com stakeholders em decisões técnicas."
+      ],
+      "engagement": {
+        "livelo": {
+          "name": "Livelo",
+          "type": "cliente",
+          "description": "Uma plataforma de fidelidade onde participantes acumulam e resgatam pontos em viagens, produtos e serviços.",
+          "responsibilities": [
+            "Desenvolvimento de um novo fluxo de resgate de viagens para a plataforma de fidelidade.",
+            "Mentoria de desenvolvedores júnior e pleno por pair programming e code reviews.",
+            "Colaboração com stakeholders em decisões técnicas."
+          ]
+        }
+      }
     },
     "ies2": {
-      "companyName": "IES2",
-      "period": "09/2019 ~ 01/2021",
-      "role": "Desenvolvedor React Native",
+      "companyName": "iES2",
+      "period": "09/2019 – 03/2021",
+      "role": "Desenvolvedor React Native Sênior",
       "description": [
-        "• Responsável por incluir processos de desenvolvimento dentro do time React Native, analisar e criar padrões de código/arquitetura, processos de build/entrega, testes, suporte aos desenvolvedores e tomadas de decisões técnicas de impacto dentro do projeto.",
-        "• Apresentei um planejamento de refatoração na parte mais sensível da aplicação. este planejamento foi executado trazendo uma melhora significativa na visão dos clientes ao produto."
-      ]
+        "Empresa de EdTech. Produto: Aulapp, uma plataforma educacional.",
+        "Desenvolvimento de recursos de aprendizagem multimídia, incluindo players personalizados de vídeo e áudio, e refatoração do núcleo da aplicação com padrões de código e componentes."
+      ],
+      "engagement": {
+        "aulapp": {
+          "name": "Aulapp",
+          "type": "produto",
+          "description": "Uma plataforma educacional com conteúdo de aprendizagem multimídia, incluindo vídeo, áudio e texto.",
+          "responsibilities": [
+            "Desenvolvimento e manutenção de recursos multimídia do aplicativo educacional.",
+            "Implementação de recursos próprios de player de vídeo e áudio.",
+            "Refatoração do núcleo da aplicação com padrões de código e uma arquitetura baseada em componentes."
+          ]
+        }
+      }
     },
     "verisoft": {
-      "companyName": "Verisoft",
-      "period": "11/2017 ~ 09/2019",
-      "role": "Desenvolvedor Android",
+      "companyName": "Verisoft Brasil",
+      "period": "11/2017 – 09/2019",
+      "role": "Desenvolvedor Android Pleno",
       "description": [
-        "• Desenvolvimento e manutenção de diversos aplicativos para Android, entre eles Claro Banca, Vivo Proteção Financeira, Bancah, Uol Leia+ Livros, Curso de Bolso.",
-        ""
-      ]
+        "Empresa de software responsável por Bancah!, uma banca digital, e Livroh!, uma plataforma de livros e audiolivros.",
+        "Desenvolvimento de aplicativos Android nativos para livros, audiolivros, revistas e jornais, atendendo a um catálogo de mais de 20 mil livros."
+      ],
+      "engagements": {
+        "uol": {
+          "name": "UOL Curso de Bolso",
+          "type": "produto",
+          "description": "Um aplicativo Android nativo para acesso a conteúdo educacional em dispositivos móveis.",
+          "responsibilities": [
+            "Desenvolvimento de recursos Android nativos para a experiência de aprendizagem mobile.",
+            "Contribuição para a manutenção e evolução do aplicativo."
+          ]
+        },
+        "bancah": {
+          "name": "Bancah!",
+          "type": "produto",
+          "description": "Uma banca digital Android nativa para revistas e jornais.",
+          "responsibilities": [
+            "Desenvolvimento de recursos Android nativos para leitura de revistas e jornais.",
+            "Manutenção de recursos para um amplo catálogo de publicações digitais."
+          ]
+        },
+        "livroh": {
+          "name": "Livroh!",
+          "type": "produto",
+          "description": "Uma plataforma Android nativa para leitura de livros e audiolivros.",
+          "responsibilities": [
+            "Desenvolvimento de recursos Android nativos para leitura de livros e audiolivros.",
+            "Colaboração com grandes editoras para atender a um catálogo de mais de 20 mil livros e 200 mil usuários."
+          ]
+        }
+      }
     },
     "ciandt": {
-      "companyName": "Ci&T",
-      "period": "08/2015 ~ 11/2017",
-      "role": "Desenvolvedor Mobile",
+      "companyName": "CI&T",
+      "period": "08/2015 – 11/2017",
+      "role": "Desenvolvedor Android e JavaScript Júnior",
       "description": [
-        "• Desenvolvimento de internet banking para dispositivos móveis utilizando o framework de desenvolvimento híbrido Kony, com JavaScript, para Android e iOS.",
-        "• Desenvolvimento de aplicativo para gestão de cartão de credito para dispositivos móveis Android para uma das maiores empresas bancarias do Brasil."
-      ]
+        "Empresa global de outsourcing. Clientes: Itaú Unibanco e TriBanco.",
+        "Desenvolvimento de aplicativos bancários Android e multiplataforma em uma equipe multidisciplinar de aproximadamente 40 pessoas."
+      ],
+      "engagements": {
+        "itau": {
+          "name": "Itaú Unibanco",
+          "type": "cliente",
+          "period": "2015 – 2016",
+          "description": "Desenvolvimento de um aplicativo Android nativo para gestão de cartões de crédito com Java e Android SDK.",
+          "responsibilities": [
+            "Desenvolvimento de recursos Android nativos para gestão de cartões de crédito.",
+            "Colaboração com times de produto, design e backend em novos fluxos e integrações de API.",
+            "Contribuição para a performance e estabilidade da aplicação."
+          ]
+        },
+        "tribanco": {
+          "name": "TriBanco",
+          "type": "cliente",
+          "period": "2016 – 2017",
+          "description": "Desenvolvimento de um aplicativo bancário multiplataforma com o framework Kony para Android e iOS.",
+          "responsibilities": [
+            "Desenvolvimento de componentes reutilizáveis para interfaces mobile.",
+            "Integração de serviços e APIs bancárias.",
+            "Melhoria de recursos existentes e resolução de defeitos em produção."
+          ]
+        }
+      }
     },
     "clickideia": {
       "companyName": "Clickideia",
-      "period": "05/2014 ~ 08/2015",
-      "role": "Desenvolvedor Web"
+      "period": "05/2014 – 08/2015",
+      "role": "Estagiário de Desenvolvimento Full-Stack",
+      "engagement": {
+        "name": "Clickideia",
+        "type": "produto",
+        "description": "Uma plataforma digital educacional que oferece a professores ferramentas para criar, atribuir e avaliar atividades online.",
+        "responsibilities": [
+          "Criação de novos recursos para o site educacional com JavaScript, jQuery e PHP.",
+          "Desenvolvimento de endpoints para que professores pudessem criar e enviar exercícios aos alunos.",
+          "Implementação de fluxos de feedback imediato para exercícios enviados pelos alunos."
+        ]
+      }
     },
     "artivinco": {
       "companyName": "Artivinco",
-      "period": "06/2012 ~ 06/2013",
-      "role": "Analista de Sistemas",
-      "description": [
-        "•\tDesenvolvimento de softwares de controle interno da empresa, principalmente referente a gestão de 'Fretes/transporte', além da criação de software para otimizar os setores internos em geral.",
-        "•\tCriação de software para otimizar a comunicação do sistema de folha de pagamento 'TOTVS'."
-      ]
+      "period": "06/2012 – 06/2013",
+      "role": "Desenvolvedor de Aplicações Desktop",
+      "engagement": {
+        "deliveryManagement": {
+          "name": "Gestão de Entregas e Frota",
+          "type": "produto",
+          "description": "Um sistema desktop para gerenciar entregas de caminhões, operações de frota e rotas.",
+          "responsibilities": [
+            "Desenvolvimento do sistema de gestão de entregas de caminhões.",
+            "Criação de uma nova interface baseada nas necessidades dos usuários.",
+            "Construção da aplicação com Delphi e Microsoft SQL Server."
+          ]
+        },
+        "reporting": {
+          "name": "Gerador de Relatórios da Fábrica",
+          "type": "produto",
+          "description": "Um gerador de relatórios XML que reunia dados do maquinário da fábrica, viagens dos entregadores e informações do TOTVS ERP.",
+          "responsibilities": [
+            "Criação de relatórios XML com as últimas viagens realizadas pelos entregadores da empresa.",
+            "Cruzamento dos dados do maquinário da fábrica com informações do TOTVS ERP.",
+            "Implementação de acesso a dados e recursos de relatórios com Delphi e Microsoft SQL Server."
+          ]
+        }
+      }
     },
     "brSimulations": {
       "companyName": "BR Simulations",
-      "period": "08/2007 ~ 08/2008",
-      "role": "Programador",
-      "description": [
-        "•\tDesenvolvimento de softwares para simulação de aviões profissionais (FTD Fligth Training Device), criando comunicação entre hardware e software de simulação (Ms Flight Simulator). Ferramenta Borland Delphi junto da biblioteca gráfica OpenGL.",
-        "•\tEntre os clientes, 'Companhia Aérea TAM', 'Escola de Aviação EDAPA', 'Escola de Aviação EJ', 'Aeroclube de Bragança'."
-      ]
+      "period": "08/2007 – 08/2008",
+      "role": "Estagiário de Desenvolvimento de Software",
+      "engagement": {
+        "a320": {
+          "name": "Airbus A320",
+          "type": "produto",
+          "description": "Um dispositivo de treinamento de voo que simula o cockpit e os sistemas de uma aeronave Airbus A320.",
+          "responsibilities": [
+            "Desenvolvimento de recursos para dispositivos de treinamento de voo (FTDs).",
+            "Criação da comunicação entre hardware e o Microsoft Flight Simulator.",
+            "Uso de OpenGL para renderizar controles de cockpit realistas conforme o estado do simulador.",
+            "Integração de componentes USB que simulam controles reais de aeronaves, além de apoio nos testes e identificação de defeitos no simulador."
+          ]
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "tictac": {
+      "title": "Tiny Tic Tac Toe",
+      "description": {
+        "summary": "Um jogo compacto de jogo da velha para mobile criado com React Native."
+      },
+      "year": "Ano: 2023",
+      "links": { "github": { "label": "GitHub" } }
+    },
+    "pathCrypto": {
+      "title": "Path Crypto",
+      "description": {
+        "summary": "Um aplicativo mobile de criptomoedas criado para uma startup fintech com React Native e Node.js."
+      },
+      "year": "Ano: 2022",
+      "links": { "website": { "label": "Website" } }
+    },
+    "pipoclube": {
+      "title": "Pipoclube",
+      "description": {
+        "summary": "Uma plataforma social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários."
+      },
+      "year": "Ano: 2022",
+      "links": { "website": { "label": "Website" } }
+    },
+    "aulapp": {
+      "title": "Aulapp",
+      "description": {
+        "summary": "Uma plataforma educacional com vídeos, áudios, exercícios e experiências de aprendizagem offline-first."
+      },
+      "year": "Ano: 2020",
+      "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
+    },
+    "livroh": {
+      "title": "Livroh",
+      "description": {
+        "summary": "Uma plataforma Android nativa para leitura de livros e audiolivros, criada para atender a um grande catálogo de editoras."
+      },
+      "year": "Ano: 2019",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "bancah": {
+      "title": "Bancah",
+      "description": { "summary": "Uma banca digital Android nativa para revistas e jornais." },
+      "year": "Ano: 2019",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "epicGolf2d": {
+      "title": "Epic Golf 2D",
+      "description": {
+        "summary": "Um jogo de golfe 2D para Android e iOS criado com MonoGame e C#. Foi finalista do BIG Festival 2018 e recebeu suporte da publicadora ZPlay."
+      },
+      "year": "Ano: 2019",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "venusParticleEditor": {
+      "title": "Venus Particle Editor",
+      "description": {
+        "summary": "Um editor de partículas desenvolvido para uso com o framework MonoGame."
+      },
+      "year": "Ano: 2019",
+      "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
+    },
+    "ourAdventureTime": {
+      "title": "Our Adventure Time",
+      "description": { "summary": "Um jogo sob medida criado para apoiar um pedido de casamento." },
+      "year": "Ano: 2018",
+      "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
+    },
+    "ultraRetroVirusAttack": {
+      "title": "Ultra Retro Virus Attack",
+      "description": {
+        "summary": "Um jogo criado em 48 horas para a Global Game Jam 2018. O jogador controla um vírus de computador e o espalha enquanto evita o firewall."
+      },
+      "year": "Ano: 2018",
+      "links": { "webPlayer": { "label": "Jogar online" }, "github": { "label": "GitHub" } }
+    },
+    "itaucard": {
+      "title": "Itaucard Android",
+      "description": {
+        "summary": "Um aplicativo Android nativo para gerenciar cartões de crédito do Itaú Unibanco, criado com Java e Android SDK."
+      },
+      "year": "Ano: 2017",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "rupert": {
+      "title": "Rupert",
+      "description": {
+        "summary": "Um projeto de jogo criado para explorar conceitos de desenvolvimento de jogos, testes com usuários, documentação de game design e código escalável."
+      },
+      "year": "Ano: 2017",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "tribanco": {
+      "title": "TriBanco Mobile Bank",
+      "description": {
+        "summary": "Um aplicativo bancário multiplataforma criado com Kony para Android e iOS."
+      },
+      "year": "Ano: 2016",
+      "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
+    },
+    "omgMyHouse": {
+      "title": "OMG My House",
+      "description": {
+        "summary": "Um jogo desenvolvido durante a graduação em Ciência da Computação, no qual o jogador protege sua casa de monstros."
+      },
+      "year": "Ano: 2015",
+      "links": { "webPlayer": { "label": "Jogar online" } }
+    },
+    "gamification": {
+      "title": "Monografia sobre Gamificação",
+      "description": {
+        "summary": "Uma monografia de conclusão de curso sobre sistemas gamificados, acompanhada de uma pequena aplicação que demonstra seus conceitos."
+      },
+      "year": "Ano: 2015",
+      "links": { "document": { "label": "Documento" } }
+    },
+    "spaceJay": {
+      "title": "Space Jay",
+      "description": {
+        "summary": "Um jogo Android com efeitos sonoros dinâmicos, pontuação online e alto nível de dificuldade."
+      },
+      "year": "Ano: 2014",
+      "links": { "googlePlay": { "label": "Google Play" } }
+    },
+    "clickideia": {
+      "title": "Clickideia Plataforma de Exercícios Educacionais",
+      "description": {
+        "summary": "Uma plataforma para criar exercícios, atribuí-los a alunos, avaliar respostas e gerar relatórios."
+      },
+      "year": "Ano: 2015",
+      "links": { "website": { "label": "Website" } }
     }
   },
   "v1": {
-    "profile": { "location": "Campinas, São Paulo — Brasil" },
+    "profile": {
+      "location": "Campinas, São Paulo — Brasil",
+      "name": "Marcelo Belkiman",
+      "subtitle": "Desenvolvedor Full-Stack Sênior"
+    },
+    "about": {
+      "title": "Olá!",
+      "description": [
+        "Engenheiro Full-Stack Sênior com mais de 14 anos de experiência na criação de produtos web e mobile escaláveis, com forte atuação em React Native, React e Node.js.",
+        "Sou especializado em desenvolvimento orientado a produto, arquitetura limpa e otimização de performance. Na Trio, construo produtos de ponta a ponta e ajudo equipes a tomar decisões técnicas que sustentam a escalabilidade de longo prazo."
+      ]
+    },
     "roles": {
-      "softwareEngineer": "Engenheiro de Software",
+      "softwareEngineer": "Engenheiro de Software Sênior",
       "mobileDeveloper": "Desenvolvedor Mobile",
-      "fullStack": "Desenvolvedor Full Stack"
+      "fullStack": "Desenvolvedor Full-Stack"
     },
     "skills": { "frontend": "Frontend", "backend": "Backend", "tools": "Ferramentas e outros" },
-    "languages": { "professional": "Profissional" },
+    "languages": { "professional": "Proficiência profissional" },
     "contact": { "email": "E-mail" },
-    "projectTypes": { "game": "Jogo", "software": "Software" },
-    "projectDescriptions": {
-      "game": "Projeto de desenvolvimento de jogos criado para explorar experiências interativas.",
-      "software": "Projeto de software focado em entregar uma experiência digital prática."
-    }
+    "sections": {
+      "profile": "Perfil",
+      "about": "Sobre mim",
+      "quickInfo": "Informações rápidas",
+      "professionalExperience": "Experiência profissional",
+      "skills": "Habilidades",
+      "contact": "Encontre-me online",
+      "education": "Formação",
+      "languages": "Idiomas",
+      "portfolio": "Portfólio",
+      "clientsProjects": "Clientes e projetos",
+      "keyResponsibilities": "Principais responsabilidades",
+      "techStack": "Tecnologias",
+      "projectCount": "{{count}} projetos"
+    },
+    "quickInfo": ["Guitarrista", "Geek", "Cultura pop", "Jogos", "Mindfulness"],
+    "current": "Atual",
+    "workModes": { "remote": "Remoto", "hybrid": "Híbrido", "onsite": "No local" },
+    "actions": {
+      "playPreview": "Reproduzir prévia de {{title}}",
+      "resumePreview": "Retomar prévia de {{title}}"
+    },
+    "projectTypes": { "game": "Jogo", "software": "Software" }
   }
 }

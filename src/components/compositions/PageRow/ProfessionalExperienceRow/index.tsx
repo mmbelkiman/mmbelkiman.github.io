@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
 import { ExperienceDetails } from './sections/ExperienceDetails'
@@ -18,6 +19,7 @@ export function ProfessionalExperienceRow({
   experiences,
   initialSelectedExperienceId,
 }: ProfessionalExperienceRowProps) {
+  const { t } = useTranslation()
   const [selectedExperienceId, setSelectedExperienceId] = useState(
     initialSelectedExperienceId ?? experiences[0]?.id,
   )
@@ -25,8 +27,8 @@ export function ProfessionalExperienceRow({
     experiences.find((experience) => experience.id === selectedExperienceId) ?? experiences[0]
 
   return (
-    <PanelFrame header={<PanelHeader label="Professional experience" />}>
-      <section aria-label="Professional experience" className="professional-experience-row">
+    <PanelFrame header={<PanelHeader label={t('v1.sections.professionalExperience')} />}>
+      <section aria-label={t('v1.sections.professionalExperience')} className="professional-experience-row">
         <ExperienceTimeline
           experiences={experiences}
           onSelect={setSelectedExperienceId}

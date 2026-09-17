@@ -1,14 +1,20 @@
 .portfolio-projects-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-small);
+  grid-auto-rows: max-content;
+  column-gap: var(--space-small);
+  row-gap: var(--space-normal);
   padding: var(--space-small);
 }
 
-.portfolio-projects-row__item,
-.portfolio-projects-row__item > .panel-frame {
+.portfolio-projects-row__item {
+  display: flex;
   min-width: 0;
-  height: 100%;
+}
+
+.portfolio-projects-row__item > .panel-frame {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .portfolio-projects-row__item--featured {

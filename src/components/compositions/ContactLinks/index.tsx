@@ -1,4 +1,5 @@
 import { Heading } from '@/components/ui/Heading'
+import { useTranslation } from 'react-i18next'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
 import { Text } from '@/components/ui/Text'
@@ -8,9 +9,11 @@ import type { ContactLinksProps } from './types'
 export type { ContactLink, ContactLinksProps } from './types'
 
 export function ContactLinks({ links }: ContactLinksProps) {
+  const { t } = useTranslation()
+
   return (
-    <PanelFrame header={<PanelHeader label="Find me online" />}>
-      <section aria-label="Contact links" className="contact-links">
+    <PanelFrame header={<PanelHeader label={t('v1.sections.contact')} />}>
+      <section aria-label={t('v1.sections.contact')} className="contact-links">
         <ul className="contact-links__list">
           {links.map((link) => {
             const isExternal = link.href.startsWith('http')

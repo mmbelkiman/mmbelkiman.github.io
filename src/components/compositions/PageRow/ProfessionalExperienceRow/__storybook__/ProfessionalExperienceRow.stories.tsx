@@ -104,13 +104,6 @@ export const Default: Story = {
         ],
       },
       {
-        id: 'onebrain',
-        company: 'Onebrain',
-        role: 'React Native Developer',
-        period: { start: { month: 'Feb', year: 2020 }, end: { month: 'Sep', year: 2021 } },
-        description: 'A placeholder description for a mobile product experience.',
-      },
-      {
         id: 'ies2',
         company: 'IES2',
         role: 'Full-Stack Developer',

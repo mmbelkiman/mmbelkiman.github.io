@@ -1,5 +1,6 @@
 import { MapPinIcon } from '@phosphor-icons/react/dist/csr/MapPin'
 import { BriefcaseIcon } from '@phosphor-icons/react/dist/csr/Briefcase'
+import { useTranslation } from 'react-i18next'
 import { CompanyLogo } from './CompanyLogo'
 import { ExperienceEngagement } from './ExperienceEngagement'
 import { Heading } from '@/components/ui/Heading'
@@ -14,6 +15,8 @@ type ExperienceDetailsProps = {
 }
 
 export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
+  const { t } = useTranslation()
+
   return (
     <article className="professional-experience-row__details">
       <header className="professional-experience-row__details-header">
@@ -39,16 +42,16 @@ export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
           ) : null}
         </div>
         <span className="professional-experience-row__details-period">
-          {formatExperiencePeriod(experience.period)}
+          {formatExperiencePeriod(experience.period, t('v1.current'))}
         </span>
       </header>
 
       <Text color="secondary">{experience.description}</Text>
 
       {experience.engagements?.length ? (
-        <PanelFrame header={<PanelHeader label="Clients & projects" />}>
+        <PanelFrame header={<PanelHeader label={t('v1.sections.clientsProjects')} />}>
           <section
-            aria-label="Clients and projects"
+            aria-label={t('v1.sections.clientsProjects')}
             className="professional-experience-row__engagements"
           >
             {experience.engagements.map((engagement) => (

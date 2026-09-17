@@ -58,13 +58,34 @@ export function usePortfolioContent(): PortfolioContent {
       timeZone: 'America/Sao_Paulo',
     },
     professionalExperience: professionalExperiences.map((experience) => {
-      const description = getTextList(experience.descriptionsKey).join(' ')
+      const descriptionKey =
+        experience.descriptionsKey ?? experience.titleKey.replace(/companyName$/, 'description')
+      const description = getTextList(descriptionKey).join(' ')
 
       return {
         company: t(experience.titleKey),
+        companyType: experience.companyTypeKey ? t(experience.companyTypeKey) : undefined,
         description,
+        engagements: experience.engagements?.map((engagement) => ({
+          category: engagement.category,
+          description: t(engagement.descriptionKey),
+          id: engagement.id,
+          logo: engagement.logoUrl ? `/${engagement.logoUrl}` : undefined,
+          name: t(engagement.nameKey),
+          period: engagement.periodKey ? t(engagement.periodKey) : undefined,
+          role: engagement.roleKey ? t(engagement.roleKey) : undefined,
+          responsibilities: getTextList(engagement.responsibilitiesKey),
+          technologies: engagement.technologies,
+          technologyBackground: 'transparent' as const,
+          type: t(engagement.typeKey) as 'client' | 'product',
+        })),
         id: experience.titleKey,
         logo: `/${experience.logoUrl}`,
+        location: experience.location
+          ? [experience.location, experience.workModeKey ? t(experience.workModeKey) : undefined]
+              .filter(Boolean)
+              .join(' · ')
+          : undefined,
         period: getPeriod(t(experience.periodKey), locale),
         role: t(experience.roleKey),
       }
@@ -119,11 +140,11 @@ export function usePortfolioContent(): PortfolioContent {
       ],
     },
     projects: portfolioItems.map((project) => {
-      const description = project.descriptionKeys?.map((key) => t(key)).filter(Boolean).join(' ')
+      const description = t(project.titleKey.replace(/\.title$/, '.description.summary'))
       const projectType = project.category
 
       return {
-        description: description || t(`v1.projectDescriptions.${projectType}`),
+        description,
         externalLinks: project.links?.map((link) => ({ label: t(link.labelKey), url: link.href })),
         featured: project.featured,
         icon:

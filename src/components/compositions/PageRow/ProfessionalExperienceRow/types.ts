@@ -21,6 +21,7 @@ export type Engagement = {
   logo?: string
   name: string
   period?: string
+  role?: string
   responsibilities: readonly string[]
   technologies: readonly ProjectTechnologyName[]
   technologyBackground?: ProjectTechnologyBackground

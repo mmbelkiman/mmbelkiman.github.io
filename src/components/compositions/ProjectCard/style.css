@@ -1,8 +1,10 @@
 .project-card {
+  box-sizing: border-box;
   display: grid;
   gap: var(--space-small);
   height: 100%;
   padding: var(--space-small);
+  padding-bottom: var(--space-big);
 }
 
 .project-card__header {

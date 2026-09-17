@@ -1,4 +1,5 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
+import { useTranslation } from 'react-i18next'
 import { ProjectTechnology } from '@/components/compositions/ProjectCard'
 import { ProjectCategory } from '@/components/compositions/ProjectCategory'
 import { Heading } from '@/components/ui/Heading'
@@ -12,6 +13,8 @@ type ExperienceEngagementProps = {
 }
 
 export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) {
+  const { t } = useTranslation()
+
   return (
     <PanelFrame>
       <article className="professional-experience-row__engagement">
@@ -20,7 +23,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
           <div>
             <Heading level={3}>{engagement.name}</Heading>
             <Text color="secondary" size="meta">
-              {engagement.type}
+              {engagement.role ? `${engagement.role} · ${engagement.type}` : engagement.type}
             </Text>
           </div>
           {engagement.period || engagement.category ? (
@@ -36,7 +39,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
         <div className="professional-experience-row__engagement-section">
           <div className="professional-experience-row__engagement-label">
             <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
-            Key responsibilities
+            {t('v1.sections.keyResponsibilities')}
           </div>
           <ul className="professional-experience-row__responsibilities">
             {engagement.responsibilities.map((responsibility) => (
@@ -45,21 +48,23 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
           </ul>
         </div>
 
-        <div className="professional-experience-row__engagement-section">
-          <div className="professional-experience-row__engagement-label">
-            <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
-            Tech stack
+        {engagement.technologies.length ? (
+          <div className="professional-experience-row__engagement-section">
+            <div className="professional-experience-row__engagement-label">
+              <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
+              {t('v1.sections.techStack')}
+            </div>
+            <ul className="project-card__technologies">
+              {engagement.technologies.map((tech) => (
+                <ProjectTechnology
+                  bg={engagement.technologyBackground}
+                  key={tech}
+                  tech={tech}
+                />
+              ))}
+            </ul>
           </div>
-          <ul className="project-card__technologies">
-            {engagement.technologies.map((tech) => (
-              <ProjectTechnology
-                bg={engagement.technologyBackground}
-                key={tech}
-                tech={tech}
-              />
-            ))}
-          </ul>
-        </div>
+        ) : null}
       </article>
     </PanelFrame>
   )

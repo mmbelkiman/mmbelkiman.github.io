@@ -3,6 +3,7 @@ import { CalendarIcon } from '@phosphor-icons/react/dist/csr/Calendar'
 import { PlayIcon } from '@phosphor-icons/react/dist/csr/Play'
 import { StarIcon } from '@phosphor-icons/react/dist/csr/Star'
 import { useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { ProjectTypeBadge } from '@/components/compositions/ProjectTypeBadge'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
@@ -38,6 +39,7 @@ export function ProjectCard({
   videoSrc,
   year,
 }: ProjectCardProps) {
+  const { t } = useTranslation()
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
   const [isVideoPaused, setIsVideoPaused] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -141,7 +143,7 @@ export function ProjectCard({
                   />
                 ) : (
                   <button
-                    aria-label={`Play ${title} preview`}
+                    aria-label={t('v1.actions.playPreview', { title })}
                     className="project-card__play-trigger"
                     onClick={() => setIsVideoLoaded(true)}
                     type="button"
@@ -157,7 +159,7 @@ export function ProjectCard({
               )}
               {isVideoLoaded && isVideoPaused ? (
                 <button
-                  aria-label={`Resume ${title} preview`}
+                  aria-label={t('v1.actions.resumePreview', { title })}
                   className="project-card__play-overlay"
                   onClick={resumeVideo}
                   type="button"

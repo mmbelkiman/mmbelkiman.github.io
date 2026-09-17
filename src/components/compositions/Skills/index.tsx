@@ -1,4 +1,5 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
+import { useTranslation } from 'react-i18next'
 import { ProjectTechnology } from '@/components/compositions/ProjectCard'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
@@ -9,9 +10,11 @@ import type { SkillsProps } from './types'
 export type { SkillsGroup, SkillsProps } from './types'
 
 export function Skills({ groups }: SkillsProps) {
+  const { t } = useTranslation()
+
   return (
-    <PanelFrame header={<PanelHeader label="Skills" />}>
-      <section aria-label="Skills" className="skills">
+    <PanelFrame header={<PanelHeader label={t('v1.sections.skills')} />}>
+      <section aria-label={t('v1.sections.skills')} className="skills">
         <div className="skills__groups">
           {groups.map((group) => (
             <section className="skills__group" key={group.title}>

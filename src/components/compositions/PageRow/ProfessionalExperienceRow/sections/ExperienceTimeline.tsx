@@ -1,4 +1,5 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
+import { useTranslation } from 'react-i18next'
 import { CompanyLogo } from './CompanyLogo'
 import type { Experience } from '../types'
 import { formatExperienceMonthYear } from '../utils'
@@ -14,42 +15,46 @@ export function ExperienceTimeline({
   onSelect,
   selectedExperienceId,
 }: ExperienceTimelineProps) {
+  const { t } = useTranslation()
+
   return (
     <nav
-      aria-label="Professional experience timeline"
+      aria-label={t('v1.sections.professionalExperience')}
       className="professional-experience-row__timeline"
     >
-      {experiences.map((experience) => {
-        const isSelected = experience.id === selectedExperienceId
+      <div className="professional-experience-row__timeline-content">
+        {experiences.map((experience) => {
+          const isSelected = experience.id === selectedExperienceId
 
-        return (
-          <button
-            aria-current={isSelected ? 'true' : undefined}
-            className="professional-experience-row__timeline-item"
-            key={experience.id}
-            onClick={() => onSelect(experience.id)}
-            type="button"
-          >
-            <span aria-hidden="true" className="professional-experience-row__timeline-marker" />
-            <span className="professional-experience-row__timeline-period">
-              <span>{formatExperienceMonthYear(experience.period.start)}</span>
-              <span>
-                {experience.period.end
-                  ? formatExperienceMonthYear(experience.period.end)
-                  : 'Present'}
+          return (
+            <button
+              aria-current={isSelected ? 'true' : undefined}
+              className="professional-experience-row__timeline-item"
+              key={experience.id}
+              onClick={() => onSelect(experience.id)}
+              type="button"
+            >
+              <span aria-hidden="true" className="professional-experience-row__timeline-marker" />
+              <span className="professional-experience-row__timeline-period">
+                <span>{formatExperienceMonthYear(experience.period.start)}</span>
+                <span>
+                  {experience.period.end
+                    ? formatExperienceMonthYear(experience.period.end)
+                    : t('v1.current')}
+                </span>
               </span>
-            </span>
-            <span className="professional-experience-row__timeline-company">
-              <CompanyLogo company={experience.company} logo={experience.logo} />
-              <span className="professional-experience-row__timeline-copy">
-                <strong>{experience.company}</strong>
-                <small>{experience.role}</small>
+              <span className="professional-experience-row__timeline-company">
+                <CompanyLogo company={experience.company} logo={experience.logo} />
+                <span className="professional-experience-row__timeline-copy">
+                  <strong>{experience.company}</strong>
+                  <small>{experience.role}</small>
+                </span>
+                <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
               </span>
-              <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
-            </span>
-          </button>
-        )
-      })}
+            </button>
+          )
+        })}
+      </div>
     </nav>
   )
 }

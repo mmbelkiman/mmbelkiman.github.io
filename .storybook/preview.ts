@@ -1,6 +1,7 @@
 import { createElement } from 'react'
 import type { Preview } from '@storybook/react-vite'
 import '../src/index.css'
+import '../src/i18n'
 
 document.documentElement.dataset.theme = 'v1'
 

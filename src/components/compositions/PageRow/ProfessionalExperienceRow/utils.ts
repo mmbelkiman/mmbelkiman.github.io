@@ -4,8 +4,8 @@ export function formatExperienceMonthYear({ month, year }: ExperienceMonthYear) 
   return `${month} ${year}`
 }
 
-export function formatExperiencePeriod({ end, start }: ExperiencePeriod) {
-  return `${formatExperienceMonthYear(start)} – ${end ? formatExperienceMonthYear(end) : 'Present'}`
+export function formatExperiencePeriod({ end, start }: ExperiencePeriod, current = 'Present') {
+  return `${formatExperienceMonthYear(start)} – ${end ? formatExperienceMonthYear(end) : current}`
 }
 
 export function getCompanyInitials(company: string) {
