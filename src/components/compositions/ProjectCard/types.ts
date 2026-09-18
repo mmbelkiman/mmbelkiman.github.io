@@ -12,6 +12,7 @@ export type ProjectCardProps = {
   externalLinks?: readonly ProjectExternalLink[]
   featured?: boolean
   icon: ReactNode
+  logoSrc?: string
   imageAlt: string
   imageSrc: string
   projectType?: ProjectTypeName

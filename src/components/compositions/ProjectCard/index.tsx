@@ -23,6 +23,7 @@ export function ProjectCard({
   externalLinks,
   featured = false,
   icon,
+  logoSrc,
   imageAlt,
   imageSrc,
   projectType,
@@ -50,7 +51,7 @@ export function ProjectCard({
           <div className="project-card__summary">
             <header className="project-card__header">
               <span aria-hidden="true" className="project-card__icon">
-                {icon}
+                {logoSrc ? <img alt="" src={logoSrc} /> : icon}
               </span>
               <div className="project-card__identity">
                 <Heading level={2}>
@@ -65,7 +66,7 @@ export function ProjectCard({
                   {title}
                 </Heading>
                 <Text color="secondary">{subtitle}</Text>
-                {projectType ? <ProjectTypeBadge type={projectType} /> : null}
+                {projectType ? <ProjectTypeBadge tone={featured ? 'featured' : 'default'} type={projectType} /> : null}
               </div>
             </header>
             <div className="project-card__description">

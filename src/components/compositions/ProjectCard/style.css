@@ -31,6 +31,15 @@
   height: var(--icon-size-big);
 }
 
+.project-card__icon img {
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  border: var(--border-width-thin) solid var(--color-metal-highlight);
+}
+
 .project-card__header .heading {
   color: var(--color-text-primary);
   font-size: var(--font-size-big);
@@ -124,6 +133,10 @@
 
 .project-card--featured .project-card__header .heading {
   color: var(--color-text-inverse);
+}
+
+.project-card--featured .project-card__icon img {
+  border-color: var(--color-metal-mid);
 }
 
 .project-card__year {

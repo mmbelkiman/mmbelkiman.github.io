@@ -1,8 +1,10 @@
 import { EnvelopeIcon } from '@phosphor-icons/react/dist/csr/Envelope'
 import { CodeIcon } from '@phosphor-icons/react/dist/csr/Code'
 import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
+import { FileTextIcon } from '@phosphor-icons/react/dist/csr/FileText'
 import { GithubLogoIcon } from '@phosphor-icons/react/dist/csr/GithubLogo'
 import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/csr/LinkedinLogo'
+import { UsersIcon } from '@phosphor-icons/react/dist/csr/Users'
 import { useTranslation } from 'react-i18next'
 import { academicEducation } from '@/data/academicEducation'
 import { portfolioItems, type PortfolioTechnology } from '@/data/portfolio'
@@ -177,12 +179,17 @@ export function usePortfolioContent(): PortfolioContent {
         icon:
           projectType === 'game' ? (
             <GameControllerIcon weight="fill" />
+          ) : projectType === 'social' ? (
+            <UsersIcon weight="fill" />
+          ) : projectType === 'doc' ? (
+            <FileTextIcon weight="fill" />
           ) : (
             <CodeIcon weight="fill" />
           ),
         id: project.titleKey,
         imageAlt: t(project.titleKey),
         imageSrc: project.posterUrl,
+        logoSrc: project.logoUrl,
         projectType,
         subtitle: t(`v1.projectTypes.${projectType}`),
         technologies: project.technologies.map((technology) => TECHNOLOGY_MAP[technology]),

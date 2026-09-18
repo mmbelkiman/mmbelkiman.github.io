@@ -35,3 +35,10 @@ export const Default: Story = {
     externalLinks: [{ label: 'Website', url: 'https://example.com' }],
   },
 }
+
+export const WithProjectLogo: Story = {
+  args: {
+    ...Default.args,
+    logoSrc: '/images/logos/pathcrypto.jpg',
+  },
+}

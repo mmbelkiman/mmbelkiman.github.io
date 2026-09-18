@@ -21,11 +21,12 @@ export type PortfolioLink = {
 }
 
 export type PortfolioItem = {
-  category: 'software' | 'game'
+  category: 'software' | 'game' | 'social' | 'doc'
   descriptionKeys?: string[]
   featured?: boolean
   linkSpacer?: boolean
   links?: PortfolioLink[]
+  logoUrl?: string
   posterUrl: string
   supplementaryImage?: {
     src: string
@@ -42,7 +43,7 @@ export const portfolioItems: PortfolioItem[] = [
     titleKey: 'portfolio.tictac.title',
     videoUrl: '/videos/tictac.webm',
     posterUrl: '/images/portfolio-previews/tictac.jpg',
-    category: 'software',
+    category: 'game',
     yearKey: 'portfolio.tictac.year',
     technologies: ['typescript', 'reactNative'],
     links: [
@@ -56,6 +57,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.pathCrypto.title',
     videoUrl: '/videos/pathcrypto.webm',
+    logoUrl: '/images/logos/pathcrypto.jpg',
     posterUrl: '/images/portfolio-previews/pathcrypto.jpg',
     category: 'software',
     yearKey: 'portfolio.pathCrypto.year',
@@ -72,8 +74,9 @@ export const portfolioItems: PortfolioItem[] = [
     titleKey: 'portfolio.pipoclube.title',
     featured: true,
     videoUrl: '/videos/pipoclube.webm',
+    logoUrl: '/images/logos/pipoclube.png',
     posterUrl: '/images/portfolio-previews/pipoclube.jpg',
-    category: 'software',
+    category: 'social',
     yearKey: 'portfolio.pipoclube.year',
     technologies: ['typescript', 'reactNative', 'php'],
     links: [
@@ -87,6 +90,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.aulapp.title',
     videoUrl: '/videos/aulapp.webm',
+    logoUrl: '/images/logos/aulapp.jpg',
     posterUrl: '/images/portfolio-previews/aulapp.jpg',
     category: 'software',
     yearKey: 'portfolio.aulapp.year',
@@ -108,6 +112,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.livroh.title',
     videoUrl: '/videos/livroh.webm',
+    logoUrl: '/images/logos/livroh.png',
     posterUrl: '/images/portfolio-previews/livroh.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.livroh.description.first', 'portfolio.livroh.description.second'],
@@ -124,6 +129,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.bancah.title',
     videoUrl: '/videos/bancah.webm',
+    logoUrl: '/images/logos/bancah.png',
     posterUrl: '/images/portfolio-previews/bancah.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.bancah.description.first', 'portfolio.bancah.description.second'],
@@ -141,6 +147,7 @@ export const portfolioItems: PortfolioItem[] = [
     titleKey: 'portfolio.epicGolf2d.title',
     featured: true,
     videoUrl: '/videos/epicgolf2d.webm',
+    logoUrl: '/images/logos/epic-golf-2d.png',
     posterUrl: '/images/portfolio-previews/epicgolf2d.jpg',
     category: 'game',
     descriptionKeys: [
@@ -235,6 +242,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.itaucard.title',
     videoUrl: '/videos/itaucard.webm',
+    logoUrl: '/images/logos/itau.png',
     posterUrl: '/images/portfolio-previews/itaucard.jpg',
     category: 'software',
     descriptionKeys: [
@@ -270,6 +278,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.tribanco.title',
     videoUrl: '/videos/tribanco.webm',
+    logoUrl: '/images/logos/tribanco.png',
     posterUrl: '/images/portfolio-previews/tribanco.jpg',
     category: 'software',
     descriptionKeys: [
@@ -315,7 +324,7 @@ export const portfolioItems: PortfolioItem[] = [
     titleKey: 'portfolio.gamification.title',
     videoUrl: '/videos/monografia.webm',
     posterUrl: '/images/portfolio-previews/monografia.jpg',
-    category: 'software',
+    category: 'doc',
     descriptionKeys: [
       'portfolio.gamification.description.first',
       'portfolio.gamification.description.second',

@@ -1,6 +1,6 @@
 import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
-import { RocketLaunchIcon } from '@phosphor-icons/react/dist/csr/RocketLaunch'
-import { WalletIcon } from '@phosphor-icons/react/dist/csr/Wallet'
+import { FileTextIcon } from '@phosphor-icons/react/dist/csr/FileText'
+import { UsersIcon } from '@phosphor-icons/react/dist/csr/Users'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PortfolioProjectsRow } from '@/components/compositions/PageRow/PortfolioProjectsRow'
 
@@ -35,28 +35,28 @@ export const Default: Story = {
         externalLinks: [{ label: 'Play online', url: 'https://example.com/orbit-defender' }],
       },
       {
-        id: 'reading-shelf',
-        title: 'Reading Shelf',
+        id: 'reading-community',
+        title: 'Reading Community',
         subtitle: 'Book discovery and recommendations.',
         description:
           'A mobile-focused experiment for browsing books, saving favorites and organizing recommendations.',
         year: '2023',
-        projectType: 'mobile',
-        icon: <RocketLaunchIcon weight="fill" />,
+        projectType: 'social',
+        icon: <UsersIcon weight="fill" />,
         imageSrc: '/images/portfolio-previews/livroh.jpg',
         imageAlt: 'Reading Shelf mobile app preview',
         technologies: ['react-native', 'firebase'],
       },
       {
-        id: 'personal-ledger',
-        title: 'Personal Ledger',
-        subtitle: 'A personal finance web application.',
+        id: 'research-notes',
+        title: 'Research Notes',
+        subtitle: 'A technical project document.',
         description:
           'A web application prototype focused on making everyday financial information easier to organize and review.',
         featured: true,
         year: '2022',
-        projectType: 'web',
-        icon: <WalletIcon weight="fill" />,
+        projectType: 'doc',
+        icon: <FileTextIcon weight="fill" />,
         imageSrc: '/images/portfolio-previews/bancah.jpg',
         imageAlt: 'Personal Ledger web application preview',
         technologies: ['react', 'node-js', 'postgresql'],

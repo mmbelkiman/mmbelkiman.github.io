@@ -315,7 +315,7 @@
     "tictac": {
       "title": "Tiny Tic Tac Toe",
       "description": {
-        "summary": "Um jogo compacto de jogo da velha para mobile criado com React Native."
+        "summary": "Jogo da velha mobile compacto criado com React Native."
       },
       "year": "Ano: 2023",
       "links": { "github": { "label": "GitHub" } }
@@ -323,7 +323,7 @@
     "pathCrypto": {
       "title": "Path Crypto",
       "description": {
-        "summary": "Um aplicativo mobile de criptomoedas criado para uma startup fintech com React Native e Node.js."
+        "summary": "Aplicativo mobile de criptomoedas criado para uma startup fintech com React Native e Node.js."
       },
       "year": "Ano: 2022",
       "links": { "website": { "label": "Website" } }
@@ -331,7 +331,7 @@
     "pipoclube": {
       "title": "Pipoclube",
       "description": {
-        "summary": "Uma plataforma social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários."
+        "summary": "Plataforma social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários."
       },
       "year": "Ano: 2022",
       "links": { "website": { "label": "Website" } }
@@ -339,7 +339,7 @@
     "aulapp": {
       "title": "Aulapp",
       "description": {
-        "summary": "Uma plataforma educacional com vídeos, áudios, exercícios e experiências de aprendizagem offline-first."
+        "summary": "Plataforma educacional com vídeos, áudios, exercícios e experiências de aprendizagem offline-first."
       },
       "year": "Ano: 2020",
       "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
@@ -347,21 +347,21 @@
     "livroh": {
       "title": "Livroh",
       "description": {
-        "summary": "Uma plataforma Android nativa para leitura de livros e audiolivros, criada para atender a um grande catálogo de editoras."
+        "summary": "Plataforma Android nativa para leitura de livros e audiolivros, criada para atender a um grande catálogo de editoras."
       },
       "year": "Ano: 2019",
       "links": { "googlePlay": { "label": "Google Play" } }
     },
     "bancah": {
       "title": "Bancah",
-      "description": { "summary": "Uma banca digital Android nativa para revistas e jornais." },
+      "description": { "summary": "Banca digital Android nativa para revistas e jornais." },
       "year": "Ano: 2019",
       "links": { "googlePlay": { "label": "Google Play" } }
     },
     "epicGolf2d": {
       "title": "Epic Golf 2D",
       "description": {
-        "summary": "Um jogo de golfe 2D para Android e iOS criado com MonoGame e C#. Foi finalista do BIG Festival 2018 e recebeu suporte da publicadora ZPlay."
+        "summary": "Jogo de golfe 2D para Android e iOS criado com MonoGame e C#. Finalista do BIG Festival 2018, com suporte da publicadora ZPlay."
       },
       "year": "Ano: 2019",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -369,21 +369,21 @@
     "venusParticleEditor": {
       "title": "Venus Particle Editor",
       "description": {
-        "summary": "Um editor de partículas desenvolvido para uso com o framework MonoGame."
+        "summary": "Editor de partículas desenvolvido para uso com o framework MonoGame."
       },
       "year": "Ano: 2019",
       "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
     },
     "ourAdventureTime": {
       "title": "Our Adventure Time",
-      "description": { "summary": "Um jogo sob medida criado para apoiar um pedido de casamento." },
+      "description": { "summary": "Jogo sob medida criado para apoiar um pedido de casamento." },
       "year": "Ano: 2018",
       "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
     },
     "ultraRetroVirusAttack": {
       "title": "Ultra Retro Virus Attack",
       "description": {
-        "summary": "Um jogo criado em 48 horas para a Global Game Jam 2018. O jogador controla um vírus de computador e o espalha enquanto evita o firewall."
+        "summary": "Jogo criado em 48 horas para a Global Game Jam 2018. O jogador controla um vírus de computador e o espalha enquanto evita o firewall."
       },
       "year": "Ano: 2018",
       "links": { "webPlayer": { "label": "Jogar online" }, "github": { "label": "GitHub" } }
@@ -391,7 +391,7 @@
     "itaucard": {
       "title": "Itaucard Android",
       "description": {
-        "summary": "Um aplicativo Android nativo para gerenciar cartões de crédito do Itaú Unibanco, criado com Java e Android SDK."
+        "summary": "Aplicativo Android nativo para gerenciar cartões de crédito do Itaú Unibanco, criado com Java e Android SDK."
       },
       "year": "Ano: 2017",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -399,7 +399,7 @@
     "rupert": {
       "title": "Rupert",
       "description": {
-        "summary": "Um projeto de jogo criado para explorar conceitos de desenvolvimento de jogos, testes com usuários, documentação de game design e código escalável."
+        "summary": "Projeto de jogo criado para explorar conceitos de desenvolvimento de jogos, testes com usuários, documentação de game design e código escalável."
       },
       "year": "Ano: 2017",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -407,7 +407,7 @@
     "tribanco": {
       "title": "TriBanco Mobile Bank",
       "description": {
-        "summary": "Um aplicativo bancário multiplataforma criado com Kony para Android e iOS."
+        "summary": "Aplicativo bancário multiplataforma criado com Kony para Android e iOS."
       },
       "year": "Ano: 2016",
       "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
@@ -415,7 +415,7 @@
     "omgMyHouse": {
       "title": "OMG My House",
       "description": {
-        "summary": "Um jogo desenvolvido durante a graduação em Ciência da Computação, no qual o jogador protege sua casa de monstros."
+        "summary": "Jogo desenvolvido durante a graduação em Ciência da Computação, no qual o jogador protege sua casa de monstros."
       },
       "year": "Ano: 2015",
       "links": { "webPlayer": { "label": "Jogar online" } }
@@ -423,7 +423,7 @@
     "gamification": {
       "title": "Monografia sobre Gamificação",
       "description": {
-        "summary": "Uma monografia de conclusão de curso sobre sistemas gamificados, acompanhada de uma pequena aplicação que demonstra seus conceitos."
+        "summary": "Monografia de conclusão de curso sobre sistemas gamificados, acompanhada de uma pequena aplicação que demonstra seus conceitos."
       },
       "year": "Ano: 2015",
       "links": { "document": { "label": "Documento" } }
@@ -431,7 +431,7 @@
     "spaceJay": {
       "title": "Space Jay",
       "description": {
-        "summary": "Um jogo Android com efeitos sonoros dinâmicos, pontuação online e alto nível de dificuldade."
+        "summary": "Jogo Android com efeitos sonoros dinâmicos, pontuação online e alto nível de dificuldade."
       },
       "year": "Ano: 2014",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -439,7 +439,7 @@
     "clickideia": {
       "title": "Clickideia Plataforma de Exercícios Educacionais",
       "description": {
-        "summary": "Uma plataforma para criar exercícios, atribuí-los a alunos, avaliar respostas e gerar relatórios."
+        "summary": "Plataforma para criar exercícios, atribuí-los a alunos, avaliar respostas e gerar relatórios."
       },
       "year": "Ano: 2015",
       "links": { "website": { "label": "Website" } }
@@ -493,6 +493,11 @@
       "playPreview": "Reproduzir prévia de {{title}}",
       "resumePreview": "Retomar prévia de {{title}}"
     },
-    "projectTypes": { "game": "Jogo", "software": "Software" }
+    "projectTypes": {
+      "doc": "Documento",
+      "game": "Jogo",
+      "social": "Rede social",
+      "software": "Software"
+    }
   }
 }
