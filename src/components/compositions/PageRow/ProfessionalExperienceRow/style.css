@@ -343,7 +343,7 @@
   color: var(--color-text-muted);
 }
 
-.professional-experience-row__engagement .project-card__technologies {
+.professional-experience-row__engagement .technology-tags {
   margin: 0;
 }
 

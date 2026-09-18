@@ -454,16 +454,21 @@
     "about": {
       "title": "Hello!",
       "description": [
-        "Senior Full-Stack Engineer with 14+ years of experience building scalable web and mobile products, with a strong focus on React Native, React, and Node.js.",
-        "I specialize in product-driven development, clean architecture, and performance optimization. At Trio, I build end-to-end products and help teams make technical decisions that support long-term scalability."
-      ]
+        "I'm a Programmer, Game Designer, and Software Architect with 14+ years of experience building scalable web and mobile products, with a strong focus on React Native, React, and Node.js.",
+        "I enjoy creating amazing digital solutions that are high-performing, visually elegant, and exciting to use."
+      ],
+      "prompt": "How can I help you today?"
     },
     "roles": {
       "softwareEngineer": "Senior Software Engineer",
       "mobileDeveloper": "Mobile Developer",
       "fullStack": "Full-Stack Developer"
     },
-    "skills": { "frontend": "Frontend", "backend": "Backend", "tools": "Tools and other" },
+    "skills": {
+      "development": "Development",
+      "tools": "Tools",
+      "architectureDeliveryDataInfrastructure": "Architecture, delivery, data & infrastructure"
+    },
     "languages": { "professional": "Professional proficiency" },
     "contact": { "email": "Email" },
     "sections": {

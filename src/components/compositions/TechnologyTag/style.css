@@ -1,0 +1,41 @@
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.technology-tag {
+  display: inline-flex;
+  gap: var(--space-nano);
+  align-items: center;
+  box-sizing: border-box;
+  height: 1.5rem;
+  padding: var(--space-nano) var(--space-small);
+  color: var(--color-text-ice);
+  border: var(--border-width-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-nano);
+  white-space: nowrap;
+}
+
+.technology-tag--bg-filled {
+  background: var(--color-surface-strong);
+}
+
+.technology-tag--bg-transparent {
+  color: var(--color-text);
+}
+
+.technology-tag--border-none {
+  border: 0;
+}
+
+.technology-tag svg {
+  width: var(--icon-size-nano);
+  height: var(--icon-size-nano);
+}

@@ -22,6 +22,12 @@ export function AboutMeCard() {
                 {paragraph}
               </Text>
             ))}
+            <Text color="secondary">
+              {t('v1.about.prompt')}
+              <span aria-hidden="true" className="about-me-card__cursor">
+                _
+              </span>
+            </Text>
           </div>
         </div>
       </section>

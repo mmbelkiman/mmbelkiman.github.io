@@ -7,10 +7,10 @@ import { useTranslation } from 'react-i18next'
 import { academicEducation } from '@/data/academicEducation'
 import { portfolioItems, type PortfolioTechnology } from '@/data/portfolio'
 import { professionalExperiences } from '@/data/professionalExperiences'
-import type { ProjectTechnologyName } from '@/components/compositions/ProjectCard'
+import type { TechnologyName } from '@/components/compositions/TechnologyTag'
 import type { PortfolioContent } from './types'
 
-const TECHNOLOGY_MAP: Record<PortfolioTechnology, ProjectTechnologyName> = {
+const TECHNOLOGY_MAP: Record<PortfolioTechnology, TechnologyName> = {
   construct2: 'html-css',
   csharp: 'csharp',
   htmlCss: 'html-css',
@@ -93,16 +93,43 @@ export function usePortfolioContent(): PortfolioContent {
     skills: {
       skillGroups: [
         {
-          title: t('v1.skills.frontend'),
-          technologies: ['react', 'react-native', 'typescript', 'javascript', 'html-css'],
-        },
-        {
-          title: t('v1.skills.backend'),
-          technologies: ['node-js', 'postgresql', 'php', 'java', 'sql'],
+          title: t('v1.skills.development'),
+          technologies: [
+            'typescript',
+            'csharp',
+            'java',
+            'php',
+            'sql',
+          ],
         },
         {
           title: t('v1.skills.tools'),
-          technologies: ['firebase', 'unity', 'monogame', 'csharp'],
+          technologies: [
+            'react-native',
+            'react',
+            'node-js',
+            'next-js',
+            'graphql',
+            'nestjs',
+            'redux',
+            'jest',
+            'unity',
+            'monogame',
+            'electron',
+          ],
+        },
+        {
+          title: t('v1.skills.architectureDeliveryDataInfrastructure'),
+          technologies: [
+            'firebase',
+            'aws',
+            'postgresql',
+            'redis',
+            'docker',
+            'software-architecture',
+            'agile-methodologies',
+            'ci-cd',
+          ],
         },
       ],
     },

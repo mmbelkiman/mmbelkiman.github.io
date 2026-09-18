@@ -1,4 +1,4 @@
-import type { ProjectTechnologyName } from '@/components/compositions/ProjectCard'
+import type { TechnologyName } from '@/components/compositions/TechnologyTag'
 import type { ProjectCategoryName } from '@/components/compositions/ProjectCategory'
 
 type ProfessionalEngagement = {
@@ -10,7 +10,7 @@ type ProfessionalEngagement = {
   periodKey?: string
   roleKey?: string
   responsibilitiesKey: string
-  technologies: readonly ProjectTechnologyName[]
+  technologies: readonly TechnologyName[]
   typeKey: string
 }
 

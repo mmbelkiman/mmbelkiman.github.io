@@ -454,16 +454,21 @@
     "about": {
       "title": "Olá!",
       "description": [
-        "Engenheiro Full-Stack Sênior com mais de 14 anos de experiência na criação de produtos web e mobile escaláveis, com forte atuação em React Native, React e Node.js.",
-        "Sou especializado em desenvolvimento orientado a produto, arquitetura limpa e otimização de performance. Na Trio, construo produtos de ponta a ponta e ajudo equipes a tomar decisões técnicas que sustentam a escalabilidade de longo prazo."
-      ]
+        "Sou Programador, Game Designer e Arquiteto de Software, com mais de 14 anos de experiência na criação de produtos web e mobile escaláveis, com forte atuação em React Native, React e Node.js.",
+        "Gosto de criar soluções digitais incríveis, com alta performance, visual elegante e uma experiência empolgante de usar."
+      ],
+      "prompt": "Como posso ajudar você hoje?"
     },
     "roles": {
       "softwareEngineer": "Engenheiro de Software Sênior",
       "mobileDeveloper": "Desenvolvedor Mobile",
       "fullStack": "Desenvolvedor Full-Stack"
     },
-    "skills": { "frontend": "Frontend", "backend": "Backend", "tools": "Ferramentas e outros" },
+    "skills": {
+      "development": "Desenvolvimento",
+      "tools": "Ferramentas",
+      "architectureDeliveryDataInfrastructure": "Arquitetura, entrega, dados e infraestrutura"
+    },
     "languages": { "professional": "Proficiência profissional" },
     "contact": { "email": "E-mail" },
     "sections": {

@@ -1,6 +1,6 @@
 import { CaretRightIcon } from '@phosphor-icons/react/dist/csr/CaretRight'
 import { useTranslation } from 'react-i18next'
-import { ProjectTechnology } from '@/components/compositions/ProjectCard'
+import { TechnologyTag } from '@/components/compositions/TechnologyTag'
 import { ProjectCategory } from '@/components/compositions/ProjectCategory'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
@@ -54,12 +54,12 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
               <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
               {t('v1.sections.techStack')}
             </div>
-            <ul className="project-card__technologies">
+            <ul className="technology-tags">
               {engagement.technologies.map((tech) => (
-                <ProjectTechnology
+                <TechnologyTag
                   bg={engagement.technologyBackground}
                   key={tech}
-                  tech={tech}
+                  technology={tech}
                 />
               ))}
             </ul>

@@ -5,10 +5,10 @@ import { StarIcon } from '@phosphor-icons/react/dist/csr/Star'
 import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ProjectTypeBadge } from '@/components/compositions/ProjectTypeBadge'
+import { TechnologyTag } from '@/components/compositions/TechnologyTag'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { Text } from '@/components/ui/Text'
-import { ProjectTechnology } from './sections/ProjectTechnology'
 import './style.css'
 import type { ProjectCardProps } from './types'
 import { getExternalLinkText } from './utils'
@@ -16,12 +16,7 @@ import { getExternalLinkText } from './utils'
 export type {
   ProjectCardProps,
   ProjectExternalLink,
-  ProjectTechnologyBackground,
-  ProjectTechnologyName,
 } from './types'
-export { ProjectTechnology } from './sections/ProjectTechnology'
-export type { ProjectTechnologyProps } from './sections/ProjectTechnology'
-export { PROJECT_TECHNOLOGY_NAMES } from './constants'
 
 export function ProjectCard({
   description,
@@ -96,13 +91,13 @@ export function ProjectCard({
               </div>
             ) : null}
             <div className="project-card__technology-stack">
-              <ul className="project-card__technologies">
+              <ul className="technology-tags">
                 {technologies.map((tech) => (
-                  <ProjectTechnology
+                  <TechnologyTag
                     bg={technologyBackground}
                     key={tech}
                     showIcon={technologyIconVisibility?.[tech]}
-                    tech={tech}
+                    technology={tech}
                   />
                 ))}
               </ul>

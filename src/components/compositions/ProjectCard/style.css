@@ -54,76 +54,6 @@
   border-radius: var(--radius-sm);
 }
 
-.project-card__technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-small);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.project-card__technology {
-  display: inline-flex;
-  gap: var(--space-nano);
-  align-items: center;
-  box-sizing: border-box;
-  height: 1.5rem;
-  padding: var(--space-nano) var(--space-small);
-  color: var(--color-text-ice);
-  border: var(--border-width-thin) solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: transparent;
-  font-family: var(--font-heading);
-  font-size: var(--font-size-nano);
-  white-space: nowrap;
-}
-
-.project-card__technology--bg-filled {
-  background: var(--color-surface-strong);
-}
-
-.project-card__technology--bg-transparent {
-  color: var(--color-text);
-}
-
-.project-card--featured .project-card__technology--bg-transparent {
-  color: var(--color-text-ice);
-}
-
-.project-card__technology--border-none {
-  border: 0;
-}
-
-.project-card__technology svg {
-  width: var(--icon-size-nano);
-  height: var(--icon-size-nano);
-}
-
-.project-card__technology--react svg {
-  color: var(--color-technology-react);
-}
-
-.project-card__technology--react-native svg {
-  color: var(--color-technology-react-native);
-}
-
-.project-card__technology--typescript svg {
-  color: var(--color-technology-typescript);
-}
-
-.project-card__technology--firebase svg {
-  color: var(--color-technology-firebase);
-}
-
-.project-card__technology--node-js svg {
-  color: var(--color-technology-node-js);
-}
-
-.project-card__technology--postgresql svg {
-  color: var(--color-technology-postgresql);
-}
-
 .project-card > .text {
   font-size: var(--font-size-normal);
   line-height: 1.25;
@@ -174,6 +104,10 @@
 
   color: var(--color-text-inverse);
   background: var(--color-surface-strong);
+}
+
+.project-card--featured .technology-tag--bg-transparent {
+  color: var(--color-text-ice);
 }
 
 .project-card__header {
