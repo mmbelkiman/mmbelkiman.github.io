@@ -31,8 +31,10 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.usOutsourcing',
     engagements: [
       {
+        category: 'research-platform',
         descriptionKey: 'professionalExperience.trio.current.engagement.studylog.description',
         id: 'studylog',
+        logoUrl: 'images/project-logos/studylog.png',
         nameKey: 'professionalExperience.trio.current.engagement.studylog.name',
         periodKey: 'professionalExperience.trio.current.engagement.studylog.period',
         responsibilitiesKey: 'professionalExperience.trio.current.engagement.studylog.responsibilities',
@@ -60,8 +62,10 @@ export const professionalExperiences: ProfessionalExperience[] = [
         typeKey: 'professionalExperience.trio.current.engagement.studylog.type',
       },
       {
+        category: 'insurance',
         descriptionKey: 'professionalExperience.trio.current.engagement.flyreel.description',
         id: 'flyreel',
+        logoUrl: 'images/project-logos/flyreel.png',
         nameKey: 'professionalExperience.trio.current.engagement.flyreel.name',
         periodKey: 'professionalExperience.trio.current.engagement.flyreel.period',
         roleKey: 'professionalExperience.trio.current.engagement.flyreel.role',
@@ -81,6 +85,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.edtech',
     engagements: [
       {
+        category: 'edtech',
         descriptionKey: 'professionalExperience.aulapp.engagement.description',
         id: 'aulapp-lms',
         logoUrl: 'img-aulapp.jpg',
@@ -111,6 +116,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.cybersecurity',
     engagements: [
       {
+        category: 'threat-intelligence',
         descriptionKey: 'professionalExperience.cyberISight.engagement.description',
         id: 'cyber-isight',
         logoUrl: 'img-cyberIsight.png',
@@ -145,9 +151,10 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.usOutsourcing',
     engagements: [
       {
+        category: 'fintech',
         descriptionKey: 'professionalExperience.trio.previous.engagement.pathCrypto.description',
         id: 'pathcrypto',
-        logoUrl: 'images/portfolio-previews/pathcrypto.jpg',
+        logoUrl: 'images/project-logos/pathcrypto.jpg',
         nameKey: 'professionalExperience.trio.previous.engagement.pathCrypto.name',
         responsibilitiesKey:
           'professionalExperience.trio.previous.engagement.pathCrypto.responsibilities',
@@ -183,8 +190,10 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.consultancy',
     engagements: [
       {
+        category: 'loyalty',
         descriptionKey: 'professionalExperience.ilia.engagement.livelo.description',
         id: 'livelo',
+        logoUrl: 'images/project-logos/livelo.png',
         nameKey: 'professionalExperience.ilia.engagement.livelo.name',
         responsibilitiesKey: 'professionalExperience.ilia.engagement.livelo.responsibilities',
         technologies: [
@@ -211,6 +220,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.edtech',
     engagements: [
       {
+        category: 'edtech',
         descriptionKey: 'professionalExperience.ies2.engagement.aulapp.description',
         id: 'aulapp',
         logoUrl: 'img-aulapp.jpg',
@@ -231,24 +241,30 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.software',
     engagements: [
       {
+        category: 'edtech',
         descriptionKey: 'professionalExperience.verisoft.engagements.uol.description',
         id: 'uol-curso-de-bolso',
+        logoUrl: 'images/project-logos/uol-curso-de-bolso.png',
         nameKey: 'professionalExperience.verisoft.engagements.uol.name',
         responsibilitiesKey: 'professionalExperience.verisoft.engagements.uol.responsibilities',
         technologies: ['android-sdk', 'java', 'sqlite', 'realm'],
         typeKey: 'professionalExperience.verisoft.engagements.uol.type',
       },
       {
+        category: 'media',
         descriptionKey: 'professionalExperience.verisoft.engagements.bancah.description',
         id: 'bancah',
+        logoUrl: 'images/project-logos/bancah.png',
         nameKey: 'professionalExperience.verisoft.engagements.bancah.name',
         responsibilitiesKey: 'professionalExperience.verisoft.engagements.bancah.responsibilities',
         technologies: ['android-sdk', 'java', 'sqlite', 'realm'],
         typeKey: 'professionalExperience.verisoft.engagements.bancah.type',
       },
       {
+        category: 'media',
         descriptionKey: 'professionalExperience.verisoft.engagements.livroh.description',
         id: 'livroh',
+        logoUrl: 'images/project-logos/livroh.png',
         nameKey: 'professionalExperience.verisoft.engagements.livroh.name',
         responsibilitiesKey: 'professionalExperience.verisoft.engagements.livroh.responsibilities',
         technologies: ['android-sdk', 'java', 'sqlite', 'realm', 'exoplayer'],
@@ -269,6 +285,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
         category: 'financial',
         descriptionKey: 'professionalExperience.ciandt.engagements.itau.description',
         id: 'itau-unibanco',
+        logoUrl: 'images/project-logos/itau.png',
         nameKey: 'professionalExperience.ciandt.engagements.itau.name',
         periodKey: 'professionalExperience.ciandt.engagements.itau.period',
         responsibilitiesKey: 'professionalExperience.ciandt.engagements.itau.responsibilities',
@@ -279,6 +296,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
         category: 'banking',
         descriptionKey: 'professionalExperience.ciandt.engagements.tribanco.description',
         id: 'tribanco',
+        logoUrl: 'images/project-logos/tribanco.png',
         nameKey: 'professionalExperience.ciandt.engagements.tribanco.name',
         periodKey: 'professionalExperience.ciandt.engagements.tribanco.period',
         responsibilitiesKey: 'professionalExperience.ciandt.engagements.tribanco.responsibilities',
@@ -297,6 +315,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.edtech',
     engagements: [
       {
+        category: 'edtech',
         descriptionKey: 'professionalExperience.clickideia.engagement.description',
         id: 'clickideia-platform',
         logoUrl: 'img-clickideia.png',
@@ -316,6 +335,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.logistics',
     engagements: [
       {
+        category: 'logistics',
         descriptionKey: 'professionalExperience.artivinco.engagement.deliveryManagement.description',
         id: 'delivery-management',
         nameKey: 'professionalExperience.artivinco.engagement.deliveryManagement.name',
@@ -325,6 +345,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
         typeKey: 'professionalExperience.artivinco.engagement.deliveryManagement.type',
       },
       {
+        category: 'industrial',
         descriptionKey: 'professionalExperience.artivinco.engagement.reporting.description',
         id: 'factory-reporting',
         nameKey: 'professionalExperience.artivinco.engagement.reporting.name',
@@ -344,6 +365,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     companyTypeKey: 'professionalExperience.companyTypes.simulation',
     engagements: [
       {
+        category: 'simulation',
         descriptionKey: 'professionalExperience.brSimulations.engagement.a320.description',
         id: 'airbus-a320',
         nameKey: 'professionalExperience.brSimulations.engagement.a320.name',
