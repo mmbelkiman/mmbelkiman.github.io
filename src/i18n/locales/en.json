@@ -448,8 +448,9 @@
   "v1": {
     "profile": {
       "location": "Campinas, São Paulo — Brazil",
+      "handle": "belki",
       "name": "Marcelo Belkiman",
-      "subtitle": "Senior Full-Stack Developer"
+      "subtitle": "Computer Scientist"
     },
     "about": {
       "title": "Hello!",
@@ -461,7 +462,6 @@
     },
     "roles": {
       "softwareEngineer": "Senior Software Engineer",
-      "mobileDeveloper": "Mobile Developer",
       "fullStack": "Full-Stack Developer"
     },
     "skills": {

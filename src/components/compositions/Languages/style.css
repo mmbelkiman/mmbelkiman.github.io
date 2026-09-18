@@ -22,17 +22,24 @@
 }
 
 .languages__flag {
-  display: grid;
+  display: flex;
   flex: 0 0 auto;
   width: 3rem;
   height: 2.25rem;
   overflow: hidden;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   border: var(--border-width-thin) solid var(--color-border-strong);
   border-radius: var(--radius-sm);
   background: var(--color-surface-inset);
+}
+
+.languages__flag-glyph {
+  display: block;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
   font-size: var(--font-size-huge);
   line-height: 1;
+  transform: translateY(1px);
 }
 
 .languages__item .heading {

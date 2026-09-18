@@ -1,4 +1,8 @@
 .clock-player-header {
+  --clock-player-height: calc(
+    3.5rem + var(--space-small) + var(--border-width-strong) + var(--border-width-strong)
+  );
+
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -20,6 +24,9 @@
   top: 50%;
   left: 0;
   z-index: 1;
+  box-sizing: border-box;
+  block-size: var(--clock-player-height);
+  margin-block: 0;
   transform: translateY(-50%);
 }
 

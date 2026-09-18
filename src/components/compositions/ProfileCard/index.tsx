@@ -25,8 +25,13 @@ export function ProfileCard() {
         </div>
 
         <div className="profile-card__details">
-          <Heading level={2}>{t('v1.profile.name')}</Heading>
-          <Text color="secondary">{t('v1.profile.subtitle')}</Text>
+          <Heading level={2}>
+            <span className="profile-card__handle">{t('v1.profile.handle')}</span>
+            <span aria-hidden="true" className="profile-card__separator">
+              {' :: '}
+            </span>
+            <span className="profile-card__credential">{t('v1.profile.subtitle')}</span>
+          </Heading>
         </div>
 
         <div className="profile-card__location">

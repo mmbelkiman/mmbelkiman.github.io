@@ -18,7 +18,7 @@ export function Languages({ languages }: LanguagesProps) {
           {languages.map((language) => (
             <li className="languages__item" key={language.name}>
               <span aria-hidden="true" className="languages__flag">
-                {language.flag}
+                <span className="languages__flag-glyph">{language.flag}</span>
               </span>
               <div>
                 <Heading level={3}>{language.name}</Heading>

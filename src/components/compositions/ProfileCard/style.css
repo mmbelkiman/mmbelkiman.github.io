@@ -34,19 +34,25 @@
 }
 
 .profile-card__details {
-  display: grid;
-  gap: var(--space-nano);
+  min-width: 0;
 }
 
 .profile-card__details .heading {
   color: var(--color-text-primary);
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-normal);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
-.profile-card__details .text {
-  font-size: var(--font-size-normal);
+.profile-card__credential {
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-weight: var(--font-weight-normal);
+}
+
+.profile-card__separator {
+  color: var(--color-focus);
+  font: inherit;
 }
 
 .profile-card__location {

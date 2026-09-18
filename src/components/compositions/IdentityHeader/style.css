@@ -56,8 +56,8 @@
 
 .identity-header__roles {
   display: flex;
-  flex-wrap: nowrap;
-  gap: var(--space-nano);
+  flex-direction: column;
+  gap: 0;
   margin: 0;
   padding: 0;
   color: var(--color-text-ice);

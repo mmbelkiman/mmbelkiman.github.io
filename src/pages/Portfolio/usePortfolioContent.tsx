@@ -54,7 +54,7 @@ export function usePortfolioContent(): PortfolioContent {
       givenName: 'Marcelo',
       locale,
       locationLabel: t('v1.profile.location'),
-      roles: [t('v1.roles.softwareEngineer'), t('v1.roles.mobileDeveloper'), t('v1.roles.fullStack')],
+      roles: [t('v1.roles.softwareEngineer'), t('v1.roles.fullStack')],
       timeZone: 'America/Sao_Paulo',
     },
     professionalExperience: professionalExperiences.map((experience) => {

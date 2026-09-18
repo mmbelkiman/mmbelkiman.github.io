@@ -17,6 +17,6 @@ export const Default: Story = {
   args: {
     givenName: 'Marcelo',
     familyName: 'Belkiman',
-    roles: ['Software Engineer', 'Mobile Developer', 'Full Stack'],
+    roles: ['Senior Software Engineer', 'Full-Stack Developer'],
   },
 }
