@@ -53,16 +53,6 @@
   line-height: 1.1;
 }
 
-.project-card__media {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  background: #000;
-  border: var(--border-width-strong) solid var(--color-border);
-  border-radius: var(--radius-sm);
-}
-
 .project-card > .text {
   font-size: var(--font-size-normal);
   line-height: 1.25;
@@ -177,11 +167,6 @@
   content: '•';
 }
 
-.project-card__media {
-  aspect-ratio: 16 / 10;
-  border-width: var(--border-width-thin);
-}
-
 .project-card__external-links {
   display: grid;
   gap: var(--space-nano);
@@ -254,8 +239,7 @@
     0 0 0 var(--border-width-thin) var(--color-metal-mid);
 }
 
-.project-card__icon::before,
-.project-card__media-frame::before {
+.project-card__icon::before {
   position: absolute;
   inset: var(--space-nano);
   border: var(--border-width-thin) solid var(--color-metal-mid);
@@ -320,92 +304,6 @@
 
 .project-card__media-column .project-card__year {
   justify-self: end;
-}
-
-.project-card__media-frame {
-  position: relative;
-  align-self: stretch;
-  padding: var(--space-small);
-  border: var(--border-width-strong) solid var(--color-accent);
-  border-radius: var(--radius-sm);
-  box-shadow:
-    inset 0 0 0 var(--border-width-thin) var(--color-metal-mid),
-    var(--shadow-inset);
-}
-
-.project-card__media-frame .project-card__media {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 12rem;
-  object-fit: contain;
-  background: #000;
-  border-color: var(--color-metal-mid);
-}
-
-video.project-card__media {
-  cursor: pointer;
-  object-fit: contain;
-  background: #000;
-}
-
-.project-card__play-trigger {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  overflow: hidden;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-}
-
-.project-card__play-trigger .project-card__media {
-  transition: filter 160ms ease;
-}
-
-.project-card__play-trigger:hover .project-card__media,
-.project-card__play-trigger:focus-visible .project-card__media {
-  filter: brightness(0.7);
-}
-
-.project-card__play-icon {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  width: var(--icon-size-huge);
-  height: var(--icon-size-huge);
-  place-items: center;
-  color: var(--color-accent-contrast);
-  background: color-mix(in srgb, var(--color-surface-strong) 78%, transparent);
-  border: var(--border-width-strong) solid var(--color-accent);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.project-card__play-icon svg {
-  width: var(--icon-size-normal);
-  height: var(--icon-size-normal);
-}
-
-.project-card__play-overlay {
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-}
-
-.project-card__play-trigger:focus-visible {
-  outline: var(--border-width-strong) solid var(--color-focus);
-  outline-offset: var(--space-nano);
 }
 
 @media (max-width: 40rem) {

@@ -490,6 +490,8 @@
     "current": "Atual",
     "workModes": { "remote": "Remoto", "hybrid": "Híbrido", "onsite": "No local" },
     "actions": {
+      "enterFullscreen": "Entrar em tela cheia na prévia de {{title}}",
+      "exitFullscreen": "Sair da tela cheia da prévia de {{title}}",
       "playPreview": "Reproduzir prévia de {{title}}",
       "resumePreview": "Retomar prévia de {{title}}"
     },

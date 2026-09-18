@@ -1,14 +1,12 @@
 import { ArrowSquareOutIcon } from '@phosphor-icons/react/dist/csr/ArrowSquareOut'
 import { CalendarIcon } from '@phosphor-icons/react/dist/csr/Calendar'
-import { PlayIcon } from '@phosphor-icons/react/dist/csr/Play'
 import { StarIcon } from '@phosphor-icons/react/dist/csr/Star'
-import { useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { ProjectTypeBadge } from '@/components/compositions/ProjectTypeBadge'
 import { TechnologyTag } from '@/components/compositions/TechnologyTag'
 import { Heading } from '@/components/ui/Heading'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { Text } from '@/components/ui/Text'
+import { PortfolioVideoPlayer } from '@/components/widgets/PortfolioVideoPlayer'
 import './style.css'
 import type { ProjectCardProps } from './types'
 import { getExternalLinkText } from './utils'
@@ -35,15 +33,6 @@ export function ProjectCard({
   videoSrc,
   year,
 }: ProjectCardProps) {
-  const { t } = useTranslation()
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
-  const [isVideoPaused, setIsVideoPaused] = useState(false)
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  const resumeVideo = () => {
-    void videoRef.current?.play()
-  }
-
   return (
     <PanelFrame tone={featured ? 'dark' : 'default'}>
       <article className={`project-card${featured ? ' project-card--featured' : ''}`}>
@@ -111,61 +100,12 @@ export function ProjectCard({
                 {year}
               </span>
             ) : null}
-            <div className="project-card__media-frame">
-              {videoSrc ? (
-                isVideoLoaded ? (
-                  <video
-                    aria-label={imageAlt}
-                    autoPlay
-                    className="project-card__media"
-                    loop
-                    muted
-                    onClick={(event) => {
-                      const video = event.currentTarget
-
-                      if (video.paused) {
-                        void video.play()
-                        return
-                      }
-
-                      video.pause()
-                    }}
-                    onPause={() => setIsVideoPaused(true)}
-                    onPlay={() => setIsVideoPaused(false)}
-                    playsInline
-                    poster={imageSrc}
-                    ref={videoRef}
-                    src={videoSrc}
-                  />
-                ) : (
-                  <button
-                    aria-label={t('v1.actions.playPreview', { title })}
-                    className="project-card__play-trigger"
-                    onClick={() => setIsVideoLoaded(true)}
-                    type="button"
-                  >
-                    <img alt={imageAlt} className="project-card__media" src={imageSrc} />
-                    <span aria-hidden="true" className="project-card__play-icon">
-                      <PlayIcon weight="fill" />
-                    </span>
-                  </button>
-                )
-              ) : (
-                <img alt={imageAlt} className="project-card__media" src={imageSrc} />
-              )}
-              {isVideoLoaded && isVideoPaused ? (
-                <button
-                  aria-label={t('v1.actions.resumePreview', { title })}
-                  className="project-card__play-overlay"
-                  onClick={resumeVideo}
-                  type="button"
-                >
-                  <span aria-hidden="true" className="project-card__play-icon">
-                    <PlayIcon weight="fill" />
-                  </span>
-                </button>
-              ) : null}
-            </div>
+            <PortfolioVideoPlayer
+              imageAlt={imageAlt}
+              imageSrc={imageSrc}
+              title={title}
+              videoSrc={videoSrc}
+            />
           </div>
         </div>
       </article>

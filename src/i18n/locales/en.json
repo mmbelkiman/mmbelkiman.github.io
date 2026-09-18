@@ -490,6 +490,8 @@
     "current": "Present",
     "workModes": { "remote": "Remote", "hybrid": "Hybrid", "onsite": "On-site" },
     "actions": {
+      "enterFullscreen": "Enter fullscreen for {{title}} preview",
+      "exitFullscreen": "Exit fullscreen for {{title}} preview",
       "playPreview": "Play {{title}} preview",
       "resumePreview": "Resume {{title}} preview"
     },
