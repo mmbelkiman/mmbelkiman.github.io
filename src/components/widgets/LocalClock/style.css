@@ -17,7 +17,6 @@
   margin: 0;
 }
 
-.local-clock > .text,
 .local-clock__date {
   color: var(--color-text-secondary);
   font-size: var(--font-size-nano);

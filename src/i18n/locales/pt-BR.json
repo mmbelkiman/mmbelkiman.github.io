@@ -331,7 +331,7 @@
     "pipoclube": {
       "title": "Pipoclube",
       "description": {
-        "summary": "Plataforma social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários."
+        "summary": "Rede social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários.\n\nDesenvolvimento end-to-end do backend em PHP e dos aplicativos mobile e web com React Native, além da condução da direção de produto da concepção à entrega."
       },
       "year": "Ano: 2022",
       "links": { "website": { "label": "Website" } }
@@ -361,9 +361,11 @@
     "epicGolf2d": {
       "title": "Epic Golf 2D",
       "description": {
-        "summary": "Jogo de golfe 2D para Android e iOS criado com MonoGame e C#. Finalista do BIG Festival 2018, com suporte da publicadora ZPlay."
+        "summary": "Jogo de golfe mobile, com foco em mecânicas simples baseadas em física. Desenvolvi todo o código do game, além de participar das decisões de game design.\n\nO projeto foi finalista do BIG Festival 2018. Após o festival, recebeu suporte da publicadora ZPlay."
       },
-      "year": "Ano: 2019",
+      "awardAlt": "Epic Golf 2D, finalista do BIG Festival 2018",
+      "awardCaption": "Finalista Big Festival\nBig Starter 2018",
+      "year": "Ano: 2018",
       "links": { "googlePlay": { "label": "Google Play" } }
     },
     "venusParticleEditor": {
@@ -480,6 +482,7 @@
       "contact": "Encontre-me online",
       "education": "Formação",
       "languages": "Idiomas",
+      "featuredProject": "Projeto em Destaque",
       "portfolio": "Portfólio",
       "clientsProjects": "Clientes e projetos",
       "keyResponsibilities": "Principais responsabilidades",

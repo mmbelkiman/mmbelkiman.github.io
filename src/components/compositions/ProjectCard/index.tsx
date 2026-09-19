@@ -14,6 +14,7 @@ import { getExternalLinkText } from './utils'
 export type {
   ProjectCardProps,
   ProjectExternalLink,
+  ProjectSupplementaryImage,
 } from './types'
 
 export function ProjectCard({
@@ -25,7 +26,7 @@ export function ProjectCard({
   imageAlt,
   imageSrc,
   projectType,
-  subtitle,
+  supplementaryImage,
   technologies,
   technologyBackground,
   technologyIconVisibility,
@@ -54,12 +55,16 @@ export function ProjectCard({
                   ) : null}
                   {title}
                 </Heading>
-                <Text color="secondary">{subtitle}</Text>
                 {projectType ? <ProjectTypeBadge tone={featured ? 'featured' : 'default'} type={projectType} /> : null}
               </div>
             </header>
             <div className="project-card__description">
               <Text color="secondary">{description}</Text>
+              {supplementaryImage ? (
+                <figure className="project-card__supplementary-image">
+                  <img alt={supplementaryImage.alt} src={supplementaryImage.src} />
+                </figure>
+              ) : null}
             </div>
             {externalLinks?.length ? (
               <div className="project-card__link-section">

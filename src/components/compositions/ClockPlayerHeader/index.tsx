@@ -9,7 +9,6 @@ export type { ClockPlayerHeaderProps } from './types'
 
 export function ClockPlayerHeader({
   locale,
-  locationLabel,
   spotifyUrl,
   timeZone,
 }: ClockPlayerHeaderProps) {
@@ -18,7 +17,7 @@ export function ClockPlayerHeader({
       <section aria-label="Now playing and local time" className="clock-player-header">
         <div className="clock-player-header__city">
           <CityLandscapeParallax timeZone={timeZone} />
-          <LocalClock locale={locale} locationLabel={locationLabel} timeZone={timeZone} />
+          <LocalClock locale={locale} timeZone={timeZone} />
         </div>
         <SpotifyPlayer spotifyUrl={spotifyUrl} />
       </section>

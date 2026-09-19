@@ -15,7 +15,6 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    locationLabel: 'Campinas, BR',
     locale: 'en-US',
     timeZone: 'America/Sao_Paulo',
   },

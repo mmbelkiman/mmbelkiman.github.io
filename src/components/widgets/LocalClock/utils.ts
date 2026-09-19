@@ -22,13 +22,3 @@ export function formatLocalTime({ locale, time, timeZone }: DateFormatOptions) {
     timeZone,
   }).format(time)
 }
-
-export function getLocationFromTimeZone(timeZone: string) {
-  const city = timeZone.split('/').at(-1)?.replaceAll('_', ' ')
-
-  return city ?? timeZone
-}
-
-export function getResolvedTimeZone(timeZone?: string) {
-  return timeZone ?? Intl.DateTimeFormat().resolvedOptions().timeZone
-}

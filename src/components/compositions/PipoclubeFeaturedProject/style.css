@@ -1,0 +1,326 @@
+.pipoclube-featured-project {
+  --color-accent: #d8193a;
+  --color-accent-hover: #f12b50;
+  --color-accent-active: #a90e27;
+  --color-border: #8c4c58;
+  --color-metal-mid: #9b5967;
+  --color-metal-dark: #4f1821;
+  --color-panel-header-details: #f4cbd2;
+  --color-panel-header-prefix: #8b1428;
+  --color-panel-header-surface-bottom: #4a151e;
+  --color-panel-header-surface-top: #6a202c;
+  --color-project-type-social: #ffc05a;
+  --color-project-type-social-surface: #513517;
+  --color-surface-raised: #251316;
+  --color-surface-strong: #171617;
+  --color-text-ice: #efd9dc;
+  --color-text-inverse: #fff7f8;
+  --color-text-muted: #d9b4ba;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.pipoclube-featured-project > .panel-frame {
+  position: relative;
+  z-index: 1;
+}
+
+.pipoclube-featured-project .panel-frame__content {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 80% 44%, #9d162c59, transparent 38%),
+    linear-gradient(118deg, #191718f2 0%, #211315ed 54%, #40171dec 100%);
+}
+
+.pipoclube-featured-project__background {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pipoclube-featured-project__glow,
+.pipoclube-featured-project__ring,
+.pipoclube-featured-project__dot,
+.pipoclube-featured-project__background-icon {
+  position: absolute;
+}
+
+.pipoclube-featured-project__glow {
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pipoclube-featured-project__glow--top {
+  top: -19rem;
+  right: -10rem;
+  width: 34rem;
+  height: 34rem;
+  background: #aa000036;
+}
+
+.pipoclube-featured-project__glow--bottom {
+  bottom: -24rem;
+  left: -14rem;
+  width: 42rem;
+  height: 42rem;
+  background: #ffffff0d;
+}
+
+.pipoclube-featured-project__glow--center {
+  top: 18%;
+  left: 35%;
+  width: 30rem;
+  height: 30rem;
+  background: #aa000022;
+}
+
+.pipoclube-featured-project__ring {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #ffffff30;
+  border-radius: 50%;
+}
+
+.pipoclube-featured-project__ring--top {
+  top: 15%;
+  right: 12%;
+}
+
+.pipoclube-featured-project__ring--bottom {
+  bottom: 11%;
+  left: 43%;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-color: #ff9cad45;
+}
+
+.pipoclube-featured-project__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.pipoclube-featured-project__dot--red {
+  top: 22%;
+  left: 11%;
+  background: #e22240;
+  box-shadow: 0 0 1rem #e22240;
+}
+
+.pipoclube-featured-project__dot--light {
+  right: 5%;
+  bottom: 25%;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #fff;
+  box-shadow: 0 0 0.9rem #fff;
+}
+
+.pipoclube-featured-project__background-icon {
+  color: #ee3854;
+  opacity: 0.14;
+}
+
+.pipoclube-featured-project__background-icon--popcorn {
+  bottom: -1.6rem;
+  left: 3%;
+  width: 9rem;
+  height: 9rem;
+  color: #fff0d4;
+  transform: rotate(-18deg);
+}
+
+.pipoclube-featured-project__background-icon--film-strip {
+  top: -1.25rem;
+  right: 36%;
+  width: 25rem;
+  height: 25rem;
+  transform: rotate(-31deg);
+}
+
+.pipoclube-featured-project__background-icon--reel {
+  right: -1.75rem;
+  bottom: -2.5rem;
+  width: 13rem;
+  height: 13rem;
+  color: #f16075;
+  transform: rotate(16deg);
+}
+
+.pipoclube-featured-project__background-icon--star {
+  top: 43%;
+  left: 45%;
+  width: 4rem;
+  height: 4rem;
+  color: #ffc05a;
+  opacity: 0.16;
+  transform: rotate(16deg);
+}
+
+.pipoclube-featured-project__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(19rem, 1.14fr);
+  gap: clamp(var(--space-big), 3vw, 3rem);
+  padding: clamp(var(--space-normal), 2vw, var(--space-big));
+}
+
+.pipoclube-featured-project__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.pipoclube-featured-project__identity {
+  display: flex;
+  gap: var(--space-normal);
+  align-items: center;
+  width: 100%;
+  padding-bottom: var(--space-normal);
+  margin-bottom: var(--space-normal);
+  border-bottom: var(--border-width-thin) solid color-mix(in srgb, #e9a7b0 45%, transparent);
+}
+
+.pipoclube-featured-project__logo {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(5.5rem, 10vw, 8rem);
+  height: clamp(5.5rem, 10vw, 8rem);
+  object-fit: contain;
+  filter: drop-shadow(0 0.25rem 0.3rem color-mix(in srgb, #000 50%, transparent));
+}
+
+.pipoclube-featured-project__identity .heading {
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+  color: var(--color-text-inverse);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pipoclube-featured-project__star {
+  flex: 0 0 auto;
+  color: #ffc05a;
+}
+
+.pipoclube-featured-project__identity .text {
+  margin-top: var(--space-nano);
+  font-size: var(--font-size-normal);
+  text-transform: uppercase;
+}
+
+.pipoclube-featured-project__identity .project-type-badge {
+  margin-top: var(--space-small);
+}
+
+.pipoclube-featured-project__description {
+  display: grid;
+  gap: var(--space-normal);
+  max-width: 38rem;
+}
+
+.pipoclube-featured-project__description .text {
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.42;
+}
+
+.pipoclube-featured-project__links {
+  display: grid;
+  gap: var(--space-small);
+  width: 100%;
+  padding: var(--space-normal) 0;
+  margin: var(--space-normal) 0 0;
+  border-top: var(--border-width-thin) solid color-mix(in srgb, #e9a7b0 45%, transparent);
+  border-bottom: var(--border-width-thin) solid color-mix(in srgb, #e9a7b0 45%, transparent);
+  list-style: none;
+}
+
+.pipoclube-featured-project__links li,
+.pipoclube-featured-project__links a {
+  display: inline-flex;
+  gap: var(--space-small);
+  align-items: center;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-normal);
+}
+
+.pipoclube-featured-project__links a {
+  color: #ff5d7b;
+  text-decoration: none;
+}
+
+.pipoclube-featured-project__links a:hover {
+  color: #ff95a8;
+  text-decoration: underline;
+}
+
+.pipoclube-featured-project__technologies {
+  padding-top: var(--space-normal);
+}
+
+.pipoclube-featured-project__technologies .technology-tag {
+  color: #f9e4e7;
+  border-color: #bb7280;
+  background: color-mix(in srgb, #251316 70%, transparent);
+}
+
+.pipoclube-featured-project__demo {
+  display: grid;
+  gap: var(--space-nano);
+  min-width: 0;
+}
+
+.pipoclube-featured-project__demo-label {
+  padding: var(--space-nano) var(--space-small);
+  color: #f9e4e7;
+  background: color-mix(in srgb, #6a202c 86%, transparent);
+  border: var(--border-width-thin) solid #a75e6b;
+  border-bottom: 0;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-nano);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pipoclube-featured-project__demo .portfolio-video-player {
+  min-height: 100%;
+  padding: var(--space-small);
+  border-color: #c8203c;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+.pipoclube-featured-project__year {
+  display: inline-flex;
+  gap: var(--space-small);
+  align-items: center;
+}
+
+@media (max-width: 56rem) {
+  .pipoclube-featured-project__content {
+    grid-template-columns: 1fr;
+  }
+
+  .pipoclube-featured-project__demo {
+    order: -1;
+  }
+}
+
+@media (max-width: 32rem) {
+  .pipoclube-featured-project__identity {
+    align-items: flex-start;
+  }
+
+  .pipoclube-featured-project__logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

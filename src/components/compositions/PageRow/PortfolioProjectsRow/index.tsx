@@ -1,4 +1,6 @@
 import { ProjectCard } from '@/components/compositions/ProjectCard'
+import { EpicGolfFeaturedProject } from '@/components/compositions/EpicGolfFeaturedProject'
+import { PipoclubeFeaturedProject } from '@/components/compositions/PipoclubeFeaturedProject'
 import { useTranslation } from 'react-i18next'
 import { PanelFrame } from '@/components/ui/PanelFrame'
 import { PanelHeader } from '@/components/ui/PanelHeader'
@@ -24,7 +26,7 @@ export function PortfolioProjectsRow({ projects }: PortfolioProjectsRowProps) {
       }
     >
       <section aria-label={t('v1.sections.portfolio')} className="portfolio-projects-row">
-        {orderedProjects.map(({ id, ...project }) => (
+        {orderedProjects.map(({ id, presentation, ...project }) => (
           <div
             className={
               project.featured
@@ -33,7 +35,13 @@ export function PortfolioProjectsRow({ projects }: PortfolioProjectsRowProps) {
             }
             key={id}
           >
-            <ProjectCard {...project} />
+            {presentation === 'pipoclube' ? (
+              <PipoclubeFeaturedProject {...project} />
+            ) : presentation === 'epicGolf' ? (
+              <EpicGolfFeaturedProject {...project} />
+            ) : (
+              <ProjectCard {...project} />
+            )}
           </div>
         ))}
       </section>

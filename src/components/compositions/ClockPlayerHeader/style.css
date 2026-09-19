@@ -36,13 +36,13 @@
   right: 0;
   z-index: 1;
   min-height: 0;
-  height: clamp(4.9rem, 4vw, 5.75rem);
+  height: 4rem;
   max-width: 100%;
   align-content: start;
 }
 
 @media (max-width: 42rem) {
   .clock-player-header__city > .local-clock {
-    height: 4.9rem;
+    height: 4rem;
   }
 }

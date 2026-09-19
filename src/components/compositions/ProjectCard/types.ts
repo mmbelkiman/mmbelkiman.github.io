@@ -7,6 +7,12 @@ export type ProjectExternalLink = {
   url: string
 }
 
+export type ProjectSupplementaryImage = {
+  alt: string
+  caption?: string
+  src: string
+}
+
 export type ProjectCardProps = {
   description: string
   externalLinks?: readonly ProjectExternalLink[]
@@ -16,7 +22,7 @@ export type ProjectCardProps = {
   imageAlt: string
   imageSrc: string
   projectType?: ProjectTypeName
-  subtitle: string
+  supplementaryImage?: ProjectSupplementaryImage
   technologies: readonly TechnologyName[]
   technologyBackground?: TechnologyTagBackground
   technologyIconVisibility?: Partial<Record<TechnologyName, boolean>>

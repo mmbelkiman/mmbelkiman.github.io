@@ -22,7 +22,6 @@ export const Default: Story = {
       {
         id: 'orbit-defender',
         title: 'Orbit Defender',
-        subtitle: 'A compact arcade prototype.',
         description:
           'A small arcade project created to explore fast game loops, score systems and responsive keyboard controls.',
         featured: true,
@@ -37,7 +36,6 @@ export const Default: Story = {
       {
         id: 'reading-community',
         title: 'Reading Community',
-        subtitle: 'Book discovery and recommendations.',
         description:
           'A mobile-focused experiment for browsing books, saving favorites and organizing recommendations.',
         year: '2023',
@@ -50,7 +48,6 @@ export const Default: Story = {
       {
         id: 'research-notes',
         title: 'Research Notes',
-        subtitle: 'A technical project document.',
         description:
           'A web application prototype focused on making everyday financial information easier to organize and review.',
         featured: true,

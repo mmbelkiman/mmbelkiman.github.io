@@ -329,7 +329,7 @@
     "pipoclube": {
       "title": "Pipoclube",
       "description": {
-        "summary": "Social platform for discovering, cataloging, and reviewing movies, with collections, ratings, and user-generated content."
+        "summary": "Social network for discovering, cataloging, and reviewing movies, with collections, ratings, and user-generated content.\n\nLed end-to-end development of the PHP backend and React Native mobile and web apps, while guiding product direction from concept through delivery."
       },
       "year": "Year: 2022",
       "links": { "website": { "label": "Website" } }
@@ -361,9 +361,11 @@
     "epicGolf2d": {
       "title": "Epic Golf 2D",
       "description": {
-        "summary": "2D mobile golf game for Android and iOS, built with MonoGame and C#. Finalist at BIG Festival 2018, with support from publisher ZPlay."
+        "summary": "Mobile golf game focused on simple physics-based mechanics. I developed all of the game's code and contributed to game-design decisions.\n\nThe project was a finalist at BIG Festival 2018. After the festival, it received support from publisher ZPlay."
       },
-      "year": "Year: 2019",
+      "awardAlt": "Epic Golf 2D, finalist at BIG Festival 2018",
+      "awardCaption": "Finalista Big Festival\nBig Starter 2018",
+      "year": "Year: 2018",
       "links": { "googlePlay": { "label": "Google Play" } }
     },
     "venusParticleEditor": {
@@ -480,6 +482,7 @@
       "contact": "Find me online",
       "education": "Education",
       "languages": "Languages",
+      "featuredProject": "Featured Project",
       "portfolio": "Portfolio",
       "clientsProjects": "Clients and projects",
       "keyResponsibilities": "Key responsibilities",

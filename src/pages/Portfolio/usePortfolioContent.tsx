@@ -55,7 +55,6 @@ export function usePortfolioContent(): PortfolioContent {
       familyName: 'Belkiman',
       givenName: 'Marcelo',
       locale,
-      locationLabel: t('v1.profile.location'),
       roles: [t('v1.roles.softwareEngineer'), t('v1.roles.fullStack')],
       timeZone: 'America/Sao_Paulo',
     },
@@ -190,8 +189,15 @@ export function usePortfolioContent(): PortfolioContent {
         imageAlt: t(project.titleKey),
         imageSrc: project.posterUrl,
         logoSrc: project.logoUrl,
+        presentation: project.presentation,
         projectType,
-        subtitle: t(`v1.projectTypes.${projectType}`),
+        supplementaryImage: project.supplementaryImage
+          ? {
+              alt: t(project.supplementaryImage.altKey),
+              caption: project.supplementaryImage.captionKey ? t(project.supplementaryImage.captionKey) : undefined,
+              src: project.supplementaryImage.src,
+            }
+          : undefined,
         technologies: project.technologies.map((technology) => TECHNOLOGY_MAP[technology]),
         technologyBackground: 'transparent' as const,
         title: t(project.titleKey),

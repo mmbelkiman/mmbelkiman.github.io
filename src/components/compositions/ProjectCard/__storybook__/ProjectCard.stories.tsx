@@ -24,7 +24,6 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     title: 'Project name',
-    subtitle: 'A concise project subtitle',
     description:
       'A short project description that explains its purpose and the main problem it solves.',
     technologies: ['react', 'typescript', 'firebase'],
@@ -41,5 +40,15 @@ export const WithProjectLogo: Story = {
   args: {
     ...Default.args,
     logoSrc: '/images/logos/pathcrypto.jpg',
+  },
+}
+
+export const WithRecognition: Story = {
+  args: {
+    ...Default.args,
+    supplementaryImage: {
+      alt: 'Epic Golf 2D, finalist at BIG Festival 2018',
+      src: '/images/portfolio-awards/epic-golf-2d/big-festival-finalist.png',
+    },
   },
 }

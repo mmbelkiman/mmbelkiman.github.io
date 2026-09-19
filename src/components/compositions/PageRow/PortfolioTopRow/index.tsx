@@ -11,7 +11,6 @@ export function PortfolioTopRow({
   familyName = DEFAULT_FAMILY_NAME,
   givenName = DEFAULT_GIVEN_NAME,
   locale,
-  locationLabel,
   roles = DEFAULT_ROLES,
   spotifyUrl,
   timeZone,
@@ -25,7 +24,6 @@ export function PortfolioTopRow({
         <Grid.Column weight={7}>
           <ClockPlayerHeader
             locale={locale}
-            locationLabel={locationLabel}
             spotifyUrl={spotifyUrl}
             timeZone={timeZone}
           />

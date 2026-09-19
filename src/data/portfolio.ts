@@ -27,10 +27,12 @@ export type PortfolioItem = {
   linkSpacer?: boolean
   links?: PortfolioLink[]
   logoUrl?: string
+  presentation?: 'pipoclube' | 'epicGolf'
   posterUrl: string
   supplementaryImage?: {
+    altKey: string
+    captionKey?: string
     src: string
-    width: string
   }
   technologies: PortfolioTechnology[]
   titleKey: string
@@ -73,6 +75,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.pipoclube.title',
     featured: true,
+    presentation: 'pipoclube',
     videoUrl: '/videos/pipoclube.webm',
     logoUrl: '/images/logos/pipoclube.png',
     posterUrl: '/images/portfolio-previews/pipoclube.jpg',
@@ -146,6 +149,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.epicGolf2d.title',
     featured: true,
+    presentation: 'epicGolf',
     videoUrl: '/videos/epicgolf2d.webm',
     logoUrl: '/images/logos/epic-golf-2d.png',
     posterUrl: '/images/portfolio-previews/epicgolf2d.jpg',
@@ -155,7 +159,11 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.epicGolf2d.description.second',
     ],
     yearKey: 'portfolio.epicGolf2d.year',
-    supplementaryImage: { src: 'epicgolf2d-trofeu.jpg', width: '40%' },
+    supplementaryImage: {
+      altKey: 'portfolio.epicGolf2d.awardAlt',
+      captionKey: 'portfolio.epicGolf2d.awardCaption',
+      src: '/images/portfolio-awards/epic-golf-2d/big-festival-finalist.png',
+    },
     technologies: ['monogame', 'csharp'],
     links: [
       {
