@@ -12,6 +12,8 @@ export type PortfolioTechnology =
   | 'typescript'
   | 'unity'
 
+export type PortfolioProjectIcon = 'grid-nine' | 'virus' | 'compass' | 'house'
+
 export type PortfolioLink = {
   className?: string
   compact?: boolean
@@ -27,6 +29,7 @@ export type PortfolioItem = {
   linkSpacer?: boolean
   links?: PortfolioLink[]
   logoUrl?: string
+  projectIcon?: PortfolioProjectIcon
   presentation?: 'pipoclube' | 'epicGolf'
   posterUrl: string
   supplementaryImage?: {
@@ -44,6 +47,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.tictac.title',
     videoUrl: '/videos/tictac.webm',
+    projectIcon: 'grid-nine',
     posterUrl: '/images/portfolio-previews/tictac.jpg',
     category: 'game',
     yearKey: 'portfolio.tictac.year',
@@ -176,6 +180,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.venusParticleEditor.title',
     videoUrl: '/videos/venusparticleeditor.webm',
+    logoUrl: '/images/logos/venus-particle-editor.png',
     posterUrl: '/images/portfolio-previews/venusparticleeditor.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.venusParticleEditor.description.first'],
@@ -199,6 +204,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.ourAdventureTime.title',
     videoUrl: '/videos/ouradventuretime.webm',
+    projectIcon: 'compass',
     posterUrl: '/images/portfolio-previews/ouradventuretime.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.ourAdventureTime.description.first'],
@@ -223,6 +229,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.ultraRetroVirusAttack.title',
     videoUrl: '/videos/ultraretrovirusattack.webm',
+    projectIcon: 'virus',
     posterUrl: '/images/portfolio-previews/ultraretrovirusattack.jpg',
     category: 'game',
     descriptionKeys: [
@@ -270,6 +277,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.rupert.title',
     videoUrl: '/videos/rupert.webm',
+    logoUrl: '/images/logos/rupert-the-fish.png',
     posterUrl: '/images/portfolio-previews/rupert.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.rupert.description.first', 'portfolio.rupert.description.second'],
@@ -312,6 +320,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.omgMyHouse.title',
     videoUrl: '/videos/omgmyhouse.webm',
+    projectIcon: 'house',
     posterUrl: '/images/portfolio-previews/omgmyhouse.jpg',
     category: 'game',
     descriptionKeys: [
@@ -353,6 +362,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.spaceJay.title',
     videoUrl: '/videos/spacejay.webm',
+    logoUrl: '/images/logos/space-jay.png',
     posterUrl: '/images/portfolio-previews/spacejay.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.spaceJay.description.first'],
@@ -362,13 +372,14 @@ export const portfolioItems: PortfolioItem[] = [
       {
         labelKey: 'portfolio.spaceJay.links.googlePlay.label',
         textKey: 'portfolio.spaceJay.links.googlePlay.text',
-        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk',
+        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.spacej',
       },
     ],
   },
   {
     titleKey: 'portfolio.clickideia.title',
     videoUrl: '/videos/clickideia.webm',
+    logoUrl: '/images/logos/clickideia.png',
     posterUrl: '/images/portfolio-previews/clickideia.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.clickideia.description.first'],

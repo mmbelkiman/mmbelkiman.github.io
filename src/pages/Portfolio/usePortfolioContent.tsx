@@ -1,13 +1,21 @@
 import { EnvelopeIcon } from '@phosphor-icons/react/dist/csr/Envelope'
 import { CodeIcon } from '@phosphor-icons/react/dist/csr/Code'
+import { CompassIcon } from '@phosphor-icons/react/dist/csr/Compass'
 import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
 import { FileTextIcon } from '@phosphor-icons/react/dist/csr/FileText'
 import { GithubLogoIcon } from '@phosphor-icons/react/dist/csr/GithubLogo'
+import { GridNineIcon } from '@phosphor-icons/react/dist/csr/GridNine'
+import { HouseIcon } from '@phosphor-icons/react/dist/csr/House'
 import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/csr/LinkedinLogo'
 import { UsersIcon } from '@phosphor-icons/react/dist/csr/Users'
+import { VirusIcon } from '@phosphor-icons/react/dist/csr/Virus'
 import { useTranslation } from 'react-i18next'
 import { academicEducation } from '@/data/academicEducation'
-import { portfolioItems, type PortfolioTechnology } from '@/data/portfolio'
+import {
+  portfolioItems,
+  type PortfolioProjectIcon,
+  type PortfolioTechnology,
+} from '@/data/portfolio'
 import { professionalExperiences } from '@/data/professionalExperiences'
 import type { TechnologyName } from '@/components/compositions/TechnologyTag'
 import type { PortfolioContent } from './types'
@@ -25,6 +33,13 @@ const TECHNOLOGY_MAP: Record<PortfolioTechnology, TechnologyName> = {
   sql: 'sql',
   typescript: 'typescript',
   unity: 'unity',
+}
+
+const PROJECT_ICON_MAP: Record<PortfolioProjectIcon, React.JSX.Element> = {
+  'grid-nine': <GridNineIcon weight="fill" />,
+  virus: <VirusIcon weight="fill" />,
+  compass: <CompassIcon weight="fill" />,
+  house: <HouseIcon weight="fill" />,
 }
 
 function formatMonth(month: number, locale: string) {
@@ -175,8 +190,9 @@ export function usePortfolioContent(): PortfolioContent {
         description,
         externalLinks: project.links?.map((link) => ({ label: t(link.labelKey), url: link.href })),
         featured: project.featured,
-        icon:
-          projectType === 'game' ? (
+        icon: project.projectIcon ? (
+          PROJECT_ICON_MAP[project.projectIcon]
+        ) : projectType === 'game' ? (
             <GameControllerIcon weight="fill" />
           ) : projectType === 'social' ? (
             <UsersIcon weight="fill" />
