@@ -1,4 +1,5 @@
 import { TECHNOLOGIES } from './constants'
+import { useTranslation } from 'react-i18next'
 import './style.css'
 import type { TechnologyTagProps } from './types'
 
@@ -11,7 +12,8 @@ export function TechnologyTag({
   showIcon = true,
   technology,
 }: TechnologyTagProps) {
-  const { icon: Icon, iconColor, label, logo } = TECHNOLOGIES[technology]
+  const { t } = useTranslation()
+  const { icon: Icon, iconColor, label, labelKey, logo } = TECHNOLOGIES[technology]
   const color = iconColor ?? (logo?.hex ? `#${logo.hex}` : undefined)
 
   return (
@@ -33,7 +35,7 @@ export function TechnologyTag({
           <Icon aria-hidden="true" style={color ? { color } : undefined} weight="fill" />
         )
       ) : null}
-      {label}
+      {labelKey ? t(labelKey) : label}
     </li>
   )
 }

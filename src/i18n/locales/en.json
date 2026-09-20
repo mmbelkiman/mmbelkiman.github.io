@@ -30,6 +30,13 @@
     }
   },
   "professionalExperience": {
+    "locations": {
+      "bostonUs": "Boston, Massachusetts, United States",
+      "campinasBrazil": "Campinas, São Paulo, Brazil",
+      "coloradoUs": "Colorado, United States",
+      "brasiliaBrazil": "Brasília, Federal District, Brazil",
+      "itatibaBrazil": "Itatiba, São Paulo, Brazil"
+    },
     "companyTypes": {
       "usOutsourcing": "US-based outsourcing company",
       "globalOutsourcing": "Global outsourcing company",
@@ -46,8 +53,7 @@
         "period": "11/2023 – Present",
         "role": "Senior Full-Stack Developer (React.js and Node.js)",
         "description": [
-          "US-based outsourcing company serving Studylog, a preclinical research platform, and Flyreel.",
-          "Developed a multi-tenant platform with real-time collaboration, advanced data grids, role-based access control, and Node.js services built with NestJS and GraphQL."
+          "Software engineering company based in Boston, United States, that partners with fintechs and businesses in regulated industries across the United States and Latin America. It builds long-term remote teams embedded in its partners’ products."
         ],
         "engagement": {
           "studylog": {
@@ -80,8 +86,7 @@
         "period": "04/2022 – 04/2023",
         "role": "Senior Full-Stack Developer (React Native and Node.js)",
         "description": [
-          "US-based outsourcing company. Client: Path Crypto, a fintech cryptocurrency platform.",
-          "Developed a cryptocurrency mobile application with React Native and contributed to scalable architecture and Node.js backend services."
+          "Software engineering company based in Boston, United States, that partners with fintechs and businesses in regulated industries across the United States and Latin America. It builds long-term remote teams embedded in its partners’ products."
         ],
         "engagement": {
           "pathCrypto": {
@@ -102,8 +107,7 @@
       "period": "09/2021 – 10/2024",
       "role": "Senior React Native Consultant and Tech Lead",
       "description": [
-        "EdTech company. Product: Aulapp, an educational platform.",
-        "Led mobile architecture and development processes, modernized the codebase with TypeScript and hooks, and implemented offline-first experiences with Realm."
+        "Brazilian education technology company based in Campinas that offers an LMS platform for educational institutions and organizations. It supports the creation, management, and tracking of digital learning experiences across educational and corporate settings."
       ],
       "engagement": {
         "name": "Aulapp LMS",
@@ -123,8 +127,7 @@
       "period": "04/2023 – 12/2023",
       "role": "Senior Full-Stack Developer (Node.js and React.js)",
       "description": [
-        "Cybersecurity software company. Product: Cyber iSight, a threat intelligence platform.",
-        "Led the multi-tenant platform from scratch, defining its architecture and building Node.js services and a scalable React and TypeScript frontend."
+        "U.S. cybersecurity company based in Colorado, created by industry specialists to develop threat intelligence and management solutions."
       ],
       "engagement": {
         "name": "Cyber iSight",
@@ -142,8 +145,7 @@
       "period": "06/2021 – 04/2022",
       "role": "Senior React Native Developer",
       "description": [
-        "Outsourcing company. Client: Livelo, Elopar’s loyalty platform.",
-        "Designed and delivered a travel redemption flow, while mentoring developers and collaborating with stakeholders on technical decisions."
+        "Brazilian digital product consultancy that combines design, data, and software engineering to create and evolve digital solutions for companies across industries."
       ],
       "engagement": {
         "livelo": {
@@ -163,8 +165,7 @@
       "period": "09/2019 – 03/2021",
       "role": "Senior React Native Developer",
       "description": [
-        "EdTech company. Product: Aulapp, an educational platform.",
-        "Developed multimedia learning features, including custom video and audio players, and refactored the core application around coding standards and components."
+        "Brazilian education technology company based in Campinas, dedicated to developing learning platforms, digital content, and applications for educational institutions and organizations."
       ],
       "engagement": {
         "aulapp": {
@@ -184,8 +185,7 @@
       "period": "11/2017 – 09/2019",
       "role": "Mid-Level Android Developer",
       "description": [
-        "Software company behind Bancah!, a digital newsstand, and Livroh!, a books and audiobooks platform.",
-        "Developed native Android applications for books, audiobooks, magazines, and newspapers, supporting a catalog of more than 20,000 books."
+        "Brazilian software company specializing in digital solutions for the publishing, education, and media sectors."
       ],
       "engagements": {
         "uol": {
@@ -193,7 +193,7 @@
           "type": "product",
           "description": "A native Android application for accessing educational content on mobile devices.",
           "responsibilities": [
-            "Developed native Android features for the mobile learning experience.",
+            "Developed features and improvements for the application.",
             "Contributed to the maintenance and evolution of the application."
           ]
         },
@@ -222,14 +222,13 @@
       "period": "08/2015 – 11/2017",
       "role": "Junior Android and JavaScript Developer",
       "description": [
-        "Global outsourcing company. Clients: Itaú Unibanco and TriBanco.",
-        "Built Android and cross-platform banking applications, collaborating in a cross-functional team of approximately 40 people."
+        "Brazilian multinational founded in Campinas in 1995, specializing in strategy, design, and software engineering to support the digital transformation of large enterprises and growing businesses."
       ],
       "engagements": {
         "itau": {
           "name": "Itaú Unibanco",
           "type": "client",
-          "period": "2015 – 2016",
+          "period": "2016 – 2017",
           "description": "Developed a native Android application for credit card management using Java and the Android SDK.",
           "responsibilities": [
             "Developed native Android features for credit card management.",
@@ -240,7 +239,7 @@
         "tribanco": {
           "name": "TriBanco",
           "type": "client",
-          "period": "2016 – 2017",
+          "period": "2015 – 2016",
           "description": "Built a cross-platform banking application with the Kony framework for Android and iOS.",
           "responsibilities": [
             "Developed reusable mobile interface components.",
@@ -254,6 +253,9 @@
       "companyName": "Clickideia",
       "period": "05/2014 – 08/2015",
       "role": "Full-Stack Developer Intern",
+      "description": [
+        "Brazilian education technology company that originated from Unicamp research projects with support from CNPq. It provides platforms, content, and training for public education networks."
+      ],
       "engagement": {
         "name": "Clickideia",
         "type": "product",
@@ -269,6 +271,9 @@
       "companyName": "Artivinco",
       "period": "06/2012 – 06/2013",
       "role": "Desktop Application Developer",
+      "description": [
+        "Brazilian packaging company founded in 1967 and based in Itatiba, São Paulo. It produces solutions that protect products, with ongoing investments in innovation, quality, and sustainable processes."
+      ],
       "engagement": {
         "deliveryManagement": {
           "name": "Delivery and Fleet Management",
@@ -296,6 +301,9 @@
       "companyName": "BR Simulations",
       "period": "08/2007 – 08/2008",
       "role": "Software Developer Intern",
+      "description": [
+        "Brazilian aerospace company based in Itatiba, São Paulo, dedicated to developing and manufacturing simulation equipment and flight training devices."
+      ],
       "engagement": {
         "a320": {
           "name": "Airbus A320",
@@ -314,7 +322,9 @@
   "portfolio": {
     "tictac": {
       "title": "Tiny Tic Tac Toe",
-      "description": { "summary": "Compact mobile tic-tac-toe game built with React Native." },
+      "description": {
+        "summary": "Cross-platform tic-tac-toe game for Android and iOS built with React Native and TypeScript, focused on a lightweight mobile application with minimal external dependencies.\n\nExplores decoupled components, simple animations, and a test suite with Jest and Detox."
+      },
       "year": "Year: 2023",
       "links": { "github": { "label": "GitHub" } }
     },
@@ -401,7 +411,7 @@
     "rupert": {
       "title": "Rupert",
       "description": {
-        "summary": "Game project created to explore game-development concepts, user testing, game-design documentation, and scalable code."
+        "summary": "Platform and puzzle game set in the depths of the ocean. Players guide a small fish through a calm adventure where observation, reasoning, and precision take the place of combat.\n\nAcross 10 levels, physics-based challenges, exploration, hidden paths, collectibles, achievements, and online rankings invite players to uncover every secret of its underwater world."
       },
       "year": "Year: 2017",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -433,7 +443,7 @@
     "spaceJay": {
       "title": "Space Jay",
       "description": {
-        "summary": "Android game with dynamic sound effects, online scoring, and a high level of difficulty."
+        "summary": "Destroy enemies, memorize attack patterns, and select the right targets to maximize your score.\n\nWith 14 enemy types, Google Play Games leaderboards, and unlockable achievements, every run rewards precision, strategy, and mastery of its mechanics."
       },
       "year": "Year: 2014",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -470,6 +480,10 @@
       "development": "Development",
       "tools": "Tools",
       "architectureDeliveryDataInfrastructure": "Architecture, delivery, data & infrastructure"
+    },
+    "technologies": {
+      "softwareArchitecture": "Software Architecture",
+      "agileMethodologies": "Agile Methodologies"
     },
     "languages": { "professional": "Professional proficiency" },
     "contact": { "email": "Email" },

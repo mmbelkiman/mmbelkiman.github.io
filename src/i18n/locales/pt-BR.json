@@ -30,6 +30,13 @@
     }
   },
   "professionalExperience": {
+    "locations": {
+      "bostonUs": "Boston, Massachusetts, Estados Unidos",
+      "campinasBrazil": "Campinas, São Paulo, Brasil",
+      "coloradoUs": "Colorado, Estados Unidos",
+      "brasiliaBrazil": "Brasília, Distrito Federal, Brasil",
+      "itatibaBrazil": "Itatiba, São Paulo, Brasil"
+    },
     "companyTypes": {
       "usOutsourcing": "Empresa de outsourcing dos Estados Unidos",
       "globalOutsourcing": "Empresa global de outsourcing",
@@ -46,8 +53,7 @@
         "period": "11/2023 – Atual",
         "role": "Desenvolvedor Full-Stack Sênior (React.js e Node.js)",
         "description": [
-          "Empresa de outsourcing dos Estados Unidos que atende Studylog, uma plataforma de pesquisa pré-clínica, e Flyreel.",
-          "Desenvolvimento de uma plataforma multi-tenant com colaboração em tempo real, grids avançados, controle de acesso por função e serviços Node.js com NestJS e GraphQL."
+          "Empresa de engenharia de software sediada em Boston, nos Estados Unidos, que atua como parceira de fintechs e empresas de setores regulados nos Estados Unidos e na América Latina. Forma equipes remotas de longo prazo integradas aos produtos de seus parceiros."
         ],
         "engagement": {
           "studylog": {
@@ -80,8 +86,7 @@
         "period": "04/2022 – 04/2023",
         "role": "Desenvolvedor Full-Stack Sênior (React Native e Node.js)",
         "description": [
-          "Empresa de outsourcing dos Estados Unidos. Cliente: Path Crypto, uma plataforma fintech de criptomoedas.",
-          "Desenvolvimento de um aplicativo de criptomoedas em React Native e contribuição para uma arquitetura escalável e serviços de backend em Node.js."
+          "Empresa de engenharia de software sediada em Boston, nos Estados Unidos, que atua como parceira de fintechs e empresas de setores regulados nos Estados Unidos e na América Latina. Forma equipes remotas de longo prazo integradas aos produtos de seus parceiros."
         ],
         "engagement": {
           "pathCrypto": {
@@ -102,8 +107,7 @@
       "period": "09/2021 – 10/2024",
       "role": "Consultor React Native Sênior e Tech Lead",
       "description": [
-        "Empresa de EdTech. Produto: Aulapp, uma plataforma educacional.",
-        "Liderança da arquitetura e dos processos de desenvolvimento mobile, modernização do código com TypeScript e hooks e implementação de experiências offline-first com Realm."
+        "Empresa brasileira de tecnologia educacional sediada em Campinas que oferece uma plataforma LMS para instituições de ensino e organizações. Apoia a criação, gestão e acompanhamento de experiências de aprendizagem digital em diferentes contextos educacionais e corporativos."
       ],
       "engagement": {
         "name": "Aulapp LMS",
@@ -123,8 +127,7 @@
       "period": "04/2023 – 12/2023",
       "role": "Desenvolvedor Full-Stack Sênior (Node.js e React.js)",
       "description": [
-        "Empresa de software de cibersegurança. Produto: Cyber iSight, uma plataforma de inteligência de ameaças.",
-        "Liderança do desenvolvimento da plataforma multi-tenant desde o início, definindo arquitetura e construindo serviços Node.js e um frontend escalável em React e TypeScript."
+        "Empresa norte-americana de cibersegurança sediada no Colorado, criada por especialistas do setor para desenvolver soluções de inteligência e gestão de ameaças."
       ],
       "engagement": {
         "name": "Cyber iSight",
@@ -142,8 +145,7 @@
       "period": "06/2021 – 04/2022",
       "role": "Desenvolvedor React Native Sênior",
       "description": [
-        "Empresa de outsourcing. Cliente: Livelo, plataforma de fidelidade da Elopar.",
-        "Desenvolvimento de um novo fluxo de resgate de viagens, mentoria de desenvolvedores e colaboração com stakeholders em decisões técnicas."
+        "Consultoria brasileira de produtos digitais que combina design, dados e engenharia de software para criar e evoluir soluções digitais para empresas de diferentes setores."
       ],
       "engagement": {
         "livelo": {
@@ -163,8 +165,7 @@
       "period": "09/2019 – 03/2021",
       "role": "Desenvolvedor React Native Sênior",
       "description": [
-        "Empresa de EdTech. Produto: Aulapp, uma plataforma educacional.",
-        "Desenvolvimento de recursos de aprendizagem multimídia, incluindo players personalizados de vídeo e áudio, e refatoração do núcleo da aplicação com padrões de código e componentes."
+        "Empresa brasileira de tecnologia educacional sediada em Campinas, dedicada ao desenvolvimento de plataformas de aprendizagem, conteúdos digitais e aplicativos para instituições de ensino e organizações."
       ],
       "engagement": {
         "aulapp": {
@@ -184,8 +185,7 @@
       "period": "11/2017 – 09/2019",
       "role": "Desenvolvedor Android Pleno",
       "description": [
-        "Empresa de software responsável por Bancah!, uma banca digital, e Livroh!, uma plataforma de livros e audiolivros.",
-        "Desenvolvimento de aplicativos Android nativos para livros, audiolivros, revistas e jornais, atendendo a um catálogo de mais de 20 mil livros."
+        "Empresa brasileira de software especializada no desenvolvimento de soluções digitais para os segmentos editorial, educacional e de mídia."
       ],
       "engagements": {
         "uol": {
@@ -193,7 +193,7 @@
           "type": "produto",
           "description": "Um aplicativo Android nativo para acesso a conteúdo educacional em dispositivos móveis.",
           "responsibilities": [
-            "Desenvolvimento de recursos Android nativos para a experiência de aprendizagem mobile.",
+            "Desenvolvimento de recursos e melhorias para o aplicativo.",
             "Contribuição para a manutenção e evolução do aplicativo."
           ]
         },
@@ -222,14 +222,13 @@
       "period": "08/2015 – 11/2017",
       "role": "Desenvolvedor Android e JavaScript Júnior",
       "description": [
-        "Empresa global de outsourcing. Clientes: Itaú Unibanco e TriBanco.",
-        "Desenvolvimento de aplicativos bancários Android e multiplataforma em uma equipe multidisciplinar de aproximadamente 40 pessoas."
+        "Multinacional brasileira fundada em Campinas em 1995, especializada em estratégia, design e engenharia de software para apoiar a transformação digital de grandes empresas e negócios em crescimento."
       ],
       "engagements": {
         "itau": {
           "name": "Itaú Unibanco",
           "type": "cliente",
-          "period": "2015 – 2016",
+          "period": "2016 – 2017",
           "description": "Desenvolvimento de um aplicativo Android nativo para gestão de cartões de crédito com Java e Android SDK.",
           "responsibilities": [
             "Desenvolvimento de recursos Android nativos para gestão de cartões de crédito.",
@@ -240,7 +239,7 @@
         "tribanco": {
           "name": "TriBanco",
           "type": "cliente",
-          "period": "2016 – 2017",
+          "period": "2015 – 2016",
           "description": "Desenvolvimento de um aplicativo bancário multiplataforma com o framework Kony para Android e iOS.",
           "responsibilities": [
             "Desenvolvimento de componentes reutilizáveis para interfaces mobile.",
@@ -254,6 +253,9 @@
       "companyName": "Clickideia",
       "period": "05/2014 – 08/2015",
       "role": "Estagiário de Desenvolvimento Full-Stack",
+      "description": [
+        "Empresa brasileira de tecnologia educacional originada em projetos de pesquisa da Unicamp e apoiada pelo CNPq. Atua com plataformas, conteúdos e formação para redes públicas de ensino."
+      ],
       "engagement": {
         "name": "Clickideia",
         "type": "produto",
@@ -269,6 +271,9 @@
       "companyName": "Artivinco",
       "period": "06/2012 – 06/2013",
       "role": "Desenvolvedor de Aplicações Desktop",
+      "description": [
+        "Empresa brasileira de embalagens fundada em 1967 e sediada em Itatiba, São Paulo. Produz soluções para proteger produtos, com investimentos contínuos em inovação, qualidade e processos sustentáveis."
+      ],
       "engagement": {
         "deliveryManagement": {
           "name": "Gestão de Entregas e Frota",
@@ -296,6 +301,9 @@
       "companyName": "BR Simulations",
       "period": "08/2007 – 08/2008",
       "role": "Estagiário de Desenvolvimento de Software",
+      "description": [
+        "Empresa brasileira do setor aeroespacial sediada em Itatiba, São Paulo, dedicada ao desenvolvimento e à fabricação de equipamentos de simulação e treinamento de voo."
+      ],
       "engagement": {
         "a320": {
           "name": "Airbus A320",
@@ -315,7 +323,7 @@
     "tictac": {
       "title": "Tiny Tic Tac Toe",
       "description": {
-        "summary": "Jogo da velha mobile compacto criado com React Native."
+        "summary": "Jogo da velha para Android e iOS desenvolvido com React Native e TypeScript, com foco em uma aplicação mobile leve e multiplataforma.\n\nExplora componentes desacoplados, animações simples e uma base de testes com Jest e Detox, reduzindo ao mínimo as dependências externas."
       },
       "year": "Ano: 2023",
       "links": { "github": { "label": "GitHub" } }
@@ -401,7 +409,7 @@
     "rupert": {
       "title": "Rupert",
       "description": {
-        "summary": "Projeto de jogo criado para explorar conceitos de desenvolvimento de jogos, testes com usuários, documentação de game design e código escalável."
+        "summary": "Jogo de plataforma e quebra-cabeças ambientado nas profundezas do oceano. Você controla um pequeno peixe em uma aventura tranquila, em que observação, raciocínio e precisão substituem o combate.\n\nCom 10 fases, desafios de física e exploração, caminhos escondidos, colecionáveis, conquistas e ranking online, convida jogadores a descobrir cada segredo do mundo submarino."
       },
       "year": "Ano: 2017",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -423,7 +431,7 @@
       "links": { "webPlayer": { "label": "Jogar online" } }
     },
     "gamification": {
-      "title": "Monografia sobre Gamificação",
+      "title": "Monografia Gamificação",
       "description": {
         "summary": "Monografia de conclusão de curso sobre sistemas gamificados, acompanhada de uma pequena aplicação que demonstra seus conceitos."
       },
@@ -433,7 +441,7 @@
     "spaceJay": {
       "title": "Space Jay",
       "description": {
-        "summary": "Jogo Android com efeitos sonoros dinâmicos, pontuação online e alto nível de dificuldade."
+        "summary": "Destrua inimigos, memorize padrões de ataque e escolha os alvos certos para maximizar a pontuação.\n\nCom 14 tipos de inimigos, placares do Google Play Games e conquistas desbloqueáveis, cada partida recompensa precisão, estratégia e domínio das mecânicas."
       },
       "year": "Ano: 2014",
       "links": { "googlePlay": { "label": "Google Play" } }
@@ -470,6 +478,10 @@
       "development": "Desenvolvimento",
       "tools": "Ferramentas",
       "architectureDeliveryDataInfrastructure": "Arquitetura, entrega, dados e infraestrutura"
+    },
+    "technologies": {
+      "softwareArchitecture": "Arquitetura de Software",
+      "agileMethodologies": "Metodologias Ágeis"
     },
     "languages": { "professional": "Proficiência profissional" },
     "contact": { "email": "E-mail" },

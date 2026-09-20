@@ -48,6 +48,7 @@ type TechnologyDefinition = {
   iconColor?: string
   icon: Icon
   label: string
+  labelKey?: string
   logo?: SimpleIcon
 }
 
@@ -159,8 +160,16 @@ export const TECHNOLOGIES: Record<TechnologyName, TechnologyDefinition> = {
   sqlite: { icon: DatabaseIcon, label: 'SQLite', logo: siSqlite },
   'react-hooks': { icon: CodeIcon, label: 'React Hooks', logo: siReact },
   'styled-components': { icon: CodeIcon, label: 'Styled Components', logo: siStyledcomponents },
-  frontegg: { icon: CodeIcon, label: 'FrontEgg' },
-  'software-architecture': { icon: CodeIcon, label: 'Software Architecture' },
-  'agile-methodologies': { icon: CodeIcon, label: 'Agile Methodologies' },
+  frontegg: { icon: CodeIcon, label: 'Frontegg' },
+  'software-architecture': {
+    icon: CodeIcon,
+    label: 'Software Architecture',
+    labelKey: 'v1.technologies.softwareArchitecture',
+  },
+  'agile-methodologies': {
+    icon: CodeIcon,
+    label: 'Agile Methodologies',
+    labelKey: 'v1.technologies.agileMethodologies',
+  },
   'ci-cd': { icon: CodeIcon, label: 'CI/CD' },
 }

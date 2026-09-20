@@ -59,7 +59,11 @@ export function ProjectCard({
               </div>
             </header>
             <div className="project-card__description">
-              <Text color="secondary">{description}</Text>
+              {description.split(/\n{2,}/).map((paragraph) => (
+                <Text color="secondary" key={paragraph}>
+                  {paragraph}
+                </Text>
+              ))}
               {supplementaryImage ? (
                 <figure className="project-card__supplementary-image">
                   <img alt={supplementaryImage.alt} src={supplementaryImage.src} />

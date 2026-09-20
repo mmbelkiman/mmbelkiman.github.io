@@ -284,6 +284,11 @@
     color-mix(in srgb, var(--color-border) 50%, transparent);
 }
 
+.project-card__description {
+  display: grid;
+  gap: var(--space-small);
+}
+
 .project-card__supplementary-image {
   position: relative;
   width: clamp(4.5rem, 30%, 6.5rem);

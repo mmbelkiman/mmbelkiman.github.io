@@ -97,8 +97,8 @@ export function usePortfolioContent(): PortfolioContent {
         })),
         id: experience.titleKey,
         logo: `/${experience.logoUrl}`,
-        location: experience.location
-          ? [experience.location, experience.workModeKey ? t(experience.workModeKey) : undefined]
+        location: experience.locationKey
+          ? [t(experience.locationKey), experience.workModeKey ? t(experience.workModeKey) : undefined]
               .filter(Boolean)
               .join(' · ')
           : undefined,
