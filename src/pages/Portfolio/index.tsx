@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PortfolioTopRow } from '@/components/compositions/PageRow/PortfolioTopRow'
 import { PortfolioProjectsRow } from '@/components/compositions/PageRow/PortfolioProjectsRow'
@@ -10,7 +11,18 @@ import { usePortfolioContent } from './usePortfolioContent'
 
 export function Portfolio() {
   const { i18n, t } = useTranslation()
+  const [isLanguageToggleCompact, setIsLanguageToggleCompact] = useState(false)
   const { contactAndEducation, projects, professionalExperience, skills, topRow } = usePortfolioContent()
+
+  useEffect(() => {
+    const updateLanguageToggleSize = () => setIsLanguageToggleCompact(window.scrollY > 48)
+
+    updateLanguageToggleSize()
+    window.addEventListener('scroll', updateLanguageToggleSize, { passive: true })
+
+    return () => window.removeEventListener('scroll', updateLanguageToggleSize)
+  }, [])
+
   const toggleLanguage = () => {
     const nextLanguage = i18n.resolvedLanguage === 'en' ? 'pt-BR' : 'en'
 
@@ -21,8 +33,13 @@ export function Portfolio() {
   return (
     <main className="portfolio-page">
       <div className="portfolio-page__content">
-        <button className="portfolio-page__language-toggle" onClick={toggleLanguage} type="button">
-          {t('menu.switchLanguage')}
+        <button
+          aria-label={t('menu.switchLanguage')}
+          className={`portfolio-page__language-toggle${isLanguageToggleCompact ? ' portfolio-page__language-toggle--compact' : ''}`}
+          onClick={toggleLanguage}
+          type="button"
+        >
+          {isLanguageToggleCompact ? (i18n.resolvedLanguage === 'en' ? 'PT' : 'EN') : t('menu.switchLanguage')}
         </button>
         <PortfolioTopRow {...topRow} />
         <ProfileAboutRow />

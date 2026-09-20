@@ -326,7 +326,7 @@
         "summary": "Cross-platform tic-tac-toe game for Android and iOS built with React Native and TypeScript, focused on a lightweight mobile application with minimal external dependencies.\n\nExplores decoupled components, simple animations, and a test suite with Jest and Detox."
       },
       "year": "Year: 2023",
-      "links": { "github": { "label": "GitHub" } }
+      "links": { "github": { "label": "Repository", "text": "github.com" } }
     },
     "pathCrypto": {
       "title": "Path Crypto",
@@ -334,7 +334,7 @@
         "summary": "Cryptocurrency mobile application built for a fintech startup with React Native and Node.js."
       },
       "year": "Year: 2022",
-      "links": { "website": { "label": "Website" } }
+      "links": { "website": { "label": "Website", "text": "pathcrypto.com" } }
     },
     "pipoclube": {
       "title": "Pipoclube",
@@ -342,7 +342,7 @@
         "summary": "Social network for discovering, cataloging, and reviewing movies, with collections, ratings, and user-generated content.\n\nLed end-to-end development of the PHP backend and React Native mobile and web apps, while guiding product direction from concept through delivery."
       },
       "year": "Year: 2022",
-      "links": { "website": { "label": "Website" } }
+      "links": { "website": { "label": "Website", "text": "pipoclube.com" } }
     },
     "aulapp": {
       "title": "Aulapp",
@@ -350,7 +350,10 @@
         "summary": "Educational platform with video, audio, exercises, and offline-first learning experiences."
       },
       "year": "Year: 2020",
-      "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
+      "links": {
+        "googlePlay": { "label": "Android", "text": "play.google.com" },
+        "appStore": { "label": "iOS", "text": "apps.apple.com" }
+      }
     },
     "livroh": {
       "title": "Livroh",
@@ -358,7 +361,7 @@
         "summary": "Native Android platform for reading books and listening to audiobooks, built to support a large publisher catalog."
       },
       "year": "Year: 2019",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "bancah": {
       "title": "Bancah",
@@ -366,7 +369,7 @@
         "summary": "Native Android digital newsstand for magazines and newspapers."
       },
       "year": "Year: 2019",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "epicGolf2d": {
       "title": "Epic Golf 2D",
@@ -376,7 +379,7 @@
       "awardAlt": "Epic Golf 2D, finalist at BIG Festival 2018",
       "awardCaption": "Finalista Big Festival\nBig Starter 2018",
       "year": "Year: 2018",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "venusParticleEditor": {
       "title": "Venus Particle Editor",
@@ -384,13 +387,19 @@
         "summary": "Particle editor developed for use with the MonoGame framework."
       },
       "year": "Year: 2019",
-      "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
+      "links": {
+        "itchIo": { "label": "Desktop", "text": "mmbelkiman.itch.io" },
+        "github": { "label": "Repository", "text": "github.com" }
+      }
     },
     "ourAdventureTime": {
       "title": "Our Adventure Time",
       "description": { "summary": "Custom game created to support a marriage proposal." },
       "year": "Year: 2018",
-      "links": { "itchIo": { "label": "itch.io" }, "github": { "label": "GitHub" } }
+      "links": {
+        "itchIo": { "label": "Play online", "text": "Unity Web-Player" },
+        "github": { "label": "Repository", "text": "github.com" }
+      }
     },
     "ultraRetroVirusAttack": {
       "title": "Ultra Retro Virus Attack",
@@ -398,7 +407,10 @@
         "summary": "Game created in 48 hours for Global Game Jam 2018. Players control a computer virus and spread it while avoiding firewall software."
       },
       "year": "Year: 2018",
-      "links": { "webPlayer": { "label": "Play online" }, "github": { "label": "GitHub" } }
+      "links": {
+        "webPlayer": { "label": "Play online", "text": "Unity Web-Player" },
+        "github": { "label": "Repository", "text": "github.com" }
+      }
     },
     "itaucard": {
       "title": "Itaucard Android",
@@ -406,7 +418,7 @@
         "summary": "Native Android application for managing Itaú Unibanco credit cards, built with Java and the Android SDK."
       },
       "year": "Year: 2017",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "rupert": {
       "title": "Rupert",
@@ -414,7 +426,7 @@
         "summary": "Platform and puzzle game set in the depths of the ocean. Players guide a small fish through a calm adventure where observation, reasoning, and precision take the place of combat.\n\nAcross 10 levels, physics-based challenges, exploration, hidden paths, collectibles, achievements, and online rankings invite players to uncover every secret of its underwater world."
       },
       "year": "Year: 2017",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "tribanco": {
       "title": "TriBanco Mobile Bank",
@@ -422,7 +434,10 @@
         "summary": "Cross-platform banking application built with Kony for Android and iOS."
       },
       "year": "Year: 2016",
-      "links": { "googlePlay": { "label": "Google Play" }, "appStore": { "label": "App Store" } }
+      "links": {
+        "googlePlay": { "label": "Android", "text": "play.google.com" },
+        "appStore": { "label": "iOS", "text": "itunes.apple.com" }
+      }
     },
     "omgMyHouse": {
       "title": "OMG My House",
@@ -430,7 +445,7 @@
         "summary": "Game developed during a Computer Science degree, in which players protect their home from monsters."
       },
       "year": "Year: 2015",
-      "links": { "webPlayer": { "label": "Play online" } }
+      "links": { "webPlayer": { "label": "Play online", "text": "Construct Web-Player" } }
     },
     "gamification": {
       "title": "Gamification Thesis",
@@ -438,7 +453,12 @@
         "summary": "Computer Science graduation thesis about gamified systems, accompanied by a small application that demonstrates its concepts."
       },
       "year": "Year: 2015",
-      "links": { "document": { "label": "Document" } }
+      "links": {
+        "document": {
+          "label": "Document",
+          "text": "Gamificação: Aplicando ao treino de atividades lógicas"
+        }
+      }
     },
     "spaceJay": {
       "title": "Space Jay",
@@ -446,7 +466,7 @@
         "summary": "Destroy enemies, memorize attack patterns, and select the right targets to maximize your score.\n\nWith 14 enemy types, Google Play Games leaderboards, and unlockable achievements, every run rewards precision, strategy, and mastery of its mechanics."
       },
       "year": "Year: 2014",
-      "links": { "googlePlay": { "label": "Google Play" } }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "clickideia": {
       "title": "Clickideia Educational Exercise Platform",
@@ -454,7 +474,7 @@
         "summary": "Platform for creating exercises, assigning them to students, evaluating answers, and generating reports."
       },
       "year": "Year: 2015",
-      "links": { "website": { "label": "Website" } }
+      "links": { "website": { "label": "Website", "text": "clickideia.com.br" } }
     }
   },
   "v1": {
@@ -484,6 +504,20 @@
     "technologies": {
       "softwareArchitecture": "Software Architecture",
       "agileMethodologies": "Agile Methodologies"
+    },
+    "projectCategories": {
+      "banking": "Banking",
+      "edtech": "EdTech",
+      "financial": "Financial",
+      "fintech": "Fintech",
+      "industrial": "Industrial",
+      "insurance": "Insurance",
+      "logistics": "Logistics",
+      "loyalty": "Loyalty",
+      "media": "Media",
+      "researchPlatform": "Research Platform",
+      "simulation": "Simulation",
+      "threatIntelligence": "Threat Intelligence"
     },
     "languages": { "professional": "Professional proficiency" },
     "contact": { "email": "Email" },

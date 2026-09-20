@@ -19,7 +19,8 @@ export const Default: Story = {
       "Mobile golf game focused on simple physics-based mechanics. I developed all of the game's code and contributed to game-design decisions.\n\nThe project was a finalist at BIG Festival 2018. After the festival, it received support from publisher ZPlay.",
     externalLinks: [
       {
-        label: 'Google Play',
+        label: 'Android',
+        text: 'play.google.com',
         url: 'https://play.google.com/store/apps/details?id=br.com.estudiovacaroxa.eg2d',
       },
     ],

@@ -135,7 +135,7 @@ export function EpicGolfFeaturedProject({
                   <li key={externalLink.url}>
                     <span>{externalLink.label}:</span>
                     <a href={externalLink.url} rel="noreferrer" target="_blank">
-                      {externalLink.url.replace(/^https?:\/\/(?:www\.)?/, '').split('/')[0]}
+                      {externalLink.text}
                       <ArrowSquareOutIcon
                         aria-hidden="true"
                         size="var(--icon-size-normal)"

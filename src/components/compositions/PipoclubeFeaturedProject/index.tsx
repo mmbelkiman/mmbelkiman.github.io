@@ -92,7 +92,7 @@ export function PipoclubeFeaturedProject({
                   <li key={externalLink.url}>
                     <span>{externalLink.label}:</span>
                     <a href={externalLink.url} rel="noreferrer" target="_blank">
-                      {externalLink.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                      {externalLink.text}
                       <ArrowSquareOutIcon
                         aria-hidden="true"
                         size="var(--icon-size-normal)"

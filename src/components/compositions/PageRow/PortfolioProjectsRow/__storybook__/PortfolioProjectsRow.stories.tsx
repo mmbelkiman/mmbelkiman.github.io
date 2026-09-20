@@ -31,7 +31,9 @@ export const Default: Story = {
         imageSrc: '/images/portfolio-previews/epicgolf2d.jpg',
         imageAlt: 'Orbit Defender game preview',
         technologies: ['typescript', 'react'],
-        externalLinks: [{ label: 'Play online', url: 'https://example.com/orbit-defender' }],
+        externalLinks: [
+          { label: 'Play online', text: 'Web Player', url: 'https://example.com/orbit-defender' },
+        ],
       },
       {
         id: 'reading-community',
@@ -57,7 +59,7 @@ export const Default: Story = {
         imageSrc: '/images/portfolio-previews/bancah.jpg',
         imageAlt: 'Personal Ledger web application preview',
         technologies: ['react', 'node-js', 'postgresql'],
-        externalLinks: [{ label: 'Repository', url: 'https://github.com/mmbelkiman' }],
+        externalLinks: [{ label: 'Repository', text: 'github.com', url: 'https://github.com/mmbelkiman' }],
       },
     ],
   },

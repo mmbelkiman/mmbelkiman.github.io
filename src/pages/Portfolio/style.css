@@ -1,6 +1,6 @@
 .portfolio-page {
   min-height: 100%;
-  padding: var(--space-normal);
+  padding: calc(var(--space-normal) + 2rem) var(--space-normal) var(--space-normal);
   background: var(--color-page);
 }
 
@@ -12,7 +12,10 @@
 }
 
 .portfolio-page__language-toggle {
-  justify-self: end;
+  position: fixed;
+  z-index: 10;
+  top: var(--space-normal);
+  right: max(var(--space-normal), calc((100vw - var(--layout-content-max)) / 2));
   padding: var(--space-nano) var(--space-small);
   color: var(--color-text);
   background: var(--color-surface-raised);
@@ -22,6 +25,18 @@
   letter-spacing: var(--letter-spacing-label);
   text-transform: uppercase;
   cursor: pointer;
+  transition:
+    padding 160ms ease,
+    font-size 160ms ease,
+    letter-spacing 160ms ease,
+    transform 160ms ease;
+}
+
+.portfolio-page__language-toggle--compact {
+  padding: 0.125rem 0.35rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  transform: translateX(-1.25rem);
 }
 
 .portfolio-page__language-toggle:hover {
@@ -36,6 +51,11 @@
 
 @media (max-width: 40rem) {
   .portfolio-page {
-    padding: var(--space-small);
+    padding: calc(var(--space-small) + 2rem) var(--space-small) var(--space-small);
+  }
+
+  .portfolio-page__language-toggle {
+    top: var(--space-small);
+    right: var(--space-small);
   }
 }

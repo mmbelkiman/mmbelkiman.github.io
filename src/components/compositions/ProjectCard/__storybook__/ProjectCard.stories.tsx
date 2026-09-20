@@ -32,7 +32,7 @@ export const Default: Story = {
     imageAlt: 'Project preview',
     videoSrc: '/videos/tictac.webm',
     icon: <FilmSlateIcon size="var(--icon-size-big)" weight="fill" />,
-    externalLinks: [{ label: 'Website', url: 'https://example.com' }],
+    externalLinks: [{ label: 'Website', text: 'example.com', url: 'https://example.com' }],
   },
 }
 

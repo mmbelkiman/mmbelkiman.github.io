@@ -4,6 +4,7 @@ import type { TechnologyName, TechnologyTagBackground } from '@/components/compo
 
 export type ProjectExternalLink = {
   label: string
+  text: string
   url: string
 }
 

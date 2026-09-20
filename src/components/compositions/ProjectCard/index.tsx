@@ -9,7 +9,6 @@ import { Text } from '@/components/ui/Text'
 import { PortfolioVideoPlayer } from '@/components/widgets/PortfolioVideoPlayer'
 import './style.css'
 import type { ProjectCardProps } from './types'
-import { getExternalLinkText } from './utils'
 
 export type {
   ProjectCardProps,
@@ -77,7 +76,7 @@ export function ProjectCard({
                     <li key={externalLink.url}>
                       <span>{externalLink.label}:</span>
                       <a href={externalLink.url} rel="noreferrer" target="_blank">
-                        {getExternalLinkText(externalLink.url)}
+                        {externalLink.text}
                         <ArrowSquareOutIcon
                           aria-hidden="true"
                           size="var(--icon-size-nano)"

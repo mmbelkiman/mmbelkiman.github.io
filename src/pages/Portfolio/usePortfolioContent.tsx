@@ -188,7 +188,11 @@ export function usePortfolioContent(): PortfolioContent {
 
       return {
         description,
-        externalLinks: project.links?.map((link) => ({ label: t(link.labelKey), url: link.href })),
+        externalLinks: project.links?.map((link) => ({
+          label: t(link.labelKey),
+          text: t(link.textKey),
+          url: link.href,
+        })),
         featured: project.featured,
         icon: project.projectIcon ? (
           PROJECT_ICON_MAP[project.projectIcon]
