@@ -11,7 +11,7 @@
   --color-ice: #b9d9eb;
   --color-mist: #c4dbe8;
   --color-white: #f6fbfd;
-  --color-pure-white: #ffffff;
+  --color-pure-white: #fff;
 
   /** primitive colors · blue and cyan **/
   --color-blue: #0055c7;
@@ -126,7 +126,7 @@
   --color-panel-header-details: var(--color-text-muted);
   --color-panel-header-border: var(--color-border);
 
-  /**colors effects**/
+  /** colors effects **/
   --shadow-panel: 0 3px 0 color-mix(in srgb, var(--color-surface-strong) 24%, transparent);
   --shadow-panel-strong: 0 5px 0
     color-mix(in srgb, var(--color-surface-strong) 34%, transparent);
@@ -162,14 +162,11 @@
   --font-size-normal: 1rem;
   --font-size-big: 1.25rem;
   --font-size-huge: 1.75rem;
-
   --font-weight-nano: 100;
   --font-weight-normal: 400;
   --font-weight-big: 500;
-
   --letter-spacing-label: 0.04em;
-
-  --font-body: 'Rajdhani', 'Arial Narrow', Arial, sans-serif;
+  --font-body: 'Rajdhani', 'Arial Narrow', arial, sans-serif;
   --font-heading: 'Share Tech Mono', 'Courier New', monospace;
 
   /** icons **/

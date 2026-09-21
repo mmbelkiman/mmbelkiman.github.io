@@ -13,7 +13,7 @@ export function CityLandscapeParallax({ period, timeZone }: CityLandscapeParalla
 
   return (
     <section className="city-landscape-parallax" data-period={displayedPeriod}>
-      <div aria-hidden="true" className="city-landscape-parallax__scene">
+      <div aria-hidden="true" className="city-landscape-parallax-scene">
         {Array.from({ length: layerCount }, (_, index) => {
           const layer = getCityLayer(displayedPeriod, index)
 

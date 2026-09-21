@@ -51,7 +51,7 @@ export function PortfolioVideoPlayer({
           <video
             aria-label={imageAlt}
             autoPlay
-            className="portfolio-video-player__media"
+            className="portfolio-video-player-media"
             loop
             muted
             onClick={(event) => {
@@ -74,27 +74,27 @@ export function PortfolioVideoPlayer({
         ) : (
           <button
             aria-label={t('v1.actions.playPreview', { title })}
-            className="portfolio-video-player__play-trigger"
+            className="portfolio-video-player-play-trigger"
             onClick={() => setIsVideoLoaded(true)}
             type="button"
           >
-            <img alt={imageAlt} className="portfolio-video-player__media" src={imageSrc} />
-            <span aria-hidden="true" className="portfolio-video-player__play-icon">
+            <img alt={imageAlt} className="portfolio-video-player-media" src={imageSrc} />
+            <span aria-hidden="true" className="portfolio-video-player-play-icon">
               <PlayIcon weight="fill" />
             </span>
           </button>
         )
       ) : (
-        <img alt={imageAlt} className="portfolio-video-player__media" src={imageSrc} />
+        <img alt={imageAlt} className="portfolio-video-player-media" src={imageSrc} />
       )}
       {isVideoLoaded && isVideoPaused ? (
         <button
           aria-label={t('v1.actions.resumePreview', { title })}
-          className="portfolio-video-player__play-overlay"
+          className="portfolio-video-player-play-overlay"
           onClick={resumeVideo}
           type="button"
         >
-          <span aria-hidden="true" className="portfolio-video-player__play-icon">
+          <span aria-hidden="true" className="portfolio-video-player-play-icon">
             <PlayIcon weight="fill" />
           </span>
         </button>
@@ -106,7 +106,7 @@ export function PortfolioVideoPlayer({
               ? t('v1.actions.exitFullscreen', { title })
               : t('v1.actions.enterFullscreen', { title })
           }
-          className="portfolio-video-player__fullscreen-control"
+          className="portfolio-video-player-fullscreen-control"
           onClick={toggleFullscreen}
           type="button"
         >

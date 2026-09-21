@@ -11,62 +11,62 @@
   white-space: nowrap;
 }
 
-.project-category--financial {
+.project-category-financial {
   color: var(--color-project-category-financial);
   background: var(--color-project-category-financial-surface);
 }
 
-.project-category--banking {
+.project-category-banking {
   color: var(--color-project-category-banking);
   background: var(--color-project-category-banking-surface);
 }
 
-.project-category--research-platform {
+.project-category-research-platform {
   color: var(--color-project-category-research-platform);
   background: var(--color-project-category-research-platform-surface);
 }
 
-.project-category--insurance {
+.project-category-insurance {
   color: var(--color-project-category-insurance);
   background: var(--color-project-category-insurance-surface);
 }
 
-.project-category--edtech {
+.project-category-edtech {
   color: var(--color-project-category-edtech);
   background: var(--color-project-category-edtech-surface);
 }
 
-.project-category--threat-intelligence {
+.project-category-threat-intelligence {
   color: var(--color-project-category-threat-intelligence);
   background: var(--color-project-category-threat-intelligence-surface);
 }
 
-.project-category--fintech {
+.project-category-fintech {
   color: var(--color-project-category-fintech);
   background: var(--color-project-category-fintech-surface);
 }
 
-.project-category--loyalty {
+.project-category-loyalty {
   color: var(--color-project-category-loyalty);
   background: var(--color-project-category-loyalty-surface);
 }
 
-.project-category--media {
+.project-category-media {
   color: var(--color-project-category-media);
   background: var(--color-project-category-media-surface);
 }
 
-.project-category--logistics {
+.project-category-logistics {
   color: var(--color-project-category-logistics);
   background: var(--color-project-category-logistics-surface);
 }
 
-.project-category--industrial {
+.project-category-industrial {
   color: var(--color-project-category-industrial);
   background: var(--color-project-category-industrial-surface);
 }
 
-.project-category--simulation {
+.project-category-simulation {
   color: var(--color-project-category-simulation);
   background: var(--color-project-category-simulation-surface);
 }

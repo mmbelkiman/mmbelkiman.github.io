@@ -14,27 +14,27 @@ export function ProfileCard() {
   return (
     <PanelFrame header={<PanelHeader label={t('v1.sections.profile')} />}>
       <section aria-label={t('v1.sections.profile')} className="profile-card">
-        <div className="profile-card__photo-frame">
-          <img alt={t('v1.profile.name')} className="profile-card__photo" src={profileImage} />
+        <div className="profile-card-photo-frame">
+          <img alt={t('v1.profile.name')} className="profile-card-photo" src={profileImage} />
           <img
             alt=""
             aria-hidden="true"
-            className="profile-card__photo-static"
+            className="profile-card-photo-static"
             src={photoStatic}
           />
         </div>
 
-        <div className="profile-card__details">
+        <div className="profile-card-details">
           <Heading level={2}>
-            <span className="profile-card__handle">{t('v1.profile.handle')}</span>
-            <span aria-hidden="true" className="profile-card__separator">
+            <span className="profile-card-handle">{t('v1.profile.handle')}</span>
+            <span aria-hidden="true" className="profile-card-separator">
               {' :: '}
             </span>
-            <span className="profile-card__credential">{t('v1.profile.subtitle')}</span>
+            <span className="profile-card-credential">{t('v1.profile.subtitle')}</span>
           </Heading>
         </div>
 
-        <div className="profile-card__location">
+        <div className="profile-card-location">
           <MapPinIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
           <Text color="secondary" size="meta">
             {t('v1.profile.location')}

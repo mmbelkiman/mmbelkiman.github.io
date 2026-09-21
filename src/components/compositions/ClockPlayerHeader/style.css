@@ -9,13 +9,13 @@
   min-height: 6.5rem;
 }
 
-.clock-player-header__city {
+.clock-player-header-city {
   position: absolute;
   inset: 0;
   z-index: 0;
 }
 
-.clock-player-header__city .city-landscape-parallax {
+.clock-player-header-city .city-landscape-parallax {
   height: 100%;
 }
 
@@ -30,7 +30,7 @@
   transform: translateY(-50%);
 }
 
-.clock-player-header__city > .local-clock {
+.clock-player-header-city > .local-clock {
   position: absolute;
   top: 0;
   right: 0;
@@ -41,8 +41,8 @@
   align-content: start;
 }
 
-@media (max-width: 42rem) {
-  .clock-player-header__city > .local-clock {
+@media (width <= 42rem) {
+  .clock-player-header-city > .local-clock {
     height: 4rem;
   }
 }

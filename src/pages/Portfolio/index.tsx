@@ -32,10 +32,10 @@ export function Portfolio() {
 
   return (
     <main className="portfolio-page">
-      <div className="portfolio-page__content">
+      <div className="portfolio-page-content">
         <button
           aria-label={t('menu.switchLanguage')}
-          className={`portfolio-page__language-toggle${isLanguageToggleCompact ? ' portfolio-page__language-toggle--compact' : ''}`}
+          className={`portfolio-page-language-toggle${isLanguageToggleCompact ? ' portfolio-page-language-toggle-compact' : ''}`}
           onClick={toggleLanguage}
           type="button"
         >

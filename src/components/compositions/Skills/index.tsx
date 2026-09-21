@@ -15,14 +15,14 @@ export function Skills({ groups }: SkillsProps) {
   return (
     <PanelFrame header={<PanelHeader label={t('v1.sections.skills')} />}>
       <section aria-label={t('v1.sections.skills')} className="skills">
-        <div className="skills__groups">
+        <div className="skills-groups">
           {groups.map((group) => (
-            <section className="skills__group" key={group.title}>
+            <section className="skills-group" key={group.title}>
               <Heading level={3}>
                 <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {group.title}
               </Heading>
-              <ul className="technology-tags skills__technologies">
+              <ul className="technology-tags skills-technologies">
                 {group.technologies.map((technology) => (
                   <TechnologyTag
                     bg="transparent"

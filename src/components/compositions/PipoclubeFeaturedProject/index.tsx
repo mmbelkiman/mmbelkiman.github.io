@@ -35,7 +35,7 @@ export function PipoclubeFeaturedProject({
           <PanelHeader
             endContent={
               year ? (
-                <span className="pipoclube-featured-project__year">
+                <span className="pipoclube-featured-project-year">
                   <CalendarIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                   {year}
                 </span>
@@ -46,29 +46,29 @@ export function PipoclubeFeaturedProject({
         }
         tone="dark"
       >
-        <div aria-hidden="true" className="pipoclube-featured-project__background">
-          <span className="pipoclube-featured-project__glow pipoclube-featured-project__glow--top" />
-          <span className="pipoclube-featured-project__glow pipoclube-featured-project__glow--bottom" />
-          <span className="pipoclube-featured-project__glow pipoclube-featured-project__glow--center" />
-          <span className="pipoclube-featured-project__ring pipoclube-featured-project__ring--top" />
-          <span className="pipoclube-featured-project__ring pipoclube-featured-project__ring--bottom" />
-          <span className="pipoclube-featured-project__dot pipoclube-featured-project__dot--red" />
-          <span className="pipoclube-featured-project__dot pipoclube-featured-project__dot--light" />
-          <PopcornIcon className="pipoclube-featured-project__background-icon pipoclube-featured-project__background-icon--popcorn" weight="fill" />
-          <FilmStripIcon className="pipoclube-featured-project__background-icon pipoclube-featured-project__background-icon--film-strip" weight="bold" />
-          <FilmReelIcon className="pipoclube-featured-project__background-icon pipoclube-featured-project__background-icon--reel" weight="bold" />
-          <StarIcon className="pipoclube-featured-project__background-icon pipoclube-featured-project__background-icon--star" weight="fill" />
+        <div aria-hidden="true" className="pipoclube-featured-project-background">
+          <span className="pipoclube-featured-project-glow pipoclube-featured-project-glow-top" />
+          <span className="pipoclube-featured-project-glow pipoclube-featured-project-glow-bottom" />
+          <span className="pipoclube-featured-project-glow pipoclube-featured-project-glow-center" />
+          <span className="pipoclube-featured-project-ring pipoclube-featured-project-ring-top" />
+          <span className="pipoclube-featured-project-ring pipoclube-featured-project-ring-bottom" />
+          <span className="pipoclube-featured-project-dot pipoclube-featured-project-dot-red" />
+          <span className="pipoclube-featured-project-dot pipoclube-featured-project-dot-light" />
+          <PopcornIcon className="pipoclube-featured-project-background-icon pipoclube-featured-project-background-icon-popcorn" weight="fill" />
+          <FilmStripIcon className="pipoclube-featured-project-background-icon pipoclube-featured-project-background-icon-film-strip" weight="bold" />
+          <FilmReelIcon className="pipoclube-featured-project-background-icon pipoclube-featured-project-background-icon-reel" weight="bold" />
+          <StarIcon className="pipoclube-featured-project-background-icon pipoclube-featured-project-background-icon-star" weight="fill" />
         </div>
 
-        <article className="pipoclube-featured-project__content">
-          <div className="pipoclube-featured-project__summary">
-            <header className="pipoclube-featured-project__identity">
-              {logoSrc ? <img alt="" className="pipoclube-featured-project__logo" src={logoSrc} /> : null}
+        <article className="pipoclube-featured-project-content">
+          <div className="pipoclube-featured-project-summary">
+            <header className="pipoclube-featured-project-identity">
+              {logoSrc ? <img alt="" className="pipoclube-featured-project-logo" src={logoSrc} /> : null}
               <div>
                 <Heading level={2}>
                   <StarIcon
                     aria-hidden="true"
-                    className="pipoclube-featured-project__star"
+                    className="pipoclube-featured-project-star"
                     size="var(--icon-size-big)"
                     weight="fill"
                   />
@@ -78,7 +78,7 @@ export function PipoclubeFeaturedProject({
               </div>
             </header>
 
-            <div className="pipoclube-featured-project__description">
+            <div className="pipoclube-featured-project-description">
               {description.split(/\n{2,}/).map((paragraph) => (
                 <Text color="secondary" key={paragraph} size="body">
                   {paragraph}
@@ -87,7 +87,7 @@ export function PipoclubeFeaturedProject({
             </div>
 
             {externalLinks?.length ? (
-              <ul className="pipoclube-featured-project__links">
+              <ul className="pipoclube-featured-project-links">
                 {externalLinks.map((externalLink) => (
                   <li key={externalLink.url}>
                     <span>{externalLink.label}:</span>
@@ -104,15 +104,15 @@ export function PipoclubeFeaturedProject({
               </ul>
             ) : null}
 
-            <ul className="technology-tags pipoclube-featured-project__technologies">
+            <ul className="technology-tags pipoclube-featured-project-technologies">
               {technologies.map((technology) => (
                 <TechnologyTag bg="transparent" key={technology} technology={technology} />
               ))}
             </ul>
           </div>
 
-          <div className="pipoclube-featured-project__demo">
-            <div className="pipoclube-featured-project__demo-label">// Demo</div>
+          <div className="pipoclube-featured-project-demo">
+            <div className="pipoclube-featured-project-demo-label">// Demo</div>
             <PortfolioVideoPlayer
               imageAlt={imageAlt}
               imageSrc={imageSrc}

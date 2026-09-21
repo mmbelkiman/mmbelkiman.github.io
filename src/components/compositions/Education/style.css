@@ -2,13 +2,13 @@
   padding: var(--space-small) var(--space-small);
 }
 
-.education__list {
+.education-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.education__item {
+.education-item {
   display: flex;
   gap: var(--space-small);
   align-items: center;
@@ -16,11 +16,11 @@
   padding: var(--space-small) 0;
 }
 
-.education__item + .education__item {
+.education-item + .education-item {
   border-top: var(--border-width-thin) solid var(--color-border);
 }
 
-.education__logo {
+.education-logo {
   display: block;
   flex: 0 0 auto;
   width: 3.25rem;
@@ -28,16 +28,16 @@
   object-fit: contain;
 }
 
-.education__content {
+.education-content {
   display: grid;
   gap: var(--space-nano);
   min-width: 0;
 }
 
-.education__content .heading {
+.education-content .heading {
   font-size: var(--font-size-normal);
 }
 
-.education__content .text--meta {
+.education-content .text-meta {
   font-family: var(--font-heading);
 }

@@ -14,11 +14,11 @@ export function Languages({ languages }: LanguagesProps) {
   return (
     <PanelFrame header={<PanelHeader label={t('v1.sections.languages')} />}>
       <section aria-label={t('v1.sections.languages')} className="languages">
-        <ul className="languages__list">
+        <ul className="languages-list">
           {languages.map((language) => (
-            <li className="languages__item" key={language.name}>
-              <span aria-hidden="true" className="languages__flag">
-                <span className="languages__flag-glyph">{language.flag}</span>
+            <li className="languages-item" key={language.name}>
+              <span aria-hidden="true" className="languages-flag">
+                <span className="languages-flag-glyph">{language.flag}</span>
               </span>
               <div>
                 <Heading level={3}>{language.name}</Heading>

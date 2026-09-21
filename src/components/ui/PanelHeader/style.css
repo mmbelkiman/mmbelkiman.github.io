@@ -26,25 +26,25 @@
   text-transform: uppercase;
 }
 
-.panel-header__label,
-.panel-header__details {
+.panel-header-label,
+.panel-header-details {
   display: inline-flex;
   gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
 
-.panel-header__label {
+.panel-header-label {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.panel-header__prefix {
+.panel-header-prefix {
   color: var(--panel-header-prefix);
 }
 
-.panel-header__details {
+.panel-header-details {
   flex: 0 0 auto;
   color: var(--panel-header-details);
   font-family: var(--font-body);

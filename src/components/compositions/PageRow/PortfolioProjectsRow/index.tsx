@@ -30,8 +30,8 @@ export function PortfolioProjectsRow({ projects }: PortfolioProjectsRowProps) {
           <div
             className={
               project.featured
-                ? 'portfolio-projects-row__item--featured'
-                : 'portfolio-projects-row__item'
+                ? 'portfolio-projects-row-item-featured'
+                : 'portfolio-projects-row-item'
             }
             key={id}
           >

@@ -2,7 +2,7 @@
   align-items: stretch;
 }
 
-.contact-education-row .grid__column,
+.contact-education-row .grid-column,
 .contact-education-row .panel-frame {
   height: 100%;
 }

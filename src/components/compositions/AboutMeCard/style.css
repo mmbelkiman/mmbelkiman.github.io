@@ -24,7 +24,7 @@
   );
 }
 
-.about-me-card__background {
+.about-me-card-background {
   position: absolute;
   z-index: 0;
   inset: 0;
@@ -34,7 +34,7 @@
   object-position: center;
 }
 
-.about-me-card__content {
+.about-me-card-content {
   position: relative;
   z-index: 2;
   display: grid;
@@ -43,24 +43,24 @@
   padding: var(--space-big);
 }
 
-.about-me-card__content .heading {
+.about-me-card-content .heading {
   margin-bottom: var(--space-normal);
   font-size: 3.5rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.about-me-card__description {
+.about-me-card-description {
   display: grid;
   gap: var(--space-normal);
 }
 
-.about-me-card__description .text {
+.about-me-card-description .text {
   font-size: clamp(var(--font-size-normal), 1.65vw, var(--font-size-big));
   line-height: 1.35;
 }
 
-.about-me-card__cursor {
+.about-me-card-cursor {
   display: inline-block;
   margin-left: 0.08em;
   color: var(--color-text-primary);
@@ -80,12 +80,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-me-card__cursor {
+  .about-me-card-cursor {
     animation: none;
   }
 }
 
-@media (max-width: 42rem) {
+@media (width <= 42rem) {
   .about-me-card {
     min-height: 30rem;
   }

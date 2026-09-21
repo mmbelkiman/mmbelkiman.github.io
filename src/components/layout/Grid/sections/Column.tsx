@@ -5,7 +5,7 @@ export function Column({ children, weight }: ColumnProps) {
   const style = { '--grid-column-weight': weight } as CSSProperties
 
   return (
-    <div className="grid__column" style={style}>
+    <div className="grid-column" style={style}>
       {children}
     </div>
   )

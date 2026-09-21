@@ -35,19 +35,19 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <PanelFrame tone={featured ? 'dark' : 'default'}>
-      <article className={`project-card${featured ? ' project-card--featured' : ''}`}>
-        <div className="project-card__content">
-          <div className="project-card__summary">
-            <header className="project-card__header">
-              <span aria-hidden="true" className="project-card__icon">
+      <article className={`project-card${featured ? ' project-card-featured' : ''}`}>
+        <div className="project-card-content">
+          <div className="project-card-summary">
+            <header className="project-card-header">
+              <span aria-hidden="true" className="project-card-icon">
                 {logoSrc ? <img alt="" src={logoSrc} /> : icon}
               </span>
-              <div className="project-card__identity">
+              <div className="project-card-identity">
                 <Heading level={2}>
                   {featured ? (
                     <StarIcon
                       aria-hidden="true"
-                      className="project-card__featured-icon"
+                      className="project-card-featured-icon"
                       size="var(--icon-size-normal)"
                       weight="fill"
                     />
@@ -57,21 +57,21 @@ export function ProjectCard({
                 {projectType ? <ProjectTypeBadge tone={featured ? 'featured' : 'default'} type={projectType} /> : null}
               </div>
             </header>
-            <div className="project-card__description">
+            <div className="project-card-description">
               {description.split(/\n{2,}/).map((paragraph) => (
                 <Text color="secondary" key={paragraph}>
                   {paragraph}
                 </Text>
               ))}
               {supplementaryImage ? (
-                <figure className="project-card__supplementary-image">
+                <figure className="project-card-supplementary-image">
                   <img alt={supplementaryImage.alt} src={supplementaryImage.src} />
                 </figure>
               ) : null}
             </div>
             {externalLinks?.length ? (
-              <div className="project-card__link-section">
-                <ul className="project-card__external-links">
+              <div className="project-card-link-section">
+                <ul className="project-card-external-links">
                   {externalLinks.map((externalLink) => (
                     <li key={externalLink.url}>
                       <span>{externalLink.label}:</span>
@@ -88,7 +88,7 @@ export function ProjectCard({
                 </ul>
               </div>
             ) : null}
-            <div className="project-card__technology-stack">
+            <div className="project-card-technology-stack">
               <ul className="technology-tags">
                 {technologies.map((tech) => (
                   <TechnologyTag
@@ -101,9 +101,9 @@ export function ProjectCard({
               </ul>
             </div>
           </div>
-          <div className="project-card__media-column">
+          <div className="project-card-media-column">
             {year ? (
-              <span className="project-card__year">
+              <span className="project-card-year">
                 <CalendarIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
                 {year}
               </span>

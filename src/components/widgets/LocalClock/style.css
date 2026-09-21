@@ -12,18 +12,18 @@
   text-transform: uppercase;
 }
 
-.local-clock__date,
-.local-clock__time {
+.local-clock-date,
+.local-clock-time {
   margin: 0;
 }
 
-.local-clock__date {
+.local-clock-date {
   color: var(--color-text-secondary);
   font-size: var(--font-size-nano);
   letter-spacing: var(--letter-spacing-label);
 }
 
-.local-clock__time {
+.local-clock-time {
   color: var(--color-text-primary);
   font-size: var(--font-size-huge);
   line-height: 1;

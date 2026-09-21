@@ -26,19 +26,19 @@
   opacity: 0.8;
 }
 
-.panel-frame--dark {
+.panel-frame-dark {
   --panel-surface: var(--color-surface-strong);
   --panel-text: var(--color-text-inverse);
   --color-text-primary: var(--color-text-inverse);
   --color-text-secondary: var(--color-text-ice);
 }
 
-.panel-frame__header {
+.panel-frame-header {
   position: relative;
   z-index: 1;
 }
 
-.panel-frame__content {
+.panel-frame-content {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
@@ -48,7 +48,7 @@
   border-radius: calc(var(--radius-md) - var(--space-nano));
 }
 
-.panel-frame__header + .panel-frame__content {
+.panel-frame-header + .panel-frame-content {
   min-height: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;

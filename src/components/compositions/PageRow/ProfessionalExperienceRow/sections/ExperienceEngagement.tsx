@@ -17,8 +17,8 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
 
   return (
     <PanelFrame>
-      <article className="professional-experience-row__engagement">
-        <header className="professional-experience-row__engagement-header">
+      <article className="professional-experience-row-engagement">
+        <header className="professional-experience-row-engagement-header">
           <CompanyLogo company={engagement.name} logo={engagement.logo} size="large" />
           <div>
             <Heading level={3}>{engagement.name}</Heading>
@@ -27,7 +27,7 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
             </Text>
           </div>
           {engagement.period || engagement.category ? (
-            <div className="professional-experience-row__engagement-meta">
+            <div className="professional-experience-row-engagement-meta">
               {engagement.period ? <span>{engagement.period}</span> : null}
               {engagement.category ? <ProjectCategory category={engagement.category} /> : null}
             </div>
@@ -36,12 +36,12 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
 
         <Text color="secondary">{engagement.description}</Text>
 
-        <div className="professional-experience-row__engagement-section">
-          <div className="professional-experience-row__engagement-label">
+        <div className="professional-experience-row-engagement-section">
+          <div className="professional-experience-row-engagement-label">
             <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
             {t('v1.sections.keyResponsibilities')}
           </div>
-          <ul className="professional-experience-row__responsibilities">
+          <ul className="professional-experience-row-responsibilities">
             {engagement.responsibilities.map((responsibility) => (
               <li key={responsibility}>{responsibility}</li>
             ))}
@@ -49,8 +49,8 @@ export function ExperienceEngagement({ engagement }: ExperienceEngagementProps) 
         </div>
 
         {engagement.technologies.length ? (
-          <div className="professional-experience-row__engagement-section">
-            <div className="professional-experience-row__engagement-label">
+          <div className="professional-experience-row-engagement-section">
+            <div className="professional-experience-row-engagement-label">
               <CaretRightIcon aria-hidden="true" size="var(--icon-size-normal)" weight="bold" />
               {t('v1.sections.techStack')}
             </div>

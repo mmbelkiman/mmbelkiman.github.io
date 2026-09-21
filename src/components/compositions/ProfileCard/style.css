@@ -4,7 +4,7 @@
   padding: var(--space-small);
 }
 
-.profile-card__photo-frame {
+.profile-card-photo-frame {
   position: relative;
   overflow: hidden;
   padding: var(--space-nano);
@@ -14,16 +14,17 @@
   box-shadow: var(--shadow-inset);
 }
 
-.profile-card__photo {
+.profile-card-photo {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1.08;
   object-fit: cover;
   object-position: 71% 32%;
-  /*filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85);*/
+
+  /* filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85); */
 }
 
-.profile-card__photo-static {
+.profile-card-photo-static {
   position: absolute;
   inset: var(--space-nano);
   width: calc(100% - (var(--space-nano) * 2));
@@ -33,29 +34,29 @@
   pointer-events: none;
 }
 
-.profile-card__details {
+.profile-card-details {
   min-width: 0;
 }
 
-.profile-card__details .heading {
+.profile-card-details .heading {
   color: var(--color-text-primary);
   font-size: var(--font-size-normal);
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
-.profile-card__credential {
+.profile-card-credential {
   color: var(--color-text-secondary);
   font: inherit;
   font-weight: var(--font-weight-normal);
 }
 
-.profile-card__separator {
+.profile-card-separator {
   color: var(--color-focus);
   font: inherit;
 }
 
-.profile-card__location {
+.profile-card-location {
   display: flex;
   gap: var(--space-small);
   align-items: center;
@@ -63,12 +64,12 @@
   border-top: var(--border-width-thin) solid var(--color-border);
 }
 
-.profile-card__location svg {
+.profile-card-location svg {
   flex: 0 0 auto;
   color: var(--color-accent-active);
 }
 
-.profile-card__location .text {
+.profile-card-location .text {
   font-family: var(--font-heading);
   letter-spacing: var(--letter-spacing-label);
   text-transform: uppercase;

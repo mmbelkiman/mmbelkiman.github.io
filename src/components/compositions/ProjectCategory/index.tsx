@@ -24,7 +24,7 @@ export function ProjectCategory({ category }: ProjectCategoryProps) {
   const { t } = useTranslation()
 
   return (
-    <span className={`project-category project-category--${category}`}>
+    <span className={`project-category project-category-${category}`}>
       {t(PROJECT_CATEGORY_LABEL_KEYS[category])}
     </span>
   )

@@ -18,13 +18,13 @@ export function TechnologyTag({
 
   return (
     <li
-      className={`technology-tag technology-tag--${technology} technology-tag--bg-${bg} technology-tag--border-${border}`}
+      className={`technology-tag technology-tag-${technology} technology-tag-bg-${bg} technology-tag-border-${border}`}
     >
       {showIcon ? (
         logo ? (
           <svg
             aria-hidden="true"
-            className="technology-tag__logo"
+            className="technology-tag-logo"
             fill="currentColor"
             style={color ? { color } : undefined}
             viewBox="0 0 24 24"

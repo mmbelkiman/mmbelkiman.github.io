@@ -21,7 +21,7 @@ export function ProjectTypeBadge({ type, tone = 'default' }: ProjectTypeBadgePro
   const Icon = PROJECT_TYPE_CONTENT[type]
 
   return (
-    <span className={`project-type-badge project-type-badge--${type} project-type-badge--${tone}`}>
+    <span className={`project-type-badge project-type-badge-${type} project-type-badge-${tone}`}>
       <Icon aria-hidden="true" size="var(--icon-size-nano)" weight="bold" />
       {t(`v1.projectTypes.${type}`)}
     </span>

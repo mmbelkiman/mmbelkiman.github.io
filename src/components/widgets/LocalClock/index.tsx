@@ -13,10 +13,10 @@ export function LocalClock({ locale, now, timeZone }: LocalClockProps) {
   const time = formatLocalTime({ locale, time: displayedTime, timeZone: resolvedTimeZone })
   return (
     <section aria-label="Local date and time" className="local-clock">
-      <time className="local-clock__time" dateTime={displayedTime.toISOString()}>
+      <time className="local-clock-time" dateTime={displayedTime.toISOString()}>
         {time}
       </time>
-      <time className="local-clock__date" dateTime={displayedTime.toISOString()}>
+      <time className="local-clock-date" dateTime={displayedTime.toISOString()}>
         {date}
       </time>
     </section>

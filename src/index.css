@@ -1,3 +1,3 @@
-@import './theme/fonts.css';
-@import './theme/theme-v1.css';
-@import './theme/foundation.css';
+@import url('./theme/fonts.css');
+@import url('./theme/theme-v1.css');
+@import url('./theme/foundation.css');

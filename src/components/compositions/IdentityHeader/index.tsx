@@ -9,19 +9,19 @@ export function IdentityHeader({ familyName, givenName, roles }: IdentityHeaderP
   return (
     <PanelFrame tone="dark">
       <header className="identity-header">
-        <div className="identity-header__content">
-          <div className="identity-header__identity">
+        <div className="identity-header-content">
+          <div className="identity-header-identity">
             <CodeIcon
               aria-hidden="true"
-              className="identity-header__icon"
+              className="identity-header-icon"
               size="var(--icon-size-big)"
               weight="duotone"
             />
-            <h1 className="identity-header__name">
+            <h1 className="identity-header-name">
               <span>{givenName}</span> <strong>{familyName}</strong>
             </h1>
           </div>
-          <ul aria-label="Professional roles" className="identity-header__roles">
+          <ul aria-label="Professional roles" className="identity-header-roles">
             {roles.map((role) => (
               <li key={role}>{role}</li>
             ))}

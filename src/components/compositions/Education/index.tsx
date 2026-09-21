@@ -14,11 +14,11 @@ export function Education({ items }: EducationProps) {
   return (
     <PanelFrame header={<PanelHeader label={t('v1.sections.education')} />}>
       <section aria-label={t('v1.sections.education')} className="education">
-        <ul className="education__list">
+        <ul className="education-list">
           {items.map((item) => (
-            <li className="education__item" key={`${item.institution}-${item.title}`}>
-              <img alt={item.logoAlt} className="education__logo" src={item.logoSrc} />
-              <div className="education__content">
+            <li className="education-item" key={`${item.institution}-${item.title}`}>
+              <img alt={item.logoAlt} className="education-logo" src={item.logoSrc} />
+              <div className="education-content">
                 <Heading level={3}>{item.title}</Heading>
                 <Text color="secondary" size="label">
                   {item.institution}

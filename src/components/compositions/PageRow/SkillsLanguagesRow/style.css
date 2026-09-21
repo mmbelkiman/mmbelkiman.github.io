@@ -2,7 +2,7 @@
   align-items: stretch;
 }
 
-.skills-row .grid__column,
+.skills-row .grid-column,
 .skills-row .panel-frame {
   height: 100%;
 }

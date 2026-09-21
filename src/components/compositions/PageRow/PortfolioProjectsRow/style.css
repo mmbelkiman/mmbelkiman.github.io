@@ -2,26 +2,25 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: max-content;
-  column-gap: var(--space-small);
-  row-gap: var(--space-normal);
+  gap: var(--space-normal) var(--space-small);
   padding: var(--space-small);
 }
 
-.portfolio-projects-row__item {
+.portfolio-projects-row-item {
   display: flex;
   min-width: 0;
 }
 
-.portfolio-projects-row__item > .panel-frame {
+.portfolio-projects-row-item > .panel-frame {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.portfolio-projects-row__item--featured {
+.portfolio-projects-row-item-featured {
   grid-column: 1 / -1;
 }
 
-@media (max-width: 40rem) {
+@media (width <= 40rem) {
   .portfolio-projects-row {
     grid-template-columns: 1fr;
   }

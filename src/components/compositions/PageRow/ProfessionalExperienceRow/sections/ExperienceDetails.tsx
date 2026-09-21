@@ -18,22 +18,22 @@ export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
   const { t } = useTranslation()
 
   return (
-    <article className="professional-experience-row__details">
-      <header className="professional-experience-row__details-header">
+    <article className="professional-experience-row-details">
+      <header className="professional-experience-row-details-header">
         <CompanyLogo company={experience.company} logo={experience.logo} size="large" />
         <div>
           <Heading level={2}>{experience.company}</Heading>
           <Text color="secondary">{experience.role}</Text>
           {experience.location || experience.companyType ? (
-            <div className="professional-experience-row__company-meta">
+            <div className="professional-experience-row-company-meta">
               {experience.location ? (
-                <span className="professional-experience-row__location">
+                <span className="professional-experience-row-location">
                   <MapPinIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
                   {experience.location}
                 </span>
               ) : null}
               {experience.companyType ? (
-                <span className="professional-experience-row__company-type">
+                <span className="professional-experience-row-company-type">
                   <BriefcaseIcon aria-hidden="true" size="var(--icon-size-normal)" weight="fill" />
                   {experience.companyType}
                 </span>
@@ -41,7 +41,7 @@ export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
             </div>
           ) : null}
         </div>
-        <span className="professional-experience-row__details-period">
+        <span className="professional-experience-row-details-period">
           {formatExperiencePeriod(experience.period, t('v1.current'))}
         </span>
       </header>
@@ -52,7 +52,7 @@ export function ExperienceDetails({ experience }: ExperienceDetailsProps) {
         <PanelFrame header={<PanelHeader label={t('v1.sections.clientsProjects')} />}>
           <section
             aria-label={t('v1.sections.clientsProjects')}
-            className="professional-experience-row__engagements"
+            className="professional-experience-row-engagements"
           >
             {experience.engagements.map((engagement) => (
               <ExperienceEngagement engagement={engagement} key={engagement.id} />

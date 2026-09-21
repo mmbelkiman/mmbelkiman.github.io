@@ -13,10 +13,10 @@ export function AboutMeCard() {
   return (
     <PanelFrame header={<PanelHeader label={t('v1.sections.about')} />}>
       <section aria-label={t('v1.sections.about')} className="about-me-card">
-        <img alt="" className="about-me-card__background" src={aboutBackground} />
-        <div className="about-me-card__content">
+        <img alt="" className="about-me-card-background" src={aboutBackground} />
+        <div className="about-me-card-content">
           <Heading level={1}>{t('v1.about.title')}</Heading>
-          <div className="about-me-card__description">
+          <div className="about-me-card-description">
             {description.map((paragraph) => (
               <Text color="secondary" key={paragraph}>
                 {paragraph}
@@ -24,7 +24,7 @@ export function AboutMeCard() {
             ))}
             <Text color="secondary">
               {t('v1.about.prompt')}
-              <span aria-hidden="true" className="about-me-card__cursor">
+              <span aria-hidden="true" className="about-me-card-cursor">
                 _
               </span>
             </Text>

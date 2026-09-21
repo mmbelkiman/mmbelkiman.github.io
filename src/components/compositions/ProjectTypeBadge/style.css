@@ -12,36 +12,36 @@
   text-transform: uppercase;
 }
 
-.project-type-badge--game {
+.project-type-badge-game {
   --project-type-color: var(--color-project-type-game);
   --project-type-color-muted: var(--color-project-type-game-muted);
   --project-type-surface: var(--color-project-type-game-surface);
 }
 
-.project-type-badge--software {
+.project-type-badge-software {
   --project-type-color: var(--color-project-type-software);
   --project-type-color-muted: var(--color-project-type-software-muted);
   --project-type-surface: var(--color-project-type-software-surface);
 }
 
-.project-type-badge--social {
+.project-type-badge-social {
   --project-type-color: var(--color-project-type-social);
   --project-type-color-muted: var(--color-project-type-social-muted);
   --project-type-surface: var(--color-project-type-social-surface);
 }
 
-.project-type-badge--doc {
+.project-type-badge-doc {
   --project-type-color: var(--color-project-type-doc);
   --project-type-color-muted: var(--color-project-type-doc-muted);
   --project-type-surface: var(--color-project-type-doc-surface);
 }
 
-.project-type-badge--default {
+.project-type-badge-default {
   color: var(--project-type-color-muted);
   background: transparent;
 }
 
-.project-type-badge--featured {
+.project-type-badge-featured {
   color: var(--project-type-color);
   background: var(--project-type-surface);
 }

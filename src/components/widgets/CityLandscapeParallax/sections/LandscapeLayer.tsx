@@ -6,7 +6,7 @@ export function LandscapeLayer({ layer }: LandscapeLayerProps) {
   const style = {
     '--city-layer-duration': `${layer.duration}s`,
   } as CSSProperties
-  const className = `city-landscape-parallax__layer city-landscape-parallax__layer--${layer.direction}`
+  const className = `city-landscape-parallax-layer city-landscape-parallax-layer--${layer.direction}`
 
   return (
     <div className={className} style={style}>

@@ -14,12 +14,12 @@ import '../theme-foundation.css'
 function ThemeFoundation() {
   return (
     <section className="foundation-story">
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Portfolio interface system / v1</Text>
         </div>
         <Heading level={1}>Rajdhani for information. Share Tech Mono for identity.</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             The visual foundation uses a light industrial palette with clear hierarchy, technical
             labels, and reusable semantic tokens.
@@ -27,177 +27,177 @@ function ThemeFoundation() {
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Semantic color roles</Text>
         </div>
         <Heading level={2}>Aliases over a compact palette</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Semantic roles remain stable while a theme can map related roles to the same primitive
             color. Surface and raised share white; inset and muted share mist.
           </Text>
         </div>
-        <ul className="foundation-story__swatches">
-          <li className="foundation-story__swatch foundation-story__swatch--page">
+        <ul className="foundation-story-swatches">
+          <li className="foundation-story-swatch foundation-story-swatch-page">
             <span>Page</span>
           </li>
-          <li className="foundation-story__swatch foundation-story__swatch--surface">
+          <li className="foundation-story-swatch foundation-story-swatch-surface">
             <span>Surface</span>
             <small>Surface + raised</small>
           </li>
-          <li className="foundation-story__swatch foundation-story__swatch--inset">
+          <li className="foundation-story-swatch foundation-story-swatch-inset">
             <span>Inset</span>
             <small>Inset + muted</small>
           </li>
-          <li className="foundation-story__swatch foundation-story__swatch--strong"><span>Strong</span></li>
-          <li className="foundation-story__swatch foundation-story__swatch--accent">
+          <li className="foundation-story-swatch foundation-story-swatch-strong"><span>Strong</span></li>
+          <li className="foundation-story-swatch foundation-story-swatch-accent">
             <span>Accent</span>
             <small>Default + hover + active</small>
           </li>
-          <li className="foundation-story__swatch foundation-story__swatch--positive"><span>Positive</span></li>
-          <li className="foundation-story__swatch foundation-story__swatch--focus">
+          <li className="foundation-story-swatch foundation-story-swatch-positive"><span>Positive</span></li>
+          <li className="foundation-story-swatch foundation-story-swatch-focus">
             <span>Focus</span>
           </li>
         </ul>
-        <div className="foundation-story__border-tokens" aria-label="Border token hierarchy">
-          <span className="foundation-story__border-token foundation-story__border-token--default">Border</span>
-          <span className="foundation-story__border-token foundation-story__border-token--strong">Border strong</span>
-          <span className="foundation-story__border-token foundation-story__border-token--outline">Border outline</span>
+        <div className="foundation-story-border-tokens" aria-label="Border token hierarchy">
+          <span className="foundation-story-border-token foundation-story-border-token-default">Border</span>
+          <span className="foundation-story-border-token foundation-story-border-token-strong">Border strong</span>
+          <span className="foundation-story-border-token foundation-story-border-token-outline">Border outline</span>
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Text roles</Text>
         </div>
         <Heading level={2}>Primary and secondary</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Components use semantic text roles. Each theme maps those roles to its own palette.
           </Text>
         </div>
-        <div className="foundation-story__text-examples">
+        <div className="foundation-story-text-examples">
           <Text>Primary text communicates the main information.</Text>
           <Text color="secondary">Secondary text supports the primary content.</Text>
-          <span className="foundation-story__text-muted">Muted text communicates metadata.</span>
-          <div className="foundation-story__text-on-strong">
-            <span className="foundation-story__text-inverse">Inverse text supports dark surfaces.</span>
-            <span className="foundation-story__text-ice">Ice text provides a quieter hierarchy.</span>
+          <span className="foundation-story-text-muted">Muted text communicates metadata.</span>
+          <div className="foundation-story-text-on-strong">
+            <span className="foundation-story-text-inverse">Inverse text supports dark surfaces.</span>
+            <span className="foundation-story-text-ice">Ice text provides a quieter hierarchy.</span>
           </div>
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Typography</Text>
         </div>
         <Heading level={2}>Type scale and hierarchy</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Rajdhani carries readable information; Share Tech Mono gives headings and labels their
             technical personality.
           </Text>
         </div>
-        <div className="foundation-story__type-scale">
-          <div className="foundation-story__type-sample foundation-story__type-sample--nano">
+        <div className="foundation-story-type-scale">
+          <div className="foundation-story-type-sample foundation-story-type-sample-nano">
             <span>nano</span>
             <strong>Metadata and compact details</strong>
             <code>0.85rem / 100</code>
           </div>
-          <div className="foundation-story__type-sample foundation-story__type-sample--normal">
+          <div className="foundation-story-type-sample foundation-story-type-sample-normal">
             <span>normal</span>
             <strong>Body information</strong>
             <code>1rem / 400</code>
           </div>
-          <div className="foundation-story__type-sample foundation-story__type-sample--big">
+          <div className="foundation-story-type-sample foundation-story-type-sample-big">
             <span>big</span>
             <strong>Section emphasis</strong>
             <code>1.25rem / 500</code>
           </div>
-          <div className="foundation-story__type-sample foundation-story__type-sample--huge">
+          <div className="foundation-story-type-sample foundation-story-type-sample-huge">
             <span>huge</span>
             <strong>Primary identity</strong>
             <code>1.75rem / 500</code>
           </div>
         </div>
-        <div className="foundation-story__label-sample">
+        <div className="foundation-story-label-sample">
           <span>Technical label</span>
           <code>Share Tech Mono / 0.04em</code>
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Layout primitives</Text>
         </div>
         <Heading level={2}>Spacing, borders and elevation</Heading>
-        <div className="foundation-story__token-groups">
-          <div className="foundation-story__token-group">
+        <div className="foundation-story-token-groups">
+          <div className="foundation-story-token-group">
             <strong>Spacing</strong>
-            <div className="foundation-story__space-scale">
-              <div><span className="foundation-story__space foundation-story__space--nano" />nano · 4px</div>
-              <div><span className="foundation-story__space foundation-story__space--small" />small · 8px</div>
-              <div><span className="foundation-story__space foundation-story__space--normal" />normal · 16px</div>
-              <div><span className="foundation-story__space foundation-story__space--big" />big · 24px</div>
+            <div className="foundation-story-space-scale">
+              <div><span className="foundation-story-space foundation-story-space-nano" />nano · 4px</div>
+              <div><span className="foundation-story-space foundation-story-space-small" />small · 8px</div>
+              <div><span className="foundation-story-space foundation-story-space-normal" />normal · 16px</div>
+              <div><span className="foundation-story-space foundation-story-space-big" />big · 24px</div>
             </div>
           </div>
-          <div className="foundation-story__token-group">
+          <div className="foundation-story-token-group">
             <strong>Frame</strong>
-            <div className="foundation-story__frame-samples">
-              <span className="foundation-story__frame foundation-story__frame--thin">thin · 1px</span>
-              <span className="foundation-story__frame foundation-story__frame--strong">strong · 2px</span>
-              <span className="foundation-story__radius">radius · 2 / 4px</span>
+            <div className="foundation-story-frame-samples">
+              <span className="foundation-story-frame foundation-story-frame-thin">thin · 1px</span>
+              <span className="foundation-story-frame foundation-story-frame-strong">strong · 2px</span>
+              <span className="foundation-story-radius">radius · 2 / 4px</span>
             </div>
           </div>
-          <div className="foundation-story__token-group">
+          <div className="foundation-story-token-group">
             <strong>Elevation</strong>
-            <div className="foundation-story__elevation-samples">
-              <span className="foundation-story__elevation foundation-story__elevation--panel">panel</span>
-              <span className="foundation-story__elevation foundation-story__elevation--strong">strong</span>
-              <span className="foundation-story__elevation foundation-story__elevation--inset">inset</span>
+            <div className="foundation-story-elevation-samples">
+              <span className="foundation-story-elevation foundation-story-elevation-panel">panel</span>
+              <span className="foundation-story-elevation foundation-story-elevation-strong">strong</span>
+              <span className="foundation-story-elevation foundation-story-elevation-inset">inset</span>
             </div>
           </div>
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Interaction and accessibility</Text>
         </div>
         <Heading level={2}>Accent states and visible focus</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Interactive controls move from accent to hover and active states. Keyboard focus always
             uses a distinct blue outline.
           </Text>
         </div>
-        <div className="foundation-story__interaction-samples">
-          <span className="foundation-story__interaction foundation-story__interaction--default">Default</span>
-          <span className="foundation-story__interaction foundation-story__interaction--hover">Hover</span>
-          <span className="foundation-story__interaction foundation-story__interaction--active">Active</span>
-          <button className="foundation-story__focus-sample" type="button">Keyboard focus</button>
+        <div className="foundation-story-interaction-samples">
+          <span className="foundation-story-interaction foundation-story-interaction-default">Default</span>
+          <span className="foundation-story-interaction foundation-story-interaction-hover">Hover</span>
+          <span className="foundation-story-interaction foundation-story-interaction-active">Active</span>
+          <button className="foundation-story-focus-sample" type="button">Keyboard focus</button>
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Layout grid</Text>
         </div>
         <Heading level={2}>Grid and Column</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Layouts use a ten-column grid. Each Grid.Column declares its proportional weight, and
             rowHeight controls compact desktop rows while mobile rows return to automatic height.
           </Text>
         </div>
-        <div className="foundation-story__grid-demo">
+        <div className="foundation-story-grid-demo">
           <Grid rowHeight="7rem">
             <Grid.Column weight={4}>
-              <div className="foundation-story__grid-column">Column / weight 4</div>
+              <div className="foundation-story-grid-column">Column / weight 4</div>
             </Grid.Column>
             <Grid.Column weight={6}>
-              <div className="foundation-story__grid-column foundation-story__grid-column--accent">
+              <div className="foundation-story-grid-column foundation-story-grid-column-accent">
                 Column / weight 6
               </div>
             </Grid.Column>
@@ -205,63 +205,63 @@ function ThemeFoundation() {
         </div>
       </article>
 
-      <article className="foundation-story__panel">
-        <div className="foundation-story__eyebrow">
+      <article className="foundation-story-panel">
+        <div className="foundation-story-eyebrow">
           <Text size="label">Iconography</Text>
         </div>
         <Heading level={2}>Phosphor Icons</Heading>
-        <div className="foundation-story__body">
+        <div className="foundation-story-body">
           <Text color="secondary">
             Interface icons use the regular, bold, fill, and duotone weights to create hierarchy
             without introducing another visual language.
           </Text>
         </div>
 
-        <div className="foundation-story__icon-grid">
-          <div className="foundation-story__icon-card foundation-story__icon-card--accent">
+        <div className="foundation-story-icon-grid">
+          <div className="foundation-story-icon-card foundation-story-icon-card-accent">
             <CodeIcon aria-hidden="true" size={36} weight="bold" />
             <strong>Code</strong>
             <span>Technical label</span>
           </div>
-          <div className="foundation-story__icon-card foundation-story__icon-card--strong">
+          <div className="foundation-story-icon-card foundation-story-icon-card-strong">
             <TerminalWindowIcon aria-hidden="true" size={36} weight="duotone" />
             <strong>Terminal</strong>
             <span>Panel utility</span>
           </div>
-          <div className="foundation-story__icon-card">
+          <div className="foundation-story-icon-card">
             <BriefcaseIcon aria-hidden="true" size={36} weight="bold" />
             <strong>Career</strong>
             <span>Content section</span>
           </div>
-          <div className="foundation-story__icon-card foundation-story__icon-card--positive">
+          <div className="foundation-story-icon-card foundation-story-icon-card-positive">
             <GameControllerIcon aria-hidden="true" size={36} weight="duotone" />
             <strong>Games</strong>
             <span>Featured area</span>
           </div>
-          <div className="foundation-story__icon-card">
+          <div className="foundation-story-icon-card">
             <MapPinIcon aria-hidden="true" size={36} weight="fill" />
             <strong>Location</strong>
             <span>Quick info</span>
           </div>
-          <div className="foundation-story__icon-card">
+          <div className="foundation-story-icon-card">
             <GithubLogoIcon aria-hidden="true" size={36} weight="fill" />
             <strong>GitHub</strong>
             <span>External profile</span>
           </div>
-          <div className="foundation-story__icon-card">
+          <div className="foundation-story-icon-card">
             <LinkedinLogoIcon aria-hidden="true" size={36} weight="fill" />
             <strong>LinkedIn</strong>
             <span>External profile</span>
           </div>
         </div>
 
-        <div className="foundation-story__weights" aria-label="Icon weight comparison">
+        <div className="foundation-story-weights" aria-label="Icon weight comparison">
           <GameControllerIcon aria-hidden="true" size={32} weight="regular" />
           <GameControllerIcon aria-hidden="true" size={32} weight="bold" />
           <GameControllerIcon aria-hidden="true" size={32} weight="fill" />
           <GameControllerIcon aria-hidden="true" size={32} weight="duotone" />
         </div>
-        <div className="foundation-story__icon-sizes" aria-label="Icon size scale">
+        <div className="foundation-story-icon-sizes" aria-label="Icon size scale">
           <span><GameControllerIcon aria-hidden="true" size="var(--icon-size-nano)" />nano</span>
           <span><GameControllerIcon aria-hidden="true" size="var(--icon-size-normal)" />normal</span>
           <span><GameControllerIcon aria-hidden="true" size="var(--icon-size-big)" />big</span>

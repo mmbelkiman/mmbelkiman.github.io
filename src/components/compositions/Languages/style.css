@@ -2,7 +2,7 @@
   padding: var(--space-small);
 }
 
-.languages__list {
+.languages-list {
   display: grid;
   gap: var(--space-small);
   padding: 0;
@@ -10,18 +10,18 @@
   list-style: none;
 }
 
-.languages__item {
+.languages-item {
   display: flex;
   gap: var(--space-small);
   align-items: center;
   min-width: 0;
 }
 
-.languages__item > div {
+.languages-item > div {
   min-width: 0;
 }
 
-.languages__flag {
+.languages-flag {
   display: flex;
   flex: 0 0 auto;
   width: 3rem;
@@ -34,7 +34,7 @@
   background: var(--color-surface-inset);
 }
 
-.languages__flag-glyph {
+.languages-flag-glyph {
   display: block;
   font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
   font-size: var(--font-size-huge);
@@ -42,10 +42,10 @@
   transform: translateY(1px);
 }
 
-.languages__item .heading {
+.languages-item .heading {
   font-size: var(--font-size-big);
 }
 
-.languages__item .text {
+.languages-item .text {
   margin-top: var(--space-nano);
 }

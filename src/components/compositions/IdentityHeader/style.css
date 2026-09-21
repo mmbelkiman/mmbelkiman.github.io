@@ -6,7 +6,7 @@
   background: var(--color-surface-strong);
 }
 
-.identity-header__content {
+.identity-header-content {
   position: relative;
   z-index: 1;
   display: grid;
@@ -27,18 +27,18 @@
   transform-origin: center;
 }
 
-.identity-header__identity {
+.identity-header-identity {
   display: flex;
   gap: var(--space-small);
   align-items: center;
 }
 
-.identity-header__icon {
+.identity-header-icon {
   flex: 0 0 auto;
   color: var(--color-text-inverse);
 }
 
-.identity-header__name {
+.identity-header-name {
   margin: 0;
   color: var(--color-text-inverse);
   font-family: var(--font-heading);
@@ -49,12 +49,12 @@
   text-transform: uppercase;
 }
 
-.identity-header__name strong {
+.identity-header-name strong {
   color: var(--color-accent);
   font: inherit;
 }
 
-.identity-header__roles {
+.identity-header-roles {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -69,13 +69,13 @@
   text-transform: uppercase;
 }
 
-.identity-header__roles li {
+.identity-header-roles li {
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
 }
 
-.identity-header__roles li:not(:last-child)::after {
+.identity-header-roles li:not(:last-child)::after {
   margin-left: var(--space-nano);
   color: var(--color-focus);
   content: '//';

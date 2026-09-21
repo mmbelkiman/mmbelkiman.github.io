@@ -20,22 +20,22 @@ export function ExperienceTimeline({
   return (
     <nav
       aria-label={t('v1.sections.professionalExperience')}
-      className="professional-experience-row__timeline"
+      className="professional-experience-row-timeline"
     >
-      <div className="professional-experience-row__timeline-content">
+      <div className="professional-experience-row-timeline-content">
         {experiences.map((experience) => {
           const isSelected = experience.id === selectedExperienceId
 
           return (
             <button
               aria-current={isSelected ? 'true' : undefined}
-              className="professional-experience-row__timeline-item"
+              className="professional-experience-row-timeline-item"
               key={experience.id}
               onClick={() => onSelect(experience.id)}
               type="button"
             >
-              <span aria-hidden="true" className="professional-experience-row__timeline-marker" />
-              <span className="professional-experience-row__timeline-period">
+              <span aria-hidden="true" className="professional-experience-row-timeline-marker" />
+              <span className="professional-experience-row-timeline-period">
                 <span>{formatExperienceMonthYear(experience.period.start)}</span>
                 <span>
                   {experience.period.end
@@ -43,9 +43,9 @@ export function ExperienceTimeline({
                     : t('v1.current')}
                 </span>
               </span>
-              <span className="professional-experience-row__timeline-company">
+              <span className="professional-experience-row-timeline-company">
                 <CompanyLogo company={experience.company} logo={experience.logo} />
-                <span className="professional-experience-row__timeline-copy">
+                <span className="professional-experience-row-timeline-copy">
                   <strong>{experience.company}</strong>
                   <small>{experience.role}</small>
                 </span>

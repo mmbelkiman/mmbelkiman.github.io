@@ -23,15 +23,15 @@
   white-space: nowrap;
 }
 
-.technology-tag--bg-filled {
+.technology-tag-bg-filled {
   background: var(--color-surface-strong);
 }
 
-.technology-tag--bg-transparent {
+.technology-tag-bg-transparent {
   color: var(--color-text);
 }
 
-.technology-tag--border-none {
+.technology-tag-border-none {
   border: 0;
 }
 
