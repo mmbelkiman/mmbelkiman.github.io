@@ -6,6 +6,16 @@ import type { TechnologyTagProps } from './types'
 export type { TechnologyName, TechnologyTagBackground, TechnologyTagProps } from './types'
 export { TECHNOLOGY_NAMES } from './constants'
 
+const BACKGROUND_CLASSES = {
+  filled: 'technology-tag-bg-filled',
+  transparent: 'technology-tag-bg-transparent',
+} as const
+
+const BORDER_CLASSES = {
+  none: 'technology-tag-border-none',
+  visible: undefined,
+} as const
+
 export function TechnologyTag({
   bg = 'filled',
   border = 'visible',
@@ -17,9 +27,7 @@ export function TechnologyTag({
   const color = iconColor ?? (logo?.hex ? `#${logo.hex}` : undefined)
 
   return (
-    <li
-      className={`technology-tag technology-tag-${technology} technology-tag-bg-${bg} technology-tag-border-${border}`}
-    >
+    <li className={['technology-tag', BACKGROUND_CLASSES[bg], BORDER_CLASSES[border]].filter(Boolean).join(' ')}>
       {showIcon ? (
         logo ? (
           <svg

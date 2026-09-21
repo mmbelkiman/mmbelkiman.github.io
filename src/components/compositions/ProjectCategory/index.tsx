@@ -5,6 +5,21 @@ import type { ProjectCategoryProps } from './types'
 export { PROJECT_CATEGORY_NAMES } from './types'
 export type { ProjectCategoryName, ProjectCategoryProps } from './types'
 
+const PROJECT_CATEGORY_CLASSES = {
+  banking: 'project-category-banking',
+  edtech: 'project-category-edtech',
+  financial: 'project-category-financial',
+  fintech: 'project-category-fintech',
+  industrial: 'project-category-industrial',
+  insurance: 'project-category-insurance',
+  logistics: 'project-category-logistics',
+  loyalty: 'project-category-loyalty',
+  media: 'project-category-media',
+  'research-platform': 'project-category-research-platform',
+  simulation: 'project-category-simulation',
+  'threat-intelligence': 'project-category-threat-intelligence',
+} as const
+
 const PROJECT_CATEGORY_LABEL_KEYS = {
   banking: 'v1.projectCategories.banking',
   edtech: 'v1.projectCategories.edtech',
@@ -24,7 +39,7 @@ export function ProjectCategory({ category }: ProjectCategoryProps) {
   const { t } = useTranslation()
 
   return (
-    <span className={`project-category project-category-${category}`}>
+    <span className={`project-category ${PROJECT_CATEGORY_CLASSES[category]}`}>
       {t(PROJECT_CATEGORY_LABEL_KEYS[category])}
     </span>
   )

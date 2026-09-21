@@ -4,14 +4,9 @@ import process from 'node:process'
 import { PurgeCSS } from 'purgecss'
 
 const SOURCE_EXTENSIONS = new Set(['.css', '.html', '.ts', '.tsx'])
-const DYNAMIC_SELECTOR_SAFELIST = [
-  /^v1-project-card__technology--(?:react|react-native|typescript|firebase|node-js|postgresql)$/,
-  /^v1-project-card__technology--bg-(?:filled|transparent)$/,
-  /^v1-project-card__technology--border-(?:visible|none)$/,
-  /^v1-project-category--(?:financial|banking)$/,
-  /^v1-project-type-badge--(?:game|mobile|software|web)$/,
-  /^v1-professional-experience-row__company-logo--(?:compact|large)$/,
-  /^v1-city-landscape-parallax__layer--(?:left|right)$/,
+const GLOBAL_SELECTOR_SAFELIST = [
+  /^:where\(\.v1, \.storybook\) :/,
+  /^(input|select|textarea)$/,
 ]
 
 async function getSourceFiles(directory) {
@@ -49,7 +44,7 @@ const purgeResults = await new PurgeCSS().purge({
   content: sourceFiles.filter((file) => path.extname(file) !== '.css'),
   css: cssFiles,
   rejected: true,
-  safelist: { standard: DYNAMIC_SELECTOR_SAFELIST },
+  safelist: { standard: GLOBAL_SELECTOR_SAFELIST },
 })
 
 const unusedSelectors = [
@@ -58,7 +53,7 @@ const unusedSelectors = [
       .flatMap((result) => result.rejected ?? [])
       .map((selector) => selector.trim())
       .filter((selector) => !selector.startsWith('&'))
-      .filter((selector) => !DYNAMIC_SELECTOR_SAFELIST.some((pattern) => pattern.test(selector))),
+      .filter((selector) => !GLOBAL_SELECTOR_SAFELIST.some((pattern) => pattern.test(selector))),
   ),
 ].sort()
 

@@ -16,12 +16,24 @@ const PROJECT_TYPE_CONTENT = {
   social: UsersIcon,
 } as const
 
+const PROJECT_TYPE_CLASSES = {
+  doc: 'project-type-badge-doc',
+  game: 'project-type-badge-game',
+  software: 'project-type-badge-software',
+  social: 'project-type-badge-social',
+} as const
+
+const PROJECT_TYPE_TONE_CLASSES = {
+  default: 'project-type-badge-default',
+  featured: 'project-type-badge-featured',
+} as const
+
 export function ProjectTypeBadge({ type, tone = 'default' }: ProjectTypeBadgeProps) {
   const { t } = useTranslation()
   const Icon = PROJECT_TYPE_CONTENT[type]
 
   return (
-    <span className={`project-type-badge project-type-badge-${type} project-type-badge-${tone}`}>
+    <span className={`project-type-badge ${PROJECT_TYPE_CLASSES[type]} ${PROJECT_TYPE_TONE_CLASSES[tone]}`}>
       <Icon aria-hidden="true" size="var(--icon-size-nano)" weight="bold" />
       {t(`v1.projectTypes.${type}`)}
     </span>
