@@ -1,0 +1,22 @@
+.text {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: inherit;
+  font-size: var(--font-size-normal);
+  font-weight: inherit;
+  line-height: 1.35;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-label {
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-big);
+  letter-spacing: var(--letter-spacing-label);
+}
+
+.text-meta {
+  font-size: var(--font-size-nano);
+}

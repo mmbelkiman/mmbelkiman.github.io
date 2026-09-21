@@ -1,264 +1,556 @@
 {
-  "menu": {
-    "menu-subtitle": "Computer scientist",
-    "menu-home": "Home",
-    "menu-portfolio": "Portfolio",
-    "switchLanguage": "em português"
-  },
+  "menu": { "switchLanguage": "em português" },
   "home": {
-    "content-name-allign": "Hi, my name is Marcelo",
-    "welcome-1": "I'm a Programmer, Game Designer and Software Architect",
-    "welcome-2": "I like to create amazing computer solutions, well-performing, visually elegant and exciting computing solutions.",
-    "welcome-3": "How can I help you today?",
-    "topic-name-1": " Languages",
-    "topic-name-2": " Objective",
-    "topic-name-3": " Professional experience",
-    "topic-name-4": " Academic education",
-    "topic-name-5": " Programming Skills",
-    "topic-name-6": " Other knowledges",
-    "topic-name-7": " Hobbies",
-    "topic-name-8": " Glossary",
-    "desc-obj": "Create incredible computing solutions, with a good performance, visually elegant and passionate.",
     "language-port-1": "Portuguese",
     "language-port-2": "Native",
-    "language-eng-1": "English",
-    "other-gamedev": "Game development",
-    "hobbies-music": "Music",
-    "hobbies-travel": "Movies",
-    "hobbies-programming": "Programming",
-    "hobbies-games": "Electronic games",
-    "glossary-course": "Academic knowledge and/or courses",
-    "glossary-exp": "Professional experience",
-    "glossary-personal": "Use in personal projects",
-    "glossary-now": "Currently using"
+    "language-eng-1": "English"
+  },
+  "education": {
+    "unyleya": {
+      "title": "Postgraduate Degree in Digital Game Development",
+      "period": "2017 – 2018",
+      "institution": "Unyleya"
+    },
+    "metrocamp": {
+      "title": "Bachelor’s Degree in Computer Science",
+      "period": "2012 – 2015",
+      "institution": "Wyden (DeVry Educacional do Brasil)"
+    },
+    "centroPaulaSouza": {
+      "technicalMaintenance": {
+        "title": "Technician in IT Infrastructure and Server Administration",
+        "period": "2010 – 2011",
+        "institution": "Escola Técnica Estadual de São Paulo"
+      },
+      "technicalProgramming": {
+        "title": "Technician in Systems Development",
+        "period": "2006 – 2007",
+        "institution": "Escola Técnica Estadual de São Paulo"
+      }
+    }
+  },
+  "professionalExperience": {
+    "locations": {
+      "bostonUs": "Boston, Massachusetts, United States",
+      "campinasBrazil": "Campinas, São Paulo, Brazil",
+      "coloradoUs": "Colorado, United States",
+      "brasiliaBrazil": "Brasília, Federal District, Brazil",
+      "itatibaBrazil": "Itatiba, São Paulo, Brazil"
+    },
+    "companyTypes": {
+      "usOutsourcing": "US-based outsourcing company",
+      "globalOutsourcing": "Global outsourcing company",
+      "edtech": "EdTech company",
+      "cybersecurity": "Cybersecurity software company",
+      "consultancy": "Digital product consultancy",
+      "software": "Software company",
+      "logistics": "Logistics company",
+      "simulation": "Simulation software company"
+    },
+    "trio": {
+      "current": {
+        "companyName": "Trio",
+        "period": "11/2023 – Present",
+        "role": "Senior Full-Stack Developer (React.js and Node.js)",
+        "description": [
+          "Software engineering company based in Boston, United States, that partners with fintechs and businesses in regulated industries across the United States and Latin America. It builds long-term remote teams embedded in its partners’ products."
+        ],
+        "engagement": {
+          "studylog": {
+            "name": "Studylog",
+            "type": "client",
+            "period": "11/2023 – 06/2026",
+            "description": "A preclinical animal-study workflow platform for planning studies, collecting data, and generating reports.",
+            "responsibilities": [
+              "Developed a multi-tenant research platform with real-time collaboration, advanced data grids, and fine-grained role-based access control.",
+              "Designed and implemented real-time collaboration with GraphQL subscriptions, including presence awareness, field-level locking, and conflict prevention based on last-modified versioning.",
+              "Built and maintained Node.js services with NestJS and GraphQL, including AWS Cognito authentication and JWT-based authorization.",
+              "Helped define a scalable cross-platform architecture with React, Next.js, and Electron.",
+              "Mentored developers and contributed to technical and product decisions for long-term scalability."
+            ]
+          },
+          "flyreel": {
+            "name": "Flyreel",
+            "type": "client",
+            "period": "07/2026 – Present",
+            "role": "Senior Software Engineer (React.js and Node.js)",
+            "description": "An AI-driven property survey solution that helps U.S. insurers assess risk without an on-site physical inspection.",
+            "responsibilities": [
+              "Current engagement; detailed responsibilities will be added as the project evolves."
+            ]
+          }
+        }
+      },
+      "previous": {
+        "companyName": "Trio",
+        "period": "04/2022 – 04/2023",
+        "role": "Senior Full-Stack Developer (React Native and Node.js)",
+        "description": [
+          "Software engineering company based in Boston, United States, that partners with fintechs and businesses in regulated industries across the United States and Latin America. It builds long-term remote teams embedded in its partners’ products."
+        ],
+        "engagement": {
+          "pathCrypto": {
+            "name": "PathCrypto",
+            "type": "client",
+            "description": "A cryptocurrency investing and portfolio management application for a fintech startup.",
+            "responsibilities": [
+              "Developed the cryptocurrency mobile application with React Native.",
+              "Contributed to architectural decisions with engineers, product owners, and product managers to define scalable solutions.",
+              "Built and maintained Node.js backend services with NestJS and Express, establishing patterns and best practices across the codebase."
+            ]
+          }
+        }
+      }
+    },
+    "aulapp": {
+      "companyName": "Aulapp",
+      "period": "09/2021 – 10/2024",
+      "role": "Senior React Native Consultant and Tech Lead",
+      "description": [
+        "Brazilian education technology company based in Campinas that offers an LMS platform for educational institutions and organizations. It supports the creation, management, and tracking of digital learning experiences across educational and corporate settings."
+      ],
+      "engagement": {
+        "name": "Aulapp LMS",
+        "type": "product",
+        "description": "A digital learning platform for producing, publishing, and managing training and assessments across web and mobile.",
+        "responsibilities": [
+          "Led technical decisions for the mobile team, including architecture, code quality, and development processes.",
+          "Migrated the codebase from JavaScript and class components to TypeScript and a hooks-based architecture, improving maintainability and scalability.",
+          "Designed offline-first capabilities with Realm, enabling access to video, audio, and exercises without connectivity, background synchronization, and user-controlled downloads.",
+          "Implemented internationalization and performance improvements through refactoring and optimization.",
+          "Established best practices for testing, Storybook, code reviews, and CI/CD processes."
+        ]
+      }
+    },
+    "cyberISight": {
+      "companyName": "Cyber iSight",
+      "period": "04/2023 – 12/2023",
+      "role": "Senior Full-Stack Developer (Node.js and React.js)",
+      "description": [
+        "U.S. cybersecurity company based in Colorado, created by industry specialists to develop threat intelligence and management solutions."
+      ],
+      "engagement": {
+        "name": "Cyber iSight",
+        "type": "product",
+        "description": "A multi-tenant SaaS platform for cybersecurity threat intelligence and reporting.",
+        "responsibilities": [
+          "Led the platform’s development from scratch, defining architecture, technology stack, coding standards, and development workflows.",
+          "Built and maintained Node.js backend services with Express and Prisma, including authentication, third-party integrations, automated tests, and Docker-based environments.",
+          "Developed the React and TypeScript frontend with a scalable component-based architecture and dynamic reporting through jsreport exports."
+        ]
+      }
+    },
+    "ilia": {
+      "companyName": "ília",
+      "period": "06/2021 – 04/2022",
+      "role": "Senior React Native Developer",
+      "description": [
+        "Brazilian digital product consultancy that combines design, data, and software engineering to create and evolve digital solutions for companies across industries."
+      ],
+      "engagement": {
+        "livelo": {
+          "name": "Livelo",
+          "type": "client",
+          "description": "A loyalty platform where members earn and redeem points for travel, products, and services.",
+          "responsibilities": [
+            "Designed and delivered a new travel redemption flow for the loyalty platform.",
+            "Mentored junior and mid-level developers through pair programming and code reviews.",
+            "Collaborated with stakeholders on technical decisions."
+          ]
+        }
+      }
+    },
+    "ies2": {
+      "companyName": "iES2",
+      "period": "09/2019 – 03/2021",
+      "role": "Senior React Native Developer",
+      "description": [
+        "Brazilian education technology company based in Campinas, dedicated to developing learning platforms, digital content, and applications for educational institutions and organizations."
+      ],
+      "engagement": {
+        "aulapp": {
+          "name": "Aulapp",
+          "type": "product",
+          "description": "An educational platform with multimedia learning content, including video, audio, and text.",
+          "responsibilities": [
+            "Developed and maintained multimedia features for the educational application.",
+            "Implemented custom video and audio player features.",
+            "Refactored the core application, applying coding standards and a component-based architecture."
+          ]
+        }
+      }
+    },
+    "verisoft": {
+      "companyName": "Verisoft Brasil",
+      "period": "11/2017 – 09/2019",
+      "role": "Mid-Level Android Developer",
+      "description": [
+        "Brazilian software company specializing in digital solutions for the publishing, education, and media sectors."
+      ],
+      "engagements": {
+        "uol": {
+          "name": "UOL Curso de Bolso",
+          "type": "product",
+          "description": "A native Android application for accessing educational content on mobile devices.",
+          "responsibilities": [
+            "Developed features and improvements for the application.",
+            "Contributed to the maintenance and evolution of the application."
+          ]
+        },
+        "bancah": {
+          "name": "Bancah!",
+          "type": "product",
+          "description": "A native Android digital newsstand for magazines and newspapers.",
+          "responsibilities": [
+            "Developed native Android features for reading magazines and newspapers.",
+            "Maintained features for a large digital publishing catalog."
+          ]
+        },
+        "livroh": {
+          "name": "Livroh!",
+          "type": "product",
+          "description": "A native Android platform for reading books and listening to audiobooks.",
+          "responsibilities": [
+            "Developed native Android features for reading books and listening to audiobooks.",
+            "Collaborated with major publishers to support a catalog of more than 20,000 books and 200,000+ users."
+          ]
+        }
+      }
+    },
+    "ciandt": {
+      "companyName": "CI&T",
+      "period": "08/2015 – 11/2017",
+      "role": "Junior Android and JavaScript Developer",
+      "description": [
+        "Brazilian multinational founded in Campinas in 1995, specializing in strategy, design, and software engineering to support the digital transformation of large enterprises and growing businesses."
+      ],
+      "engagements": {
+        "itau": {
+          "name": "Itaú Unibanco",
+          "type": "client",
+          "period": "2016 – 2017",
+          "description": "Developed a native Android application for credit card management using Java and the Android SDK.",
+          "responsibilities": [
+            "Developed native Android features for credit card management.",
+            "Collaborated with product, design, and backend teams on new flows and API integrations.",
+            "Helped maintain application performance and stability."
+          ]
+        },
+        "tribanco": {
+          "name": "TriBanco",
+          "type": "client",
+          "period": "2015 – 2016",
+          "description": "Built a cross-platform banking application with the Kony framework for Android and iOS.",
+          "responsibilities": [
+            "Developed reusable mobile interface components.",
+            "Integrated banking services and APIs.",
+            "Improved existing features and resolved production defects."
+          ]
+        }
+      }
+    },
+    "clickideia": {
+      "companyName": "Clickideia",
+      "period": "05/2014 – 08/2015",
+      "role": "Full-Stack Developer Intern",
+      "description": [
+        "Brazilian education technology company that originated from Unicamp research projects with support from CNPq. It provides platforms, content, and training for public education networks."
+      ],
+      "engagement": {
+        "name": "Clickideia",
+        "type": "product",
+        "description": "An educational digital platform that gives teachers tools to create, assign, and assess online activities.",
+        "responsibilities": [
+          "Created new features for the educational website using JavaScript, jQuery, and PHP.",
+          "Developed endpoints for teachers to create and send exercises to students.",
+          "Built feedback flows that let students receive immediate results for their submitted exercises."
+        ]
+      }
+    },
+    "artivinco": {
+      "companyName": "Artivinco",
+      "period": "06/2012 – 06/2013",
+      "role": "Desktop Application Developer",
+      "description": [
+        "Brazilian packaging company founded in 1967 and based in Itatiba, São Paulo. It produces solutions that protect products, with ongoing investments in innovation, quality, and sustainable processes."
+      ],
+      "engagement": {
+        "deliveryManagement": {
+          "name": "Delivery and Fleet Management",
+          "type": "product",
+          "description": "A desktop system for managing truck deliveries, fleet operations, and routes.",
+          "responsibilities": [
+            "Developed the truck delivery management system.",
+            "Created a new interface based on user needs.",
+            "Built the application with Delphi and Microsoft SQL Server."
+          ]
+        },
+        "reporting": {
+          "name": "Factory Reporting Generator",
+          "type": "product",
+          "description": "An XML report generator that combined factory machinery data, courier trip information, and TOTVS ERP data.",
+          "responsibilities": [
+            "Created XML reports with the latest trips made by the company’s couriers.",
+            "Cross-referenced factory machinery data with information from the TOTVS ERP.",
+            "Implemented data access and reporting features with Delphi and Microsoft SQL Server."
+          ]
+        }
+      }
+    },
+    "brSimulations": {
+      "companyName": "BR Simulations",
+      "period": "08/2007 – 08/2008",
+      "role": "Software Developer Intern",
+      "description": [
+        "Brazilian aerospace company based in Itatiba, São Paulo, dedicated to developing and manufacturing simulation equipment and flight training devices."
+      ],
+      "engagement": {
+        "a320": {
+          "name": "Airbus A320",
+          "type": "product",
+          "description": "A flight training device that simulates the Airbus A320 cockpit and its aircraft systems.",
+          "responsibilities": [
+            "Developed features for flight training devices (FTDs).",
+            "Created communication between hardware and Microsoft Flight Simulator.",
+            "Used OpenGL to render realistic cockpit controls based on simulator state.",
+            "Integrated USB components that simulate real aircraft controls, and helped test and identify defects in the simulator."
+          ]
+        }
+      }
+    }
   },
   "portfolio": {
     "tictac": {
-      "description": {},
+      "title": "Tiny Tic Tac Toe",
+      "description": {
+        "summary": "Cross-platform tic-tac-toe game for Android and iOS built with React Native and TypeScript, focused on a lightweight mobile application with minimal external dependencies.\n\nExplores decoupled components, simple animations, and a test suite with Jest and Detox."
+      },
       "year": "Year: 2023",
-      "technologies": {},
-      "links": {
-        "github": {}
-      }
+      "links": { "github": { "label": "Repository", "text": "github.com" } }
     },
     "pathCrypto": {
-      "description": {},
+      "title": "Path Crypto",
+      "description": {
+        "summary": "Cryptocurrency mobile application built for a fintech startup with React Native and Node.js."
+      },
       "year": "Year: 2022",
-      "technologies": {},
-      "links": {
-        "website": {}
-      }
+      "links": { "website": { "label": "Website", "text": "pathcrypto.com" } }
     },
     "pipoclube": {
-      "description": {},
+      "title": "Pipoclube",
+      "description": {
+        "summary": "Social network for discovering, cataloging, and reviewing movies, with collections, ratings, and user-generated content.\n\nLed end-to-end development of the PHP backend and React Native mobile and web apps, while guiding product direction from concept through delivery."
+      },
       "year": "Year: 2022",
-      "technologies": {},
-      "links": {
-        "website": {}
-      }
+      "links": { "website": { "label": "Website", "text": "pipoclube.com" } }
     },
     "aulapp": {
+      "title": "Aulapp",
+      "description": {
+        "summary": "Educational platform with video, audio, exercises, and offline-first learning experiences."
+      },
       "year": "Year: 2020",
-      "technologies": {},
       "links": {
-        "googlePlay": {},
-        "appStore": {}
+        "googlePlay": { "label": "Android", "text": "play.google.com" },
+        "appStore": { "label": "iOS", "text": "apps.apple.com" }
       }
     },
     "livroh": {
-      "description": {},
-      "year": "Ano: 2019",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "title": "Livroh",
+      "description": {
+        "summary": "Native Android platform for reading books and listening to audiobooks, built to support a large publisher catalog."
+      },
+      "year": "Year: 2019",
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "bancah": {
+      "title": "Bancah",
       "description": {
-        "second": "."
+        "summary": "Native Android digital newsstand for magazines and newspapers."
       },
-      "year": "Ano: 2019",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "year": "Year: 2019",
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "epicGolf2d": {
+      "title": "Epic Golf 2D",
       "description": {
-        "first": "' "
+        "summary": "Mobile golf game focused on simple physics-based mechanics. I developed all of the game's code and contributed to game-design decisions.\n\nThe project was a finalist at BIG Festival 2018. After the festival, it received support from publisher ZPlay."
       },
-      "year": "Ano: 2019",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "awardAlt": "Epic Golf 2D, finalist at BIG Festival 2018",
+      "awardCaption": "Finalista Big Festival\nBig Starter 2018",
+      "year": "Year: 2018",
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "venusParticleEditor": {
-      "description": {},
-      "year": "Ano: 2019",
-      "technologies": {},
+      "title": "Venus Particle Editor",
+      "description": {
+        "summary": "Particle editor developed for use with the MonoGame framework."
+      },
+      "year": "Year: 2019",
       "links": {
-        "itchIo": {},
-        "github": {}
+        "itchIo": { "label": "Desktop", "text": "mmbelkiman.itch.io" },
+        "github": { "label": "Repository", "text": "github.com" }
       }
     },
     "ourAdventureTime": {
-      "description": {},
-      "year": "Ano: 2018",
-      "technologies": {},
+      "title": "Our Adventure Time",
+      "description": { "summary": "Custom game created to support a marriage proposal." },
+      "year": "Year: 2018",
       "links": {
-        "itchIo": {
-          "text": "play online"
-        },
-        "github": {}
+        "itchIo": { "label": "Play online", "text": "Unity Web-Player" },
+        "github": { "label": "Repository", "text": "github.com" }
       }
     },
     "ultraRetroVirusAttack": {
-      "description": {},
+      "title": "Ultra Retro Virus Attack",
+      "description": {
+        "summary": "Game created in 48 hours for Global Game Jam 2018. Players control a computer virus and spread it while avoiding firewall software."
+      },
       "year": "Year: 2018",
-      "technologies": {},
       "links": {
-        "webPlayer": {
-          "text": "play online"
-        },
-        "github": {}
+        "webPlayer": { "label": "Play online", "text": "Unity Web-Player" },
+        "github": { "label": "Repository", "text": "github.com" }
       }
     },
     "itaucard": {
-      "description": {},
+      "title": "Itaucard Android",
+      "description": {
+        "summary": "Native Android application for managing Itaú Unibanco credit cards, built with Java and the Android SDK."
+      },
       "year": "Year: 2017",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "rupert": {
-      "description": {},
+      "title": "Rupert",
+      "description": {
+        "summary": "Platform and puzzle game set in the depths of the ocean. Players guide a small fish through a calm adventure where observation, reasoning, and precision take the place of combat.\n\nAcross 10 levels, physics-based challenges, exploration, hidden paths, collectibles, achievements, and online rankings invite players to uncover every secret of its underwater world."
+      },
       "year": "Year: 2017",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "tribanco": {
-      "description": {},
+      "title": "TriBanco Mobile Bank",
+      "description": {
+        "summary": "Cross-platform banking application built with Kony for Android and iOS."
+      },
       "year": "Year: 2016",
-      "technologies": {},
       "links": {
-        "googlePlay": {},
-        "appStore": {}
+        "googlePlay": { "label": "Android", "text": "play.google.com" },
+        "appStore": { "label": "iOS", "text": "itunes.apple.com" }
       }
     },
     "omgMyHouse": {
+      "title": "OMG My House",
       "description": {
-        "first": " ",
-        "second": " "
+        "summary": "Game developed during a Computer Science degree, in which players protect their home from monsters."
       },
       "year": "Year: 2015",
-      "technologies": {},
-      "links": {
-        "webPlayer": {}
-      }
+      "links": { "webPlayer": { "label": "Play online", "text": "Construct Web-Player" } }
     },
     "gamification": {
+      "title": "Gamification Thesis",
       "description": {
-        "third": "."
+        "summary": "Computer Science graduation thesis about gamified systems, accompanied by a small application that demonstrates its concepts."
       },
       "year": "Year: 2015",
-      "technologies": {},
       "links": {
-        "document": {}
+        "document": {
+          "label": "Document",
+          "text": "Gamificação: Aplicando ao treino de atividades lógicas"
+        }
       }
     },
     "spaceJay": {
-      "description": {},
+      "title": "Space Jay",
+      "description": {
+        "summary": "Destroy enemies, memorize attack patterns, and select the right targets to maximize your score.\n\nWith 14 enemy types, Google Play Games leaderboards, and unlockable achievements, every run rewards precision, strategy, and mastery of its mechanics."
+      },
       "year": "Year: 2014",
-      "technologies": {},
-      "links": {
-        "googlePlay": {}
-      }
+      "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "clickideia": {
+      "title": "Clickideia Educational Exercise Platform",
       "description": {
-        "first": "  ",
-        "second": "   "
+        "summary": "Platform for creating exercises, assigning them to students, evaluating answers, and generating reports."
       },
       "year": "Year: 2015",
-      "technologies": {},
-      "links": {
-        "website": {}
-      }
-    },
-    "gludum": {
-      "description": {
-        "first": " ",
-        "second": " ",
-        "third": " "
-      },
-      "year": "Year: 2015"
-    },
-    "breakout": {
-      "description": {},
-      "year": "Year: 2013"
-    },
-    "music": {
-      "description": {}
-    },
-    "m12": {
-      "description": {}
+      "links": { "website": { "label": "Website", "text": "clickideia.com.br" } }
     }
   },
-  "static": {},
-  "professionalExperience": {
-    "trio": {
-      "current": {
-        "period": "11/2023 ~ Today",
-        "role": "Full Stack Developer (React+Node)"
-      },
-      "previous": {
-        "period": "04/2022 ~ 04/2023",
-        "role": "Full Stack Developer (React+React Native+Node)"
-      }
+  "v1": {
+    "profile": {
+      "location": "Campinas, São Paulo — Brazil",
+      "handle": "belki",
+      "name": "Marcelo Belkiman",
+      "subtitle": "Computer Scientist"
     },
-    "aulapp": {
-      "period": "09/2021 ~ 10/2024",
-      "role": "Mobile Engineer Consultant/Lead (React Native)"
+    "about": {
+      "title": "Hello!",
+      "description": [
+        "I'm a Programmer, Game Designer, and Software Architect with 14+ years of experience building scalable web and mobile products, with a strong focus on React Native, React, and Node.js.",
+        "I enjoy creating amazing digital solutions that are high-performing, visually elegant, and exciting to use."
+      ],
+      "prompt": "How can I help you today?"
     },
-    "cyberISight": {
-      "period": "04/2023 ~ 12/2023",
-      "role": "Full Stack Developer (React+Node)"
+    "roles": {
+      "softwareEngineer": "Senior Software Engineer",
+      "fullStack": "Full-Stack Developer"
     },
-    "ilia": {
-      "period": "08/2021 ~ 04/2022",
-      "role": "Mobile Developer (React Native)"
+    "skills": {
+      "development": "Development",
+      "tools": "Tools",
+      "architectureDeliveryDataInfrastructure": "Architecture, delivery, data & infrastructure"
     },
-    "onebrain": {
-      "period": "01/2021 ~ 08/2021",
-      "role": "React Native Developer"
+    "technologies": {
+      "softwareArchitecture": "Software Architecture",
+      "agileMethodologies": "Agile Methodologies"
     },
-    "ies2": {
-      "period": "09/2019 ~ 01/2021",
-      "role": "React Native/Android Developer"
+    "projectCategories": {
+      "banking": "Banking",
+      "edtech": "EdTech",
+      "financial": "Financial",
+      "fintech": "Fintech",
+      "industrial": "Industrial",
+      "insurance": "Insurance",
+      "logistics": "Logistics",
+      "loyalty": "Loyalty",
+      "media": "Media",
+      "researchPlatform": "Research Platform",
+      "simulation": "Simulation",
+      "threatIntelligence": "Threat Intelligence"
     },
-    "verisoft": {
-      "period": "11/2017 ~ 09/2019",
-      "role": "Android Developer"
+    "languages": { "professional": "Professional proficiency" },
+    "contact": { "email": "Email" },
+    "sections": {
+      "profile": "Profile",
+      "about": "About me",
+      "quickInfo": "Quick info",
+      "professionalExperience": "Professional experience",
+      "skills": "Skills",
+      "contact": "Find me online",
+      "education": "Education",
+      "languages": "Languages",
+      "featuredProject": "Featured Project",
+      "portfolio": "Portfolio",
+      "clientsProjects": "Clients and projects",
+      "keyResponsibilities": "Key responsibilities",
+      "techStack": "Tech stack",
+      "projectCount": "{{count}} projects"
     },
-    "ciandt": {
-      "period": "08/2015 ~ 11/2017",
-      "role": "Mobile Developer"
+    "quickInfo": ["Guitar player", "Geek", "Pop culture", "Games", "Mindfulness"],
+    "current": "Present",
+    "workModes": { "remote": "Remote", "hybrid": "Hybrid", "onsite": "On-site" },
+    "actions": {
+      "enterFullscreen": "Enter fullscreen for {{title}} preview",
+      "exitFullscreen": "Exit fullscreen for {{title}} preview",
+      "playPreview": "Play {{title}} preview",
+      "resumePreview": "Resume {{title}} preview"
     },
-    "clickideia": {
-      "period": "05/2014 ~ 08/2015",
-      "role": "Web Developer"
-    },
-    "artivinco": {
-      "period": "06/2012 ~ 06/2013",
-      "role": "System analyst"
-    },
-    "brSimulations": {
-      "period": "08/2007 ~ 08/2008",
-      "role": "Developer/Programmer"
+    "projectTypes": {
+      "doc": "Document",
+      "game": "Game",
+      "social": "Social Network",
+      "software": "Software"
     }
   }
 }

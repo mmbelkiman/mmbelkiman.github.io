@@ -1,11 +1,55 @@
-import type { PortfolioCardProps } from '../components/PortfolioCard'
+export type PortfolioTechnology =
+  | 'construct2'
+  | 'csharp'
+  | 'htmlCss'
+  | 'java'
+  | 'javascript'
+  | 'monogame'
+  | 'nodeJs'
+  | 'php'
+  | 'reactNative'
+  | 'sql'
+  | 'typescript'
+  | 'unity'
 
-export const portfolioItems: PortfolioCardProps[] = [
+export type PortfolioProjectIcon = 'grid-nine' | 'virus' | 'compass' | 'house'
+
+export type PortfolioLink = {
+  className?: string
+  compact?: boolean
+  href: string
+  labelKey: string
+  textKey: string
+}
+
+export type PortfolioItem = {
+  category: 'software' | 'game' | 'social' | 'doc'
+  descriptionKeys?: string[]
+  featured?: boolean
+  linkSpacer?: boolean
+  links?: PortfolioLink[]
+  logoUrl?: string
+  projectIcon?: PortfolioProjectIcon
+  presentation?: 'pipoclube' | 'epicGolf'
+  posterUrl: string
+  supplementaryImage?: {
+    altKey: string
+    captionKey?: string
+    src: string
+  }
+  technologies: PortfolioTechnology[]
+  titleKey: string
+  videoUrl: string
+  yearKey?: string
+}
+
+export const portfolioItems: PortfolioItem[] = [
   {
     titleKey: 'portfolio.tictac.title',
     videoUrl: '/videos/tictac.webm',
+    projectIcon: 'grid-nine',
     posterUrl: '/images/portfolio-previews/tictac.jpg',
-    category: 'software',
+    category: 'game',
     yearKey: 'portfolio.tictac.year',
     technologies: ['typescript', 'reactNative'],
     links: [
@@ -19,6 +63,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.pathCrypto.title',
     videoUrl: '/videos/pathcrypto.webm',
+    logoUrl: '/images/logos/pathcrypto.jpg',
     posterUrl: '/images/portfolio-previews/pathcrypto.jpg',
     category: 'software',
     yearKey: 'portfolio.pathCrypto.year',
@@ -33,9 +78,12 @@ export const portfolioItems: PortfolioCardProps[] = [
   },
   {
     titleKey: 'portfolio.pipoclube.title',
+    featured: true,
+    presentation: 'pipoclube',
     videoUrl: '/videos/pipoclube.webm',
+    logoUrl: '/images/logos/pipoclube.png',
     posterUrl: '/images/portfolio-previews/pipoclube.jpg',
-    category: 'software',
+    category: 'social',
     yearKey: 'portfolio.pipoclube.year',
     technologies: ['typescript', 'reactNative', 'php'],
     links: [
@@ -49,6 +97,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.aulapp.title',
     videoUrl: '/videos/aulapp.webm',
+    logoUrl: '/images/logos/aulapp.jpg',
     posterUrl: '/images/portfolio-previews/aulapp.jpg',
     category: 'software',
     yearKey: 'portfolio.aulapp.year',
@@ -70,6 +119,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.livroh.title',
     videoUrl: '/videos/livroh.webm',
+    logoUrl: '/images/logos/livroh.png',
     posterUrl: '/images/portfolio-previews/livroh.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.livroh.description.first', 'portfolio.livroh.description.second'],
@@ -86,6 +136,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.bancah.title',
     videoUrl: '/videos/bancah.webm',
+    logoUrl: '/images/logos/bancah.png',
     posterUrl: '/images/portfolio-previews/bancah.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.bancah.description.first', 'portfolio.bancah.description.second'],
@@ -101,7 +152,10 @@ export const portfolioItems: PortfolioCardProps[] = [
   },
   {
     titleKey: 'portfolio.epicGolf2d.title',
+    featured: true,
+    presentation: 'epicGolf',
     videoUrl: '/videos/epicgolf2d.webm',
+    logoUrl: '/images/logos/epic-golf-2d.png',
     posterUrl: '/images/portfolio-previews/epicgolf2d.jpg',
     category: 'game',
     descriptionKeys: [
@@ -109,7 +163,11 @@ export const portfolioItems: PortfolioCardProps[] = [
       'portfolio.epicGolf2d.description.second',
     ],
     yearKey: 'portfolio.epicGolf2d.year',
-    supplementaryImage: { src: 'epicgolf2d-trofeu.jpg', width: '40%' },
+    supplementaryImage: {
+      altKey: 'portfolio.epicGolf2d.awardAlt',
+      captionKey: 'portfolio.epicGolf2d.awardCaption',
+      src: '/images/portfolio-awards/epic-golf-2d/big-festival-finalist.png',
+    },
     technologies: ['monogame', 'csharp'],
     links: [
       {
@@ -122,6 +180,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.venusParticleEditor.title',
     videoUrl: '/videos/venusparticleeditor.webm',
+    logoUrl: '/images/logos/venus-particle-editor.png',
     posterUrl: '/images/portfolio-previews/venusparticleeditor.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.venusParticleEditor.description.first'],
@@ -145,6 +204,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.ourAdventureTime.title',
     videoUrl: '/videos/ouradventuretime.webm',
+    projectIcon: 'compass',
     posterUrl: '/images/portfolio-previews/ouradventuretime.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.ourAdventureTime.description.first'],
@@ -169,6 +229,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.ultraRetroVirusAttack.title',
     videoUrl: '/videos/ultraretrovirusattack.webm',
+    projectIcon: 'virus',
     posterUrl: '/images/portfolio-previews/ultraretrovirusattack.jpg',
     category: 'game',
     descriptionKeys: [
@@ -196,6 +257,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.itaucard.title',
     videoUrl: '/videos/itaucard.webm',
+    logoUrl: '/images/logos/itau.png',
     posterUrl: '/images/portfolio-previews/itaucard.jpg',
     category: 'software',
     descriptionKeys: [
@@ -215,6 +277,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.rupert.title',
     videoUrl: '/videos/rupert.webm',
+    logoUrl: '/images/logos/rupert-the-fish.png',
     posterUrl: '/images/portfolio-previews/rupert.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.rupert.description.first', 'portfolio.rupert.description.second'],
@@ -231,6 +294,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.tribanco.title',
     videoUrl: '/videos/tribanco.webm',
+    logoUrl: '/images/logos/tribanco.png',
     posterUrl: '/images/portfolio-previews/tribanco.jpg',
     category: 'software',
     descriptionKeys: [
@@ -256,6 +320,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.omgMyHouse.title',
     videoUrl: '/videos/omgmyhouse.webm',
+    projectIcon: 'house',
     posterUrl: '/images/portfolio-previews/omgmyhouse.jpg',
     category: 'game',
     descriptionKeys: [
@@ -276,7 +341,7 @@ export const portfolioItems: PortfolioCardProps[] = [
     titleKey: 'portfolio.gamification.title',
     videoUrl: '/videos/monografia.webm',
     posterUrl: '/images/portfolio-previews/monografia.jpg',
-    category: 'software',
+    category: 'doc',
     descriptionKeys: [
       'portfolio.gamification.description.first',
       'portfolio.gamification.description.second',
@@ -297,6 +362,7 @@ export const portfolioItems: PortfolioCardProps[] = [
   {
     titleKey: 'portfolio.spaceJay.title',
     videoUrl: '/videos/spacejay.webm',
+    logoUrl: '/images/logos/space-jay.png',
     posterUrl: '/images/portfolio-previews/spacejay.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.spaceJay.description.first'],
@@ -306,13 +372,14 @@ export const portfolioItems: PortfolioCardProps[] = [
       {
         labelKey: 'portfolio.spaceJay.links.googlePlay.label',
         textKey: 'portfolio.spaceJay.links.googlePlay.text',
-        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk',
+        href: 'https://play.google.com/store/apps/details?id=com.calangostudio.spacej',
       },
     ],
   },
   {
     titleKey: 'portfolio.clickideia.title',
     videoUrl: '/videos/clickideia.webm',
+    logoUrl: '/images/logos/clickideia.png',
     posterUrl: '/images/portfolio-previews/clickideia.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.clickideia.description.first'],

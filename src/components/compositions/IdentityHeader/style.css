@@ -1,0 +1,82 @@
+.identity-header {
+  position: relative;
+  container-type: inline-size;
+  overflow: hidden;
+  padding: clamp(var(--space-small), 3vw, var(--space-big));
+  background: var(--color-surface-strong);
+}
+
+.identity-header-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--space-small);
+}
+
+.identity-header::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 200vmax;
+  height: 200vmax;
+  content: '';
+  background: url('../../../assets/backgrounds/matrix-bg.png') center / auto 100vmax repeat;
+  opacity: 0.09;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: center;
+}
+
+.identity-header-identity {
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+}
+
+.identity-header-icon {
+  flex: 0 0 auto;
+  color: var(--color-text-inverse);
+}
+
+.identity-header-name {
+  margin: 0;
+  color: var(--color-text-inverse);
+  font-family: var(--font-heading);
+  font-size: clamp(var(--font-size-big), 4.75vw, var(--font-size-huge));
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.identity-header-name strong {
+  color: var(--color-accent);
+  font: inherit;
+}
+
+.identity-header-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-ice);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-nano);
+  letter-spacing: 0.02em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.identity-header-roles li {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.identity-header-roles li:not(:last-child)::after {
+  margin-left: var(--space-nano);
+  color: var(--color-focus);
+  content: '//';
+}

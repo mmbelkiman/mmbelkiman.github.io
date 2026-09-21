@@ -1,0 +1,76 @@
+.profile-card {
+  display: grid;
+  gap: var(--space-small);
+  padding: var(--space-small);
+}
+
+.profile-card-photo-frame {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-nano);
+  background: var(--color-surface-inset);
+  border: var(--border-width-strong) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-inset);
+}
+
+.profile-card-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  object-position: 71% 32%;
+
+  /* filter: grayscale(1) contrast(1.08) sepia(0.12) hue-rotate(160deg) saturate(0.85); */
+}
+
+.profile-card-photo-static {
+  position: absolute;
+  inset: var(--space-nano);
+  width: calc(100% - (var(--space-nano) * 2));
+  height: calc(100% - (var(--space-nano) * 2));
+  object-fit: cover;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.profile-card-details {
+  min-width: 0;
+}
+
+.profile-card-details .heading {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-normal);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.profile-card-credential {
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-weight: var(--font-weight-normal);
+}
+
+.profile-card-separator {
+  color: var(--color-focus);
+  font: inherit;
+}
+
+.profile-card-location {
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+  padding-top: var(--space-small);
+  border-top: var(--border-width-thin) solid var(--color-border);
+}
+
+.profile-card-location svg {
+  flex: 0 0 auto;
+  color: var(--color-accent-active);
+}
+
+.profile-card-location .text {
+  font-family: var(--font-heading);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+}

@@ -1,0 +1,323 @@
+.epic-golf-featured-project {
+  --color-accent: #80e5ff;
+  --color-accent-hover: #c5f6ff;
+  --color-accent-active: #2ab9ea;
+  --color-border: #59c6ef;
+  --color-metal-mid: #79d5f4;
+  --color-metal-dark: #1266a3;
+  --color-panel-header-details: #d8f7ff;
+  --color-panel-header-prefix: #076ba9;
+  --color-panel-header-surface-bottom: #168bd0;
+  --color-panel-header-surface-top: #75d5fa;
+  --color-project-type-game: #d7f9ff;
+  --color-project-type-game-surface: #07568c;
+  --color-surface-raised: #0579bf;
+  --color-surface-strong: #0567aa;
+  --color-text-ice: #dff8ff;
+  --color-text-inverse: #fff;
+  --color-text-muted: #bcecff;
+  --gradient-metal-border: linear-gradient(135deg, #d9f9ff, #4ebde9 48%, #0b5a9b);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.epic-golf-featured-project > .panel-frame {
+  position: relative;
+  z-index: 1;
+}
+
+.epic-golf-featured-project .panel-frame-content {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, #005ca9a8 0%, #087fc99c 55%, #00539aa8 100%),
+    url('/images/portfolio-scenery/epic-golf-2d/background.png') center / cover;
+}
+
+.epic-golf-featured-project-background {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.epic-golf-featured-project-cloud,
+.epic-golf-featured-project-course,
+.epic-golf-featured-project-star-decoration {
+  position: absolute;
+  display: block;
+  max-width: none;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.epic-golf-featured-project-cloud-one {
+  top: 21%;
+  left: 4%;
+  width: clamp(4rem, 6vw, 5.5rem);
+}
+
+.epic-golf-featured-project-cloud-two {
+  top: 45%;
+  right: 4%;
+  width: clamp(4.5rem, 7vw, 6rem);
+}
+
+.epic-golf-featured-project-cloud-three {
+  bottom: 18%;
+  left: 37%;
+  width: clamp(3.5rem, 5vw, 4.75rem);
+}
+
+.epic-golf-featured-project-cloud-four {
+  top: 9%;
+  right: 31%;
+  width: clamp(3.75rem, 5.5vw, 5rem);
+}
+
+.epic-golf-featured-project-cloud-five {
+  bottom: 38%;
+  left: 8%;
+  width: clamp(3.25rem, 4.5vw, 4.25rem);
+}
+
+.epic-golf-featured-project-cloud-six {
+  right: 16%;
+  bottom: 12%;
+  width: clamp(3rem, 4vw, 3.75rem);
+}
+
+.epic-golf-featured-project-course {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.epic-golf-featured-project-star-decoration {
+  top: 33%;
+  left: 47%;
+  width: 6rem;
+  opacity: 0.65;
+  transform: rotate(-18deg);
+}
+
+.epic-golf-featured-project-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(19rem, 1.14fr);
+  gap: clamp(var(--space-big), 3vw, 3rem);
+  padding: clamp(var(--space-normal), 2vw, var(--space-big));
+}
+
+.epic-golf-featured-project-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.epic-golf-featured-project-identity {
+  display: flex;
+  gap: var(--space-normal);
+  align-items: center;
+  width: 100%;
+  padding-bottom: var(--space-normal);
+  margin-bottom: var(--space-normal);
+  border-bottom: var(--border-width-thin) solid #c9f6ff9c;
+}
+
+.epic-golf-featured-project-logo {
+  display: block;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: clamp(5.5rem, 10vw, 8rem);
+  height: clamp(5.5rem, 10vw, 8rem);
+  padding: var(--space-small);
+  object-fit: contain;
+  background: #0b7ece;
+  border: var(--border-width-strong) solid #c5f6ff;
+  box-shadow:
+    inset 0 0 0 var(--border-width-thin) #05629e,
+    0 0 0 var(--border-width-thin) #004c85,
+    0.2rem 0.25rem 0 #004c85;
+  image-rendering: pixelated;
+}
+
+.epic-golf-featured-project-identity .heading {
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+  color: var(--color-text-inverse);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.epic-golf-featured-project-title-star {
+  flex: 0 0 auto;
+  color: #ffd452;
+}
+
+.epic-golf-featured-project-identity .project-type-badge {
+  margin-top: var(--space-small);
+}
+
+.epic-golf-featured-project-description {
+  display: grid;
+  gap: var(--space-normal);
+  max-width: 38rem;
+}
+
+.epic-golf-featured-project-description .text {
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.42;
+}
+
+.epic-golf-featured-project-award {
+  display: flex;
+  gap: var(--space-normal);
+  align-items: center;
+  width: 100%;
+  padding: var(--space-normal) 0;
+  margin: var(--space-normal) 0 0;
+  border-top: var(--border-width-thin) solid #c9f6ff9c;
+  border-bottom: var(--border-width-thin) solid #c9f6ff9c;
+}
+
+.epic-golf-featured-project-award-badge {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(3.6rem, 8vw, 4.8rem);
+  aspect-ratio: 1;
+  padding: var(--space-nano);
+  background: #f6d86b;
+  border: var(--border-width-thin) solid #c8f7ff;
+  overflow: hidden;
+}
+
+.epic-golf-featured-project-award-badge img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  transform: translateY(22px) scale(1.7);
+  transform-origin: center;
+}
+
+.epic-golf-featured-project-award figcaption {
+  display: grid;
+  gap: var(--space-nano);
+  color: #fff7ca;
+  font-family: var(--font-heading);
+}
+
+.epic-golf-featured-project-award-title {
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-big);
+  line-height: 1.25;
+}
+
+.epic-golf-featured-project-award-subtitle {
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.epic-golf-featured-project-links {
+  display: grid;
+  gap: var(--space-small);
+  width: 100%;
+  padding: var(--space-small) 0;
+  margin: 0;
+  border-bottom: var(--border-width-thin) solid #c9f6ff9c;
+  list-style: none;
+}
+
+.epic-golf-featured-project-links li,
+.epic-golf-featured-project-links a {
+  display: inline-flex;
+  gap: var(--space-small);
+  align-items: center;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-normal);
+}
+
+.epic-golf-featured-project-links a {
+  color: #d8f9ff;
+  text-decoration: none;
+}
+
+.epic-golf-featured-project-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.epic-golf-featured-project-technologies {
+  padding-top: var(--space-normal);
+}
+
+.epic-golf-featured-project-technologies .technology-tag {
+  color: #ecfbff;
+  border-color: #9fe7fb;
+  background: #005897a6;
+}
+
+.epic-golf-featured-project-demo {
+  display: grid;
+  gap: var(--space-nano);
+  align-content: start;
+  min-width: 0;
+}
+
+.epic-golf-featured-project-demo-label {
+  padding: var(--space-nano) var(--space-small);
+  color: #ecfbff;
+  background: #0d86caeb;
+  border: var(--border-width-thin) solid #9fe7fb;
+  border-bottom: 0;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-nano);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.epic-golf-featured-project-demo .portfolio-video-player {
+  min-height: 0;
+  padding: var(--space-small);
+  border-color: #b0efff;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+.epic-golf-featured-project-year {
+  display: inline-flex;
+  gap: var(--space-small);
+  align-items: center;
+}
+
+@media (width <= 56rem) {
+  .epic-golf-featured-project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .epic-golf-featured-project-demo {
+    order: -1;
+  }
+}
+
+@media (width <= 32rem) {
+  .epic-golf-featured-project-identity {
+    align-items: flex-start;
+  }
+
+  .epic-golf-featured-project-logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

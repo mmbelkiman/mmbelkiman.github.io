@@ -1,0 +1,55 @@
+.panel-frame {
+  --panel-frame-metal-border-width: 4px;
+  --panel-surface: var(--color-surface-raised);
+  --panel-text: var(--color-text);
+  --panel-border: var(--color-border-strong);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--panel-text);
+  background:
+    linear-gradient(var(--panel-surface), var(--panel-surface)) padding-box,
+    var(--gradient-metal-border) border-box;
+  border: var(--panel-frame-metal-border-width) solid transparent;
+  border-radius: var(--radius-md);
+  outline: var(--border-width-thin) solid var(--color-border-outline);
+}
+
+.panel-frame::before {
+  position: absolute;
+  inset: 3px;
+  pointer-events: none;
+  content: '';
+  border: var(--border-width-thin) solid var(--color-metal-highlight);
+  border-radius: var(--radius-sm);
+  opacity: 0.8;
+}
+
+.panel-frame-dark {
+  --panel-surface: var(--color-surface-strong);
+  --panel-text: var(--color-text-inverse);
+  --color-text-primary: var(--color-text-inverse);
+  --color-text-secondary: var(--color-text-ice);
+}
+
+.panel-frame-header {
+  position: relative;
+  z-index: 1;
+}
+
+.panel-frame-content {
+  position: relative;
+  z-index: 1;
+  flex: 1 0 auto;
+  min-height: 0;
+  background: transparent;
+  border: var(--border-width-thin) solid var(--panel-border);
+  border-radius: calc(var(--radius-md) - var(--space-nano));
+}
+
+.panel-frame-header + .panel-frame-content {
+  min-height: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

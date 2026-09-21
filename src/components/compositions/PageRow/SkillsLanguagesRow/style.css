@@ -1,0 +1,8 @@
+.skills-row .grid {
+  align-items: stretch;
+}
+
+.skills-row .grid-column,
+.skills-row .panel-frame {
+  height: 100%;
+}

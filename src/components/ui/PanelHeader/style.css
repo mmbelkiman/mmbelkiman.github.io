@@ -1,0 +1,53 @@
+.panel-header {
+  --panel-header-surface: linear-gradient(
+    180deg,
+    var(--color-panel-header-surface-top),
+    var(--color-panel-header-surface-bottom)
+  );
+  --panel-header-text: var(--color-panel-header-text);
+  --panel-header-prefix: var(--color-panel-header-prefix);
+  --panel-header-details: var(--color-panel-header-details);
+
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+  justify-content: space-between;
+  min-height: 1.5rem;
+  padding: 0 var(--space-small);
+  color: var(--panel-header-text);
+  background: var(--panel-header-surface);
+  border-bottom: var(--border-width-thin) solid var(--color-panel-header-border);
+  box-shadow: var(--shadow-inset);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-label);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.panel-header-label,
+.panel-header-details {
+  display: inline-flex;
+  gap: var(--space-small);
+  align-items: center;
+  min-width: 0;
+}
+
+.panel-header-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel-header-prefix {
+  color: var(--panel-header-prefix);
+}
+
+.panel-header-details {
+  flex: 0 0 auto;
+  color: var(--panel-header-details);
+  font-family: var(--font-body);
+  font-size: var(--font-size-nano);
+  font-weight: var(--font-weight-big);
+}

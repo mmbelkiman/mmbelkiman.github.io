@@ -1,0 +1,24 @@
+import { useMemo } from 'react'
+import { useLocalClock } from './hooks/useLocalClock'
+import './style.css'
+import type { LocalClockProps } from './types'
+import { formatLocalDate, formatLocalTime } from './utils'
+
+export type { LocalClockProps } from './types'
+
+export function LocalClock({ locale, now, timeZone }: LocalClockProps) {
+  const displayedTime = useLocalClock(now)
+  const resolvedTimeZone = useMemo(() => timeZone ?? 'UTC', [timeZone])
+  const date = formatLocalDate({ locale, time: displayedTime, timeZone: resolvedTimeZone })
+  const time = formatLocalTime({ locale, time: displayedTime, timeZone: resolvedTimeZone })
+  return (
+    <section aria-label="Local date and time" className="local-clock">
+      <time className="local-clock-time" dateTime={displayedTime.toISOString()}>
+        {time}
+      </time>
+      <time className="local-clock-date" dateTime={displayedTime.toISOString()}>
+        {date}
+      </time>
+    </section>
+  )
+}

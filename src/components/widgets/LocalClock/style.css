@@ -1,0 +1,30 @@
+.local-clock {
+  display: grid;
+  gap: var(--space-nano);
+  align-content: center;
+  min-height: 100%;
+  padding: var(--space-small) var(--space-normal);
+  color: var(--color-text-primary);
+  background: color-mix(in srgb, var(--color-surface-strong) 92%, transparent);
+  border-left: var(--border-width-thin) solid var(--color-border-strong);
+  font-family: var(--font-heading);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.local-clock-date,
+.local-clock-time {
+  margin: 0;
+}
+
+.local-clock-date {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-nano);
+  letter-spacing: var(--letter-spacing-label);
+}
+
+.local-clock-time {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-huge);
+  line-height: 1;
+}

@@ -1,0 +1,20 @@
+.portfolio-top-row .grid {
+  align-items: stretch;
+}
+
+.portfolio-top-row .grid-column {
+  height: 100%;
+}
+
+.portfolio-top-row .grid-column > .panel-frame {
+  height: 100%;
+}
+
+.portfolio-top-row .panel-frame-content,
+.portfolio-top-row .identity-header {
+  height: 100%;
+}
+
+.portfolio-top-row .identity-header {
+  box-sizing: border-box;
+}

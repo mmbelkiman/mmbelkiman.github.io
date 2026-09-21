@@ -1,0 +1,48 @@
+.clock-player-header {
+  --clock-player-height: calc(
+    3.5rem + var(--space-small) + var(--border-width-strong) + var(--border-width-strong)
+  );
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 6.5rem;
+}
+
+.clock-player-header-city {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.clock-player-header-city .city-landscape-parallax {
+  height: 100%;
+}
+
+.clock-player-header > .spotify-player {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  block-size: var(--clock-player-height);
+  margin-block: 0;
+  transform: translateY(-50%);
+}
+
+.clock-player-header-city > .local-clock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 0;
+  height: 4rem;
+  max-width: 100%;
+  align-content: start;
+}
+
+@media (width <= 42rem) {
+  .clock-player-header-city > .local-clock {
+    height: 4rem;
+  }
+}

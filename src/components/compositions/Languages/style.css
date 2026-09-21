@@ -1,0 +1,51 @@
+.languages {
+  padding: var(--space-small);
+}
+
+.languages-list {
+  display: grid;
+  gap: var(--space-small);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.languages-item {
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
+  min-width: 0;
+}
+
+.languages-item > div {
+  min-width: 0;
+}
+
+.languages-flag {
+  display: flex;
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 2.25rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-width-thin) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-inset);
+}
+
+.languages-flag-glyph {
+  display: block;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  font-size: var(--font-size-huge);
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+.languages-item .heading {
+  font-size: var(--font-size-big);
+}
+
+.languages-item .text {
+  margin-top: var(--space-nano);
+}

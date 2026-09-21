@@ -1,0 +1,21 @@
+.heading {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-normal);
+}
+
+.heading-1 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+.heading-2 {
+  font-size: var(--font-size-big);
+  line-height: 1.2;
+}
+
+.heading-3 {
+  font-size: var(--font-size-normal);
+  line-height: 1.2;
+}

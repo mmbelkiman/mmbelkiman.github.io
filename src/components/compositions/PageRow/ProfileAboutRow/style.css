@@ -1,0 +1,14 @@
+.profile-about-row .grid {
+  align-items: stretch;
+}
+
+.profile-about-row .grid-column,
+.profile-about-row .grid-column > .panel-frame {
+  height: 100%;
+}
+
+.profile-about-row .profile-card,
+.profile-about-row .about-me-card {
+  height: 100%;
+  box-sizing: border-box;
+}

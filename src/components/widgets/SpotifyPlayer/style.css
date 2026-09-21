@@ -1,0 +1,31 @@
+.spotify-player {
+  --spotify-player-scale: 0.7;
+
+  place-self: center start;
+  width: min(calc(100% - var(--space-normal)), 26rem);
+  block-size: calc(
+    3.5rem + var(--space-small) + var(--border-width-strong) + var(--border-width-strong)
+  );
+  margin-inline: var(--space-small);
+  padding: var(--space-nano);
+  overflow: hidden;
+  background: var(--color-surface-strong);
+  border: var(--border-width-strong) solid var(--color-metal-mid);
+  border-radius: var(--radius-md);
+}
+
+.spotify-player-embed {
+  display: block;
+  width: 142.857%;
+  height: 5rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-strong);
+  transform: scale(var(--spotify-player-scale));
+  transform-origin: top left;
+}
+
+.spotify-player:focus-within {
+  outline: var(--border-width-strong) solid var(--color-focus);
+  outline-offset: var(--space-nano);
+}

@@ -1,0 +1,177 @@
+:root[data-theme='v1'] {
+  color-scheme: light;
+
+  /** primitive colors · industrial blue and neutral (dark → light) **/
+  --color-ink: #020a12;
+  --color-navy: #062848;
+  --color-deep-blue: #1b4b6b;
+  --color-slate: #45637d;
+  --color-steel: #769bb2;
+  --color-cloud-blue: #aac1d0;
+  --color-ice: #b9d9eb;
+  --color-mist: #c4dbe8;
+  --color-white: #f6fbfd;
+  --color-pure-white: #fff;
+
+  /** primitive colors · blue and cyan **/
+  --color-blue: #0055c7;
+  --color-azure: #087cf2;
+  --color-teal-blue: #047f9b;
+  --color-cerulean: #1266a6;
+  --color-electric-blue: #00a8ff;
+  --color-ocean: #0b3d60;
+  --color-sea-blue: #0b5f8e;
+  --color-sky: #57d7ff;
+  --color-blue-light: #e4f1fc;
+
+  /** primitive colors · green and teal **/
+  --color-forest: #0b493f;
+  --color-jade: #08705b;
+  --color-green: #2f9b69;
+  --color-olive: #3c7f1d;
+  --color-teal: #007f83;
+  --color-mint: #76e2c2;
+  --color-green-light: #e2f6f5;
+
+  /** primitive colors · violet **/
+  --color-violet-dark: #362460;
+  --color-violet-muted: #5b3b95;
+  --color-violet: #713fd4;
+  --color-lavender: #c69cff;
+  --color-lavender-light: #f0eaff;
+
+  /** primitive colors · gold and orange **/
+  --color-orange: #b85d08;
+  --color-orange-light: #fff0dc;
+  --color-gold: #f5c35b;
+  --color-amber-dark: #5c4210;
+  --color-ochre: #8c5900;
+
+  /** primitive colors · rose **/
+  --color-rose: #9c3d6e;
+  --color-rose-light: #f9e5f1;
+
+  /** primitive colors · gray **/
+  --color-gray: #5e6670;
+  --color-gray-light: #ebeff3;
+
+  /** semantic aliases **/
+  --color-border-outline: var(--color-ink);
+  --color-surface-strong: var(--color-navy);
+  --color-text: var(--color-navy);
+  --color-metal-dark: var(--color-deep-blue);
+  --color-text-muted: var(--color-slate);
+  --color-border: var(--color-steel);
+  --color-metal-mid: var(--color-steel);
+  --color-panel-header-surface-bottom: var(--color-cloud-blue);
+  --color-page: var(--color-cloud-blue);
+  --color-panel-header-surface-top: var(--color-ice);
+  --color-text-ice: var(--color-ice);
+  --color-metal-light: var(--color-mist);
+  --color-surface-inset: var(--color-mist);
+  --color-surface-muted: var(--color-surface-inset);
+  --color-surface: var(--color-white);
+  --color-text-inverse: var(--color-white);
+  --color-metal-highlight: var(--color-white);
+  --color-accent-contrast: var(--color-white);
+  --color-surface-raised: var(--color-white);
+  --color-border-highlight: var(--color-pure-white);
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: var(--color-text-muted);
+  --color-accent-active: var(--color-blue);
+  --color-project-category-financial: var(--color-blue);
+  --color-accent-hover: var(--color-blue);
+  --color-accent: var(--color-azure);
+  --color-border-strong: var(--color-deep-blue);
+  --color-project-category-simulation: var(--color-teal-blue);
+  --color-project-category-insurance: var(--color-cerulean);
+  --color-focus: var(--color-electric-blue);
+  --color-project-type-game-surface: var(--color-ocean);
+  --color-project-type-game-muted: var(--color-sea-blue);
+  --color-project-type-game: var(--color-sky);
+  --color-project-category-financial-surface: var(--color-blue-light);
+  --color-project-category-insurance-surface: var(--color-blue-light);
+  --color-project-category-simulation-surface: var(--color-blue-light);
+  --color-project-type-doc-surface: var(--color-forest);
+  --color-project-type-doc-muted: var(--color-jade);
+  --color-project-category-research-platform: var(--color-jade);
+  --color-positive: var(--color-green);
+  --color-project-category-edtech: var(--color-olive);
+  --color-project-category-fintech: var(--color-teal);
+  --color-project-type-doc: var(--color-mint);
+  --color-project-category-edtech-surface: var(--color-green-light);
+  --color-project-category-fintech-surface: var(--color-green-light);
+  --color-project-category-research-platform-surface: var(--color-green-light);
+  --color-project-type-software-surface: var(--color-violet-dark);
+  --color-project-type-software-muted: var(--color-violet-muted);
+  --color-project-category-banking: var(--color-violet);
+  --color-project-type-software: var(--color-lavender);
+  --color-project-category-banking-surface: var(--color-lavender-light);
+  --color-project-type-social-surface: var(--color-amber-dark);
+  --color-project-type-social-muted: var(--color-ochre);
+  --color-project-category-media: var(--color-rose);
+  --color-project-category-media-surface: var(--color-rose-light);
+  --color-project-category-threat-intelligence: var(--color-rose);
+  --color-project-category-threat-intelligence-surface: var(--color-rose-light);
+  --color-project-category-logistics: var(--color-orange);
+  --color-project-category-logistics-surface: var(--color-orange-light);
+  --color-project-category-loyalty: var(--color-orange);
+  --color-project-category-loyalty-surface: var(--color-orange-light);
+  --color-project-type-social: var(--color-gold);
+  --color-project-featured: var(--color-gold);
+  --color-project-category-industrial: var(--color-gray);
+  --color-project-category-industrial-surface: var(--color-gray-light);
+  --color-panel-header-text: var(--color-text);
+  --color-panel-header-prefix: var(--color-metal-dark);
+  --color-panel-header-details: var(--color-text-muted);
+  --color-panel-header-border: var(--color-border);
+
+  /** colors effects **/
+  --shadow-panel: 0 3px 0 color-mix(in srgb, var(--color-surface-strong) 24%, transparent);
+  --shadow-panel-strong: 0 5px 0
+    color-mix(in srgb, var(--color-surface-strong) 34%, transparent);
+  --shadow-inset: inset 0 1px 0
+    color-mix(in srgb, var(--color-border-highlight) 90%, transparent);
+  --gradient-metal-border: linear-gradient(
+    135deg,
+    var(--color-metal-highlight) 0%,
+    var(--color-metal-light) 13%,
+    var(--color-metal-mid) 29%,
+    var(--color-metal-dark) 43%,
+    var(--color-metal-highlight) 54%,
+    var(--color-metal-light) 67%,
+    var(--color-metal-dark) 84%,
+    var(--color-metal-highlight) 100%
+  );
+
+  /** borders **/
+  --border-width-thin: 1px;
+  --border-width-strong: 2px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /** spaces,paddings,margins **/
+  --space-nano: 0.25rem;
+  --space-small: 0.5rem;
+  --space-normal: 1rem;
+  --space-big: 1.5rem;
+  --layout-content-max: 90rem;
+
+  /** fonts **/
+  --font-size-nano: 0.85rem;
+  --font-size-normal: 1rem;
+  --font-size-big: 1.25rem;
+  --font-size-huge: 1.75rem;
+  --font-weight-nano: 100;
+  --font-weight-normal: 400;
+  --font-weight-big: 500;
+  --letter-spacing-label: 0.04em;
+  --font-body: 'Rajdhani', 'Arial Narrow', arial, sans-serif;
+  --font-heading: 'Share Tech Mono', 'Courier New', monospace;
+
+  /** icons **/
+  --icon-size-nano: 0.875rem;
+  --icon-size-normal: 1.2rem;
+  --icon-size-big: 1.75rem;
+  --icon-size-huge: 2.25rem;
+}
