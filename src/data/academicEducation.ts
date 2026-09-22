@@ -7,25 +7,25 @@ type AcademicEducation = {
 
 export const academicEducation: AcademicEducation[] = [
   {
-    logoUrl: 'img-unyleya.png',
+    logoUrl: 'images/logos/education/img-unyleya.png',
     titleKey: 'education.unyleya.title',
     periodKey: 'education.unyleya.period',
     institutionKey: 'education.unyleya.institution',
   },
   {
-    logoUrl: 'img-metrocamp.png',
+    logoUrl: 'images/logos/education/img-metrocamp.png',
     titleKey: 'education.metrocamp.title',
     periodKey: 'education.metrocamp.period',
     institutionKey: 'education.metrocamp.institution',
   },
   {
-    logoUrl: 'img-centropaulasouza.png',
+    logoUrl: 'images/logos/education/img-centropaulasouza.png',
     titleKey: 'education.centroPaulaSouza.technicalMaintenance.title',
     periodKey: 'education.centroPaulaSouza.technicalMaintenance.period',
     institutionKey: 'education.centroPaulaSouza.technicalMaintenance.institution',
   },
   {
-    logoUrl: 'img-centropaulasouza.png',
+    logoUrl: 'images/logos/education/img-centropaulasouza.png',
     titleKey: 'education.centroPaulaSouza.technicalProgramming.title',
     periodKey: 'education.centroPaulaSouza.technicalProgramming.period',
     institutionKey: 'education.centroPaulaSouza.technicalProgramming.institution',
