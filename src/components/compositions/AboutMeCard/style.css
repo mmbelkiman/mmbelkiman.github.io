@@ -38,6 +38,7 @@
   position: relative;
   z-index: 2;
   display: grid;
+  box-sizing: border-box;
   align-content: center;
   width: min(100%, 31rem);
   padding: var(--space-big);
@@ -82,6 +83,12 @@
 @media (prefers-reduced-motion: reduce) {
   .about-me-card-cursor {
     animation: none;
+  }
+}
+
+@media (width <= 52rem) {
+  .about-me-card-content {
+    padding: var(--space-normal);
   }
 }
 

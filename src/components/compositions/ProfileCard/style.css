@@ -74,3 +74,30 @@
   letter-spacing: var(--letter-spacing-label);
   text-transform: uppercase;
 }
+
+@media (width <= 52rem) {
+  .profile-card {
+    grid-template-columns: minmax(7rem, 24%) minmax(0, 1fr);
+    grid-template-rows: 1fr auto auto 1fr;
+    row-gap: var(--space-nano);
+  }
+
+  .profile-card-photo-frame {
+    grid-row: 1 / -1;
+    align-self: center;
+  }
+
+  .profile-card-details {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .profile-card-location {
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+    padding-top: 0;
+    border-top: 0;
+  }
+}

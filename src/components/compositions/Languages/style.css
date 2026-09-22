@@ -49,3 +49,34 @@
 .languages-item .text {
   margin-top: var(--space-nano);
 }
+
+@media (width <= 42rem) {
+  .languages {
+    padding: var(--space-nano);
+  }
+
+  .languages-list {
+    gap: var(--space-nano);
+  }
+
+  .languages-item {
+    gap: var(--space-nano);
+  }
+
+  .languages-flag {
+    width: 2.25rem;
+    height: 1.75rem;
+  }
+
+  .languages-flag-glyph {
+    font-size: var(--font-size-big);
+  }
+
+  .languages-item .heading {
+    font-size: var(--font-size-normal);
+  }
+
+  .languages-item .text-label {
+    font-size: 0.75rem;
+  }
+}
