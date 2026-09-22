@@ -354,7 +354,7 @@ export const portfolioItems: PortfolioItem[] = [
       {
         labelKey: 'portfolio.gamification.links.document.label',
         textKey: 'portfolio.gamification.links.document.text',
-        href: 'https://raw.githubusercontent.com/mmbelkiman/mmbelkiman.github.io/master/downloads/gamification-MarceloBelkiman.pdf',
+        href: '/downloads/gamification-MarceloBelkiman.pdf',
         compact: true,
       },
     ],
