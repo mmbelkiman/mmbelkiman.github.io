@@ -55,3 +55,32 @@
 .contact-links-item a:focus-visible .heading {
   color: var(--color-accent-active);
 }
+
+@media (width <= 42rem) {
+  .contact-links {
+    padding: var(--space-nano);
+  }
+
+  .contact-links-item a {
+    gap: var(--space-nano);
+    padding: var(--space-nano) 0;
+  }
+
+  .contact-links-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .contact-links-icon svg {
+    width: var(--icon-size-big);
+    height: var(--icon-size-big);
+  }
+
+  .contact-links-content .heading {
+    font-size: var(--font-size-normal);
+  }
+
+  .contact-links-content .text-label {
+    font-size: 0.75rem;
+  }
+}

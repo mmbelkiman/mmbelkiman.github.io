@@ -2,7 +2,7 @@
   position: relative;
   container-type: inline-size;
   overflow: hidden;
-  padding: clamp(var(--space-small), 3vw, var(--space-big));
+  padding: var(--space-normal);
   background: var(--color-surface-strong);
 }
 
@@ -79,4 +79,10 @@
   margin-left: var(--space-nano);
   color: var(--color-focus);
   content: '//';
+}
+
+@media (width <= 75rem) {
+  .identity-header {
+    padding: var(--space-nano);
+  }
 }

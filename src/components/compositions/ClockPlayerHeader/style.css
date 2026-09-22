@@ -41,8 +41,41 @@
   align-content: start;
 }
 
-@media (width <= 42rem) {
+@media (width <= 75rem) {
+  .clock-player-header {
+    display: grid;
+    grid-template-rows: calc(var(--clock-player-height) + var(--space-nano)) 1.5rem;
+    row-gap: var(--space-nano);
+    min-height: calc(var(--clock-player-height) + 1.5rem + (var(--space-nano) * 2));
+  }
+
+  .clock-player-header > .spotify-player {
+    position: relative;
+    top: auto;
+    left: auto;
+    align-self: end;
+    transform: none;
+  }
+
   .clock-player-header-city > .local-clock {
-    height: 4rem;
+    inset: auto 0 0;
+    height: 1.5rem;
+    max-width: none;
+    display: flex;
+    gap: var(--space-normal);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-normal);
+    border-top: var(--border-width-thin) solid var(--color-border-strong);
+    border-left: 0;
+    text-align: left;
+  }
+
+  .clock-player-header-city > .local-clock .local-clock-date {
+    order: -1;
+  }
+
+  .clock-player-header-city > .local-clock .local-clock-time {
+    font-size: var(--font-size-normal);
   }
 }
