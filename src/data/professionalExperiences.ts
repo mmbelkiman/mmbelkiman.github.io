@@ -37,7 +37,6 @@ export const professionalExperiences: ProfessionalExperience[] = [
         logoUrl: 'images/logos/flyreel.png',
         nameKey: 'professionalExperience.trio.current.engagement.flyreel.name',
         periodKey: 'professionalExperience.trio.current.engagement.flyreel.period',
-        roleKey: 'professionalExperience.trio.current.engagement.flyreel.role',
         responsibilitiesKey: 'professionalExperience.trio.current.engagement.flyreel.responsibilities',
         technologies: [],
         typeKey: 'professionalExperience.trio.current.engagement.flyreel.type',

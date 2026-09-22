@@ -13,7 +13,9 @@ export function PortfolioProjectsRow({ projects }: PortfolioProjectsRowProps) {
   const { t } = useTranslation()
   const orderedProjects = [
     ...projects.filter((project) => project.featured),
-    ...projects.filter((project) => !project.featured),
+    ...projects
+      .filter((project) => !project.featured)
+      .sort((firstProject, secondProject) => (secondProject.sortYear ?? 0) - (firstProject.sortYear ?? 0)),
   ]
 
   return (

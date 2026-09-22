@@ -40,7 +40,7 @@ export type PortfolioItem = {
   technologies: PortfolioTechnology[]
   titleKey: string
   videoUrl: string
-  yearKey?: string
+  year: number
 }
 
 export const portfolioItems: PortfolioItem[] = [
@@ -50,7 +50,7 @@ export const portfolioItems: PortfolioItem[] = [
     projectIcon: 'grid-nine',
     posterUrl: '/images/portfolio-previews/tictac.jpg',
     category: 'game',
-    yearKey: 'portfolio.tictac.year',
+    year: 2023,
     technologies: ['typescript', 'reactNative'],
     links: [
       {
@@ -66,7 +66,7 @@ export const portfolioItems: PortfolioItem[] = [
     logoUrl: '/images/logos/pathcrypto.jpg',
     posterUrl: '/images/portfolio-previews/pathcrypto.jpg',
     category: 'software',
-    yearKey: 'portfolio.pathCrypto.year',
+    year: 2022,
     technologies: ['typescript', 'reactNative', 'nodeJs'],
     links: [
       {
@@ -84,7 +84,7 @@ export const portfolioItems: PortfolioItem[] = [
     logoUrl: '/images/logos/pipoclube.png',
     posterUrl: '/images/portfolio-previews/pipoclube.jpg',
     category: 'social',
-    yearKey: 'portfolio.pipoclube.year',
+    year: 2022,
     technologies: ['typescript', 'reactNative', 'php'],
     links: [
       {
@@ -100,7 +100,7 @@ export const portfolioItems: PortfolioItem[] = [
     logoUrl: '/images/logos/aulapp.jpg',
     posterUrl: '/images/portfolio-previews/aulapp.jpg',
     category: 'software',
-    yearKey: 'portfolio.aulapp.year',
+    year: 2020,
     technologies: ['javascript', 'reactNative'],
     links: [
       {
@@ -123,7 +123,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/livroh.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.livroh.description.first', 'portfolio.livroh.description.second'],
-    yearKey: 'portfolio.livroh.year',
+    year: 2019,
     technologies: ['java'],
     links: [
       {
@@ -140,7 +140,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/bancah.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.bancah.description.first', 'portfolio.bancah.description.second'],
-    yearKey: 'portfolio.bancah.year',
+    year: 2019,
     technologies: ['java'],
     links: [
       {
@@ -162,7 +162,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.epicGolf2d.description.first',
       'portfolio.epicGolf2d.description.second',
     ],
-    yearKey: 'portfolio.epicGolf2d.year',
+    year: 2018,
     supplementaryImage: {
       altKey: 'portfolio.epicGolf2d.awardAlt',
       captionKey: 'portfolio.epicGolf2d.awardCaption',
@@ -184,7 +184,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/venusparticleeditor.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.venusParticleEditor.description.first'],
-    yearKey: 'portfolio.venusParticleEditor.year',
+    year: 2019,
     technologies: ['csharp', 'monogame'],
     links: [
       {
@@ -208,7 +208,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/ouradventuretime.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.ourAdventureTime.description.first'],
-    yearKey: 'portfolio.ourAdventureTime.year',
+    year: 2018,
     technologies: ['unity', 'csharp'],
     links: [
       {
@@ -236,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.ultraRetroVirusAttack.description.first',
       'portfolio.ultraRetroVirusAttack.description.second',
     ],
-    yearKey: 'portfolio.ultraRetroVirusAttack.year',
+    year: 2018,
     technologies: ['unity', 'csharp'],
     links: [
       {
@@ -264,7 +264,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.itaucard.description.first',
       'portfolio.itaucard.description.second',
     ],
-    yearKey: 'portfolio.itaucard.year',
+    year: 2017,
     technologies: ['java'],
     links: [
       {
@@ -281,7 +281,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/rupert.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.rupert.description.first', 'portfolio.rupert.description.second'],
-    yearKey: 'portfolio.rupert.year',
+    year: 2017,
     technologies: ['java'],
     links: [
       {
@@ -301,7 +301,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.tribanco.description.first',
       'portfolio.tribanco.description.second',
     ],
-    yearKey: 'portfolio.tribanco.year',
+    year: 2016,
     technologies: ['javascript'],
     links: [
       {
@@ -327,7 +327,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.omgMyHouse.description.first',
       'portfolio.omgMyHouse.description.second',
     ],
-    yearKey: 'portfolio.omgMyHouse.year',
+    year: 2015,
     technologies: ['construct2'],
     links: [
       {
@@ -347,7 +347,7 @@ export const portfolioItems: PortfolioItem[] = [
       'portfolio.gamification.description.second',
       'portfolio.gamification.description.third',
     ],
-    yearKey: 'portfolio.gamification.year',
+    year: 2015,
     technologies: ['htmlCss', 'javascript'],
     linkSpacer: true,
     links: [
@@ -366,7 +366,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/spacejay.jpg',
     category: 'game',
     descriptionKeys: ['portfolio.spaceJay.description.first'],
-    yearKey: 'portfolio.spaceJay.year',
+    year: 2014,
     technologies: ['java'],
     links: [
       {
@@ -383,7 +383,7 @@ export const portfolioItems: PortfolioItem[] = [
     posterUrl: '/images/portfolio-previews/clickideia.jpg',
     category: 'software',
     descriptionKeys: ['portfolio.clickideia.description.first'],
-    yearKey: 'portfolio.clickideia.year',
+    year: 2015,
     technologies: ['javascript', 'sql', 'php'],
     linkSpacer: true,
     links: [

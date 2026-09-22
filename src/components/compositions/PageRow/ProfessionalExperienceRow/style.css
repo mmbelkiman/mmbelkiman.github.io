@@ -7,8 +7,9 @@
 
 .professional-experience-row-timeline,
 .professional-experience-row-details {
+  min-width: 0;
   min-height: 0;
-  overflow-y: auto;
+  overflow: hidden auto;
   scrollbar-color: var(--color-metal-mid) transparent;
   scrollbar-width: thin;
 }
@@ -31,6 +32,7 @@
   position: relative;
   z-index: 1;
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: 1rem max-content minmax(0, 1fr);
   gap: var(--space-small);
   align-items: center;
@@ -199,10 +201,17 @@
   --color-text-secondary: var(--color-text-ice);
 
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-content: start;
   gap: var(--space-normal);
   padding: var(--space-normal);
   background: var(--color-surface-strong);
+}
+
+.professional-experience-row-details > *,
+.professional-experience-row-details-header > div {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .professional-experience-row-details-header {
@@ -274,11 +283,16 @@
 .professional-experience-row-engagements {
   display: grid;
   gap: var(--space-small);
+  box-sizing: border-box;
+  width: 100%;
   padding: var(--space-small);
 }
 
+.professional-experience-row-details > .panel-frame,
 .professional-experience-row-engagements > .panel-frame {
+  box-sizing: border-box;
   min-width: 0;
+  width: 100%;
 }
 
 .professional-experience-row-engagement {
@@ -386,7 +400,50 @@
 
 @media (width <= 42rem) {
   .professional-experience-row {
-    height: 34rem;
+    grid-template-columns: minmax(7rem, 0.25fr) minmax(0, 1fr);
+    height: 30rem;
+  }
+
+  .professional-experience-row-timeline-content {
+    padding-block: var(--space-nano);
+  }
+
+  .professional-experience-row-timeline-item {
+    gap: var(--space-nano);
+    padding: var(--space-nano);
+  }
+
+  .professional-experience-row-timeline-item::before {
+    left: calc(var(--space-nano) + 0.5rem);
+  }
+
+  .professional-experience-row-timeline-marker {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .professional-experience-row-timeline-period {
+    font-size: 0.75rem;
+  }
+
+  .professional-experience-row-company-logo-compact {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  .professional-experience-row-details {
+    gap: var(--space-small);
+    padding: var(--space-small);
+    padding-right: var(--space-normal);
+    scrollbar-gutter: stable;
+  }
+
+  .professional-experience-row-details > .panel-frame {
+    width: auto;
+    max-width: none;
+    margin-right: calc(var(--space-normal) * -1);
+    margin-left: calc(var(--space-small) * -1);
   }
 
   .professional-experience-row-details-header {
@@ -399,11 +456,34 @@
 
   .professional-experience-row-engagement-header {
     grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-nano);
   }
 
   .professional-experience-row-engagement-meta {
     grid-column: 1 / -1;
     justify-items: start;
     text-align: left;
+  }
+
+  .professional-experience-row-engagements,
+  .professional-experience-row-engagement {
+    min-width: 0;
+    padding: var(--space-nano);
+  }
+
+  .professional-experience-row-engagements {
+    padding: 0;
+  }
+
+  .professional-experience-row-company-meta {
+    gap: var(--space-nano);
+  }
+
+  .professional-experience-row-location,
+  .professional-experience-row-company-type,
+  .professional-experience-row-details > .text,
+  .professional-experience-row-engagement > .text {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 }
