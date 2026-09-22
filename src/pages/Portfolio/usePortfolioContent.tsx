@@ -211,6 +211,7 @@ export function usePortfolioContent(): PortfolioContent {
         logoSrc: project.logoUrl,
         presentation: project.presentation,
         projectType,
+        sortYear: project.year,
         supplementaryImage: project.supplementaryImage
           ? {
               alt: t(project.supplementaryImage.altKey),
@@ -222,7 +223,7 @@ export function usePortfolioContent(): PortfolioContent {
         technologyBackground: 'transparent' as const,
         title: t(project.titleKey),
         videoSrc: project.videoUrl,
-        year: t(project.yearKey ?? ''),
+        year: t('v1.common.year', { year: project.year }),
       }
     }),
   }

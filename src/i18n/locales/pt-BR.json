@@ -73,7 +73,6 @@
             "name": "Flyreel",
             "type": "cliente",
             "period": "07/2026 – Atual",
-            "role": "Engenheiro de Software Sênior (React.js e Node.js)",
             "description": "Uma solução de vistoria de propriedades orientada por IA que ajuda seguradoras dos Estados Unidos a avaliar riscos sem inspeção física no local.",
             "responsibilities": [
               "Projeto atual; as responsabilidades detalhadas serão adicionadas conforme o projeto evoluir."
@@ -325,7 +324,6 @@
       "description": {
         "summary": "Jogo da velha para Android e iOS desenvolvido com React Native e TypeScript, com foco em uma aplicação mobile leve e multiplataforma.\n\nExplora componentes desacoplados, animações simples e uma base de testes com Jest e Detox, reduzindo ao mínimo as dependências externas."
       },
-      "year": "Ano: 2023",
       "links": { "github": { "label": "Repositório", "text": "github.com" } }
     },
     "pathCrypto": {
@@ -333,7 +331,6 @@
       "description": {
         "summary": "Aplicativo mobile de criptomoedas criado para uma startup fintech com React Native e Node.js."
       },
-      "year": "Ano: 2022",
       "links": { "website": { "label": "Website", "text": "pathcrypto.com" } }
     },
     "pipoclube": {
@@ -341,7 +338,6 @@
       "description": {
         "summary": "Rede social para descobrir, catalogar e avaliar filmes, com coleções, notas e conteúdo gerado por usuários.\n\nDesenvolvimento end-to-end do backend em PHP e dos aplicativos mobile e web com React Native, além da condução da direção de produto da concepção à entrega."
       },
-      "year": "Ano: 2022",
       "links": { "website": { "label": "Website", "text": "pipoclube.com" } }
     },
     "aulapp": {
@@ -349,7 +345,6 @@
       "description": {
         "summary": "Plataforma educacional com vídeos, áudios, exercícios e experiências de aprendizagem offline-first."
       },
-      "year": "Ano: 2020",
       "links": {
         "googlePlay": { "label": "Android", "text": "play.google.com" },
         "appStore": { "label": "iOS", "text": "apps.apple.com" }
@@ -360,13 +355,11 @@
       "description": {
         "summary": "Plataforma Android nativa para leitura de livros e audiolivros, criada para atender a um grande catálogo de editoras."
       },
-      "year": "Ano: 2019",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "bancah": {
       "title": "Bancah",
       "description": { "summary": "Banca digital Android nativa para revistas e jornais." },
-      "year": "Ano: 2019",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "epicGolf2d": {
@@ -376,7 +369,6 @@
       },
       "awardAlt": "Epic Golf 2D, finalista do BIG Festival 2018",
       "awardCaption": "Finalista Big Festival\nBig Starter 2018",
-      "year": "Ano: 2018",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "venusParticleEditor": {
@@ -384,7 +376,6 @@
       "description": {
         "summary": "Editor de partículas desenvolvido para uso com o framework MonoGame."
       },
-      "year": "Ano: 2019",
       "links": {
         "itchIo": { "label": "Desktop", "text": "mmbelkiman.itch.io" },
         "github": { "label": "Repositório", "text": "github.com" }
@@ -393,7 +384,6 @@
     "ourAdventureTime": {
       "title": "Our Adventure Time",
       "description": { "summary": "Jogo sob medida criado para apoiar um pedido de casamento." },
-      "year": "Ano: 2018",
       "links": {
         "itchIo": { "label": "Jogar online", "text": "Unity Web-Player" },
         "github": { "label": "Repositório", "text": "github.com" }
@@ -404,7 +394,6 @@
       "description": {
         "summary": "Jogo criado em 48 horas para a Global Game Jam 2018. O jogador controla um vírus de computador e o espalha enquanto evita o firewall."
       },
-      "year": "Ano: 2018",
       "links": {
         "webPlayer": { "label": "Jogar online", "text": "Unity Web-Player" },
         "github": { "label": "Repositório", "text": "github.com" }
@@ -415,7 +404,6 @@
       "description": {
         "summary": "Aplicativo Android nativo para gerenciar cartões de crédito do Itaú Unibanco, criado com Java e Android SDK."
       },
-      "year": "Ano: 2017",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "rupert": {
@@ -423,7 +411,6 @@
       "description": {
         "summary": "Jogo de plataforma e quebra-cabeças ambientado nas profundezas do oceano. Você controla um pequeno peixe em uma aventura tranquila, em que observação, raciocínio e precisão substituem o combate.\n\nCom 10 fases, desafios de física e exploração, caminhos escondidos, colecionáveis, conquistas e ranking online, convida jogadores a descobrir cada segredo do mundo submarino."
       },
-      "year": "Ano: 2017",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "tribanco": {
@@ -431,7 +418,6 @@
       "description": {
         "summary": "Aplicativo bancário multiplataforma criado com Kony para Android e iOS."
       },
-      "year": "Ano: 2016",
       "links": {
         "googlePlay": { "label": "Android", "text": "play.google.com" },
         "appStore": { "label": "iOS", "text": "itunes.apple.com" }
@@ -442,7 +428,6 @@
       "description": {
         "summary": "Jogo desenvolvido durante a graduação em Ciência da Computação, no qual o jogador protege sua casa de monstros."
       },
-      "year": "Ano: 2015",
       "links": { "webPlayer": { "label": "Jogar online", "text": "Construct Web-Player" } }
     },
     "gamification": {
@@ -450,7 +435,6 @@
       "description": {
         "summary": "Monografia de conclusão de curso sobre sistemas gamificados, acompanhada de uma pequena aplicação que demonstra seus conceitos."
       },
-      "year": "Ano: 2015",
       "links": {
         "document": {
           "label": "Documento",
@@ -463,7 +447,6 @@
       "description": {
         "summary": "Destrua inimigos, memorize padrões de ataque e escolha os alvos certos para maximizar a pontuação.\n\nCom 14 tipos de inimigos, placares do Google Play Games e conquistas desbloqueáveis, cada partida recompensa precisão, estratégia e domínio das mecânicas."
       },
-      "year": "Ano: 2014",
       "links": { "googlePlay": { "label": "Android", "text": "play.google.com" } }
     },
     "clickideia": {
@@ -471,11 +454,11 @@
       "description": {
         "summary": "Plataforma para criar exercícios, atribuí-los a alunos, avaliar respostas e gerar relatórios."
       },
-      "year": "Ano: 2015",
       "links": { "website": { "label": "Website", "text": "clickideia.com.br" } }
     }
   },
   "v1": {
+    "common": { "year": "Ano: {{year}}" },
     "profile": {
       "location": "Campinas, São Paulo — Brasil",
       "handle": "belki",
@@ -485,7 +468,7 @@
     "about": {
       "title": "Olá!",
       "description": [
-        "Sou Programador, Game Designer e Arquiteto de Software, com mais de 14 anos de experiência na criação de produtos web e mobile escaláveis, com forte atuação em React Native, React e Node.js.",
+        "Sou Programador, Game Designer e Arquiteto de Software, com mais de 14 anos de experiência na criação de produtos web e mobile, com forte atuação em React Native, React e Node.js.",
         "Gosto de criar soluções digitais incríveis, com alta performance, visual elegante e uma experiência empolgante de usar."
       ],
       "prompt": "Como posso ajudar você hoje?"
