@@ -21,20 +21,20 @@ export const Default: Story = {
     contactLinks: [
       {
         label: 'LinkedIn',
-        value: '/mmbelkiman',
-        href: 'https://www.linkedin.com/in/mmbelkiman',
+        value: '/demo',
+        href: 'https://www.linkedin.com/in/demo',
         icon: <LinkedinLogoIcon weight="fill" />,
       },
       {
         label: 'GitHub',
-        value: '/mmbelkiman',
-        href: 'https://github.com/mmbelkiman',
+        value: '/demo',
+        href: 'https://github.com/demo',
         icon: <GithubLogoIcon weight="fill" />,
       },
       {
         label: 'Email',
-        value: 'marcelo@mmbelkiman.com',
-        href: 'mailto:marcelo@mmbelkiman.com',
+        value: 'marcelo@mail.com',
+        href: 'mailto:marcelo@mail.com',
         icon: <EnvelopeIcon weight="bold" />,
       },
     ],

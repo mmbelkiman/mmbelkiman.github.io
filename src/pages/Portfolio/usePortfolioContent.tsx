@@ -158,10 +158,10 @@ export function usePortfolioContent(): PortfolioContent {
           value: '/marcelobelkiman',
         },
         {
-          href: 'https://github.com/mmbelkiman',
+          href: 'https://github.com/mbelkiman',
           icon: <GithubLogoIcon weight="fill" />,
           label: 'GitHub',
-          value: '/mmbelkiman',
+          value: '/mbelkiman',
         },
         {
           href: 'mailto:marcelobelkiman@gmail.com',

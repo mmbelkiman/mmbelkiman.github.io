@@ -56,7 +56,7 @@ export const portfolioItems: PortfolioItem[] = [
       {
         labelKey: 'portfolio.tictac.links.github.label',
         textKey: 'portfolio.tictac.links.github.text',
-        href: 'https://github.com/mmbelkiman/tiny_tic_tac_toe_mobile?tab=readme-ov-file',
+        href: 'https://github.com/mbelkiman/tiny_tic_tac_toe_mobile?tab=readme-ov-file',
       },
     ],
   },
@@ -190,12 +190,12 @@ export const portfolioItems: PortfolioItem[] = [
       {
         labelKey: 'portfolio.venusParticleEditor.links.itchIo.label',
         textKey: 'portfolio.venusParticleEditor.links.itchIo.text',
-        href: 'https://mmbelkiman.itch.io/venus-particle-editor',
+        href: 'https://mbelkiman.itch.io/venus-particle-editor',
       },
       {
         labelKey: 'portfolio.venusParticleEditor.links.github.label',
         textKey: 'portfolio.venusParticleEditor.links.github.text',
-        href: 'https://github.com/mmbelkiman/Venus-Particle-Editor',
+        href: 'https://github.com/mbelkiman/Venus-Particle-Editor',
         className: 'sourcecode',
         compact: true,
       },
@@ -248,7 +248,7 @@ export const portfolioItems: PortfolioItem[] = [
       {
         labelKey: 'portfolio.ultraRetroVirusAttack.links.github.label',
         textKey: 'portfolio.ultraRetroVirusAttack.links.github.text',
-        href: 'https://github.com/mmbelkiman/UltraRetroVirusAttack',
+        href: 'https://github.com/mbelkiman/UltraRetroVirusAttack',
         className: 'sourcecode',
         compact: true,
       },

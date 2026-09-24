@@ -59,7 +59,7 @@ export const Default: Story = {
         imageSrc: '/images/portfolio-previews/bancah.jpg',
         imageAlt: 'Personal Ledger web application preview',
         technologies: ['react', 'node-js', 'postgresql'],
-        externalLinks: [{ label: 'Repository', text: 'github.com', url: 'https://github.com/mmbelkiman' }],
+        externalLinks: [{ label: 'Repository', text: 'github.com', url: 'https://github.com/demo' }],
       },
     ],
   },
